@@ -24,7 +24,7 @@ window.onload = function(){
             }
         }
         console.dir(AA);
-        return "あなたの AA{SPA) の点数は" + AA[27] + "点です!!";
+        return "あなたの AA(SPA) の点数は" + AA[27] + "点です!!";
     }
 
 
