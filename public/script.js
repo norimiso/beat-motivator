@@ -244,6 +244,7 @@ function processCsv(csv){
 
     let stastics = ["<table>"];
     let stastics_header = `
+    <thead>
     <tr>
     <td> ☆ </td>
     <td> played / total </td>
@@ -260,6 +261,7 @@ function processCsv(csv){
     <td> AA </td>
     <td> A </td>
     </tr>
+    </thead>
     `;
     stastics.push(stastics_header);
     for (let i = 12; i >= 1; i--) {
@@ -284,6 +286,7 @@ function processCsv(csv){
 
     let list = ["<table>"];
     let list_header = `
+    <thead>
     <tr>
     <td> ☆ </td>
     <td> title </td>
@@ -291,6 +294,7 @@ function processCsv(csv){
     <td> rate </td>
     <td> MAX- </td>
     </tr>
+    </thead>
     `;
     list.push(list_header);
 
