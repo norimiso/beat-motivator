@@ -292,20 +292,20 @@ function processCsv(csv){
     for (let i = 12; i >= 1; i--) {
         let temp = "";
         if(i === 12){
-            temp += "☆12 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% | max-**: " + stats[i]["2keta"] + " / ";
+            temp += "☆12 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% (" + stats[i]["played"] + "/" + stats[i]["total"] +") | ";
+            temp += "max-**: " + stats[i]["2keta"] + " / ";
             temp += "99%: " + stats[i]["99%"] + " / ";
             temp += "98%: " + stats[i]["98%"] + " / ";
             temp += "97%: " + stats[i]["97%"] + " / ";
-            temp += "96%: " + stats[i]["97%"] + " / ";
             temp += "max-: " + stats[i]["MAX-"] + " / ";
             temp += "AAA: " + stats[i]["AAA"] + "\n";
             stastics_summary.push(temp);
         } else if (i === 11){
-            temp += "☆11 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% | max-**: " + stats[i]["2keta"] + " / ";
+            temp += "☆11 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% (" + stats[i]["played"] + "/" + stats[i]["total"] +") | ";
+            temp += "max-**: " + stats[i]["2keta"] + " / ";
             temp += "99%: " + stats[i]["99%"] + " / ";
             temp += "98%: " + stats[i]["98%"] + " / ";
             temp += "97%: " + stats[i]["97%"] + " / ";
-            temp += "96%: " + stats[i]["97%"] + " / ";
             temp += "max-: " + stats[i]["MAX-"] + " / ";
             temp += "AAA: " + stats[i]["AAA"] + "\n";
             stastics_summary.push(temp);
