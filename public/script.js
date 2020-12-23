@@ -39,6 +39,8 @@ function setTextareaData(){
     let data = processCsv(raw_data);
     document.getElementById("list").innerHTML = data["list"];
     document.getElementById("stastics").innerHTML = data["stastics"];
+    let tweet_url = '<a href="https://twitter.com/intent/tweet?hashtags=beat_motivator&ref_src=twsrc%5Etfw&text=' + encodeURI(data["stastics_summary"]) + '&tw_p=tweetbutton&url=https%3A%2F%2Fgoofy-wiles-fc39fe.netlify.app%2F" target="_blank" rel="noopener noreferrer"> Tweet your IIDX stats!! </a>'
+    document.getElementById("tweet_button").innerHTML = tweet_url;
 }
 
 function getMasterdata(){
@@ -283,6 +285,34 @@ function processCsv(csv){
     }
     stastics.push("</table>");
 
+    let stastics_summary = [];
+    let num_1keta = 0;
+    let num_99p = 0;
+    let num_98p = 0;
+    for (let i = 12; i >= 1; i--) {
+        let temp = "";
+        if(i === 12){
+            temp += "☆12 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% | max-*: " + stats[i]["1keta"] + " / ";
+            temp += "max-**: " + stats[i]["2keta"] + " / ";
+            temp += "max-: " + stats[i]["MAX-"] + " / ";
+            temp += "AAA: " + stats[i]["AAA"] + "\n";
+            stastics_summary.push(temp);
+        } else if (i === 11){
+            temp += "☆11 avg: " + (stats[i]["average_rate"]*100).toFixed(2) + "% | max-*: " + stats[i]["1keta"] + " / ";
+            temp += "max-**: " + stats[i]["2keta"] + " / ";
+            temp += "98%: " + stats[i]["98%"] + " / ";
+            temp += "max-: " + stats[i]["MAX-"] + "\n";
+            stastics_summary.push(temp);
+        }
+        num_1keta += stats[i]["1keta"];
+        num_99p += stats[i]["99%"];
+        num_98p += stats[i]["98%"];
+    }
+    stastics_summary.push("Total | max-*: " + num_1keta + " / ");
+    stastics_summary.push("99%: " + num_99p + " / ");
+    stastics_summary.push("98%: " + num_98p + "\n\n");
+
+    console.log(stastics_summary.join(""));
 
     let list = ["<table>"];
     let list_header = `
@@ -314,7 +344,8 @@ function processCsv(csv){
 
     return {
         "list": list.join(""),
-        "stastics": stastics.join("")
+        "stastics": stastics.join(""),
+        "stastics_summary": stastics_summary.join("")
     };
 }
 
