@@ -10,23 +10,23 @@ function getMusicData(){
         switch ( xhr.readyState ) {
             case 0:
                 // 未初期化状態.
-                console.log( 'uninitialized!' );
+                console.log( "uninitialized!" );
                 break;
             case 1: // データ送信中.
-                console.log( 'loading...' );
+                console.log( "loading..." );
                 break;
             case 2: // 応答待ち.
-                console.log( 'loaded.' );
+                console.log( "loaded." );
                 break;
             case 3: // データ受信中.
-                console.log( 'interactive... '+xhr.responseText.length+' bytes.' );
+                console.log( "interactive... "+xhr.responseText.length+" bytes." );
                 break;
             case 4: // データ受信完了.
                 if( xhr.status == 200 || xhr.status == 304 ) {
                     music_data = xhr.responseText; // responseXML もあり
-                    console.log( 'COMPLETE! :'+ music_data );
+                    console.log( "COMPLETE! :"+ music_data );
                 } else {
-                    console.log( 'Failed. HttpStatus: '+xhr.statusText );
+                    console.log( "Failed. HttpStatus: "+xhr.statusText );
                 }
                 break;
         }
@@ -35,10 +35,10 @@ function getMusicData(){
 }
 
 function setTextareaData(){
-    raw_data = document.getElementById('csv').value;
+    raw_data = document.getElementById("csv").value;
     let data = processCsv(raw_data);
-    document.getElementById('list').innerHTML = data["list"];
-    document.getElementById('stastics').innerHTML = data["stastics"];
+    document.getElementById("list").innerHTML = data["list"];
+    document.getElementById("stastics").innerHTML = data["stastics"];
 }
 
 function getMasterdata(){
@@ -315,7 +315,7 @@ function processCsv(csv){
 }
 
 window.onload = function(){
-    let button = document.getElementById('sub');
+    let button = document.getElementById("sub");
 
     getMusicData();
     button.onclick = setTextareaData;
