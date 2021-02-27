@@ -1,4 +1,9 @@
 version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,kaiden_average,top_score
+1st&substream,22DUNK,TECHNO,SLAKE,1,SPB,1,-1,-1,-,-
+1st&substream,22DUNK,TECHNO,SLAKE,1,SPN,2,3,265,-,-
+1st&substream,22DUNK,TECHNO,SLAKE,1,SPH,3,4,323,-,-
+1st&substream,22DUNK,TECHNO,SLAKE,1,SPA,4,5,329,-,-
+1st&substream,22DUNK,TECHNO,SLAKE,1,SPL,5,-1,-1,-,-
 1st&substream,5.1.1.,PIANO AMBIENT,dj nagureo,1,SPB,1,-1,-1,-,-
 1st&substream,5.1.1.,PIANO AMBIENT,dj nagureo,1,SPN,2,2,99,-,-
 1st&substream,5.1.1.,PIANO AMBIENT,dj nagureo,1,SPH,3,6,511,-,-
@@ -24,6 +29,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 1st&substream,GENOM SCREAMS,TRANCE,L.E.D. LIGHT,1,SPH,3,6,417,-,-
 1st&substream,GENOM SCREAMS,TRANCE,L.E.D. LIGHT,1,SPA,4,9,536,-,-
 1st&substream,GENOM SCREAMS,TRANCE,L.E.D. LIGHT,1,SPL,5,-1,-1,-,-
+1st&substream,gentle stress,DRUM'N'BASS,DJ Swan,1,SPB,1,-1,-1,-,-
+1st&substream,gentle stress,DRUM'N'BASS,DJ Swan,1,SPN,2,2,172,-,-
+1st&substream,gentle stress,DRUM'N'BASS,DJ Swan,1,SPH,3,4,342,-,-
+1st&substream,gentle stress,DRUM'N'BASS,DJ Swan,1,SPA,4,9,728,-,-
+1st&substream,gentle stress,DRUM'N'BASS,DJ Swan,1,SPL,5,-1,-1,-,-
 1st&substream,GRADIUSIC CYBER,DIGI-ROCK,TAKA,1,SPB,1,-1,-1,-,-
 1st&substream,GRADIUSIC CYBER,DIGI-ROCK,TAKA,1,SPN,2,5,442,-,-
 1st&substream,GRADIUSIC CYBER,DIGI-ROCK,TAKA,1,SPH,3,6,508,-,-
@@ -139,6 +149,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 3rd style,Schlagwerk,BIG BEAT,TaQ,3,SPH,3,6,663,-,-
 3rd style,Schlagwerk,BIG BEAT,TaQ,3,SPA,4,8,848,-,-
 3rd style,Schlagwerk,BIG BEAT,TaQ,3,SPL,5,-1,-1,-,-
+3rd style,Skyscraper,EPIC HOUSE,good-cool,3,SPB,1,-1,-1,-,-
+3rd style,Skyscraper,EPIC HOUSE,good-cool,3,SPN,2,4,372,-,-
+3rd style,Skyscraper,EPIC HOUSE,good-cool,3,SPH,3,6,610,-,-
+3rd style,Skyscraper,EPIC HOUSE,good-cool,3,SPA,4,7,629,-,-
+3rd style,Skyscraper,EPIC HOUSE,good-cool,3,SPL,5,-1,-1,-,-
 3rd style,Tangerine Stream,AMBIENT,dj TAKA,3,SPB,1,-1,-1,-,-
 3rd style,Tangerine Stream,AMBIENT,dj TAKA,3,SPN,2,2,141,-,-
 3rd style,Tangerine Stream,AMBIENT,dj TAKA,3,SPH,3,3,198,-,-
@@ -164,6 +179,16 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 4th style,B4U,SPEED RAVE,NAOKI,4,SPH,3,9,801,-,-
 4th style,B4U,SPEED RAVE,NAOKI,4,SPA,4,10,1014,-,-
 4th style,B4U,SPEED RAVE,NAOKI,4,SPL,5,-1,-1,-,-
+4th style,Broken My Heart,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,4,SPB,1,-1,-1,-,-
+4th style,Broken My Heart,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,4,SPN,2,5,474,-,-
+4th style,Broken My Heart,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,4,SPH,3,7,751,-,-
+4th style,Broken My Heart,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,4,SPA,4,9,914,-,-
+4th style,Broken My Heart,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,4,SPL,5,-1,-1,-,-
+4th style,Burnin' The Floor,EURO GROOVE,NAOKI,4,SPB,1,-1,-1,-,-
+4th style,Burnin' The Floor,EURO GROOVE,NAOKI,4,SPN,2,4,293,-,-
+4th style,Burnin' The Floor,EURO GROOVE,NAOKI,4,SPH,3,4,478,-,-
+4th style,Burnin' The Floor,EURO GROOVE,NAOKI,4,SPA,4,7,721,-,-
+4th style,Burnin' The Floor,EURO GROOVE,NAOKI,4,SPL,5,-1,-1,-,-
 4th style,CHECKING YOU OUT,HIP HOP,good-cool feat. JP Miles,4,SPB,1,-1,-1,-,-
 4th style,CHECKING YOU OUT,HIP HOP,good-cool feat. JP Miles,4,SPN,2,7,339,-,-
 4th style,CHECKING YOU OUT,HIP HOP,good-cool feat. JP Miles,4,SPH,3,9,481,-,-
@@ -204,6 +229,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 4th style,Hitch Hiker2,WARP HOUSE,good-cool,4,SPH,3,6,609,-,-
 4th style,Hitch Hiker2,WARP HOUSE,good-cool,4,SPA,4,7,665,-,-
 4th style,Hitch Hiker2,WARP HOUSE,good-cool,4,SPL,5,9,976,-,-
+4th style,Jam&Marmalade,WARP HOUSE,FinalOffset,4,SPB,1,-1,-1,-,-
+4th style,Jam&Marmalade,WARP HOUSE,FinalOffset,4,SPN,2,6,388,-,-
+4th style,Jam&Marmalade,WARP HOUSE,FinalOffset,4,SPH,3,7,456,-,-
+4th style,Jam&Marmalade,WARP HOUSE,FinalOffset,4,SPA,4,8,512,-,-
+4th style,Jam&Marmalade,WARP HOUSE,FinalOffset,4,SPL,5,-1,-1,-,-
 4th style,KAMIKAZE,TECHNO,dj nagureo,4,SPB,1,-1,-1,-,-
 4th style,KAMIKAZE,TECHNO,dj nagureo,4,SPN,2,5,515,-,-
 4th style,KAMIKAZE,TECHNO,dj nagureo,4,SPH,3,6,745,-,-
@@ -214,21 +244,51 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 4th style,LOVE WILL・・・,TRANCE,riewo,4,SPH,3,4,379,-,-
 4th style,LOVE WILL・・・,TRANCE,riewo,4,SPA,4,7,732,-,-
 4th style,LOVE WILL・・・,TRANCE,riewo,4,SPL,5,-1,-1,-,-
+4th style,minimalian,MINIMAL,DETROIAN,4,SPB,1,-1,-1,-,-
+4th style,minimalian,MINIMAL,DETROIAN,4,SPN,2,3,271,-,-
+4th style,minimalian,MINIMAL,DETROIAN,4,SPH,3,8,555,-,-
+4th style,minimalian,MINIMAL,DETROIAN,4,SPA,4,9,706,-,-
+4th style,minimalian,MINIMAL,DETROIAN,4,SPL,5,-1,-1,-,-
+4th style,Mr.T.(take me higher),DANCE POP,Risky Men ?feat.Asuka-M,4,SPB,1,-1,-1,-,-
+4th style,Mr.T.(take me higher),DANCE POP,Risky Men ?feat.Asuka-M,4,SPN,2,4,428,-,-
+4th style,Mr.T.(take me higher),DANCE POP,Risky Men ?feat.Asuka-M,4,SPH,3,5,510,-,-
+4th style,Mr.T.(take me higher),DANCE POP,Risky Men ?feat.Asuka-M,4,SPA,4,10,889,-,-
+4th style,Mr.T.(take me higher),DANCE POP,Risky Men ?feat.Asuka-M,4,SPL,5,-1,-1,-,-
 4th style,starmine,HAPPY HARDCORE,Ryu☆,4,SPB,1,2,224,-,-
 4th style,starmine,HAPPY HARDCORE,Ryu☆,4,SPN,2,5,456,-,-
 4th style,starmine,HAPPY HARDCORE,Ryu☆,4,SPH,3,8,719,-,-
 4th style,starmine,HAPPY HARDCORE,Ryu☆,4,SPA,4,9,800,-,-
 4th style,starmine,HAPPY HARDCORE,Ryu☆,4,SPL,5,-1,-1,-,-
+4th style,SWEET LAB,LOUNGE HOUSE,DJ SIMON,4,SPB,1,-1,-1,-,-
+4th style,SWEET LAB,LOUNGE HOUSE,DJ SIMON,4,SPN,2,3,280,-,-
+4th style,SWEET LAB,LOUNGE HOUSE,DJ SIMON,4,SPH,3,6,496,-,-
+4th style,SWEET LAB,LOUNGE HOUSE,DJ SIMON,4,SPA,4,10,692,-,-
+4th style,SWEET LAB,LOUNGE HOUSE,DJ SIMON,4,SPL,5,-1,-1,-,-
 4th style,Voltage (feat. Hidemaru),BIG BEAT,TaQ,4,SPB,1,-1,-1,-,-
 4th style,Voltage (feat. Hidemaru),BIG BEAT,TaQ,4,SPN,2,5,480,-,-
 4th style,Voltage (feat. Hidemaru),BIG BEAT,TaQ,4,SPH,3,7,630,-,-
 4th style,Voltage (feat. Hidemaru),BIG BEAT,TaQ,4,SPA,4,8,670,-,-
 4th style,Voltage (feat. Hidemaru),BIG BEAT,TaQ,4,SPL,5,-1,-1,-,-
+5th style,Abyss,INTELLIGENCE,dj TAKA,5,SPB,1,-1,-1,-,-
+5th style,Abyss,INTELLIGENCE,dj TAKA,5,SPN,2,5,639,-,-
+5th style,Abyss,INTELLIGENCE,dj TAKA,5,SPH,3,7,817,-,-
+5th style,Abyss,INTELLIGENCE,dj TAKA,5,SPA,4,8,945,-,-
+5th style,Abyss,INTELLIGENCE,dj TAKA,5,SPL,5,-1,-1,-,-
+5th style,in my eyes,TRANCE,ric,5,SPB,1,-1,-1,-,-
+5th style,in my eyes,TRANCE,ric,5,SPN,2,5,484,-,-
+5th style,in my eyes,TRANCE,ric,5,SPH,3,6,739,-,-
+5th style,in my eyes,TRANCE,ric,5,SPA,4,7,798,-,-
+5th style,in my eyes,TRANCE,ric,5,SPL,5,-1,-1,-,-
 5th style,LOVE AGAIN TONIGHT～for Mellisa mix～,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,5,SPB,1,-1,-1,-,-
 5th style,LOVE AGAIN TONIGHT～for Mellisa mix～,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,5,SPN,2,4,385,-,-
 5th style,LOVE AGAIN TONIGHT～for Mellisa mix～,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,5,SPH,3,5,501,-,-
 5th style,LOVE AGAIN TONIGHT～for Mellisa mix～,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,5,SPA,4,6,561,-,-
 5th style,LOVE AGAIN TONIGHT～for Mellisa mix～,HYPER EUROBEAT,NAOKI feat.PAULA TERRY,5,SPL,5,-1,-1,-,-
+5th style,outer wall,TECHNO,sampling masters MEGA,5,SPB,1,-1,-1,-,-
+5th style,outer wall,TECHNO,sampling masters MEGA,5,SPN,2,5,474,-,-
+5th style,outer wall,TECHNO,sampling masters MEGA,5,SPH,3,6,687,-,-
+5th style,outer wall,TECHNO,sampling masters MEGA,5,SPA,4,8,892,-,-
+5th style,outer wall,TECHNO,sampling masters MEGA,5,SPL,5,-1,-1,-,-
 5th style,QQQ,TECHNO,TaQ,5,SPB,1,-1,-1,-,-
 5th style,QQQ,TECHNO,TaQ,5,SPN,2,5,621,-,-
 5th style,QQQ,TECHNO,TaQ,5,SPH,3,8,961,-,-
@@ -259,6 +319,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 5th style,RISLIM,NEW ROMANTIC,ric,5,SPH,3,7,625,-,-
 5th style,RISLIM,NEW ROMANTIC,ric,5,SPA,4,-1,-1,-,-
 5th style,RISLIM,NEW ROMANTIC,ric,5,SPL,5,-1,-1,-,-
+5th style,sometime,SOUND TRACK,Aya,5,SPB,1,-1,-1,-,-
+5th style,sometime,SOUND TRACK,Aya,5,SPN,2,4,393,-,-
+5th style,sometime,SOUND TRACK,Aya,5,SPH,3,6,539,-,-
+5th style,sometime,SOUND TRACK,Aya,5,SPA,4,8,672,-,-
+5th style,sometime,SOUND TRACK,Aya,5,SPL,5,-1,-1,-,-
 5th style,Spin the disc,HOUSE,good-cool,5,SPB,1,-1,-1,-,-
 5th style,Spin the disc,HOUSE,good-cool,5,SPN,2,5,409,-,-
 5th style,Spin the disc,HOUSE,good-cool,5,SPH,3,7,659,-,-
@@ -269,11 +334,26 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 5th style,STILL IN MY HEART,HYPER EUROBEAT,NAOKI,5,SPH,3,7,705,-,-
 5th style,STILL IN MY HEART,HYPER EUROBEAT,NAOKI,5,SPA,4,9,971,-,-
 5th style,STILL IN MY HEART,HYPER EUROBEAT,NAOKI,5,SPL,5,-1,-1,-,-
+5th style,still my words,AMBIENT,TaQ feat. Meg,5,SPB,1,-1,-1,-,-
+5th style,still my words,AMBIENT,TaQ feat. Meg,5,SPN,2,4,464,-,-
+5th style,still my words,AMBIENT,TaQ feat. Meg,5,SPH,3,6,619,-,-
+5th style,still my words,AMBIENT,TaQ feat. Meg,5,SPA,4,-1,-1,-,-
+5th style,still my words,AMBIENT,TaQ feat. Meg,5,SPL,5,-1,-1,-,-
 5th style,sync,TRANCE,OutPhase (TaQ/dj TAKA),5,SPB,1,-1,-1,-,-
 5th style,sync,TRANCE,OutPhase (TaQ/dj TAKA),5,SPN,2,6,549,-,-
 5th style,sync,TRANCE,OutPhase (TaQ/dj TAKA),5,SPH,3,8,982,-,-
 5th style,sync,TRANCE,OutPhase (TaQ/dj TAKA),5,SPA,4,10,1204,-,-
 5th style,sync,TRANCE,OutPhase (TaQ/dj TAKA),5,SPL,5,-1,-1,-,-
+5th style,THE CUBE,DRUM'N'BASS,DJ SUWAMI,5,SPB,1,-1,-1,-,-
+5th style,THE CUBE,DRUM'N'BASS,DJ SUWAMI,5,SPN,2,4,374,-,-
+5th style,THE CUBE,DRUM'N'BASS,DJ SUWAMI,5,SPH,3,6,644,-,-
+5th style,THE CUBE,DRUM'N'BASS,DJ SUWAMI,5,SPA,4,7,682,-,-
+5th style,THE CUBE,DRUM'N'BASS,DJ SUWAMI,5,SPL,5,-1,-1,-,-
+5th style,THE SHINING POLARIS,EPIC TRANCE,L.E.D. feat. Sana,5,SPB,1,-1,-1,-,-
+5th style,THE SHINING POLARIS,EPIC TRANCE,L.E.D. feat. Sana,5,SPN,2,5,485,-,-
+5th style,THE SHINING POLARIS,EPIC TRANCE,L.E.D. feat. Sana,5,SPH,3,7,667,-,-
+5th style,THE SHINING POLARIS,EPIC TRANCE,L.E.D. feat. Sana,5,SPA,4,8,799,-,-
+5th style,THE SHINING POLARIS,EPIC TRANCE,L.E.D. feat. Sana,5,SPL,5,-1,-1,-,-
 5th style,V,PROGRESSIVE,TAKA,5,SPB,1,2,173,-,-
 5th style,V,PROGRESSIVE,TAKA,5,SPN,2,5,646,-,-
 5th style,V,PROGRESSIVE,TAKA,5,SPH,3,10,1272,-,-
@@ -284,6 +364,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 6th style,19，November,HOUSE,good-cool,6,SPH,3,6,733,-,-
 6th style,19，November,HOUSE,good-cool,6,SPA,4,8,910,-,-
 6th style,19，November,HOUSE,good-cool,6,SPL,5,-1,-1,-,-
+6th style,BALLAD FOR YOU～想いの雨～,BALLAD,NM feat.Thomas Howard,6,SPB,1,-1,-1,-,-
+6th style,BALLAD FOR YOU～想いの雨～,BALLAD,NM feat.Thomas Howard,6,SPN,2,4,297,-,-
+6th style,BALLAD FOR YOU～想いの雨～,BALLAD,NM feat.Thomas Howard,6,SPH,3,5,387,-,-
+6th style,BALLAD FOR YOU～想いの雨～,BALLAD,NM feat.Thomas Howard,6,SPA,4,7,537,-,-
+6th style,BALLAD FOR YOU～想いの雨～,BALLAD,NM feat.Thomas Howard,6,SPL,5,-1,-1,-,-
 6th style,Blueberry Stream,HOUSE,dj TAKA,6,SPB,1,-1,-1,-,-
 6th style,Blueberry Stream,HOUSE,dj TAKA,6,SPN,2,5,429,-,-
 6th style,Blueberry Stream,HOUSE,dj TAKA,6,SPH,3,7,770,-,-
@@ -339,6 +424,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 6th style,rottel-da-sun,ROTTERDAM TECHNO,sampling masters MEGA,6,SPH,3,8,692,-,-
 6th style,rottel-da-sun,ROTTERDAM TECHNO,sampling masters MEGA,6,SPA,4,10,936,-,-
 6th style,rottel-da-sun,ROTTERDAM TECHNO,sampling masters MEGA,6,SPL,5,-1,-1,-,-
+6th style,route 80s,NOISY,sampling masters MEGA,6,SPB,1,-1,-1,-,-
+6th style,route 80s,NOISY,sampling masters MEGA,6,SPN,2,6,457,-,-
+6th style,route 80s,NOISY,sampling masters MEGA,6,SPH,3,8,614,-,-
+6th style,route 80s,NOISY,sampling masters MEGA,6,SPA,4,9,766,-,-
+6th style,route 80s,NOISY,sampling masters MEGA,6,SPL,5,-1,-1,-,-
 6th style,SOMETHING WONDERFUL,EPIC TRANCE,L.E.D.,6,SPB,1,-1,-1,-,-
 6th style,SOMETHING WONDERFUL,EPIC TRANCE,L.E.D.,6,SPN,2,6,471,-,-
 6th style,SOMETHING WONDERFUL,EPIC TRANCE,L.E.D.,6,SPH,3,8,688,-,-
@@ -384,6 +474,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 7th style,Bad Routine,FILTER HOUSE,D.J. Spugna,7,SPH,3,7,716,-,-
 7th style,Bad Routine,FILTER HOUSE,D.J. Spugna,7,SPA,4,9,964,-,-
 7th style,Bad Routine,FILTER HOUSE,D.J. Spugna,7,SPL,5,-1,-1,-,-
+7th style,Burning Heat! (Full Option Mix),12 BEAT,Mr.T with Motoaki.F,7,SPB,1,-1,-1,-,-
+7th style,Burning Heat! (Full Option Mix),12 BEAT,Mr.T with Motoaki.F,7,SPN,2,4,361,-,-
+7th style,Burning Heat! (Full Option Mix),12 BEAT,Mr.T with Motoaki.F,7,SPH,3,5,494,-,-
+7th style,Burning Heat! (Full Option Mix),12 BEAT,Mr.T with Motoaki.F,7,SPA,4,7,755,-,-
+7th style,Burning Heat! (Full Option Mix),12 BEAT,Mr.T with Motoaki.F,7,SPL,5,-1,-1,-,-
 7th style,Cheer Train,BIG BEAT,Fuzita Blender,7,SPB,1,-1,-1,-,-
 7th style,Cheer Train,BIG BEAT,Fuzita Blender,7,SPN,2,5,470,-,-
 7th style,Cheer Train,BIG BEAT,Fuzita Blender,7,SPH,3,6,623,-,-
@@ -394,6 +489,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 7th style,D2R,HYPER ROCK BEAT,NAOKI,7,SPH,3,6,671,-,-
 7th style,D2R,HYPER ROCK BEAT,NAOKI,7,SPA,4,8,823,-,-
 7th style,D2R,HYPER ROCK BEAT,NAOKI,7,SPL,5,-1,-1,-,-
+7th style,DESTINY,HYPER EUROBEAT,NAOKI feat.Paula Terry,7,SPB,1,-1,-1,-,-
+7th style,DESTINY,HYPER EUROBEAT,NAOKI feat.Paula Terry,7,SPN,2,5,546,-,-
+7th style,DESTINY,HYPER EUROBEAT,NAOKI feat.Paula Terry,7,SPH,3,6,700,-,-
+7th style,DESTINY,HYPER EUROBEAT,NAOKI feat.Paula Terry,7,SPA,4,8,925,-,-
+7th style,DESTINY,HYPER EUROBEAT,NAOKI feat.Paula Terry,7,SPL,5,-1,-1,-,-
 7th style,foreplay,PROGRESSIVE JAZZ,Osamu Kubota,7,SPB,1,-1,-1,-,-
 7th style,foreplay,PROGRESSIVE JAZZ,Osamu Kubota,7,SPN,2,4,357,-,-
 7th style,foreplay,PROGRESSIVE JAZZ,Osamu Kubota,7,SPH,3,8,631,-,-
@@ -414,6 +514,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 7th style,Last Message,EUROBEAT,good-cool feat. Meg,7,SPH,3,8,682,-,-
 7th style,Last Message,EUROBEAT,good-cool feat. Meg,7,SPA,4,9,819,-,-
 7th style,Last Message,EUROBEAT,good-cool feat. Meg,7,SPL,5,-1,-1,-,-
+7th style,Let the Snow Paint Me,AMBIENT POP,Sana,7,SPB,1,-1,-1,-,-
+7th style,Let the Snow Paint Me,AMBIENT POP,Sana,7,SPN,2,4,431,-,-
+7th style,Let the Snow Paint Me,AMBIENT POP,Sana,7,SPH,3,6,537,-,-
+7th style,Let the Snow Paint Me,AMBIENT POP,Sana,7,SPA,4,7,624,-,-
+7th style,Let the Snow Paint Me,AMBIENT POP,Sana,7,SPL,5,-1,-1,-,-
 7th style,Love Me Do,NEW WAVE,AKIRA YAMAOKA,7,SPB,1,-1,-1,-,-
 7th style,Love Me Do,NEW WAVE,AKIRA YAMAOKA,7,SPN,2,5,571,-,-
 7th style,Love Me Do,NEW WAVE,AKIRA YAMAOKA,7,SPH,3,7,857,-,-
@@ -449,11 +554,21 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 7th style,革命,ORCHESTRAL,dj TAKA with NAOKI,7,SPH,3,10,1004,-,-
 7th style,革命,ORCHESTRAL,dj TAKA with NAOKI,7,SPA,4,10,1183,-,-
 7th style,革命,ORCHESTRAL,dj TAKA with NAOKI,7,SPL,5,-1,-1,-,-
+8th style,abstract,BIG BEAT,TaQ,8,SPB,1,-1,-1,-,-
+8th style,abstract,BIG BEAT,TaQ,8,SPN,2,6,659,-,-
+8th style,abstract,BIG BEAT,TaQ,8,SPH,3,9,831,-,-
+8th style,abstract,BIG BEAT,TaQ,8,SPA,4,9,960,-,-
+8th style,abstract,BIG BEAT,TaQ,8,SPL,5,-1,-1,-,-
 8th style,airflow,INSTRUMENTAL,Mr.T,8,SPB,1,-1,-1,-,-
 8th style,airflow,INSTRUMENTAL,Mr.T,8,SPN,2,3,295,-,-
 8th style,airflow,INSTRUMENTAL,Mr.T,8,SPH,3,5,402,-,-
 8th style,airflow,INSTRUMENTAL,Mr.T,8,SPA,4,7,721,-,-
 8th style,airflow,INSTRUMENTAL,Mr.T,8,SPL,5,-1,-1,-,-
+8th style,ALL RIGHT,DRUM'N'BASS,RAM,8,SPB,1,-1,-1,-,-
+8th style,ALL RIGHT,DRUM'N'BASS,RAM,8,SPN,2,4,446,-,-
+8th style,ALL RIGHT,DRUM'N'BASS,RAM,8,SPH,3,8,658,-,-
+8th style,ALL RIGHT,DRUM'N'BASS,RAM,8,SPA,4,9,815,-,-
+8th style,ALL RIGHT,DRUM'N'BASS,RAM,8,SPL,5,-1,-1,-,-
 8th style,Attitude,TRANCE,Y&Co.,8,SPB,1,-1,-1,-,-
 8th style,Attitude,TRANCE,Y&Co.,8,SPN,2,5,527,-,-
 8th style,Attitude,TRANCE,Y&Co.,8,SPH,3,8,721,-,-
@@ -494,6 +609,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 8th style,Halfway of promise,GIRL ROCK,Yu Takami feat. Shihori Nakane,8,SPH,3,8,781,-,-
 8th style,Halfway of promise,GIRL ROCK,Yu Takami feat. Shihori Nakane,8,SPA,4,11,940,-,-
 8th style,Halfway of promise,GIRL ROCK,Yu Takami feat. Shihori Nakane,8,SPL,5,-1,-1,-,-
+8th style,HYPER BOUNDARY GATE,GOA TRANCE,L.E.D.LIGHT,8,SPB,1,-1,-1,-,-
+8th style,HYPER BOUNDARY GATE,GOA TRANCE,L.E.D.LIGHT,8,SPN,2,6,646,-,-
+8th style,HYPER BOUNDARY GATE,GOA TRANCE,L.E.D.LIGHT,8,SPH,3,8,976,-,-
+8th style,HYPER BOUNDARY GATE,GOA TRANCE,L.E.D.LIGHT,8,SPA,4,9,1115,-,-
+8th style,HYPER BOUNDARY GATE,GOA TRANCE,L.E.D.LIGHT,8,SPL,5,-1,-1,-,-
 8th style,LAB,RAVE,RAM,8,SPB,1,-1,-1,-,-
 8th style,LAB,RAVE,RAM,8,SPN,2,5,534,-,-
 8th style,LAB,RAVE,RAM,8,SPH,3,9,1029,-,-
@@ -504,6 +624,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 8th style,LOVE IS ORANGE,HARD CHANSON,Orange Lounge,8,SPH,3,6,519,-,-
 8th style,LOVE IS ORANGE,HARD CHANSON,Orange Lounge,8,SPA,4,8,903,-,-
 8th style,LOVE IS ORANGE,HARD CHANSON,Orange Lounge,8,SPL,5,10,1059,-,-
+8th style,Luv 2 Feel Your Body,2 STEP,Shoichiro Hirata,8,SPB,1,-1,-1,-,-
+8th style,Luv 2 Feel Your Body,2 STEP,Shoichiro Hirata,8,SPN,2,4,437,-,-
+8th style,Luv 2 Feel Your Body,2 STEP,Shoichiro Hirata,8,SPH,3,6,542,-,-
+8th style,Luv 2 Feel Your Body,2 STEP,Shoichiro Hirata,8,SPA,4,9,839,-,-
+8th style,Luv 2 Feel Your Body,2 STEP,Shoichiro Hirata,8,SPL,5,-1,-1,-,-
 8th style,memories,BEAT ROCK,TAKA,8,SPB,1,-1,-1,-,-
 8th style,memories,BEAT ROCK,TAKA,8,SPN,2,5,578,-,-
 8th style,memories,BEAT ROCK,TAKA,8,SPH,3,9,1056,-,-
@@ -549,6 +674,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 8th style,WAR GAME,HIP HOP,ASLETICS,8,SPH,3,8,789,-,-
 8th style,WAR GAME,HIP HOP,ASLETICS,8,SPA,4,10,1077,-,-
 8th style,WAR GAME,HIP HOP,ASLETICS,8,SPL,5,-1,-1,-,-
+8th style,World Wide Love,POPS,MTO,8,SPB,1,-1,-1,-,-
+8th style,World Wide Love,POPS,MTO,8,SPN,2,3,353,-,-
+8th style,World Wide Love,POPS,MTO,8,SPH,3,5,526,-,-
+8th style,World Wide Love,POPS,MTO,8,SPA,4,5,559,-,-
+8th style,World Wide Love,POPS,MTO,8,SPL,5,-1,-1,-,-
 8th style,xenon,ELECTROSHOCK,Mr.T,8,SPB,1,-1,-1,-,-
 8th style,xenon,ELECTROSHOCK,Mr.T,8,SPN,2,5,570,-,-
 8th style,xenon,ELECTROSHOCK,Mr.T,8,SPH,3,9,867,-,-
@@ -684,6 +814,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 9th style,RISLIM -Remix-,ELECTRO 2 STEP,ric Remixed by Hisashi Nawata,9,SPH,3,6,508,-,-
 9th style,RISLIM -Remix-,ELECTRO 2 STEP,ric Remixed by Hisashi Nawata,9,SPA,4,11,959,-,-
 9th style,RISLIM -Remix-,ELECTRO 2 STEP,ric Remixed by Hisashi Nawata,9,SPL,5,-1,-1,-,-
+9th style,rottel-the-Mercury,GABBA,sampling masters MEGA,9,SPB,1,-1,-1,-,-
+9th style,rottel-the-Mercury,GABBA,sampling masters MEGA,9,SPN,2,6,503,-,-
+9th style,rottel-the-Mercury,GABBA,sampling masters MEGA,9,SPH,3,9,963,-,-
+9th style,rottel-the-Mercury,GABBA,sampling masters MEGA,9,SPA,4,10,1137,-,-
+9th style,rottel-the-Mercury,GABBA,sampling masters MEGA,9,SPL,5,-1,-1,-,-
 9th style,Silvia Drive,HAPPY HANDBAG,dj TAKA feat.Noria,9,SPB,1,-1,-1,-,-
 9th style,Silvia Drive,HAPPY HANDBAG,dj TAKA feat.Noria,9,SPN,2,4,429,-,-
 9th style,Silvia Drive,HAPPY HANDBAG,dj TAKA feat.Noria,9,SPH,3,8,790,-,-
@@ -709,6 +844,11 @@ version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,
 9th style,SWEETEST SAVAGE,HIP HOP,ASLETICS,9,SPH,3,7,704,-,-
 9th style,SWEETEST SAVAGE,HIP HOP,ASLETICS,9,SPA,4,11,930,-,-
 9th style,SWEETEST SAVAGE,HIP HOP,ASLETICS,9,SPL,5,-1,-1,-,-
+9th style,ライオン好き,ボデー,AKIRA YAMAOKA,9,SPB,1,-1,-1,-,-
+9th style,ライオン好き,ボデー,AKIRA YAMAOKA,9,SPN,2,4,329,-,-
+9th style,ライオン好き,ボデー,AKIRA YAMAOKA,9,SPH,3,5,600,-,-
+9th style,ライオン好き,ボデー,AKIRA YAMAOKA,9,SPA,4,7,755,-,-
+9th style,ライオン好き,ボデー,AKIRA YAMAOKA,9,SPL,5,-1,-1,-,-
 9th style,真夏の花・真夏の夢,HOUSE,Sana,9,SPB,1,-1,-1,-,-
 9th style,真夏の花・真夏の夢,HOUSE,Sana,9,SPN,2,4,420,-,-
 9th style,真夏の花・真夏の夢,HOUSE,Sana,9,SPH,3,6,603,-,-
@@ -884,11 +1024,16 @@ IIDX RED,ANDROMEDA,PSYCHEDELIC GOA TRANCE,Sota Fujimori,11,SPN,2,5,517,-,-
 IIDX RED,ANDROMEDA,PSYCHEDELIC GOA TRANCE,Sota Fujimori,11,SPH,3,8,973,-,-
 IIDX RED,ANDROMEDA,PSYCHEDELIC GOA TRANCE,Sota Fujimori,11,SPA,4,11,1446,-,-
 IIDX RED,ANDROMEDA,PSYCHEDELIC GOA TRANCE,Sota Fujimori,11,SPL,5,-1,-1,-,-
+IIDX RED,awakening,TRANCE,AKIRA YAMAOKA,11,SPB,1,-1,-1,-,-
+IIDX RED,awakening,TRANCE,AKIRA YAMAOKA,11,SPN,2,5,553,-,-
+IIDX RED,awakening,TRANCE,AKIRA YAMAOKA,11,SPH,3,7,750,-,-
+IIDX RED,awakening,TRANCE,AKIRA YAMAOKA,11,SPA,4,10,866,-,-
+IIDX RED,awakening,TRANCE,AKIRA YAMAOKA,11,SPL,5,-1,-1,-,-
 IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPB,1,-1,-1,-,-
 IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPN,2,5,559,-,-
 IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPH,3,9,894,-,-
 IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPA,4,11,1114,-,-
-IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPL,5,-1,-1,-,-
+IIDX RED,Be quiet,HARD DANCE,Ryu☆,11,SPL,5,-1,1463,-,-
 IIDX RED,BLOCKS,TRANCE,SPARKER,11,SPB,1,-1,-1,-,-
 IIDX RED,BLOCKS,TRANCE,SPARKER,11,SPN,2,5,417,-,-
 IIDX RED,BLOCKS,TRANCE,SPARKER,11,SPH,3,7,675,-,-
@@ -904,6 +1049,11 @@ IIDX RED,Click Again,CLICK HOUSE,dj REMO-CON,11,SPN,2,5,462,-,-
 IIDX RED,Click Again,CLICK HOUSE,dj REMO-CON,11,SPH,3,6,737,-,-
 IIDX RED,Click Again,CLICK HOUSE,dj REMO-CON,11,SPA,4,11,1097,-,-
 IIDX RED,Click Again,CLICK HOUSE,dj REMO-CON,11,SPL,5,-1,-1,-,-
+IIDX RED,Close my Eyes for Me,AMERICA,D-crew feat.DENNIS GUNN(DJ Yoshitaka SCRATCHING),11,SPB,1,-1,-1,-,-
+IIDX RED,Close my Eyes for Me,AMERICA,D-crew feat.DENNIS GUNN(DJ Yoshitaka SCRATCHING),11,SPN,2,5,529,-,-
+IIDX RED,Close my Eyes for Me,AMERICA,D-crew feat.DENNIS GUNN(DJ Yoshitaka SCRATCHING),11,SPH,3,8,755,-,-
+IIDX RED,Close my Eyes for Me,AMERICA,D-crew feat.DENNIS GUNN(DJ Yoshitaka SCRATCHING),11,SPA,4,9,948,-,-
+IIDX RED,Close my Eyes for Me,AMERICA,D-crew feat.DENNIS GUNN(DJ Yoshitaka SCRATCHING),11,SPL,5,-1,-1,-,-
 IIDX RED,D.A.N.C.E.!,J-POP,DJ Yoshitaka feat.星野奏子,11,SPB,1,-1,-1,-,-
 IIDX RED,D.A.N.C.E.!,J-POP,DJ Yoshitaka feat.星野奏子,11,SPN,2,3,299,-,-
 IIDX RED,D.A.N.C.E.!,J-POP,DJ Yoshitaka feat.星野奏子,11,SPH,3,5,431,-,-
@@ -924,6 +1074,11 @@ IIDX RED,FAKE TIME,HARD ROCK,dj REMO-CON,11,SPN,2,5,534,-,-
 IIDX RED,FAKE TIME,HARD ROCK,dj REMO-CON,11,SPH,3,11,916,-,-
 IIDX RED,FAKE TIME,HARD ROCK,dj REMO-CON,11,SPA,4,12,1231,-,-
 IIDX RED,FAKE TIME,HARD ROCK,dj REMO-CON,11,SPL,5,-1,-1,-,-
+IIDX RED,Fly Away To India,DANCE POP,Baby Weapon feat.KAJIL,11,SPB,1,-1,-1,-,-
+IIDX RED,Fly Away To India,DANCE POP,Baby Weapon feat.KAJIL,11,SPN,2,3,344,-,-
+IIDX RED,Fly Away To India,DANCE POP,Baby Weapon feat.KAJIL,11,SPH,3,6,562,-,-
+IIDX RED,Fly Away To India,DANCE POP,Baby Weapon feat.KAJIL,11,SPA,4,7,712,-,-
+IIDX RED,Fly Away To India,DANCE POP,Baby Weapon feat.KAJIL,11,SPL,5,-1,-1,-,-
 IIDX RED,GENOCIDE,DRUM'N'BASS,dj Killer,11,SPB,1,-1,-1,-,-
 IIDX RED,GENOCIDE,DRUM'N'BASS,dj Killer,11,SPN,2,6,587,-,-
 IIDX RED,GENOCIDE,DRUM'N'BASS,dj Killer,11,SPH,3,10,1103,-,-
@@ -944,6 +1099,11 @@ IIDX RED,KEY,BEAT ROCK,colors,11,SPN,2,6,573,-,-
 IIDX RED,KEY,BEAT ROCK,colors,11,SPH,3,8,950,-,-
 IIDX RED,KEY,BEAT ROCK,colors,11,SPA,4,11,1436,-,-
 IIDX RED,KEY,BEAT ROCK,colors,11,SPL,5,-1,-1,-,-
+IIDX RED,NEBULA GRASPER,PSYCHEDELIC TRANCE,L.E.D.,11,SPB,1,-1,-1,-,-
+IIDX RED,NEBULA GRASPER,PSYCHEDELIC TRANCE,L.E.D.,11,SPN,2,6,691,-,-
+IIDX RED,NEBULA GRASPER,PSYCHEDELIC TRANCE,L.E.D.,11,SPH,3,9,1029,-,-
+IIDX RED,NEBULA GRASPER,PSYCHEDELIC TRANCE,L.E.D.,11,SPA,4,10,1241,-,-
+IIDX RED,NEBULA GRASPER,PSYCHEDELIC TRANCE,L.E.D.,11,SPL,5,-1,-1,-,-
 IIDX RED,Raspberry Heart(English version),COLORFUL HARDCORE,jun feat. PAULA TERRY,11,SPB,1,-1,-1,-,-
 IIDX RED,Raspberry Heart(English version),COLORFUL HARDCORE,jun feat. PAULA TERRY,11,SPN,2,5,531,-,-
 IIDX RED,Raspberry Heart(English version),COLORFUL HARDCORE,jun feat. PAULA TERRY,11,SPH,3,8,797,-,-
@@ -1039,6 +1199,11 @@ HAPPY SKY,Catch Me,ACID JAZZ,DJ Yoshitaka feat. ERi,12,SPN,2,5,405,-,-
 HAPPY SKY,Catch Me,ACID JAZZ,DJ Yoshitaka feat. ERi,12,SPH,3,8,678,-,-
 HAPPY SKY,Catch Me,ACID JAZZ,DJ Yoshitaka feat. ERi,12,SPA,4,10,925,-,-
 HAPPY SKY,Catch Me,ACID JAZZ,DJ Yoshitaka feat. ERi,12,SPL,5,-1,-1,-,-
+HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPB,1,-1,-1,-,-
+HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPN,2,4,360,-,-
+HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPH,3,8,647,-,-
+HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPA,4,9,852,-,-
+HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPL,5,-1,-1,-,-
 HAPPY SKY,double thrash,BATTLE2005,414,12,SPB,1,-1,-1,-,-
 HAPPY SKY,double thrash,BATTLE2005,414,12,SPN,2,6,527,-,-
 HAPPY SKY,double thrash,BATTLE2005,414,12,SPH,3,10,1066,-,-
@@ -1084,6 +1249,11 @@ HAPPY SKY,I am,CYBER J-ROCK,有沢みはる from BeForU,12,SPN,2,5,555,-,-
 HAPPY SKY,I am,CYBER J-ROCK,有沢みはる from BeForU,12,SPH,3,8,883,-,-
 HAPPY SKY,I am,CYBER J-ROCK,有沢みはる from BeForU,12,SPA,4,10,1096,-,-
 HAPPY SKY,I am,CYBER J-ROCK,有沢みはる from BeForU,12,SPL,5,-1,-1,-,-
+HAPPY SKY,in motion,CLICK HOUSE,Ryu☆,12,SPB,1,-1,-1,-,-
+HAPPY SKY,in motion,CLICK HOUSE,Ryu☆,12,SPN,2,5,432,-,-
+HAPPY SKY,in motion,CLICK HOUSE,Ryu☆,12,SPH,3,6,545,-,-
+HAPPY SKY,in motion,CLICK HOUSE,Ryu☆,12,SPA,4,7,661,-,-
+HAPPY SKY,in motion,CLICK HOUSE,Ryu☆,12,SPL,5,-1,-1,-,-
 HAPPY SKY,INAZUMA,TRANCE,dj TAKA,12,SPB,1,-1,-1,-,-
 HAPPY SKY,INAZUMA,TRANCE,dj TAKA,12,SPN,2,5,561,-,-
 HAPPY SKY,INAZUMA,TRANCE,dj TAKA,12,SPH,3,9,930,-,-
@@ -1184,6 +1354,11 @@ HAPPY SKY,Votum stellarum,ANTHEM TRANCE,iconoclasm,12,SPN,2,4,413,-,-
 HAPPY SKY,Votum stellarum,ANTHEM TRANCE,iconoclasm,12,SPH,3,9,857,-,-
 HAPPY SKY,Votum stellarum,ANTHEM TRANCE,iconoclasm,12,SPA,4,10,1017,-,-
 HAPPY SKY,Votum stellarum,ANTHEM TRANCE,iconoclasm,12,SPL,5,-1,-1,-,-
+HAPPY SKY,We are Disっ娘よっつ打ち命,DISCO,DANCE☆MAN feat. Disっ娘,12,SPB,1,-1,-1,-,-
+HAPPY SKY,We are Disっ娘よっつ打ち命,DISCO,DANCE☆MAN feat. Disっ娘,12,SPN,2,3,336,-,-
+HAPPY SKY,We are Disっ娘よっつ打ち命,DISCO,DANCE☆MAN feat. Disっ娘,12,SPH,3,5,490,-,-
+HAPPY SKY,We are Disっ娘よっつ打ち命,DISCO,DANCE☆MAN feat. Disっ娘,12,SPA,4,9,837,-,-
+HAPPY SKY,We are Disっ娘よっつ打ち命,DISCO,DANCE☆MAN feat. Disっ娘,12,SPL,5,-1,-1,-,-
 HAPPY SKY,Xepher,MEDIEVAL CHOIR,Tatsh,12,SPB,1,3,205,-,-
 HAPPY SKY,Xepher,MEDIEVAL CHOIR,Tatsh,12,SPN,2,5,571,-,-
 HAPPY SKY,Xepher,MEDIEVAL CHOIR,Tatsh,12,SPH,3,10,1135,-,-
@@ -1299,6 +1474,11 @@ DistorteD,INFERNO,BRAZILIAN HOUSE,Caldeira feat.星野奏子,13,SPN,2,5,601,-,-
 DistorteD,INFERNO,BRAZILIAN HOUSE,Caldeira feat.星野奏子,13,SPH,3,7,828,-,-
 DistorteD,INFERNO,BRAZILIAN HOUSE,Caldeira feat.星野奏子,13,SPA,4,9,1008,-,-
 DistorteD,INFERNO,BRAZILIAN HOUSE,Caldeira feat.星野奏子,13,SPL,5,-1,-1,-,-
+DistorteD,Leaving...,SYMPHONIC EURO,SEIYA MURAI meets “eimy”,13,SPB,1,-1,-1,-,-
+DistorteD,Leaving...,SYMPHONIC EURO,SEIYA MURAI meets “eimy”,13,SPN,2,4,396,-,-
+DistorteD,Leaving...,SYMPHONIC EURO,SEIYA MURAI meets “eimy”,13,SPH,3,8,714,-,-
+DistorteD,Leaving...,SYMPHONIC EURO,SEIYA MURAI meets “eimy”,13,SPA,4,10,1116,-,-
+DistorteD,Leaving...,SYMPHONIC EURO,SEIYA MURAI meets “eimy”,13,SPL,5,-1,-1,-,-
 DistorteD,MINT,ELECTRONICA,SLAKE,13,SPB,1,-1,-1,-,-
 DistorteD,MINT,ELECTRONICA,SLAKE,13,SPN,2,6,524,-,-
 DistorteD,MINT,ELECTRONICA,SLAKE,13,SPH,3,10,917,-,-
@@ -1739,6 +1919,11 @@ DJ TROOPERS,REMINISCENCE,TRI EURO FANTASIA,jun with Alison,15,SPN,2,6,643,-,-
 DJ TROOPERS,REMINISCENCE,TRI EURO FANTASIA,jun with Alison,15,SPH,3,9,939,-,-
 DJ TROOPERS,REMINISCENCE,TRI EURO FANTASIA,jun with Alison,15,SPA,4,10,1183,-,-
 DJ TROOPERS,REMINISCENCE,TRI EURO FANTASIA,jun with Alison,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,Rising in the Sun(original mix),UK HARDCORE,kors k feat.Rie,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,Rising in the Sun(original mix),UK HARDCORE,kors k feat.Rie,15,SPN,2,5,477,-,-
+DJ TROOPERS,Rising in the Sun(original mix),UK HARDCORE,kors k feat.Rie,15,SPH,3,9,864,-,-
+DJ TROOPERS,Rising in the Sun(original mix),UK HARDCORE,kors k feat.Rie,15,SPA,4,11,1202,-,-
+DJ TROOPERS,Rising in the Sun(original mix),UK HARDCORE,kors k feat.Rie,15,SPL,5,-1,-1,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPN,2,6,609,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPH,3,9,1032,-,-
@@ -1799,6 +1984,11 @@ DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPN,2,6,640,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPH,3,10,1064,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPA,4,11,1458,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPN,2,6,353,-,-
+DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPH,3,9,842,-,-
+DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPA,4,10,935,-,-
+DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPL,5,-1,-1,-,-
 DJ TROOPERS,TROOPERS,ULTIMATE CORE,Des-TRACT,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,TROOPERS,ULTIMATE CORE,Des-TRACT,15,SPN,2,6,625,-,-
 DJ TROOPERS,TROOPERS,ULTIMATE CORE,Des-TRACT,15,SPH,3,10,1216,-,-
@@ -1834,6 +2024,11 @@ DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPN,2,6,510,
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPH,3,8,804,-,-
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPA,4,10,1029,-,-
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPN,2,5,466,-,-
+DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPH,3,8,777,-,-
+DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPA,4,9,1005,-,-
+DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPL,5,-1,-1,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPN,2,6,642,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPH,3,10,1144,-,-
@@ -1924,6 +2119,11 @@ EMPRESS,I'm Screaming LOVE,TECHNO POP,Creative Life,16,SPN,2,4,308,-,-
 EMPRESS,I'm Screaming LOVE,TECHNO POP,Creative Life,16,SPH,3,6,666,-,-
 EMPRESS,I'm Screaming LOVE,TECHNO POP,Creative Life,16,SPA,4,7,851,-,-
 EMPRESS,I'm Screaming LOVE,TECHNO POP,Creative Life,16,SPL,5,-1,-1,-,-
+EMPRESS,Jack,MIXTURE,DesQ,16,SPB,1,-1,-1,-,-
+EMPRESS,Jack,MIXTURE,DesQ,16,SPN,2,5,465,-,-
+EMPRESS,Jack,MIXTURE,DesQ,16,SPH,3,7,714,-,-
+EMPRESS,Jack,MIXTURE,DesQ,16,SPA,4,10,1086,-,-
+EMPRESS,Jack,MIXTURE,DesQ,16,SPL,5,-1,-1,-,-
 EMPRESS,Just a Little Smile,NU SKOOL BREAKS,Sota Fujimori,16,SPB,1,-1,-1,-,-
 EMPRESS,Just a Little Smile,NU SKOOL BREAKS,Sota Fujimori,16,SPN,2,4,415,-,-
 EMPRESS,Just a Little Smile,NU SKOOL BREAKS,Sota Fujimori,16,SPH,3,8,683,-,-
@@ -1994,6 +2194,11 @@ EMPRESS,THANK YOU FOR PLAYING,ONLY ONE EPILOGUE,SUPER STAR 満-MITSURU-,16,SPN,2
 EMPRESS,THANK YOU FOR PLAYING,ONLY ONE EPILOGUE,SUPER STAR 満-MITSURU-,16,SPH,3,9,858,-,-
 EMPRESS,THANK YOU FOR PLAYING,ONLY ONE EPILOGUE,SUPER STAR 満-MITSURU-,16,SPA,4,10,1090,-,-
 EMPRESS,THANK YOU FOR PLAYING,ONLY ONE EPILOGUE,SUPER STAR 満-MITSURU-,16,SPL,5,12,1534,-,-
+EMPRESS,thunder HOUSE NATION Remix,HOUSE,Remix by Sunset In Ibiza (SII),16,SPB,1,-1,-1,-,-
+EMPRESS,thunder HOUSE NATION Remix,HOUSE,Remix by Sunset In Ibiza (SII),16,SPN,2,5,544,-,-
+EMPRESS,thunder HOUSE NATION Remix,HOUSE,Remix by Sunset In Ibiza (SII),16,SPH,3,7,838,-,-
+EMPRESS,thunder HOUSE NATION Remix,HOUSE,Remix by Sunset In Ibiza (SII),16,SPA,4,9,1242,-,-
+EMPRESS,thunder HOUSE NATION Remix,HOUSE,Remix by Sunset In Ibiza (SII),16,SPL,5,12,1954,-,-
 EMPRESS,Turii ～Panta rhei～,ELEMENTAL CHANT,Zektbach,16,SPB,1,2,186,-,-
 EMPRESS,Turii ～Panta rhei～,ELEMENTAL CHANT,Zektbach,16,SPN,2,4,449,-,-
 EMPRESS,Turii ～Panta rhei～,ELEMENTAL CHANT,Zektbach,16,SPH,3,9,1051,-,-
@@ -2084,6 +2289,11 @@ SIRIUS,bass 2 bass,BUBBLEGUM DANCE,Ryu☆,17,SPN,2,4,366,-,-
 SIRIUS,bass 2 bass,BUBBLEGUM DANCE,Ryu☆,17,SPH,3,7,638,-,-
 SIRIUS,bass 2 bass,BUBBLEGUM DANCE,Ryu☆,17,SPA,4,10,970,-,-
 SIRIUS,bass 2 bass,BUBBLEGUM DANCE,Ryu☆,17,SPL,5,-1,-1,-,-
+SIRIUS,beatchic☆仮面～好き、でいさせて～,E-DANCE POP,上野圭市(transforming into Masao Lovely)feat.星野奏子,17,SPB,1,-1,-1,-,-
+SIRIUS,beatchic☆仮面～好き、でいさせて～,E-DANCE POP,上野圭市(transforming into Masao Lovely)feat.星野奏子,17,SPN,2,5,507,-,-
+SIRIUS,beatchic☆仮面～好き、でいさせて～,E-DANCE POP,上野圭市(transforming into Masao Lovely)feat.星野奏子,17,SPH,3,8,836,-,-
+SIRIUS,beatchic☆仮面～好き、でいさせて～,E-DANCE POP,上野圭市(transforming into Masao Lovely)feat.星野奏子,17,SPA,4,9,1017,-,-
+SIRIUS,beatchic☆仮面～好き、でいさせて～,E-DANCE POP,上野圭市(transforming into Masao Lovely)feat.星野奏子,17,SPL,5,-1,-1,-,-
 SIRIUS,BEAUTIFUL ANGEL,DRUM'N'BASS,DJ SWAN,17,SPB,1,-1,-1,-,-
 SIRIUS,BEAUTIFUL ANGEL,DRUM'N'BASS,DJ SWAN,17,SPN,2,4,321,-,-
 SIRIUS,BEAUTIFUL ANGEL,DRUM'N'BASS,DJ SWAN,17,SPH,3,8,921,-,-
@@ -2099,6 +2309,11 @@ SIRIUS,bloomin' feeling,HAPPY HARDCORE,Ryu☆,17,SPN,2,7,643,-,-
 SIRIUS,bloomin' feeling,HAPPY HARDCORE,Ryu☆,17,SPH,3,9,980,-,-
 SIRIUS,bloomin' feeling,HAPPY HARDCORE,Ryu☆,17,SPA,4,11,1313,-,-
 SIRIUS,bloomin' feeling,HAPPY HARDCORE,Ryu☆,17,SPL,5,-1,-1,-,-
+SIRIUS,CaptivAte～裁き～(SUBLIME TECHNO MIX),SUBLIME TECHNO,Remixed by DJ YOSHITAKA,17,SPB,1,-1,-1,-,-
+SIRIUS,CaptivAte～裁き～(SUBLIME TECHNO MIX),SUBLIME TECHNO,Remixed by DJ YOSHITAKA,17,SPN,2,6,523,-,-
+SIRIUS,CaptivAte～裁き～(SUBLIME TECHNO MIX),SUBLIME TECHNO,Remixed by DJ YOSHITAKA,17,SPH,3,8,837,-,-
+SIRIUS,CaptivAte～裁き～(SUBLIME TECHNO MIX),SUBLIME TECHNO,Remixed by DJ YOSHITAKA,17,SPA,4,10,1231,-,-
+SIRIUS,CaptivAte～裁き～(SUBLIME TECHNO MIX),SUBLIME TECHNO,Remixed by DJ YOSHITAKA,17,SPL,5,-1,-1,-,-
 SIRIUS,D,NEXT SKOOL BREAKBEATS HARDCORE,Eagle,17,SPB,1,-1,-1,-,-
 SIRIUS,D,NEXT SKOOL BREAKBEATS HARDCORE,Eagle,17,SPN,2,8,770,-,-
 SIRIUS,D,NEXT SKOOL BREAKBEATS HARDCORE,Eagle,17,SPH,3,10,1004,-,-
@@ -2169,11 +2384,21 @@ SIRIUS,GOLDEN CROSS,TECHNO,dj REMO-CON VS dj TAKA,17,SPN,2,5,559,-,-
 SIRIUS,GOLDEN CROSS,TECHNO,dj REMO-CON VS dj TAKA,17,SPH,3,9,1072,-,-
 SIRIUS,GOLDEN CROSS,TECHNO,dj REMO-CON VS dj TAKA,17,SPA,4,12,1765,-,-
 SIRIUS,GOLDEN CROSS,TECHNO,dj REMO-CON VS dj TAKA,17,SPL,5,-1,-1,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPB,1,-1,-1,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPN,2,5,520,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPH,3,8,862,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPA,4,10,1170,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPL,5,-1,-1,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPB,1,3,273,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPN,2,4,381,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPH,3,7,718,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPA,4,9,975,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPL,5,-1,-1,-,-
+SIRIUS,Keep it-秋葉工房mix-,EUROBEAT,DJ Command feat. NAGISA,17,SPB,1,-1,-1,-,-
+SIRIUS,Keep it-秋葉工房mix-,EUROBEAT,DJ Command feat. NAGISA,17,SPN,2,5,521,-,-
+SIRIUS,Keep it-秋葉工房mix-,EUROBEAT,DJ Command feat. NAGISA,17,SPH,3,9,867,-,-
+SIRIUS,Keep it-秋葉工房mix-,EUROBEAT,DJ Command feat. NAGISA,17,SPA,4,10,942,-,-
+SIRIUS,Keep it-秋葉工房mix-,EUROBEAT,DJ Command feat. NAGISA,17,SPL,5,-1,-1,-,-
 SIRIUS,Last Burning,ELECTRO,Dirty Androids,17,SPB,1,-1,-1,-,-
 SIRIUS,Last Burning,ELECTRO,Dirty Androids,17,SPN,2,5,443,-,-
 SIRIUS,Last Burning,ELECTRO,Dirty Androids,17,SPH,3,7,840,-,-
@@ -2199,6 +2424,11 @@ SIRIUS,NEW SENSATION -もう、あなたしか見えない-,ONLY ONE IDOL SONG,S
 SIRIUS,NEW SENSATION -もう、あなたしか見えない-,ONLY ONE IDOL SONG,SUPER HEROINE 彩香-AYAKA-,17,SPH,3,10,1045,-,-
 SIRIUS,NEW SENSATION -もう、あなたしか見えない-,ONLY ONE IDOL SONG,SUPER HEROINE 彩香-AYAKA-,17,SPA,4,11,1357,-,-
 SIRIUS,NEW SENSATION -もう、あなたしか見えない-,ONLY ONE IDOL SONG,SUPER HEROINE 彩香-AYAKA-,17,SPL,5,-1,-1,-,-
+SIRIUS,NoN-Fiction Story!,TECHNO POP,Creative Life,17,SPB,1,-1,-1,-,-
+SIRIUS,NoN-Fiction Story!,TECHNO POP,Creative Life,17,SPN,2,4,360,-,-
+SIRIUS,NoN-Fiction Story!,TECHNO POP,Creative Life,17,SPH,3,7,703,-,-
+SIRIUS,NoN-Fiction Story!,TECHNO POP,Creative Life,17,SPA,4,10,1112,-,-
+SIRIUS,NoN-Fiction Story!,TECHNO POP,Creative Life,17,SPL,5,-1,-1,-,-
 SIRIUS,Programmed Sun,PSY TRANCE(MORNING),kors k,17,SPB,1,-1,-1,-,-
 SIRIUS,Programmed Sun,PSY TRANCE(MORNING),kors k,17,SPN,2,6,563,-,-
 SIRIUS,Programmed Sun,PSY TRANCE(MORNING),kors k,17,SPH,3,9,960,-,-
@@ -2219,6 +2449,11 @@ SIRIUS,Red. by Full Metal Jacket,TECH-BREAKBEATS,DJ Mass MAD Izm*,17,SPN,2,6,517
 SIRIUS,Red. by Full Metal Jacket,TECH-BREAKBEATS,DJ Mass MAD Izm*,17,SPH,3,10,1062,-,-
 SIRIUS,Red. by Full Metal Jacket,TECH-BREAKBEATS,DJ Mass MAD Izm*,17,SPA,4,12,1643,-,-
 SIRIUS,Red. by Full Metal Jacket,TECH-BREAKBEATS,DJ Mass MAD Izm*,17,SPL,5,-1,-1,-,-
+SIRIUS,Roots of my way!,ACTRESS,ナイア,17,SPB,1,-1,-1,-,-
+SIRIUS,Roots of my way!,ACTRESS,ナイア,17,SPN,2,4,447,-,-
+SIRIUS,Roots of my way!,ACTRESS,ナイア,17,SPH,3,7,683,-,-
+SIRIUS,Roots of my way!,ACTRESS,ナイア,17,SPA,4,9,1025,-,-
+SIRIUS,Roots of my way!,ACTRESS,ナイア,17,SPL,5,-1,-1,-,-
 SIRIUS,Session 1 -Genesis-,ELECTRIC FUSION,PRASTIK DANCEFLOOR,17,SPB,1,-1,-1,-,-
 SIRIUS,Session 1 -Genesis-,ELECTRIC FUSION,PRASTIK DANCEFLOOR,17,SPN,2,6,472,-,-
 SIRIUS,Session 1 -Genesis-,ELECTRIC FUSION,PRASTIK DANCEFLOOR,17,SPH,3,9,841,-,-
@@ -2259,6 +2494,11 @@ SIRIUS,かずあそび,INSANIO,CULTVOICE by S.S.D.PRODUCTS,17,SPN,2,3,265,-,-
 SIRIUS,かずあそび,INSANIO,CULTVOICE by S.S.D.PRODUCTS,17,SPH,3,6,600,-,-
 SIRIUS,かずあそび,INSANIO,CULTVOICE by S.S.D.PRODUCTS,17,SPA,4,8,852,-,-
 SIRIUS,かずあそび,INSANIO,CULTVOICE by S.S.D.PRODUCTS,17,SPL,5,-1,-1,-,-
+SIRIUS,コスモス,J-POP,TSU-NA,17,SPB,1,-1,-1,-,-
+SIRIUS,コスモス,J-POP,TSU-NA,17,SPN,2,5,458,-,-
+SIRIUS,コスモス,J-POP,TSU-NA,17,SPH,3,8,762,-,-
+SIRIUS,コスモス,J-POP,TSU-NA,17,SPA,4,9,1049,-,-
+SIRIUS,コスモス,J-POP,TSU-NA,17,SPL,5,-1,-1,-,-
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPB,1,2,190,-,-
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,476,-,-
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPH,3,6,709,-,-
@@ -2269,6 +2509,11 @@ SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPN,2,6,646,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPH,3,8,943,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPA,4,9,1123,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPL,5,-1,-1,-,-
+SIRIUS,バビロニア,DISTORTED NEW AGE,劇団レコード,17,SPB,1,-1,-1,-,-
+SIRIUS,バビロニア,DISTORTED NEW AGE,劇団レコード,17,SPN,2,4,422,-,-
+SIRIUS,バビロニア,DISTORTED NEW AGE,劇団レコード,17,SPH,3,7,705,-,-
+SIRIUS,バビロニア,DISTORTED NEW AGE,劇団レコード,17,SPA,4,8,940,-,-
+SIRIUS,バビロニア,DISTORTED NEW AGE,劇団レコード,17,SPL,5,-1,-1,-,-
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPB,1,-1,-1,-,-
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPN,2,6,669,-,-
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPH,3,10,1214,-,-
@@ -2359,6 +2604,11 @@ Resort Anthem,Energy Drive,HARDCORE,kevin energy,18,SPN,2,6,448,-,-
 Resort Anthem,Energy Drive,HARDCORE,kevin energy,18,SPH,3,8,763,-,-
 Resort Anthem,Energy Drive,HARDCORE,kevin energy,18,SPA,4,11,1122,-,-
 Resort Anthem,Energy Drive,HARDCORE,kevin energy,18,SPL,5,-1,-1,-,-
+Resort Anthem,Eternal Tears,WINTER BALLADE,ツガル,18,SPB,1,-1,-1,-,-
+Resort Anthem,Eternal Tears,WINTER BALLADE,ツガル,18,SPN,2,2,222,-,-
+Resort Anthem,Eternal Tears,WINTER BALLADE,ツガル,18,SPH,3,5,551,-,-
+Resort Anthem,Eternal Tears,WINTER BALLADE,ツガル,18,SPA,4,7,691,-,-
+Resort Anthem,Eternal Tears,WINTER BALLADE,ツガル,18,SPL,5,-1,-1,-,-
 Resort Anthem,Everlasting Resort,ONLY ONE ANTHEM,SUPER STAR 満-MITSURU-,18,SPB,1,-1,-1,-,-
 Resort Anthem,Everlasting Resort,ONLY ONE ANTHEM,SUPER STAR 満-MITSURU-,18,SPN,2,4,448,-,-
 Resort Anthem,Everlasting Resort,ONLY ONE ANTHEM,SUPER STAR 満-MITSURU-,18,SPH,3,7,669,-,-
@@ -2374,6 +2624,11 @@ Resort Anthem,Golden Palms,NU DISCO,Dirty Androids,18,SPN,2,5,377,-,-
 Resort Anthem,Golden Palms,NU DISCO,Dirty Androids,18,SPH,3,8,758,-,-
 Resort Anthem,Golden Palms,NU DISCO,Dirty Androids,18,SPA,4,10,1036,-,-
 Resort Anthem,Golden Palms,NU DISCO,Dirty Androids,18,SPL,5,11,1240,-,-
+Resort Anthem,I FIGHT ME,DRUM & BASS,kobo feat. Marsha,18,SPB,1,-1,-1,-,-
+Resort Anthem,I FIGHT ME,DRUM & BASS,kobo feat. Marsha,18,SPN,2,3,315,-,-
+Resort Anthem,I FIGHT ME,DRUM & BASS,kobo feat. Marsha,18,SPH,3,7,718,-,-
+Resort Anthem,I FIGHT ME,DRUM & BASS,kobo feat. Marsha,18,SPA,4,9,1068,-,-
+Resort Anthem,I FIGHT ME,DRUM & BASS,kobo feat. Marsha,18,SPL,5,-1,-1,-,-
 Resort Anthem,Kailua,ENERGETIC HAWAIIAN TRANCE,kors k,18,SPB,1,-1,-1,-,-
 Resort Anthem,Kailua,ENERGETIC HAWAIIAN TRANCE,kors k,18,SPN,2,5,268,-,-
 Resort Anthem,Kailua,ENERGETIC HAWAIIAN TRANCE,kors k,18,SPH,3,9,708,-,-
@@ -2664,6 +2919,11 @@ Lincle,LAX5 feat.Ryota Yoshinari,LOUD TECH,Katana Sounds,19,SPN,2,6,540,-,-
 Lincle,LAX5 feat.Ryota Yoshinari,LOUD TECH,Katana Sounds,19,SPH,3,9,1082,-,-
 Lincle,LAX5 feat.Ryota Yoshinari,LOUD TECH,Katana Sounds,19,SPA,4,10,1427,-,-
 Lincle,LAX5 feat.Ryota Yoshinari,LOUD TECH,Katana Sounds,19,SPL,5,-1,-1,-,-
+Lincle,LETHEBOLG ～双神威に斬り咲けり～,PLATINUM J-POP ONE,ＴЁЯＲＡ,19,SPB,1,-1,-1,-,-
+Lincle,LETHEBOLG ～双神威に斬り咲けり～,PLATINUM J-POP ONE,ＴЁЯＲＡ,19,SPN,2,5,518,-,-
+Lincle,LETHEBOLG ～双神威に斬り咲けり～,PLATINUM J-POP ONE,ＴЁЯＲＡ,19,SPH,3,8,826,-,-
+Lincle,LETHEBOLG ～双神威に斬り咲けり～,PLATINUM J-POP ONE,ＴЁЯＲＡ,19,SPA,4,10,1111,-,-
+Lincle,LETHEBOLG ～双神威に斬り咲けり～,PLATINUM J-POP ONE,ＴЁЯＲＡ,19,SPL,5,-1,-1,-,-
 Lincle,Liquid Crystal Girl feat. echo,ELECTRO,kmp,19,SPB,1,-1,-1,-,-
 Lincle,Liquid Crystal Girl feat. echo,ELECTRO,kmp,19,SPN,2,2,209,-,-
 Lincle,Liquid Crystal Girl feat. echo,ELECTRO,kmp,19,SPH,3,6,562,-,-
@@ -2684,6 +2944,11 @@ Lincle,Mermaid girl-秋葉工房 MIX-,EURO BEAT,Remixed by DJ Command,19,SPN,2,4
 Lincle,Mermaid girl-秋葉工房 MIX-,EURO BEAT,Remixed by DJ Command,19,SPH,3,6,678,-,-
 Lincle,Mermaid girl-秋葉工房 MIX-,EURO BEAT,Remixed by DJ Command,19,SPA,4,9,1030,-,-
 Lincle,Mermaid girl-秋葉工房 MIX-,EURO BEAT,Remixed by DJ Command,19,SPL,5,-1,-1,-,-
+Lincle,Miami Sunset Drive,80's ELECTRO HOUSE,Dirty Androids,19,SPB,1,-1,-1,-,-
+Lincle,Miami Sunset Drive,80's ELECTRO HOUSE,Dirty Androids,19,SPN,2,4,324,-,-
+Lincle,Miami Sunset Drive,80's ELECTRO HOUSE,Dirty Androids,19,SPH,3,6,548,-,-
+Lincle,Miami Sunset Drive,80's ELECTRO HOUSE,Dirty Androids,19,SPA,4,9,842,-,-
+Lincle,Miami Sunset Drive,80's ELECTRO HOUSE,Dirty Androids,19,SPL,5,-1,-1,-,-
 Lincle,NNRT,ELECTRO GOTHIC,Levaslater,19,SPB,1,-1,-1,-,-
 Lincle,NNRT,ELECTRO GOTHIC,Levaslater,19,SPN,2,6,632,-,-
 Lincle,NNRT,ELECTRO GOTHIC,Levaslater,19,SPH,3,10,1290,-,-
@@ -2719,6 +2984,11 @@ Lincle,Release The Music,TECH DANCE,kors k,19,SPN,2,4,430,-,-
 Lincle,Release The Music,TECH DANCE,kors k,19,SPH,3,7,740,-,-
 Lincle,Release The Music,TECH DANCE,kors k,19,SPA,4,10,1081,-,-
 Lincle,Release The Music,TECH DANCE,kors k,19,SPL,5,-1,-1,-,-
+Lincle,RESISTANCE,MYSTERIOUS ROCK,セリカ,19,SPB,1,-1,-1,-,-
+Lincle,RESISTANCE,MYSTERIOUS ROCK,セリカ,19,SPN,2,3,320,-,-
+Lincle,RESISTANCE,MYSTERIOUS ROCK,セリカ,19,SPH,3,7,679,-,-
+Lincle,RESISTANCE,MYSTERIOUS ROCK,セリカ,19,SPA,4,10,1198,-,-
+Lincle,RESISTANCE,MYSTERIOUS ROCK,セリカ,19,SPL,5,-1,-1,-,-
 Lincle,Round and Round,HYPER ELECTRO,Masayoshi Minoshima feat. 綾倉盟,19,SPB,1,-1,-1,-,-
 Lincle,Round and Round,HYPER ELECTRO,Masayoshi Minoshima feat. 綾倉盟,19,SPN,2,4,403,-,-
 Lincle,Round and Round,HYPER ELECTRO,Masayoshi Minoshima feat. 綾倉盟,19,SPH,3,6,622,-,-
@@ -5949,6 +6219,11 @@ HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPN,2,5,493,-,-
 HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPH,3,9,890,-,-
 HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPA,4,11,1288,-,-
 HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPL,5,-1,-1,-,-
+HEROIC VERSE,Crank It,BASS HOUSE,Crayvxn,27,SPB,1,-1,-1,-,-
+HEROIC VERSE,Crank It,BASS HOUSE,Crayvxn,27,SPN,2,4,393,-,-
+HEROIC VERSE,Crank It,BASS HOUSE,Crayvxn,27,SPH,3,7,731,-,-
+HEROIC VERSE,Crank It,BASS HOUSE,Crayvxn,27,SPA,4,9,1228,-,-
+HEROIC VERSE,Crank It,BASS HOUSE,Crayvxn,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,Dans la nuit de l'eternite,POLONAISE,"BEMANI Sound Team ""レ・度胸兄弟""",27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Dans la nuit de l'eternite,POLONAISE,"BEMANI Sound Team ""レ・度胸兄弟""",27,SPN,2,7,718,-,-
 HEROIC VERSE,Dans la nuit de l'eternite,POLONAISE,"BEMANI Sound Team ""レ・度胸兄弟""",27,SPH,3,10,1153,-,-
@@ -6144,6 +6419,11 @@ HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPN,2,5,480,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPH,3,8,821,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPA,4,11,1471,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPL,5,-1,-1,-,-
+HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPB,1,-1,-1,-,-
+HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPN,2,6,638,-,-
+HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPH,3,9,886,-,-
+HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPA,4,11,1447,-,-
+HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPL,5,-1,-1,-,-
 HEROIC VERSE,POP TEAM EPIC(kors k Remix),IIDX EDITION,上坂すみれ,27,SPB,1,1,165,-,-
 HEROIC VERSE,POP TEAM EPIC(kors k Remix),IIDX EDITION,上坂すみれ,27,SPN,2,3,269,-,-
 HEROIC VERSE,POP TEAM EPIC(kors k Remix),IIDX EDITION,上坂すみれ,27,SPH,3,7,653,-,-
@@ -6184,6 +6464,11 @@ HEROIC VERSE,rough percussionythm,HARD D&B,"BEMANI Sound Team ""setup VS 謎の�
 HEROIC VERSE,rough percussionythm,HARD D&B,"BEMANI Sound Team ""setup VS 謎の勢力""",27,SPH,3,9,853,-,-
 HEROIC VERSE,rough percussionythm,HARD D&B,"BEMANI Sound Team ""setup VS 謎の勢力""",27,SPA,4,11,1295,-,-
 HEROIC VERSE,rough percussionythm,HARD D&B,"BEMANI Sound Team ""setup VS 謎の勢力""",27,SPL,5,-1,-1,-,-
+HEROIC VERSE,S!ck (Nhato Remix),HARDCORE,Remixed by Nhato,27,SPB,1,-1,-1,-,-
+HEROIC VERSE,S!ck (Nhato Remix),HARDCORE,Remixed by Nhato,27,SPN,2,6,506,-,-
+HEROIC VERSE,S!ck (Nhato Remix),HARDCORE,Remixed by Nhato,27,SPH,3,9,830,-,-
+HEROIC VERSE,S!ck (Nhato Remix),HARDCORE,Remixed by Nhato,27,SPA,4,11,1279,-,-
+HEROIC VERSE,S!ck (Nhato Remix),HARDCORE,Remixed by Nhato,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,SCREW // owo // SCREW,TWERKCORE // uwu // BEATJUGGLE,かめりあ,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,SCREW // owo // SCREW,TWERKCORE // uwu // BEATJUGGLE,かめりあ,27,SPN,2,6,567,-,-
 HEROIC VERSE,SCREW // owo // SCREW,TWERKCORE // uwu // BEATJUGGLE,かめりあ,27,SPH,3,9,1111,-,-
@@ -6414,6 +6699,11 @@ BISTROVER,3!dolon Forc3,THE 4TH,青龍×Eagle,28,SPN,2,6,506,-,-
 BISTROVER,3!dolon Forc3,THE 4TH,青龍×Eagle,28,SPH,3,9,808,-,-
 BISTROVER,3!dolon Forc3,THE 4TH,青龍×Eagle,28,SPA,4,12,1513,-,-
 BISTROVER,3!dolon Forc3,THE 4TH,青龍×Eagle,28,SPL,5,-1,-1,-,-
+BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPB,1,-1,-1,-,-
+BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPN,2,5,476,-,-
+BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPH,3,8,792,-,-
+BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPA,4,11,1336,-,-
+BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPL,5,-1,-1,-,-
 BISTROVER,Ah Hah Yeah,UPTEMPO RAW,Masayoshi Iimori,28,SPB,1,-1,-1,-,-
 BISTROVER,Ah Hah Yeah,UPTEMPO RAW,Masayoshi Iimori,28,SPN,2,4,367,-,-
 BISTROVER,Ah Hah Yeah,UPTEMPO RAW,Masayoshi Iimori,28,SPH,3,8,729,-,-
@@ -6424,6 +6714,11 @@ BISTROVER,AMRITA -不滅ノ花-,ORIENTAL TRANCE,SOUND HOLIC feat. Nana Takahashi
 BISTROVER,AMRITA -不滅ノ花-,ORIENTAL TRANCE,SOUND HOLIC feat. Nana Takahashi,28,SPH,3,8,815,-,-
 BISTROVER,AMRITA -不滅ノ花-,ORIENTAL TRANCE,SOUND HOLIC feat. Nana Takahashi,28,SPA,4,11,1398,-,-
 BISTROVER,AMRITA -不滅ノ花-,ORIENTAL TRANCE,SOUND HOLIC feat. Nana Takahashi,28,SPL,5,-1,-1,-,-
+BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPB,1,-1,-1,-,-
+BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPN,2,5,545,-,-
+BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPH,3,9,964,-,-
+BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPA,4,12,1752,-,-
+BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPL,5,-1,-1,-,-
 BISTROVER,BEMANI PRO LEAGUE Theme,BPL EDM,"BEMANI Sound Team ""Sota F.""",28,SPB,1,-1,-1,-,-
 BISTROVER,BEMANI PRO LEAGUE Theme,BPL EDM,"BEMANI Sound Team ""Sota F.""",28,SPN,2,4,393,-,-
 BISTROVER,BEMANI PRO LEAGUE Theme,BPL EDM,"BEMANI Sound Team ""Sota F.""",28,SPH,3,7,712,-,-
@@ -6439,11 +6734,26 @@ BISTROVER,Breakin' Rules,CYBER PUNK,"BEMANI Sound Team ""Sota Fujimori""",28,SPN
 BISTROVER,Breakin' Rules,CYBER PUNK,"BEMANI Sound Team ""Sota Fujimori""",28,SPH,3,9,917,-,-
 BISTROVER,Breakin' Rules,CYBER PUNK,"BEMANI Sound Team ""Sota Fujimori""",28,SPA,4,11,1396,-,-
 BISTROVER,Breakin' Rules,CYBER PUNK,"BEMANI Sound Team ""Sota Fujimori""",28,SPL,5,-1,-1,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPB,1,-1,-1,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPN,2,6,609,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPH,3,9,935,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPA,4,11,1470,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPL,5,-1,-1,-,-
 BISTROVER,Chewingood!!!,CHIP RAVE,TORIENA,28,SPB,1,-1,-1,-,-
 BISTROVER,Chewingood!!!,CHIP RAVE,TORIENA,28,SPN,2,4,435,-,-
 BISTROVER,Chewingood!!!,CHIP RAVE,TORIENA,28,SPH,3,7,761,-,-
 BISTROVER,Chewingood!!!,CHIP RAVE,TORIENA,28,SPA,4,10,1317,-,-
 BISTROVER,Chewingood!!!,CHIP RAVE,TORIENA,28,SPL,5,-1,-1,-,-
+BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPB,1,-1,-1,-,-
+BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPN,2,5,520,-,-
+BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPH,3,9,932,-,-
+BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPA,4,11,1483,-,-
+BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPL,5,-1,-1,-,-
+BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPB,1,-1,-1,-,-
+BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPN,2,5,506,-,-
+BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPH,3,9,848,-,-
+BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPA,4,11,1447,-,-
+BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPL,5,-1,-1,-,-
 BISTROVER,Don't Stop The Music feat. Kanae Asaba,ELECTRO FUNK,Nhato,28,SPB,1,-1,-1,-,-
 BISTROVER,Don't Stop The Music feat. Kanae Asaba,ELECTRO FUNK,Nhato,28,SPN,2,3,349,-,-
 BISTROVER,Don't Stop The Music feat. Kanae Asaba,ELECTRO FUNK,Nhato,28,SPH,3,6,674,-,-
@@ -6459,6 +6769,11 @@ BISTROVER,Euphoric Lagoon,J-DANCE FUSION,"BEMANI Sound Team ""TAG""",28,SPN,2,5,
 BISTROVER,Euphoric Lagoon,J-DANCE FUSION,"BEMANI Sound Team ""TAG""",28,SPH,3,8,815,-,-
 BISTROVER,Euphoric Lagoon,J-DANCE FUSION,"BEMANI Sound Team ""TAG""",28,SPA,4,10,1312,-,-
 BISTROVER,Euphoric Lagoon,J-DANCE FUSION,"BEMANI Sound Team ""TAG""",28,SPL,5,-1,-1,-,-
+BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPB,1,-1,-1,-,-
+BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPN,2,4,382,-,-
+BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPH,3,7,661,-,-
+BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPA,4,10,1082,-,-
+BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPL,5,-1,-1,-,-
 BISTROVER,Farewell to Marrakech,MOROCCAN CROSSOVER,Dirty Androids,28,SPB,1,-1,-1,-,-
 BISTROVER,Farewell to Marrakech,MOROCCAN CROSSOVER,Dirty Androids,28,SPN,2,5,466,-,-
 BISTROVER,Farewell to Marrakech,MOROCCAN CROSSOVER,Dirty Androids,28,SPH,3,8,786,-,-
@@ -6509,6 +6824,11 @@ BISTROVER,Mars beach,BALEARIC,さよひめぼう,28,SPN,2,3,311,-,-
 BISTROVER,Mars beach,BALEARIC,さよひめぼう,28,SPH,3,7,701,-,-
 BISTROVER,Mars beach,BALEARIC,さよひめぼう,28,SPA,4,10,1129,-,-
 BISTROVER,Mars beach,BALEARIC,さよひめぼう,28,SPL,5,-1,-1,-,-
+BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPB,1,-1,-1,-,-
+BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPN,2,7,746,-,-
+BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPH,3,10,1112,-,-
+BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPA,4,12,1790,-,-
+BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPL,5,-1,-1,-,-
 BISTROVER,Midnight Drive,HIP HOP,らっぷびと Prod. by uno,28,SPB,1,-1,-1,-,-
 BISTROVER,Midnight Drive,HIP HOP,らっぷびと Prod. by uno,28,SPN,2,3,308,-,-
 BISTROVER,Midnight Drive,HIP HOP,らっぷびと Prod. by uno,28,SPH,3,8,675,-,-
@@ -6564,16 +6884,31 @@ BISTROVER,Rub-a Dub-a,LOVERS CANDY RAVE,kors k,28,SPN,2,5,480,-,-
 BISTROVER,Rub-a Dub-a,LOVERS CANDY RAVE,kors k,28,SPH,3,8,772,-,-
 BISTROVER,Rub-a Dub-a,LOVERS CANDY RAVE,kors k,28,SPA,4,10,1102,-,-
 BISTROVER,Rub-a Dub-a,LOVERS CANDY RAVE,kors k,28,SPL,5,-1,-1,-,-
+BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPB,1,-1,-1,-,-
+BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPN,2,5,492,-,-
+BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPH,3,9,877,-,-
+BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPA,4,11,1253,-,-
+BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPL,5,-1,-1,-,-
 BISTROVER,S-Bahn,DARK TECHNO,"BEMANI Sound Team ""DARK TRAIN""",28,SPB,1,-1,-1,-,-
 BISTROVER,S-Bahn,DARK TECHNO,"BEMANI Sound Team ""DARK TRAIN""",28,SPN,2,4,491,-,-
 BISTROVER,S-Bahn,DARK TECHNO,"BEMANI Sound Team ""DARK TRAIN""",28,SPH,3,7,800,-,-
 BISTROVER,S-Bahn,DARK TECHNO,"BEMANI Sound Team ""DARK TRAIN""",28,SPA,4,9,1092,-,-
 BISTROVER,S-Bahn,DARK TECHNO,"BEMANI Sound Team ""DARK TRAIN""",28,SPL,5,-1,-1,-,-
+BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPB,1,-1,-1,-,-
+BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPN,2,5,442,-,-
+BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPH,3,8,807,-,-
+BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPA,4,10,1193,-,-
+BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPL,5,-1,-1,-,-
 BISTROVER,So Punky,80s EUROBEAT,Y&Co. feat. 大山愛未,28,SPB,1,-1,-1,-,-
 BISTROVER,So Punky,80s EUROBEAT,Y&Co. feat. 大山愛未,28,SPN,2,5,448,-,-
 BISTROVER,So Punky,80s EUROBEAT,Y&Co. feat. 大山愛未,28,SPH,3,8,849,-,-
 BISTROVER,So Punky,80s EUROBEAT,Y&Co. feat. 大山愛未,28,SPA,4,10,1297,-,-
 BISTROVER,So Punky,80s EUROBEAT,Y&Co. feat. 大山愛未,28,SPL,5,-1,-1,-,-
+BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPB,1,-1,-1,-,-
+BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPN,2,6,670,-,-
+BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPH,3,10,1177,-,-
+BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPA,4,12,1670,-,-
+BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPL,5,-1,-1,-,-
 BISTROVER,Swarm Of Scarabs,HOLIC,C-Show,28,SPB,1,-1,-1,-,-
 BISTROVER,Swarm Of Scarabs,HOLIC,C-Show,28,SPN,2,6,532,-,-
 BISTROVER,Swarm Of Scarabs,HOLIC,C-Show,28,SPH,3,8,784,-,-
@@ -6594,6 +6929,11 @@ BISTROVER,TOMORROW,IIDX EDITION,Remixed by まろん feat. ricono,28,SPN,2,4,397
 BISTROVER,TOMORROW,IIDX EDITION,Remixed by まろん feat. ricono,28,SPH,3,7,784,-,-
 BISTROVER,TOMORROW,IIDX EDITION,Remixed by まろん feat. ricono,28,SPA,4,10,1141,-,-
 BISTROVER,TOMORROW,IIDX EDITION,Remixed by まろん feat. ricono,28,SPL,5,-1,-1,-,-
+BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPB,1,-1,-1,-,-
+BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPN,2,5,556,-,-
+BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPH,3,10,1022,-,-
+BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPA,4,12,1700,-,-
+BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPL,5,-1,-1,-,-
 BISTROVER,Vitrum,PROGRESSIVE METAL,"BEMANI Sound Team ""Yvya""",28,SPB,1,-1,-1,-,-
 BISTROVER,Vitrum,PROGRESSIVE METAL,"BEMANI Sound Team ""Yvya""",28,SPN,2,6,554,-,-
 BISTROVER,Vitrum,PROGRESSIVE METAL,"BEMANI Sound Team ""Yvya""",28,SPH,3,9,905,-,-
@@ -6614,6 +6954,11 @@ BISTROVER,X-ray binary,TRANCE,"BEMANI Sound Team ""Trance Liquid""",28,SPN,2,5,5
 BISTROVER,X-ray binary,TRANCE,"BEMANI Sound Team ""Trance Liquid""",28,SPH,3,9,983,-,-
 BISTROVER,X-ray binary,TRANCE,"BEMANI Sound Team ""Trance Liquid""",28,SPA,4,11,1417,-,-
 BISTROVER,X-ray binary,TRANCE,"BEMANI Sound Team ""Trance Liquid""",28,SPL,5,-1,-1,-,-
+BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPB,1,-1,-1,-,-
+BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPN,2,4,485,-,-
+BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPH,3,8,896,-,-
+BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPA,4,10,1264,-,-
+BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPL,5,-1,-1,-,-
 BISTROVER,犬に雨傘,FRENCH POP,OSTER project feat. そらこ,28,SPB,1,-1,-1,-,-
 BISTROVER,犬に雨傘,FRENCH POP,OSTER project feat. そらこ,28,SPN,2,4,471,-,-
 BISTROVER,犬に雨傘,FRENCH POP,OSTER project feat. そらこ,28,SPH,3,7,740,-,-
@@ -6639,6 +6984,11 @@ BISTROVER,水無月の雫 ft. 小林まな,-和- EURO TRANCE,Xceon,28,SPN,2,6,63
 BISTROVER,水無月の雫 ft. 小林まな,-和- EURO TRANCE,Xceon,28,SPH,3,8,908,-,-
 BISTROVER,水無月の雫 ft. 小林まな,-和- EURO TRANCE,Xceon,28,SPA,4,10,1313,-,-
 BISTROVER,水無月の雫 ft. 小林まな,-和- EURO TRANCE,Xceon,28,SPL,5,-1,-1,-,-
+BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPB,1,-1,-1,-,-
+BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPN,2,6,602,-,-
+BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPH,3,9,973,-,-
+BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPA,4,12,1983,-,-
+BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPL,5,-1,-1,-,-
 BISTROVER,魔法のかくれんぼ,FANTASY TOYPOP,Snail's House,28,SPB,1,-1,-1,-,-
 BISTROVER,魔法のかくれんぼ,FANTASY TOYPOP,Snail's House,28,SPN,2,5,449,-,-
 BISTROVER,魔法のかくれんぼ,FANTASY TOYPOP,Snail's House,28,SPH,3,8,854,-,-
@@ -6649,98 +6999,18 @@ BISTROVER,霧幻メモリア,LAST FRONTIER,"BEMANI Sound Team ""劇団レコー�
 BISTROVER,霧幻メモリア,LAST FRONTIER,"BEMANI Sound Team ""劇団レコード"" feat.Risa Yuzuki",28,SPH,3,7,726,-,-
 BISTROVER,霧幻メモリア,LAST FRONTIER,"BEMANI Sound Team ""劇団レコード"" feat.Risa Yuzuki",28,SPA,4,10,1026,-,-
 BISTROVER,霧幻メモリア,LAST FRONTIER,"BEMANI Sound Team ""劇団レコード"" feat.Risa Yuzuki",28,SPL,5,-1,-1,-,-
+BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPB,1,-1,-1,-,-
+BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPN,2,6,537,-,-
+BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPH,3,9,927,-,-
+BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPA,4,11,1382,-,-
+BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPL,5,-1,-1,-,-
 BISTROVER,涙のテ・エストラーニョ・ムーチョ,Hi-歌謡タンゴ,LA BAILARINA☆Prim,28,SPB,1,-1,-1,-,-
 BISTROVER,涙のテ・エストラーニョ・ムーチョ,Hi-歌謡タンゴ,LA BAILARINA☆Prim,28,SPN,2,6,700,-,-
 BISTROVER,涙のテ・エストラーニョ・ムーチョ,Hi-歌謡タンゴ,LA BAILARINA☆Prim,28,SPH,3,9,1045,-,-
 BISTROVER,涙のテ・エストラーニョ・ムーチョ,Hi-歌謡タンゴ,LA BAILARINA☆Prim,28,SPA,4,11,1422,-,-
 BISTROVER,涙のテ・エストラーニョ・ムーチョ,Hi-歌謡タンゴ,LA BAILARINA☆Prim,28,SPL,5,-1,-1,-,-
-BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPB,1,-1,-1,-,-
-BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPB,1,-1,-1,-,-
-BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPB,1,-1,-1,-,-
 BISTROVER,閠槞彁の願い,DARKSTEP,DJ TECHNORCH & RoughSketch,28,SPB,1,-1,-1,-,-
-BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPB,1,-1,-1,-,-
-BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPB,1,-1,-1,-,-
-BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPN,2,4,382,-,-
-BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPN,2,5,556,-,-
-BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPN,2,6,537,-,-
 BISTROVER,閠槞彁の願い,DARKSTEP,DJ TECHNORCH & RoughSketch,28,SPN,2,6,533,-,-
-BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPN,2,4,485,-,-
-BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPN,2,6,602,-,-
-BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPH,3,7,661,-,-
-BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPH,3,10,1022,-,-
-BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPH,3,9,927,-,-
 BISTROVER,閠槞彁の願い,DARKSTEP,DJ TECHNORCH & RoughSketch,28,SPH,3,10,1109,-,-
-BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPH,3,8,896,-,-
-BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPH,3,9,973,-,-
-BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPA,4,10,1082,-,-
-BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPA,4,12,1700,-,-
-BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPA,4,11,1382,-,-
 BISTROVER,閠槞彁の願い,DARKSTEP,DJ TECHNORCH & RoughSketch,28,SPA,4,12,1613,-,-
-BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPA,4,10,1264,-,-
-BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPA,4,12,1983,-,-
-BISTROVER,Explorer feat. ぷにぷに電機,DANCE POP,パソコン音楽クラブ,28,SPL,5,-1,-1,-,-
-BISTROVER,Viridian,NU-NRG,REMO-CON,28,SPL,5,-1,-1,-,-
-BISTROVER,乱膳の舞姫,BALKANIC ROCK,"BEMANI Sound Team ""Akhuta Works"" feat. mami",28,SPL,5,-1,-1,-,-
 BISTROVER,閠槞彁の願い,DARKSTEP,DJ TECHNORCH & RoughSketch,28,SPL,5,-1,-1,-,-
-BISTROVER,ここからよろしく大作戦143,ROCK,"BEMANI Sound Team ""あさき隊""",28,SPL,5,-1,-1,-,-
-BISTROVER,世界の果てに約束の凱歌を -ReUnion-,BRAVE ANTHEM,OSTER project feat. かなたん,28,SPL,5,-1,-1,-,-
-BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPB,1,-1,-1,-,-
-BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPN,2,5,520,-,-
-BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPH,3,9,932,-,-
-BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPA,4,11,1483,-,-
-BISTROVER,CONNECT-,EPIC TRANCE,"BEMANI Sound Team ""Sota Fujimori""",28,SPL,5,-1,-1,-,-
-BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPB,1,-1,-1,-,-
-BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPN,2,5,506,-,-
-BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPH,3,9,848,-,-
-BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPA,4,11,1447,-,-
-BISTROVER,Crazy Jackpot,UK HARDCORE,Hommarju,28,SPL,5,-1,-1,-,-
-BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPB,1,-1,-1,-,-
-BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPN,2,5,476,-,-
-BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPH,3,8,792,-,-
-BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPA,4,11,1336,-,-
-BISTROVER,ABSOLUTE (kors k Remix),IIDX ANTHEM REVIVAL,Remixed by kors k,28,SPL,5,-1,-1,-,-
-BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPB,1,-1,-1,-,-
-BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPN,2,5,545,-,-
-BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPH,3,9,964,-,-
-BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPA,4,12,1752,-,-
-BISTROVER,ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS),BIG BEAT,かめりあ,28,SPL,5,-1,-1,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPB,1,-1,-1,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPN,2,6,609,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPH,3,9,935,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPA,4,11,1470,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPL,5,-1,-1,-,-
-HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPB,1,-1,-1,-,-
-HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPN,2,4,360,-,-
-HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPH,3,8,647,-,-
-HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPA,4,9,852,-,-
-HAPPY SKY,Don't let it go,J-POP REMIX,ウッチーズ,12,SPL,5,-1,-1,-,-
-BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPB,1,-1,-1,-,-
-BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPN,2,7,746,-,-
-BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPH,3,10,1112,-,-
-BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPA,4,12,1790,-,-
-BISTROVER,MEGAERA,BULGARIAN CORE,fallen shepherd × cotowari ft. nayuta,28,SPL,5,-1,-1,-,-
-BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPB,1,-1,-1,-,-
-BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPN,2,5,492,-,-
-BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPH,3,9,877,-,-
-BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPA,4,11,1253,-,-
-BISTROVER,Rubrum Piano,ACID LATIN JAZZ,Xceon,28,SPL,5,-1,-1,-,-
-BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPB,1,-1,-1,-,-
-BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPN,2,5,442,-,-
-BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPH,3,8,807,-,-
-BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPA,4,10,1193,-,-
-BISTROVER,smooooch・∀・ (Snail's House Remix),CANDY RAVE BASS,Remixed by Snail's House,28,SPL,5,-1,-1,-,-
-BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPB,1,-1,-1,-,-
-BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPN,2,6,670,-,-
-BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPH,3,10,1177,-,-
-BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPA,4,12,1670,-,-
-BISTROVER,SOLID STATE SQUAD -RISEN RELIC REMIX-,LIFE STREAM,Remixed by xi,28,SPL,5,-1,-1,-,-
-BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPB,1,-1,-1,-,-
-BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPN,2,4,364,-,-
-BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPH,3,8,629,-,-
-BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPA,4,10,973,-,-
-BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPL,5,-1,-1,-,-
-DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPB,1,-1,-1,-,-
-DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPN,2,4,466,-,-
-DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPH,3,8,777,-,-
-DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPA,4,9,1005,-,-
-DJ TROOPERS,高高度降下低高度開傘,SYMPHONIC TECHNO,Dr.Honda,15,SPL,5,-1,-1,-,-
