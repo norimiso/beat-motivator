@@ -354,6 +354,9 @@ function processCsv(csv) {
 
   for (const s of ret) {
     // console.log(s);
+    if (document.getElementById("check_12").checked === true && s["level"] !== "12"){
+      continue;
+    }
     list.push("<tr>");
     list.push("<td>☆" + s["level"] + "</td>");
     list.push("<td>" + s["title"] + " (" + s["difficulty"] + ")" + "</td>");
