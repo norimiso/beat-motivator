@@ -1794,11 +1794,11 @@ DJ TROOPERS,2 tribe 4 K,TRIBAL,Remo-con,15,SPN,2,5,452,-,-
 DJ TROOPERS,2 tribe 4 K,TRIBAL,Remo-con,15,SPH,3,7,684,-,-
 DJ TROOPERS,2 tribe 4 K,TRIBAL,Remo-con,15,SPA,4,11,1402,-,-
 DJ TROOPERS,2 tribe 4 K,TRIBAL,Remo-con,15,SPL,5,-1,-1,-,-
-DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPB,1,-1,-1,-,-
-DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPN,2,6,631,-,-
-DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPH,3,10,1089,-,-
-DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPA,4,11,1443,-,-
-DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPN,2,6,631,-,-
+DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPH,3,10,1089,-,-
+DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPA,4,11,1443,-,-
+DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPL,5,-1,-1,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPN,2,4,390,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPH,3,7,694,-,-
@@ -1929,11 +1929,11 @@ DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPN,2,6,609,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPH,3,9,1032,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPA,4,12,1386,-,-
 DJ TROOPERS,Ristaccia,OUVERTURE,Zektbach,15,SPL,5,-1,-1,-,-
-DJ TROOPERS,"satellite020712 from ""CODED ARMS""",HARD HOUSE,猫叉Master,15,SPB,1,-1,-1,-,-
-DJ TROOPERS,"satellite020712 from ""CODED ARMS""",HARD HOUSE,猫叉Master,15,SPN,2,6,680,-,-
-DJ TROOPERS,"satellite020712 from ""CODED ARMS""",HARD HOUSE,猫叉Master,15,SPH,3,9,983,-,-
-DJ TROOPERS,"satellite020712 from ""CODED ARMS""",HARD HOUSE,猫叉Master,15,SPA,4,11,1293,-,-
-DJ TROOPERS,"satellite020712 from ""CODED ARMS""",HARD HOUSE,猫叉Master,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,satellite020712 from "CODED ARMS",HARD HOUSE,猫叉Master,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,satellite020712 from "CODED ARMS",HARD HOUSE,猫叉Master,15,SPN,2,6,680,-,-
+DJ TROOPERS,satellite020712 from "CODED ARMS",HARD HOUSE,猫叉Master,15,SPH,3,9,983,-,-
+DJ TROOPERS,satellite020712 from "CODED ARMS",HARD HOUSE,猫叉Master,15,SPA,4,11,1293,-,-
+DJ TROOPERS,satellite020712 from "CODED ARMS",HARD HOUSE,猫叉Master,15,SPL,5,-1,-1,-,-
 DJ TROOPERS,satfinal,RAVE,RAM,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,satfinal,RAVE,RAM,15,SPN,2,5,548,-,-
 DJ TROOPERS,satfinal,RAVE,RAM,15,SPH,3,7,722,-,-
@@ -1963,7 +1963,7 @@ DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPN,2,6,560,-,-
 DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPH,3,10,1121,-,-
 DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPA,4,11,1269,-,-
-DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,STEEL NEEDLE,BREAK CORE,Scorpion,15,SPL,5,12,1701,-,-
 DJ TROOPERS,switch,ULTIMATE J-POP,DAISUKE ASAKURA ex.ＴЁЯＲＡ,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,switch,ULTIMATE J-POP,DAISUKE ASAKURA ex.ＴЁЯＲＡ,15,SPN,2,5,407,-,-
 DJ TROOPERS,switch,ULTIMATE J-POP,DAISUKE ASAKURA ex.ＴЁЯＲＡ,15,SPH,3,9,790,-,-
@@ -2214,11 +2214,11 @@ EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPN,2,5,569,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPH,3,9,921,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPA,4,12,1478,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPL,5,-1,-1,-,-
-EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPB,1,-1,-1,-,-
-EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPN,2,6,629,-,-
-EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPH,3,10,962,-,-
-EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPA,4,11,1276,-,-
-EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPL,5,-1,-1,-,-
+EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPB,1,-1,-1,-,-
+EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPN,2,6,629,-,-
+EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPH,3,10,962,-,-
+EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPA,4,11,1276,-,-
+EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPL,5,-1,-1,-,-
 EMPRESS,ハリツヤランデヴー,HOU-ROCK,Des-MASTERS,16,SPB,1,-1,-1,-,-
 EMPRESS,ハリツヤランデヴー,HOU-ROCK,Des-MASTERS,16,SPN,2,5,482,-,-
 EMPRESS,ハリツヤランデヴー,HOU-ROCK,Des-MASTERS,16,SPH,3,8,1078,-,-
@@ -2519,11 +2519,11 @@ SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPN,
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPH,3,10,1214,-,-
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPA,4,12,1684,-,-
 SIRIUS,ワルツ第17番 ト短調”大犬のワルツ”,VALSE,virkato,17,SPL,5,-1,-1,-,-
-SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPB,1,-1,-1,-,-
-SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,357,-,-
-SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPH,3,8,868,-,-
-SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPA,4,10,1073,-,-
-SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPL,5,-1,-1,-,-
+SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPB,1,-1,-1,-,-
+SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,357,-,-
+SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPH,3,8,868,-,-
+SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPA,4,10,1073,-,-
+SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPL,5,-1,-1,-,-
 SIRIUS,未来のプリズム,STARPOP,星野奏子,17,SPB,1,-1,-1,-,-
 SIRIUS,未来のプリズム,STARPOP,星野奏子,17,SPN,2,4,351,-,-
 SIRIUS,未来のプリズム,STARPOP,星野奏子,17,SPH,3,7,701,-,-
@@ -7038,7 +7038,7 @@ BISTROVER,Playball,TECH HOUSE,sanodg,28,SPB,1,-1,-1,-,-
 BISTROVER,innocent revolver,BIGBAND JAZZ,OSTER project,28,SPB,1,-1,-1,-,-
 BISTROVER,apo:llioth,HARDCORE,Juggernaut.,28,SPB,1,-1,-1,-,-
 BISTROVER,BLACK or WHITE?,SYMPHONIC SPEED SCHRANZ,BlackYooh vs. siromaru,28,SPB,1,-1,-1,-,-
-BISTROVER,ディスコルディア,CROSS OVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPB,1,-1,-1,-,-
+BISTROVER,ディスコルディア,CROSSOVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPB,1,-1,-1,-,-
 BISTROVER,Ritual of Anubis,ARABIC HARD RITUAL,KO3 & Relect,28,SPN,2,6,599,-,-
 BISTROVER,Scandal,PROGRESSIVE SWING,Osamu Kubota,28,SPN,2,4,492,-,-
 BISTROVER,Sugarplum,MOE CORE,KOTONOHOUSE,28,SPN,2,5,445,-,-
@@ -7048,7 +7048,7 @@ BISTROVER,Playball,TECH HOUSE,sanodg,28,SPN,2,4,351,-,-
 BISTROVER,innocent revolver,BIGBAND JAZZ,OSTER project,28,SPN,2,6,570,-,-
 BISTROVER,apo:llioth,HARDCORE,Juggernaut.,28,SPN,2,5,615,-,-
 BISTROVER,BLACK or WHITE?,SYMPHONIC SPEED SCHRANZ,BlackYooh vs. siromaru,28,SPN,2,6,655,-,-
-BISTROVER,ディスコルディア,CROSS OVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPN,2,7,701,-,-
+BISTROVER,ディスコルディア,CROSSOVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPN,2,7,701,-,-
 BISTROVER,Ritual of Anubis,ARABIC HARD RITUAL,KO3 & Relect,28,SPH,3,9,945,-,-
 BISTROVER,Scandal,PROGRESSIVE SWING,Osamu Kubota,28,SPH,3,9,1009,-,-
 BISTROVER,Sugarplum,MOE CORE,KOTONOHOUSE,28,SPH,3,8,938,-,-
@@ -7058,7 +7058,7 @@ BISTROVER,Playball,TECH HOUSE,sanodg,28,SPH,3,6,470,-,-
 BISTROVER,innocent revolver,BIGBAND JAZZ,OSTER project,28,SPH,3,10,1197,-,-
 BISTROVER,apo:llioth,HARDCORE,Juggernaut.,28,SPH,3,9,1053,-,-
 BISTROVER,BLACK or WHITE?,SYMPHONIC SPEED SCHRANZ,BlackYooh vs. siromaru,28,SPH,3,10,1287,-,-
-BISTROVER,ディスコルディア,CROSS OVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPH,3,10,1229,-,-
+BISTROVER,ディスコルディア,CROSSOVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPH,3,10,1229,-,-
 BISTROVER,Ritual of Anubis,ARABIC HARD RITUAL,KO3 & Relect,28,SPA,4,11,1422,-,-
 BISTROVER,Scandal,PROGRESSIVE SWING,Osamu Kubota,28,SPA,4,11,1476,-,-
 BISTROVER,Sugarplum,MOE CORE,KOTONOHOUSE,28,SPA,4,10,1265,-,-
@@ -7068,7 +7068,7 @@ BISTROVER,Playball,TECH HOUSE,sanodg,28,SPA,4,8,693,-,-
 BISTROVER,innocent revolver,BIGBAND JAZZ,OSTER project,28,SPA,4,12,1990,-,-
 BISTROVER,apo:llioth,HARDCORE,Juggernaut.,28,SPA,4,11,1498,-,-
 BISTROVER,BLACK or WHITE?,SYMPHONIC SPEED SCHRANZ,BlackYooh vs. siromaru,28,SPA,4,12,2013,-,-
-BISTROVER,ディスコルディア,CROSS OVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPA,4,12,2073,-,-
+BISTROVER,ディスコルディア,CROSSOVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPA,4,12,2073,-,-
 BISTROVER,Ritual of Anubis,ARABIC HARD RITUAL,KO3 & Relect,28,SPL,5,-1,-1,-,-
 BISTROVER,Scandal,PROGRESSIVE SWING,Osamu Kubota,28,SPL,5,-1,-1,-,-
 BISTROVER,Sugarplum,MOE CORE,KOTONOHOUSE,28,SPL,5,-1,-1,-,-
@@ -7078,9 +7078,59 @@ BISTROVER,Playball,TECH HOUSE,sanodg,28,SPL,5,-1,-1,-,-
 BISTROVER,innocent revolver,BIGBAND JAZZ,OSTER project,28,SPL,5,-1,-1,-,-
 BISTROVER,apo:llioth,HARDCORE,Juggernaut.,28,SPL,5,-1,-1,-,-
 BISTROVER,BLACK or WHITE?,SYMPHONIC SPEED SCHRANZ,BlackYooh vs. siromaru,28,SPL,5,-1,-1,-,-
-BISTROVER,ディスコルディア,CROSS OVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPL,5,-1,-1,-,-
+BISTROVER,ディスコルディア,CROSSOVER,"ぺのれり vs. BEMANI Sound Team ""HuΣeR""",28,SPL,5,-1,-1,-,-
 BISTROVER,Neo Heritage,HDM,kors k vs MAD CHILD,28,SPB,1,-1,-1,-,-
 BISTROVER,Neo Heritage,HDM,kors k vs MAD CHILD,28,SPN,2,5,481,-,-
 BISTROVER,Neo Heritage,HDM,kors k vs MAD CHILD,28,SPH,3,9,851,-,-
 BISTROVER,Neo Heritage,HDM,kors k vs MAD CHILD,28,SPA,4,11,1454,-,-
 BISTROVER,Neo Heritage,HDM,kors k vs MAD CHILD,28,SPL,5,-1,-1,-,-
+BISTROVER,Tiempo Loco,Hi-TECH / PSY CORE,kors k feat.Hboy,28,SPB,1,-1,-1,-,-
+BISTROVER,Jungle Eater,DRUMSTEP / RAGGATEK,Hommarju,28,SPB,1,-1,-1,-,-
+BISTROVER,Parvati,ORBITALIC WORLD MUSIC,"BEMANI Sound Team ""U1 overground""",28,SPB,1,-1,-1,-,-
+BISTROVER,As You Want,CYBER LIQUID FUNK,Maozon,28,SPB,1,-1,-1,-,-
+BISTROVER,Brahma,TOKYO STYLE SPEEDCORE,m1dy,28,SPB,1,-1,-1,-,-
+BISTROVER,Rosa azuL,HARD LATIN,lapix,28,SPB,1,-1,-1,-,-
+BISTROVER,伐折羅-vajra-,KUDOS CORE,DJ TOTTO VS 兎々,28,SPB,1,-1,-1,-,-
+BISTROVER,DENIM,TECHNO,SLAKE,28,SPB,1,-1,-1,-,-
+BISTROVER,二人ノ廃城幽踊宴,SPUKWALZER,上ノ瀬つかさ,28,SPB,1,-1,-1,-,-
+BISTROVER,Tell me what you wish feat.らっぷびと,ROCK,Pizuya's Cell,28,SPB,1,-1,-1,-,-
+BISTROVER,Tiempo Loco,Hi-TECH / PSY CORE,kors k feat.Hboy,28,SPN,2,5,545,-,-
+BISTROVER,Jungle Eater,DRUMSTEP / RAGGATEK,Hommarju,28,SPN,2,5,513,-,-
+BISTROVER,Parvati,ORBITALIC WORLD MUSIC,"BEMANI Sound Team ""U1 overground""",28,SPN,2,5,523,-,-
+BISTROVER,As You Want,CYBER LIQUID FUNK,Maozon,28,SPN,2,4,430,-,-
+BISTROVER,Brahma,TOKYO STYLE SPEEDCORE,m1dy,28,SPN,2,6,621,-,-
+BISTROVER,Rosa azuL,HARD LATIN,lapix,28,SPN,2,5,456,-,-
+BISTROVER,伐折羅-vajra-,KUDOS CORE,DJ TOTTO VS 兎々,28,SPN,2,6,585,-,-
+BISTROVER,DENIM,TECHNO,SLAKE,28,SPN,2,4,304,-,-
+BISTROVER,二人ノ廃城幽踊宴,SPUKWALZER,上ノ瀬つかさ,28,SPN,2,7,637,-,-
+BISTROVER,Tell me what you wish feat.らっぷびと,ROCK,Pizuya's Cell,28,SPN,2,5,571,-,-
+BISTROVER,Tiempo Loco,Hi-TECH / PSY CORE,kors k feat.Hboy,28,SPH,3,10,1035,-,-
+BISTROVER,Jungle Eater,DRUMSTEP / RAGGATEK,Hommarju,28,SPH,3,9,935,-,-
+BISTROVER,Parvati,ORBITALIC WORLD MUSIC,"BEMANI Sound Team ""U1 overground""",28,SPH,3,9,940,-,-
+BISTROVER,As You Want,CYBER LIQUID FUNK,Maozon,28,SPH,3,8,753,-,-
+BISTROVER,Brahma,TOKYO STYLE SPEEDCORE,m1dy,28,SPH,3,8,907,-,-
+BISTROVER,Rosa azuL,HARD LATIN,lapix,28,SPH,3,9,926,-,-
+BISTROVER,伐折羅-vajra-,KUDOS CORE,DJ TOTTO VS 兎々,28,SPH,3,10,1085,-,-
+BISTROVER,DENIM,TECHNO,SLAKE,28,SPH,3,9,670,-,-
+BISTROVER,二人ノ廃城幽踊宴,SPUKWALZER,上ノ瀬つかさ,28,SPH,3,10,1216,-,-
+BISTROVER,Tell me what you wish feat.らっぷびと,ROCK,Pizuya's Cell,28,SPH,3,8,818,-,-
+BISTROVER,Tiempo Loco,Hi-TECH / PSY CORE,kors k feat.Hboy,28,SPA,4,12,1884,-,-
+BISTROVER,Jungle Eater,DRUMSTEP / RAGGATEK,Hommarju,28,SPA,4,11,1517,-,-
+BISTROVER,Parvati,ORBITALIC WORLD MUSIC,"BEMANI Sound Team ""U1 overground""",28,SPA,4,12,1467,-,-
+BISTROVER,As You Want,CYBER LIQUID FUNK,Maozon,28,SPA,4,10,1246,-,-
+BISTROVER,Brahma,TOKYO STYLE SPEEDCORE,m1dy,28,SPA,4,11,1454,-,-
+BISTROVER,Rosa azuL,HARD LATIN,lapix,28,SPA,4,11,1417,-,-
+BISTROVER,伐折羅-vajra-,KUDOS CORE,DJ TOTTO VS 兎々,28,SPA,4,12,1877,-,-
+BISTROVER,DENIM,TECHNO,SLAKE,28,SPA,4,10,883,-,-
+BISTROVER,二人ノ廃城幽踊宴,SPUKWALZER,上ノ瀬つかさ,28,SPA,4,12,1927,-,-
+BISTROVER,Tell me what you wish feat.らっぷびと,ROCK,Pizuya's Cell,28,SPA,4,11,1436,-,-
+BISTROVER,Tiempo Loco,Hi-TECH / PSY CORE,kors k feat.Hboy,28,SPL,5,-1,-1,-,-
+BISTROVER,Jungle Eater,DRUMSTEP / RAGGATEK,Hommarju,28,SPL,5,-1,-1,-,-
+BISTROVER,Parvati,ORBITALIC WORLD MUSIC,"BEMANI Sound Team ""U1 overground""",28,SPL,5,-1,-1,-,-
+BISTROVER,As You Want,CYBER LIQUID FUNK,Maozon,28,SPL,5,-1,-1,-,-
+BISTROVER,Brahma,TOKYO STYLE SPEEDCORE,m1dy,28,SPL,5,-1,-1,-,-
+BISTROVER,Rosa azuL,HARD LATIN,lapix,28,SPL,5,-1,-1,-,-
+BISTROVER,伐折羅-vajra-,KUDOS CORE,DJ TOTTO VS 兎々,28,SPL,5,-1,-1,-,-
+BISTROVER,DENIM,TECHNO,SLAKE,28,SPL,5,-1,-1,-,-
+BISTROVER,二人ノ廃城幽踊宴,SPUKWALZER,上ノ瀬つかさ,28,SPL,5,-1,-1,-,-
+BISTROVER,Tell me what you wish feat.らっぷびと,ROCK,Pizuya's Cell,28,SPL,5,-1,-1,-,-
