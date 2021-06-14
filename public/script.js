@@ -147,6 +147,10 @@ function processCsv(csv) {
           temp["notes"] = master_data_song[key]["notes"];
           temp["max-"] =
             master_data_song[key]["notes"] * 2 - song[difficulty + "_score"];
+          // rate validation
+          if (temp["rate"] < 0){
+            temp["rate"] = 0;
+          }
         } else {
           temp["rate"] = 0.0;
           temp["notes"] = 1;
