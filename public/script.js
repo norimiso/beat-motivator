@@ -175,6 +175,11 @@ function processCsv(csv) {
     }
     if (stats[value["level"]] && stats[value["level"]]["total"] >= 0) {
       stats[value["level"]]["total"]++;
+      // for debug
+      if(value["level"]) == 12 {
+        console.dir(value);
+        console.log(stats[value["level"]]["total"]);
+      }
     } else {
       stats[value["level"]] = {
         total: 0,
