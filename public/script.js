@@ -1,3 +1,5 @@
+const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
+
 let raw_data;
 let music_data;
 let xhr = new XMLHttpRequest();
@@ -384,8 +386,6 @@ function processCsv(csv) {
     statistics_summary: statistics_summary.join(""),
   };
 }
-
-const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
 function createStatisticsCell(row, name) {
   const value = row[name];
