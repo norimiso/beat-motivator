@@ -38,10 +38,10 @@ function setTextareaData() {
   raw_data = document.getElementById("csv").value;
   let data = processCsv(raw_data);
   document.getElementById("list").innerHTML = data["list"];
-  document.getElementById("stastics").innerHTML = data["stastics"];
+  document.getElementById("statistics").innerHTML = data["statistics"];
   let tweet_url =
     '<a href="https://twitter.com/intent/tweet?hashtags=beat_motivator&ref_src=twsrc%5Etfw&text=' +
-    encodeURI(data["stastics_summary"]) +
+    encodeURI(data["statistics_summary"]) +
     '&tw_p=tweetbutton&url=https%3A%2F%2Fgoofy-wiles-fc39fe.netlify.app%2F" target="_blank" rel="noopener noreferrer"> Tweet your IIDX stats!! </a>';
   document.getElementById("tweet_button").innerHTML = tweet_url;
 }
@@ -253,8 +253,8 @@ function processCsv(csv) {
 
   console.dir(stats);
 
-  let stastics = ["<table>"];
-  let stastics_header = `
+  let statistics = ["<table>"];
+  let statistics_header = `
     <thead>
     <tr>
     <td> ☆ </td>
@@ -274,13 +274,13 @@ function processCsv(csv) {
     </tr>
     </thead>
     `;
-  stastics.push(stastics_header);
+  statistics.push(statistics_header);
   for (let i = 12; i >= 1; i--) {
     const row = stats[i];
-    stastics.push("<tr>");
-    stastics.push("<td>" + "☆" + i + "</td>");
-    stastics.push("<td>" + row["played"] + "/" + row["total"] + "</td>");
-    stastics.push("<td>" + (row["average_rate"] * 100).toFixed(3) + "%</td>");
+    statistics.push("<tr>");
+    statistics.push("<td>" + "☆" + i + "</td>");
+    statistics.push("<td>" + row["played"] + "/" + row["total"] + "</td>");
+    statistics.push("<td>" + (row["average_rate"] * 100).toFixed(3) + "%</td>");
     [
       "1keta",
       "2keta",
@@ -290,12 +290,12 @@ function processCsv(csv) {
       "AA",
       "A",
     ].forEach((name) => {
-      stastics.push(createStasticsCell(row, name));
+      statistics.push(createStatisticsCell(row, name));
     });
   }
-  stastics.push("</table>");
+  statistics.push("</table>");
 
-  let stastics_summary = [];
+  let statistics_summary = [];
   let num_1keta = 0;
   let num_99p = 0;
   let num_98p = 0;
@@ -316,7 +316,7 @@ function processCsv(csv) {
       temp += "97%: " + stats[i]["97%"] + " / ";
       temp += "max-: " + stats[i]["MAX-"] + " / ";
       temp += "AAA: " + stats[i]["AAA"] + "\n";
-      stastics_summary.push(temp);
+      statistics_summary.push(temp);
     } else if (i === 11) {
       temp +=
         "☆11 avg: " +
@@ -332,17 +332,17 @@ function processCsv(csv) {
       temp += "97%: " + stats[i]["97%"] + " / ";
       temp += "max-: " + stats[i]["MAX-"] + " / ";
       temp += "AAA: " + stats[i]["AAA"] + "\n";
-      stastics_summary.push(temp);
+      statistics_summary.push(temp);
     }
     num_1keta += stats[i]["1keta"];
     num_99p += stats[i]["99%"];
     num_98p += stats[i]["98%"];
   }
-  stastics_summary.push("Total | max-*: " + num_1keta + " / ");
-  stastics_summary.push("99%: " + num_99p + " / ");
-  stastics_summary.push("98%: " + num_98p + "\n\n");
+  statistics_summary.push("Total | max-*: " + num_1keta + " / ");
+  statistics_summary.push("99%: " + num_99p + " / ");
+  statistics_summary.push("98%: " + num_98p + "\n\n");
 
-  console.log(stastics_summary.join(""));
+  console.log(statistics_summary.join(""));
 
   let list = ["<table>"];
   let list_header = `
@@ -380,14 +380,14 @@ function processCsv(csv) {
 
   return {
     list: list.join(""),
-    stastics: stastics.join(""),
-    stastics_summary: stastics_summary.join(""),
+    statistics: statistics.join(""),
+    statistics_summary: statistics_summary.join(""),
   };
 }
 
 const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
-function createStasticsCell(row, name) {
+function createStatisticsCell(row, name) {
   const value = row[name];
   const alpha = value / row["total"];
   const style =
@@ -403,5 +403,5 @@ window.onload = function () {
 };
 
 function toggleHeatmap(checked) {
-  document.getElementById("stastics").classList.toggle("heatmap", checked);
+  document.getElementById("statistics").classList.toggle("heatmap", checked);
 }
