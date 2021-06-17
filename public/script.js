@@ -148,7 +148,7 @@ function processCsv(csv) {
           temp["max-"] =
             master_data_song[key]["notes"] * 2 - song[difficulty + "_score"];
           // rate validation
-          if (temp["rate"] < 0){
+          if (temp["rate"] < 0) {
             temp["rate"] = 0;
           }
         } else {
@@ -176,7 +176,7 @@ function processCsv(csv) {
     if (stats[value["level"]] && stats[value["level"]]["total"] >= 0) {
       stats[value["level"]]["total"]++;
       // for debug
-      if(value["level"] == 12) {
+      if (value["level"] == 12) {
         console.dir(value);
         console.log(stats[value["level"]]["total"]);
       }
@@ -276,25 +276,22 @@ function processCsv(csv) {
     `;
   stastics.push(stastics_header);
   for (let i = 12; i >= 1; i--) {
+    const row = stats[i];
     stastics.push("<tr>");
     stastics.push("<td>" + "☆" + i + "</td>");
-    stastics.push(
-      "<td>" + stats[i]["played"] + "/" + stats[i]["total"] + "</td>"
-    );
-    stastics.push(
-      "<td>" + (stats[i]["average_rate"] * 100).toFixed(3) + "%</td>"
-    );
-    stastics.push("<td>" + stats[i]["1keta"] + "</td>");
-    stastics.push("<td>" + stats[i]["2keta"] + "</td>");
-    stastics.push("<td>" + stats[i]["99%"] + "</td>");
-    stastics.push("<td>" + stats[i]["98%"] + "</td>");
-    stastics.push("<td>" + stats[i]["97%"] + "</td>");
-    stastics.push("<td>" + stats[i]["96%"] + "</td>");
-    stastics.push("<td>" + stats[i]["95%"] + "</td>");
-    stastics.push("<td>" + stats[i]["MAX-"] + "</td>");
-    stastics.push("<td>" + stats[i]["AAA"] + "</td>");
-    stastics.push("<td>" + stats[i]["AA"] + "</td>");
-    stastics.push("<td>" + stats[i]["A"] + "</td>");
+    stastics.push("<td>" + row["played"] + "/" + row["total"] + "</td>");
+    stastics.push("<td>" + (row["average_rate"] * 100).toFixed(3) + "%</td>");
+    [
+      "1keta",
+      "2keta",
+      ...[...Array(5)].map((_, i) => 100 - (i + 1) + "%"),
+      "MAX-",
+      "AAA",
+      "AA",
+      "A",
+    ].forEach((name) => {
+      stastics.push(createStasticsCell(row, name));
+    });
   }
   stastics.push("</table>");
 
@@ -363,7 +360,10 @@ function processCsv(csv) {
 
   for (const s of ret) {
     // console.log(s);
-    if (document.getElementById("check_12").checked === true && s["level"] !== "12"){
+    if (
+      document.getElementById("check_12").checked === true &&
+      s["level"] !== "12"
+    ) {
       continue;
     }
     list.push("<tr>");
@@ -385,9 +385,23 @@ function processCsv(csv) {
   };
 }
 
+const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
+
+function createStasticsCell(row, name) {
+  const value = row[name];
+  const alpha = value / row["total"];
+  const style =
+    "background-color: rgba(" + HEATMAP_BACKGROUND_COLOR + ", " + alpha + ");";
+  return '<td style="' + style + '">' + value + "</td>";
+}
+
 window.onload = function () {
   let button = document.getElementById("sub");
 
   getMusicData();
   button.onclick = setTextareaData;
 };
+
+function toggleHeatmap(checked) {
+  document.getElementById("stastics").classList.toggle("heatmap", checked);
+}

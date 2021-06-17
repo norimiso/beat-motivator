@@ -8,6 +8,17 @@
 
     <script src="./script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <style type="text/css">
+      #stastics:not(.heatmap) tbody td {
+        background-color: inherit !important;
+      }
+      #stastics.heatmap thead td {
+        background-color: var(--color-text);
+      }
+      #stastics.heatmap tbody tr {
+        background-color: var(--color-bg);
+      }
+    </style>
   </head>
 
   <body>
@@ -22,14 +33,23 @@
       <textarea name="csv" cols="100" rows="10" id="csv"></textarea>
     </p>
     <p>
-      <a
-        href="https://github.com/norimiso/beat-motivator"
-      >Github</a
-      >
+      <a href="https://github.com/norimiso/beat-motivator">Github</a>
       はこちら。
     </p>
     <p><input type="button" value="submit" id="sub" /></p>
-    <p><input type="checkbox" name="check_12" id="check_12" value="true"/><label for="check_12">Shows only 12</label></p>
+    <p>
+      <input type="checkbox" name="check_12" id="check_12" value="true" /><label
+        for="check_12"
+        >Shows only 12</label
+      >
+      <input
+        type="checkbox"
+        name="enable_heatmap"
+        id="enable_heatmap"
+        value="true"
+        onClick="toggleHeatmap(this.checked);"
+      /><label for="enable_heatmap">Enable heatmap</label>
+    </p>
     <p id="tweet_button"></p>
     <p id="stastics"></p>
     <p id="list"></p>
