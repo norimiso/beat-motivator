@@ -24,7 +24,7 @@ function getMusicData() {
         console.log("interactive... " + xhr.responseText.length + " bytes.");
         break;
       case 4: // データ受信完了.
-        if (xhr.status == 200 || xhr.status == 304) {
+        if (xhr.status === 200 || xhr.status === 304) {
           music_data = xhr.responseText; // responseXML もあり
           console.log("COMPLETE! :" + music_data);
         } else {
@@ -186,7 +186,7 @@ function processCsv(csv) {
     if (stats[value["level"]] && stats[value["level"]]["total"] >= 0) {
       stats[value["level"]]["total"]++;
       // for debug
-      if (value["level"] == 12) {
+      if (value["level"] === 12) {
         console.dir(value);
         console.log(stats[value["level"]]["total"]);
       }
