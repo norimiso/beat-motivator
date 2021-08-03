@@ -1,6 +1,6 @@
 const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
-let music_data;
+let musicData;
 const xhr = new XMLHttpRequest();
 const filepath = "master_sp_songs.csv";
 
@@ -24,8 +24,8 @@ function getMusicData() {
         break;
       case 4: // データ受信完了.
         if (xhr.status === 200 || xhr.status === 304) {
-          music_data = xhr.responseText; // responseXML もあり
-          console.log("COMPLETE! :" + music_data);
+          musicData = xhr.responseText; // responseXML もあり
+          console.log("COMPLETE! :" + musicData);
         } else {
           console.log("Failed. HttpStatus: " + xhr.statusText);
         }
@@ -36,34 +36,35 @@ function getMusicData() {
 }
 
 async function setTextareaData() {
-  let raw_data;
-  const tmp_data = document.getElementById("csv").value;
-  if (!tmp_data && navigator.clipboard) {
+  let rawData;
+  const tmpData = document.getElementById("csv").value;
+  if (!tmpData && navigator.clipboard) {
     // inputが空でClipboard APIが使えるならクリップボードのデータを読み込む
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
-    raw_data = await navigator.clipboard.readText();
+    rawData = await navigator.clipboard.readText();
   } else {
     // そうでなければinputのデータを使う
-    raw_data = tmp_data;
+    rawData = tmpData;
   }
-  const data = processCsv(raw_data);
-  document.getElementById("list").innerHTML = data["list"];
-  document.getElementById("statistics").innerHTML = data["statistics"];
-  let tweet_url =
+  const data = processCsv(rawData);
+  const tweetUrl =
     '<a href="https://twitter.com/intent/tweet?hashtags=beat_motivator&ref_src=twsrc%5Etfw&text=' +
     encodeURI(data["statistics_summary"]) +
     '&tw_p=tweetbutton&url=https%3A%2F%2Fgoofy-wiles-fc39fe.netlify.app%2F" target="_blank" rel="noopener noreferrer"> Tweet your IIDX stats!! </a>';
-  document.getElementById("tweet_button").innerHTML = tweet_url;
+
+  document.getElementById("list").innerHTML = data["list"];
+  document.getElementById("statistics").innerHTML = data["statistics"];
+  document.getElementById("tweet_button").innerHTML = tweetUrl;
 }
 
 function getMasterdata() {
   const ret = [];
-  const splittedData = music_data.split("\n");
+  const splittedData = musicData.split("\n");
   for (const line of splittedData) {
     const cols = line.split(",");
     if (cols.length < 2 || cols[0] === "version_full") {
       console.log(cols);
-      continue; // skip hedder
+      continue; // skip header
     }
 
     ret.push({
@@ -90,7 +91,7 @@ function processCsv(csv) {
   for (const line of splittedData) {
     const cols = line.split(",");
     if (cols[0] === "バージョン") {
-      continue; // skip hedder
+      continue; // skip header
     }
     csvData.push({
       title: cols[1],
@@ -125,12 +126,12 @@ function processCsv(csv) {
   }
   // console.dir(csvData);
 
-  const master_data = getMasterdata();
-  // console.dir(master_data);
+  const masterData = getMasterdata();
+  // console.dir(masterData);
 
-  const master_data_song = {};
-  for (const data of master_data) {
-    master_data_song[data["title"] + "_" + data["difficulty"]] = {
+  const masterDataSong = {};
+  for (const data of masterData) {
+    masterDataSong[data["title"] + "_" + data["difficulty"]] = {
       version: data["version"],
       level: data["level"],
       notes: data["notes"],
@@ -138,7 +139,7 @@ function processCsv(csv) {
       top_score: data["top_score"],
     };
   }
-  // console.dir(master_data_song);
+  // console.dir(masterDataSong);
   const ret = [];
 
   for (const song of csvData) {
@@ -151,12 +152,12 @@ function processCsv(csv) {
         temp["title"] = song["title"];
         temp["difficulty"] = difficulty;
         temp["score"] = song[difficulty + "_score"];
-        if (master_data_song[key]) {
+        if (masterDataSong[key]) {
           temp["rate"] =
-            song[difficulty + "_score"] / master_data_song[key]["notes"] / 2;
-          temp["notes"] = master_data_song[key]["notes"];
+            song[difficulty + "_score"] / masterDataSong[key]["notes"] / 2;
+          temp["notes"] = masterDataSong[key]["notes"];
           temp["max-"] =
-            master_data_song[key]["notes"] * 2 - song[difficulty + "_score"];
+            masterDataSong[key]["notes"] * 2 - song[difficulty + "_score"];
           // rate validation
           if (temp["rate"] < 0) {
             temp["rate"] = 0;
@@ -179,14 +180,14 @@ function processCsv(csv) {
 
   const stats = {};
 
-  for (let [key, value] of Object.entries(master_data_song)) {
+  for (let [key, value] of Object.entries(masterDataSong)) {
     if (value["level"] === "-1") {
       continue;
     }
     if (stats[value["level"]] && stats[value["level"]]["total"] >= 0) {
       stats[value["level"]]["total"]++;
       // for debug
-      if (value["level"] === 12) {
+      if (value["level"] === "12") {
         console.dir(value);
         console.log(stats[value["level"]]["total"]);
       }
@@ -264,7 +265,7 @@ function processCsv(csv) {
   console.dir(stats);
 
   const statistics = ["<table>"];
-  const statistics_header = `
+  const statisticsHeader = `
     <thead>
     <tr>
     <td> ☆ </td>
@@ -284,7 +285,7 @@ function processCsv(csv) {
     </tr>
     </thead>
     `;
-  statistics.push(statistics_header);
+  statistics.push(statisticsHeader);
   for (let i = 12; i >= 1; i--) {
     const row = stats[i];
     statistics.push("<tr>");
@@ -305,10 +306,10 @@ function processCsv(csv) {
   }
   statistics.push("</table>");
 
-  const statistics_summary = [];
-  let num_1keta = 0;
-  let num_99p = 0;
-  let num_98p = 0;
+  const statisticsSummary = [];
+  let num1keta = 0;
+  let num99p = 0;
+  let num98p = 0;
   for (let i = 12; i >= 1; i--) {
     let temp = "";
     if (i === 12) {
@@ -326,7 +327,7 @@ function processCsv(csv) {
       temp += "97%: " + stats[i]["97%"] + " / ";
       temp += "max-: " + stats[i]["MAX-"] + " / ";
       temp += "AAA: " + stats[i]["AAA"] + "\n";
-      statistics_summary.push(temp);
+      statisticsSummary.push(temp);
     } else if (i === 11) {
       temp +=
         "☆11 avg: " +
@@ -342,20 +343,20 @@ function processCsv(csv) {
       temp += "97%: " + stats[i]["97%"] + " / ";
       temp += "max-: " + stats[i]["MAX-"] + " / ";
       temp += "AAA: " + stats[i]["AAA"] + "\n";
-      statistics_summary.push(temp);
+      statisticsSummary.push(temp);
     }
-    num_1keta += stats[i]["1keta"];
-    num_99p += stats[i]["99%"];
-    num_98p += stats[i]["98%"];
+    num1keta += stats[i]["1keta"];
+    num99p += stats[i]["99%"];
+    num98p += stats[i]["98%"];
   }
-  statistics_summary.push("Total | max-*: " + num_1keta + " / ");
-  statistics_summary.push("99%: " + num_99p + " / ");
-  statistics_summary.push("98%: " + num_98p + "\n\n");
+  statisticsSummary.push("Total | max-*: " + num1keta + " / ");
+  statisticsSummary.push("99%: " + num99p + " / ");
+  statisticsSummary.push("98%: " + num98p + "\n\n");
 
-  console.log(statistics_summary.join(""));
+  console.log(statisticsSummary.join(""));
 
   const list = ["<table>"];
-  const list_header = `
+  const listHeader = `
     <thead>
     <tr>
     <td> ☆ </td>
@@ -366,7 +367,7 @@ function processCsv(csv) {
     </tr>
     </thead>
     `;
-  list.push(list_header);
+  list.push(listHeader);
 
   for (const s of ret) {
     // console.log(s);
@@ -391,7 +392,7 @@ function processCsv(csv) {
   return {
     list: list.join(""),
     statistics: statistics.join(""),
-    statistics_summary: statistics_summary.join(""),
+    statistics_summary: statisticsSummary.join(""),
   };
 }
 
