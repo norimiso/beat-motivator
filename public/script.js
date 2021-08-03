@@ -285,10 +285,10 @@ function processCsv(csv) {
     </thead>
     `;
   statistics.push(statisticsHeader);
-  for (let i = 12; i >= 1; i--) {
-    const row = stats[i];
+  for (let lv = 12; lv >= 1; lv--) {
+    const row = stats[lv];
     statistics.push("<tr>");
-    statistics.push("<td>" + "☆" + i + "</td>");
+    statistics.push("<td>" + "☆" + lv + "</td>");
     statistics.push("<td>" + row["played"] + "/" + row["total"] + "</td>");
     statistics.push("<td>" + (row["average_rate"] * 100).toFixed(3) + "%</td>");
     [
@@ -309,45 +309,13 @@ function processCsv(csv) {
   let num1keta = 0;
   let num99p = 0;
   let num98p = 0;
-  for (let i = 12; i >= 1; i--) {
-    if (i === 12) {
-      let line = "";
-      line +=
-        "☆12 avg: " +
-        (stats[i]["average_rate"] * 100).toFixed(2) +
-        "% (" +
-        stats[i]["played"] +
-        "/" +
-        stats[i]["total"] +
-        ") | ";
-      line += "max-**: " + stats[i]["2keta"] + " / ";
-      line += "99%: " + stats[i]["99%"] + " / ";
-      line += "98%: " + stats[i]["98%"] + " / ";
-      line += "97%: " + stats[i]["97%"] + " / ";
-      line += "max-: " + stats[i]["MAX-"] + " / ";
-      line += "AAA: " + stats[i]["AAA"] + "\n";
-      statisticsSummary.push(line);
-    } else if (i === 11) {
-      let line = "";
-      line +=
-        "☆11 avg: " +
-        (stats[i]["average_rate"] * 100).toFixed(2) +
-        "% (" +
-        stats[i]["played"] +
-        "/" +
-        stats[i]["total"] +
-        ") | ";
-      line += "max-**: " + stats[i]["2keta"] + " / ";
-      line += "99%: " + stats[i]["99%"] + " / ";
-      line += "98%: " + stats[i]["98%"] + " / ";
-      line += "97%: " + stats[i]["97%"] + " / ";
-      line += "max-: " + stats[i]["MAX-"] + " / ";
-      line += "AAA: " + stats[i]["AAA"] + "\n";
-      statisticsSummary.push(line);
+  for (let lv = 12; lv >= 1; lv--) {
+    if (lv === 12 || lv === 11) {
+      statisticsSummary.push(statSummaryLineOfLevel(stats, lv));
     }
-    num1keta += stats[i]["1keta"];
-    num99p += stats[i]["99%"];
-    num98p += stats[i]["98%"];
+    num1keta += stats[lv]["1keta"];
+    num99p += stats[lv]["99%"];
+    num98p += stats[lv]["98%"];
   }
   statisticsSummary.push("Total | max-*: " + num1keta + " / ");
   statisticsSummary.push("99%: " + num99p + " / ");
@@ -403,6 +371,27 @@ function processCsv(csv) {
     statistics: statistics.join(""),
     statistics_summary: statisticsSummary.join(""),
   };
+}
+
+function statSummaryLineOfLevel(stats, lv) {
+  let line = "";
+  line +=
+    "☆" +
+    lv +
+    " avg: " +
+    (stats[lv]["average_rate"] * 100).toFixed(2) +
+    "% (" +
+    stats[lv]["played"] +
+    "/" +
+    stats[lv]["total"] +
+    ") | ";
+  line += "max-**: " + stats[lv]["2keta"] + " / ";
+  line += "99%: " + stats[lv]["99%"] + " / ";
+  line += "98%: " + stats[lv]["98%"] + " / ";
+  line += "97%: " + stats[lv]["97%"] + " / ";
+  line += "max-: " + stats[lv]["MAX-"] + " / ";
+  line += "AAA: " + stats[lv]["AAA"] + "\n";
+  return line;
 }
 
 function createStatisticsCell(row, name) {
