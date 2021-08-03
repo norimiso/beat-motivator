@@ -1,8 +1,7 @@
 const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
-let raw_data;
 let music_data;
-let xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 const filepath = "master_sp_songs.csv";
 
 function getMusicData() {
@@ -37,8 +36,9 @@ function getMusicData() {
 }
 
 async function setTextareaData() {
+  let raw_data;
   const tmp_data = document.getElementById("csv").value;
-  if(!tmp_data && navigator.clipboard) {
+  if (!tmp_data && navigator.clipboard) {
     // inputが空でClipboard APIが使えるならクリップボードのデータを読み込む
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
     raw_data = await navigator.clipboard.readText();
@@ -46,7 +46,7 @@ async function setTextareaData() {
     // そうでなければinputのデータを使う
     raw_data = tmp_data;
   }
-  let data = processCsv(raw_data);
+  const data = processCsv(raw_data);
   document.getElementById("list").innerHTML = data["list"];
   document.getElementById("statistics").innerHTML = data["statistics"];
   let tweet_url =
@@ -57,78 +57,78 @@ async function setTextareaData() {
 }
 
 function getMasterdata() {
-  let ret = [];
-  let temp = music_data.split("\n");
-  for (const line of temp) {
-    temp = line.split(",");
-    if (temp.length < 2 || temp[0] === "version_full") {
-      console.log(temp);
+  const ret = [];
+  const splittedData = music_data.split("\n");
+  for (const line of splittedData) {
+    const cols = line.split(",");
+    if (cols.length < 2 || cols[0] === "version_full") {
+      console.log(cols);
       continue; // skip hedder
     }
 
     ret.push({
-      title: temp[1],
-      version: temp[0],
-      difficulty: temp[5],
-      level: temp[7],
-      notes: temp[8],
-      kaiden_average: temp[9],
-      top_score: temp[10],
+      title: cols[1],
+      version: cols[0],
+      difficulty: cols[5],
+      level: cols[7],
+      notes: cols[8],
+      kaiden_average: cols[9],
+      top_score: cols[10],
     });
   }
   return ret;
 }
 
 function processCsv(csv) {
-  splittedData = csv.split("\n");
+  const splittedData = csv.split("\n");
   if (splittedData[0].split(",")[0] !== "バージョン") {
     return "CSV 入れて！！！！！！";
   }
 
-  let csvData = [];
+  const csvData = [];
 
   for (const line of splittedData) {
-    temp = line.split(",");
-    if (temp[0] === "バージョン") {
+    const cols = line.split(",");
+    if (cols[0] === "バージョン") {
       continue; // skip hedder
     }
     csvData.push({
-      title: temp[1],
-      version: temp[0],
-      playcount: temp[4],
-      SPB_level: temp[5],
-      SPB_score: temp[6],
-      SPB_misscount: temp[9],
-      SPB_clearlamp: temp[10],
-      SPB_djlevel: temp[11],
-      SPN_level: temp[12],
-      SPN_score: temp[13],
-      SPN_misscount: temp[16],
-      SPN_clearlamp: temp[17],
-      SPN_djlevel: temp[18],
-      SPH_level: temp[19],
-      SPH_score: temp[20],
-      SPH_misscount: temp[23],
-      SPH_clearlamp: temp[24],
-      SPH_djlevel: temp[25],
-      SPA_level: temp[26],
-      SPA_score: temp[27],
-      SPA_misscount: temp[30],
-      SPA_clearlamp: temp[31],
-      SPA_djlevel: temp[32],
-      SPL_level: temp[33],
-      SPL_score: temp[34],
-      SPL_misscount: temp[37],
-      SPL_clearlamp: temp[38],
-      SPL_djlevel: temp[39],
+      title: cols[1],
+      version: cols[0],
+      playcount: cols[4],
+      SPB_level: cols[5],
+      SPB_score: cols[6],
+      SPB_misscount: cols[9],
+      SPB_clearlamp: cols[10],
+      SPB_djlevel: cols[11],
+      SPN_level: cols[12],
+      SPN_score: cols[13],
+      SPN_misscount: cols[16],
+      SPN_clearlamp: cols[17],
+      SPN_djlevel: cols[18],
+      SPH_level: cols[19],
+      SPH_score: cols[20],
+      SPH_misscount: cols[23],
+      SPH_clearlamp: cols[24],
+      SPH_djlevel: cols[25],
+      SPA_level: cols[26],
+      SPA_score: cols[27],
+      SPA_misscount: cols[30],
+      SPA_clearlamp: cols[31],
+      SPA_djlevel: cols[32],
+      SPL_level: cols[33],
+      SPL_score: cols[34],
+      SPL_misscount: cols[37],
+      SPL_clearlamp: cols[38],
+      SPL_djlevel: cols[39],
     });
   }
   // console.dir(csvData);
 
-  let master_data = getMasterdata();
+  const master_data = getMasterdata();
   // console.dir(master_data);
 
-  let master_data_song = {};
+  const master_data_song = {};
   for (const data of master_data) {
     master_data_song[data["title"] + "_" + data["difficulty"]] = {
       version: data["version"],
@@ -139,13 +139,13 @@ function processCsv(csv) {
     };
   }
   // console.dir(master_data_song);
-  let ret = [];
+  const ret = [];
 
   for (const song of csvData) {
     const difficulties = ["SPB", "SPN", "SPH", "SPA", "SPL"];
     for (const difficulty of difficulties) {
       if (song[difficulty + "_score"] > 0) {
-        let temp = {};
+        const temp = {};
         const key = song["title"] + "_" + difficulty;
         temp["level"] = song[difficulty + "_level"];
         temp["title"] = song["title"];
@@ -177,7 +177,7 @@ function processCsv(csv) {
     if (a["rate"] < b["rate"]) return 1;
   });
 
-  let stats = {};
+  const stats = {};
 
   for (let [key, value] of Object.entries(master_data_song)) {
     if (value["level"] === "-1") {
@@ -263,8 +263,8 @@ function processCsv(csv) {
 
   console.dir(stats);
 
-  let statistics = ["<table>"];
-  let statistics_header = `
+  const statistics = ["<table>"];
+  const statistics_header = `
     <thead>
     <tr>
     <td> ☆ </td>
@@ -305,7 +305,7 @@ function processCsv(csv) {
   }
   statistics.push("</table>");
 
-  let statistics_summary = [];
+  const statistics_summary = [];
   let num_1keta = 0;
   let num_99p = 0;
   let num_98p = 0;
@@ -354,8 +354,8 @@ function processCsv(csv) {
 
   console.log(statistics_summary.join(""));
 
-  let list = ["<table>"];
-  let list_header = `
+  const list = ["<table>"];
+  const list_header = `
     <thead>
     <tr>
     <td> ☆ </td>
@@ -404,7 +404,7 @@ function createStatisticsCell(row, name) {
 }
 
 window.onload = function () {
-  let button = document.getElementById("sub");
+  const button = document.getElementById("sub");
 
   getMusicData();
   button.onclick = setTextareaData;
