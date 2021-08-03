@@ -173,10 +173,8 @@ function processCsv(csv) {
     }
   }
 
-  songScores.sort(function (a, b) {
-    if (a["rate"] > b["rate"]) return -1;
-    if (a["rate"] < b["rate"]) return 1;
-  });
+  // sort by rate, in descending order
+  songScores.sort((a, b) => b["rate"] - a["rate"]);
 
   const stats = {};
   for (const song of Object.values(masterDataSong)) {
