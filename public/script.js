@@ -2,10 +2,10 @@ const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
 let musicData;
 const xhr = new XMLHttpRequest();
-const filepath = "master_sp_songs.csv";
+const songDataFilepath = "master_sp_songs.csv";
 
-function getMusicData() {
-  xhr.open("GET", filepath);
+function fetchSongDataFile() {
+  xhr.open("GET", songDataFilepath);
 
   xhr.onreadystatechange = function () {
     switch (xhr.readyState) {
@@ -140,59 +140,58 @@ function processCsv(csv) {
     };
   }
   // console.dir(masterDataSong);
-  const ret = [];
+  const songScores = [];
 
   for (const song of csvData) {
     const difficulties = ["SPB", "SPN", "SPH", "SPA", "SPL"];
     for (const difficulty of difficulties) {
       if (song[difficulty + "_score"] > 0) {
-        const temp = {};
+        const songScore = {};
         const key = song["title"] + "_" + difficulty;
-        temp["level"] = song[difficulty + "_level"];
-        temp["title"] = song["title"];
-        temp["difficulty"] = difficulty;
-        temp["score"] = song[difficulty + "_score"];
+        songScore["level"] = song[difficulty + "_level"];
+        songScore["title"] = song["title"];
+        songScore["difficulty"] = difficulty;
+        songScore["score"] = song[difficulty + "_score"];
         if (masterDataSong[key]) {
-          temp["rate"] =
+          songScore["rate"] =
             song[difficulty + "_score"] / masterDataSong[key]["notes"] / 2;
-          temp["notes"] = masterDataSong[key]["notes"];
-          temp["max-"] =
+          songScore["notes"] = masterDataSong[key]["notes"];
+          songScore["max-"] =
             masterDataSong[key]["notes"] * 2 - song[difficulty + "_score"];
           // rate validation
-          if (temp["rate"] < 0) {
-            temp["rate"] = 0;
+          if (songScore["rate"] < 0) {
+            songScore["rate"] = 0;
           }
         } else {
-          temp["rate"] = 0.0;
-          temp["notes"] = 1;
-          temp["max-"] = 9999;
+          songScore["rate"] = 0.0;
+          songScore["notes"] = 1;
+          songScore["max-"] = 9999;
           console.log("not found:" + key);
         }
-        ret.push(temp);
+        songScores.push(songScore);
       }
     }
   }
 
-  ret.sort(function (a, b) {
+  songScores.sort(function (a, b) {
     if (a["rate"] > b["rate"]) return -1;
     if (a["rate"] < b["rate"]) return 1;
   });
 
   const stats = {};
-
-  for (let [key, value] of Object.entries(masterDataSong)) {
-    if (value["level"] === "-1") {
+  for (const song of Object.values(masterDataSong)) {
+    if (song["level"] === "-1") {
       continue;
     }
-    if (stats[value["level"]] && stats[value["level"]]["total"] >= 0) {
-      stats[value["level"]]["total"]++;
+    if (stats[song["level"]] && stats[song["level"]]["total"] >= 0) {
+      stats[song["level"]]["total"]++;
       // for debug
-      if (value["level"] === "12") {
-        console.dir(value);
-        console.log(stats[value["level"]]["total"]);
+      if (song["level"] === "12") {
+        console.dir(song);
+        console.log(stats[song["level"]]["total"]);
       }
     } else {
-      stats[value["level"]] = {
+      stats[song["level"]] = {
         total: 0,
         played: 0,
         average_rate: 0.0,
@@ -211,55 +210,57 @@ function processCsv(csv) {
     }
   }
 
-  console.dir(ret);
+  console.dir(songScores);
 
-  for (const s of ret) {
+  for (const s of songScores) {
     if (s["max-"] === 9999) {
       continue; // because we have no data about this song.
     }
-    stats[s["level"]]["played"]++;
-    stats[s["level"]]["average_rate"] += s["rate"]; // will be devined by "played"
+
+    const songLv = s["level"];
+    stats[songLv]["played"]++;
+    stats[songLv]["average_rate"] += s["rate"]; // will be devined by "played"
     if (s["max-"] < 10) {
-      stats[s["level"]]["1keta"]++;
+      stats[songLv]["1keta"]++;
     } else if (s["max-"] < 100) {
-      stats[s["level"]]["2keta"]++;
+      stats[songLv]["2keta"]++;
     }
     if (s["rate"] >= 0.99) {
-      stats[s["level"]]["99%"]++;
+      stats[songLv]["99%"]++;
     } else if (s["rate"] >= 0.98) {
-      stats[s["level"]]["98%"]++;
+      stats[songLv]["98%"]++;
     } else if (s["rate"] >= 0.97) {
-      stats[s["level"]]["97%"]++;
+      stats[songLv]["97%"]++;
     } else if (s["rate"] >= 0.96) {
-      stats[s["level"]]["96%"]++;
+      stats[songLv]["96%"]++;
     } else if (s["rate"] >= 0.95) {
-      stats[s["level"]]["95%"]++;
+      stats[songLv]["95%"]++;
     } else if (s["rate"] >= 17 / 18) {
-      stats[s["level"]]["MAX-"]++;
+      stats[songLv]["MAX-"]++;
     } else if (s["rate"] >= 16 / 18) {
-      stats[s["level"]]["AAA"]++;
+      stats[songLv]["AAA"]++;
     } else if (s["rate"] >= 14 / 18) {
-      stats[s["level"]]["AA"]++;
+      stats[songLv]["AA"]++;
     } else if (s["rate"] >= 12 / 18) {
-      stats[s["level"]]["A"]++;
+      stats[songLv]["A"]++;
     }
   }
 
-  for (let i = 1; i <= 12; i++) {
-    if (stats[i]["played"] > 0) {
-      stats[i]["average_rate"] /= stats[i]["played"];
+  for (let lv = 1; lv <= 12; lv++) {
+    if (stats[lv]["played"] > 0) {
+      stats[lv]["average_rate"] /= stats[lv]["played"];
     } else {
-      stats[i]["average_rate"] = 0;
+      stats[lv]["average_rate"] = 0;
     }
-    stats[i]["2keta"] += stats[i]["1keta"];
-    stats[i]["98%"] += stats[i]["99%"];
-    stats[i]["97%"] += stats[i]["98%"];
-    stats[i]["96%"] += stats[i]["97%"];
-    stats[i]["95%"] += stats[i]["96%"];
-    stats[i]["MAX-"] += stats[i]["95%"];
-    stats[i]["AAA"] += stats[i]["MAX-"];
-    stats[i]["AA"] += stats[i]["AAA"];
-    stats[i]["A"] += stats[i]["AA"];
+    stats[lv]["2keta"] += stats[lv]["1keta"];
+    stats[lv]["98%"] += stats[lv]["99%"];
+    stats[lv]["97%"] += stats[lv]["98%"];
+    stats[lv]["96%"] += stats[lv]["97%"];
+    stats[lv]["95%"] += stats[lv]["96%"];
+    stats[lv]["MAX-"] += stats[lv]["95%"];
+    stats[lv]["AAA"] += stats[lv]["MAX-"];
+    stats[lv]["AA"] += stats[lv]["AAA"];
+    stats[lv]["A"] += stats[lv]["AA"];
   }
 
   console.dir(stats);
@@ -311,9 +312,9 @@ function processCsv(csv) {
   let num99p = 0;
   let num98p = 0;
   for (let i = 12; i >= 1; i--) {
-    let temp = "";
     if (i === 12) {
-      temp +=
+      let line = "";
+      line +=
         "☆12 avg: " +
         (stats[i]["average_rate"] * 100).toFixed(2) +
         "% (" +
@@ -321,15 +322,16 @@ function processCsv(csv) {
         "/" +
         stats[i]["total"] +
         ") | ";
-      temp += "max-**: " + stats[i]["2keta"] + " / ";
-      temp += "99%: " + stats[i]["99%"] + " / ";
-      temp += "98%: " + stats[i]["98%"] + " / ";
-      temp += "97%: " + stats[i]["97%"] + " / ";
-      temp += "max-: " + stats[i]["MAX-"] + " / ";
-      temp += "AAA: " + stats[i]["AAA"] + "\n";
-      statisticsSummary.push(temp);
+      line += "max-**: " + stats[i]["2keta"] + " / ";
+      line += "99%: " + stats[i]["99%"] + " / ";
+      line += "98%: " + stats[i]["98%"] + " / ";
+      line += "97%: " + stats[i]["97%"] + " / ";
+      line += "max-: " + stats[i]["MAX-"] + " / ";
+      line += "AAA: " + stats[i]["AAA"] + "\n";
+      statisticsSummary.push(line);
     } else if (i === 11) {
-      temp +=
+      let line = "";
+      line +=
         "☆11 avg: " +
         (stats[i]["average_rate"] * 100).toFixed(2) +
         "% (" +
@@ -337,13 +339,13 @@ function processCsv(csv) {
         "/" +
         stats[i]["total"] +
         ") | ";
-      temp += "max-**: " + stats[i]["2keta"] + " / ";
-      temp += "99%: " + stats[i]["99%"] + " / ";
-      temp += "98%: " + stats[i]["98%"] + " / ";
-      temp += "97%: " + stats[i]["97%"] + " / ";
-      temp += "max-: " + stats[i]["MAX-"] + " / ";
-      temp += "AAA: " + stats[i]["AAA"] + "\n";
-      statisticsSummary.push(temp);
+      line += "max-**: " + stats[i]["2keta"] + " / ";
+      line += "99%: " + stats[i]["99%"] + " / ";
+      line += "98%: " + stats[i]["98%"] + " / ";
+      line += "97%: " + stats[i]["97%"] + " / ";
+      line += "max-: " + stats[i]["MAX-"] + " / ";
+      line += "AAA: " + stats[i]["AAA"] + "\n";
+      statisticsSummary.push(line);
     }
     num1keta += stats[i]["1keta"];
     num99p += stats[i]["99%"];
@@ -369,20 +371,29 @@ function processCsv(csv) {
     `;
   list.push(listHeader);
 
-  for (const s of ret) {
+  for (const songScore of songScores) {
     // console.log(s);
     if (
       document.getElementById("check_12").checked === true &&
-      s["level"] !== "12"
+      songScore["level"] !== "12"
     ) {
       continue;
     }
     list.push("<tr>");
-    list.push("<td>☆" + s["level"] + "</td>");
-    list.push("<td>" + s["title"] + " (" + s["difficulty"] + ")" + "</td>");
-    list.push("<td>" + s["score"] + "</td>");
-    list.push("<td>" + (s["rate"] * 100).toFixed(2) + "%</td>");
-    list.push("<td>MAX-" + (s["notes"] * 2 - s["score"]) + "</td>");
+    list.push("<td>☆" + songScore["level"] + "</td>");
+    list.push(
+      "<td>" +
+        songScore["title"] +
+        " (" +
+        songScore["difficulty"] +
+        ")" +
+        "</td>"
+    );
+    list.push("<td>" + songScore["score"] + "</td>");
+    list.push("<td>" + (songScore["rate"] * 100).toFixed(2) + "%</td>");
+    list.push(
+      "<td>MAX-" + (songScore["notes"] * 2 - songScore["score"]) + "</td>"
+    );
     list.push("</tr>");
   }
   list.push("</table>");
@@ -407,7 +418,7 @@ function createStatisticsCell(row, name) {
 window.onload = function () {
   const button = document.getElementById("sub");
 
-  getMusicData();
+  fetchSongDataFile();
   button.onclick = setTextareaData;
 };
 
