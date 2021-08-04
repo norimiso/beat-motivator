@@ -1,38 +1,24 @@
 const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
 let musicData;
-const xhr = new XMLHttpRequest();
 const songDataFilepath = "master_sp_songs.csv";
 
 function fetchSongDataFile() {
-  xhr.open("GET", songDataFilepath);
-
-  xhr.onreadystatechange = function () {
-    switch (xhr.readyState) {
-      case 0:
-        // 未初期化状態.
-        console.log("uninitialized!");
-        break;
-      case 1: // データ送信中.
-        console.log("loading...");
-        break;
-      case 2: // 応答待ち.
-        console.log("loaded.");
-        break;
-      case 3: // データ受信中.
-        console.log("interactive... " + xhr.responseText.length + " bytes.");
-        break;
-      case 4: // データ受信完了.
-        if (xhr.status === 200 || xhr.status === 304) {
-          musicData = xhr.responseText; // responseXML もあり
-          console.log("COMPLETE! :" + musicData);
-        } else {
-          console.log("Failed. HttpStatus: " + xhr.statusText);
-        }
-        break;
-    }
-  };
-  xhr.send(null);
+  fetch(songDataFilepath)
+    .then((res) => {
+      if (res.status === 200 || res.status === 304) {
+        return res.text();
+      } else {
+        throw new Error(res.statusText);
+      }
+    })
+    .then((resText) => {
+      musicData = resText;
+      console.log("COMPLETE! :" + resText);
+    })
+    .catch((statusText) => {
+      console.log("Failed. HttpStatus: " + statusText);
+    });
 }
 
 async function setTextareaData() {
