@@ -1,6 +1,6 @@
 const HEATMAP_BACKGROUND_COLOR = "17, 139, 238";
 
-let musicData;
+let songData;
 const songDataFilepath = "master_sp_songs.csv";
 
 function fetchSongDataFile() {
@@ -13,11 +13,11 @@ function fetchSongDataFile() {
       }
     })
     .then((resText) => {
-      musicData = resText;
-      console.log("COMPLETE! :" + resText);
+      songData = resText;
+      console.log("COMPLETE! :", resText);
     })
     .catch((statusText) => {
-      console.log("Failed. HttpStatus: " + statusText);
+      console.log("Failed. HttpStatus:", statusText);
     });
 }
 
@@ -45,7 +45,7 @@ async function setTextareaData() {
 
 function getMasterdata() {
   const ret = [];
-  const splittedData = musicData.split("\n");
+  const splittedData = songData.split("\n");
   for (const line of splittedData) {
     const cols = line.split(",");
     if (cols.length < 2 || cols[0] === "version_full") {
@@ -83,31 +83,41 @@ function processCsv(csv) {
       title: cols[1],
       version: cols[0],
       playcount: cols[4],
-      SPB_level: cols[5],
-      SPB_score: cols[6],
-      SPB_misscount: cols[9],
-      SPB_clearlamp: cols[10],
-      SPB_djlevel: cols[11],
-      SPN_level: cols[12],
-      SPN_score: cols[13],
-      SPN_misscount: cols[16],
-      SPN_clearlamp: cols[17],
-      SPN_djlevel: cols[18],
-      SPH_level: cols[19],
-      SPH_score: cols[20],
-      SPH_misscount: cols[23],
-      SPH_clearlamp: cols[24],
-      SPH_djlevel: cols[25],
-      SPA_level: cols[26],
-      SPA_score: cols[27],
-      SPA_misscount: cols[30],
-      SPA_clearlamp: cols[31],
-      SPA_djlevel: cols[32],
-      SPL_level: cols[33],
-      SPL_score: cols[34],
-      SPL_misscount: cols[37],
-      SPL_clearlamp: cols[38],
-      SPL_djlevel: cols[39],
+      SPB: {
+        level: cols[5],
+        score: cols[6],
+        misscount: cols[9],
+        clearlamp: cols[10],
+        djlevel: cols[11],
+      },
+      SPN: {
+        level: cols[12],
+        score: cols[13],
+        misscount: cols[16],
+        clearlamp: cols[17],
+        djlevel: cols[18],
+      },
+      SPH: {
+        level: cols[19],
+        score: cols[20],
+        misscount: cols[23],
+        clearlamp: cols[24],
+        djlevel: cols[25],
+      },
+      SPA: {
+        level: cols[26],
+        score: cols[27],
+        misscount: cols[30],
+        clearlamp: cols[31],
+        djlevel: cols[32],
+      },
+      SPL: {
+        level: cols[33],
+        score: cols[34],
+        misscount: cols[37],
+        clearlamp: cols[38],
+        djlevel: cols[39],
+      },
     });
   }
   // console.dir(csvData);
@@ -117,7 +127,7 @@ function processCsv(csv) {
 
   const masterDataSong = {};
   for (const data of masterData) {
-    masterDataSong[data["title"] + "_" + data["difficulty"]] = {
+    masterDataSong[`${data["title"]}_${data["difficulty"]}`] = {
       version: data["version"],
       level: data["level"],
       notes: data["notes"],
@@ -131,19 +141,19 @@ function processCsv(csv) {
   for (const song of csvData) {
     const difficulties = ["SPB", "SPN", "SPH", "SPA", "SPL"];
     for (const difficulty of difficulties) {
-      if (song[difficulty + "_score"] > 0) {
+      if (song[difficulty]["score"] > 0) {
         const songScore = {};
-        const key = song["title"] + "_" + difficulty;
-        songScore["level"] = song[difficulty + "_level"];
+        const key = `${song["title"]}_${difficulty}`;
+        songScore["level"] = song[difficulty]["level"];
         songScore["title"] = song["title"];
         songScore["difficulty"] = difficulty;
-        songScore["score"] = song[difficulty + "_score"];
+        songScore["score"] = song[difficulty]["score"];
         if (masterDataSong[key]) {
           songScore["rate"] =
-            song[difficulty + "_score"] / masterDataSong[key]["notes"] / 2;
+            song[difficulty]["score"] / masterDataSong[key]["notes"] / 2;
           songScore["notes"] = masterDataSong[key]["notes"];
           songScore["max-"] =
-            masterDataSong[key]["notes"] * 2 - song[difficulty + "_score"];
+            masterDataSong[key]["notes"] * 2 - song[difficulty]["score"];
           // rate validation
           if (songScore["rate"] < 0) {
             songScore["rate"] = 0;
@@ -152,7 +162,7 @@ function processCsv(csv) {
           songScore["rate"] = 0.0;
           songScore["notes"] = 1;
           songScore["max-"] = 9999;
-          console.log("not found:" + key);
+          console.log("not found:", key);
         }
         songScores.push(songScore);
       }
@@ -274,13 +284,13 @@ function processCsv(csv) {
   for (let lv = 12; lv >= 1; lv--) {
     const row = stats[lv];
     statistics.push("<tr>");
-    statistics.push("<td>" + "☆" + lv + "</td>");
-    statistics.push("<td>" + row["played"] + "/" + row["total"] + "</td>");
-    statistics.push("<td>" + (row["average_rate"] * 100).toFixed(3) + "%</td>");
+    statistics.push(`<td>☆${lv}</td>`);
+    statistics.push(`<td>${row["played"]}/${row["total"]}</td>`);
+    statistics.push(`<td>${(row["average_rate"] * 100).toFixed(3)}%</td>`);
     [
       "1keta",
       "2keta",
-      ...[...Array(5)].map((_, i) => 100 - (i + 1) + "%"),
+      ...[...Array(5)].map((_, i) => `${100 - (i + 1)}%`),
       "MAX-",
       "AAA",
       "AA",
@@ -303,9 +313,9 @@ function processCsv(csv) {
     num99p += stats[lv]["99%"];
     num98p += stats[lv]["98%"];
   }
-  statisticsSummary.push("Total | max-*: " + num1keta + " / ");
-  statisticsSummary.push("99%: " + num99p + " / ");
-  statisticsSummary.push("98%: " + num98p + "\n\n");
+  statisticsSummary.push(`Total | max-*: ${num1keta} / `);
+  statisticsSummary.push(`99%: ${num99p} / `);
+  statisticsSummary.push(`98%: ${num98p}\n\n`);
 
   console.log(statisticsSummary.join(""));
 
@@ -332,20 +342,11 @@ function processCsv(csv) {
       continue;
     }
     list.push("<tr>");
-    list.push("<td>☆" + songScore["level"] + "</td>");
-    list.push(
-      "<td>" +
-        songScore["title"] +
-        " (" +
-        songScore["difficulty"] +
-        ")" +
-        "</td>"
-    );
-    list.push("<td>" + songScore["score"] + "</td>");
-    list.push("<td>" + (songScore["rate"] * 100).toFixed(2) + "%</td>");
-    list.push(
-      "<td>MAX-" + (songScore["notes"] * 2 - songScore["score"]) + "</td>"
-    );
+    list.push(`<td>☆${songScore["level"]}</td>`);
+    list.push(`<td>${songScore["title"]} (${songScore["difficulty"]})</td>`);
+    list.push(`<td>${songScore["score"]}</td>`);
+    list.push(`<td>${(songScore["rate"] * 100).toFixed(2)}%</td>`);
+    list.push(`<td>MAX-${songScore["notes"] * 2 - songScore["score"]}</td>`);
     list.push("</tr>");
   }
   list.push("</table>");
@@ -361,31 +362,23 @@ function processCsv(csv) {
 
 function statSummaryLineOfLevel(stats, lv) {
   let line = "";
-  line +=
-    "☆" +
-    lv +
-    " avg: " +
-    (stats[lv]["average_rate"] * 100).toFixed(2) +
-    "% (" +
-    stats[lv]["played"] +
-    "/" +
-    stats[lv]["total"] +
-    ") | ";
-  line += "max-**: " + stats[lv]["2keta"] + " / ";
-  line += "99%: " + stats[lv]["99%"] + " / ";
-  line += "98%: " + stats[lv]["98%"] + " / ";
-  line += "97%: " + stats[lv]["97%"] + " / ";
-  line += "max-: " + stats[lv]["MAX-"] + " / ";
-  line += "AAA: " + stats[lv]["AAA"] + "\n";
+
+  const formattedAvgRate = (stats[lv]["average_rate"] * 100).toFixed(2);
+  line += `☆${lv} avg: ${formattedAvgRate}% (${stats[lv]["played"]}/${stats[lv]["total"]}) | `;
+  line += `max-**: ${stats[lv]["2keta"]} / `;
+  line += `99%: ${stats[lv]["99%"]} / `;
+  line += `98%: ${stats[lv]["98%"]} / `;
+  line += `97%: ${stats[lv]["97%"]} / `;
+  line += `max-: ${stats[lv]["MAX-"]} / `;
+  line += `AAA: ${stats[lv]["AAA"]}\n`;
   return line;
 }
 
 function createStatisticsCell(row, name) {
   const value = row[name];
   const alpha = value / row["total"];
-  const style =
-    "background-color: rgba(" + HEATMAP_BACKGROUND_COLOR + ", " + alpha + ");";
-  return '<td style="' + style + '">' + value + "</td>";
+  const style = `background-color: rgba(${HEATMAP_BACKGROUND_COLOR}, ${alpha});`;
+  return `<td style="${style}">${value}</td>`;
 }
 
 window.onload = function () {
