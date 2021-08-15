@@ -3963,7 +3963,7 @@ PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPB,1,-1,-1,-,-
 PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPN,2,5,443,-,-
 PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPH,3,8,717,-,-
 PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPA,4,11,1205,-,-
-PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPL,5,-1,-1,-,-
+PENDUAL,Chronos,PROGRESSIVE,TAG,22,SPL,5,11,1538,-,-
 PENDUAL,cinder,MAELSTROM,PHQUASE,22,SPB,1,-1,-1,-,-
 PENDUAL,cinder,MAELSTROM,PHQUASE,22,SPN,2,5,432,-,-
 PENDUAL,cinder,MAELSTROM,PHQUASE,22,SPH,3,9,1037,-,-
@@ -6593,7 +6593,7 @@ HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPN,2,6,567,-,-
 HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPH,3,9,913,-,-
 HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPA,4,11,1466,-,-
-HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPL,5,-1,-1,-,-
+HEROIC VERSE,Ypsilon,HARD STACC,"BEMANI Sound Team ""setup""",27,SPL,5,12,1801,-,-
 HEROIC VERSE,ガヴリールドロップキック,IIDX EDITION,Remixed by かめりあ,27,SPB,1,3,207,-,-
 HEROIC VERSE,ガヴリールドロップキック,IIDX EDITION,Remixed by かめりあ,27,SPN,2,5,396,-,-
 HEROIC VERSE,ガヴリールドロップキック,IIDX EDITION,Remixed by かめりあ,27,SPH,3,9,856,-,-
@@ -7159,3 +7159,28 @@ BISTROVER,無意識のフィロソフィア,HARD TRANCE,BEMANI Sound Team "TAG",
 BISTROVER,無意識のフィロソフィア,HARD TRANCE,BEMANI Sound Team "TAG",28,SPH,3,9,1136,-,-
 BISTROVER,無意識のフィロソフィア,HARD TRANCE,BEMANI Sound Team "TAG",28,SPA,4,11,1682,-,-
 BISTROVER,無意識のフィロソフィア,HARD TRANCE,BEMANI Sound Team "TAG",28,SPL,5,-1,-1,-,-
+BISTROVER,Rejection Girl,0,0,28,SPB,1,-1,-1,-,-
+BISTROVER,MA・TSU・RI,JAPANESQUE,"かなたん，アマギセーラ，ぁゅ by BEMANI Sound Team ""藤森崇多""",28,SPB,1,-1,-1,-,-
+BISTROVER,MOVE! (We Keep It Movin'),ORBITALIC ELECTRIC MUSIC,"Jonny Dynamite!，Lisa - paint with stars -，Rio Hiiragi by BEMANI Sound Team ""U1-ASAMi""",28,SPB,1,-1,-1,-,-
+BISTROVER,LIKE A VAMPIRE,HEAVY METAL,"koyomi，星野奏子 by BEMANI Sound Team ""TAKA""",28,SPB,1,-1,-1,-,-
+BISTROVER,スーパー戦湯ババンバーン,オンセンヒーロー,"すわひでお，秋成，かぼちゃ，藍月なくる，NU-KO by BEMANI Sound Team ""八戸亀生羅""",28,SPB,1,-1,-1,-,-
+BISTROVER,Rejection Girl,0,0,28,SPN,2,5,514,-,-
+BISTROVER,MA・TSU・RI,JAPANESQUE,"かなたん，アマギセーラ，ぁゅ by BEMANI Sound Team ""藤森崇多""",28,SPN,2,5,555,-,-
+BISTROVER,MOVE! (We Keep It Movin'),ORBITALIC ELECTRIC MUSIC,"Jonny Dynamite!，Lisa - paint with stars -，Rio Hiiragi by BEMANI Sound Team ""U1-ASAMi""",28,SPN,2,4,387,-,-
+BISTROVER,LIKE A VAMPIRE,HEAVY METAL,"koyomi，星野奏子 by BEMANI Sound Team ""TAKA""",28,SPN,2,6,536,-,-
+BISTROVER,スーパー戦湯ババンバーン,オンセンヒーロー,"すわひでお，秋成，かぼちゃ，藍月なくる，NU-KO by BEMANI Sound Team ""八戸亀生羅""",28,SPN,2,6,645,-,-
+BISTROVER,Rejection Girl,0,0,28,SPH,3,9,844,-,-
+BISTROVER,MA・TSU・RI,JAPANESQUE,"かなたん，アマギセーラ，ぁゅ by BEMANI Sound Team ""藤森崇多""",28,SPH,3,9,948,-,-
+BISTROVER,MOVE! (We Keep It Movin'),ORBITALIC ELECTRIC MUSIC,"Jonny Dynamite!，Lisa - paint with stars -，Rio Hiiragi by BEMANI Sound Team ""U1-ASAMi""",28,SPH,3,7,694,-,-
+BISTROVER,LIKE A VAMPIRE,HEAVY METAL,"koyomi，星野奏子 by BEMANI Sound Team ""TAKA""",28,SPH,3,9,908,-,-
+BISTROVER,スーパー戦湯ババンバーン,オンセンヒーロー,"すわひでお，秋成，かぼちゃ，藍月なくる，NU-KO by BEMANI Sound Team ""八戸亀生羅""",28,SPH,3,10,1080,-,-
+BISTROVER,Rejection Girl,0,0,28,SPA,4,11,1352,-,-
+BISTROVER,MA・TSU・RI,JAPANESQUE,"かなたん，アマギセーラ，ぁゅ by BEMANI Sound Team ""藤森崇多""",28,SPA,4,11,1302,-,-
+BISTROVER,MOVE! (We Keep It Movin'),ORBITALIC ELECTRIC MUSIC,"Jonny Dynamite!，Lisa - paint with stars -，Rio Hiiragi by BEMANI Sound Team ""U1-ASAMi""",28,SPA,4,10,1111,-,-
+BISTROVER,LIKE A VAMPIRE,HEAVY METAL,"koyomi，星野奏子 by BEMANI Sound Team ""TAKA""",28,SPA,4,11,1415,-,-
+BISTROVER,スーパー戦湯ババンバーン,オンセンヒーロー,"すわひでお，秋成，かぼちゃ，藍月なくる，NU-KO by BEMANI Sound Team ""八戸亀生羅""",28,SPA,4,12,1755,-,-
+BISTROVER,Rejection Girl,0,0,28,SPL,5,-1,-1,-,-
+BISTROVER,MA・TSU・RI,JAPANESQUE,"かなたん，アマギセーラ，ぁゅ by BEMANI Sound Team ""藤森崇多""",28,SPL,5,-1,-1,-,-
+BISTROVER,MOVE! (We Keep It Movin'),ORBITALIC ELECTRIC MUSIC,"Jonny Dynamite!，Lisa - paint with stars -，Rio Hiiragi by BEMANI Sound Team ""U1-ASAMi""",28,SPL,5,-1,-1,-,-
+BISTROVER,LIKE A VAMPIRE,HEAVY METAL,"koyomi，星野奏子 by BEMANI Sound Team ""TAKA""",28,SPL,5,-1,-1,-,-
+BISTROVER,スーパー戦湯ババンバーン,オンセンヒーロー,"すわひでお，秋成，かぼちゃ，藍月なくる，NU-KO by BEMANI Sound Team ""八戸亀生羅""",28,SPL,5,-1,-1,-,-
