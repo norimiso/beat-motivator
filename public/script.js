@@ -36,8 +36,16 @@ function getMusicData() {
   xhr.send(null);
 }
 
-function setTextareaData() {
-  raw_data = document.getElementById("csv").value;
+async function setTextareaData() {
+  const tmp_data = document.getElementById("csv").value;
+  if(!tmp_data && navigator.clipboard) {
+    // inputが空でClipboard APIが使えるならクリップボードのデータを読み込む
+    // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
+    raw_data = await navigator.clipboard.readText();
+  } else {
+    // そうでなければinputのデータを使う
+    raw_data = tmp_data;
+  }
   let data = processCsv(raw_data);
   document.getElementById("list").innerHTML = data["list"];
   document.getElementById("statistics").innerHTML = data["statistics"];
