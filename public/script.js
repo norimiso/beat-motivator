@@ -23,14 +23,14 @@ function fetchSongDataFile() {
 
 async function setTextareaData() {
   let rawData;
-  const tmpData = document.getElementById("csv").value;
-  if (!tmpData && navigator.clipboard) {
+  const csvInput = document.getElementById("csv").value;
+  if (!csvInput && navigator.clipboard) {
     // inputが空でClipboard APIが使えるならクリップボードのデータを読み込む
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
     rawData = await navigator.clipboard.readText();
   } else {
     // そうでなければinputのデータを使う
-    rawData = tmpData;
+    rawData = csvInput;
   }
   const data = processCsv(rawData);
   const tweetUrl =
