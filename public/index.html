@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Tool for IIDX" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beat Motivator</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Tool for IIDX" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Beat Motivator</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <style type="text/css">
+      body {
+        position: relative;
+        margin: 8px;
+      }
 
-  <script src="./script.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-  <style type="text/css">
-    body {
-      position: relative;
-      margin: 8px;
-    }
+      #statistics:not(.heatmap) tbody td {
+        background-color: inherit !important;
+      }
 
-    #statistics:not(.heatmap) tbody td {
-      background-color: inherit !important;
-    }
+      #statistics.heatmap thead td {
+        background-color: var(--color-text);
+      }
 
-    #statistics.heatmap thead td {
-      background-color: var(--color-text);
-    }
+      #statistics.heatmap tbody tr {
+        background-color: var(--color-bg);
+      }
 
-    #statistics.heatmap tbody tr {
-      background-color: var(--color-bg);
-    }
+      #github-link-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        text-align: right;
+      }
 
-    #github-link-box {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 32px;
-      text-align: right;
-    }
+      #github-repo-link {
+        display: inline-block;
+      }
 
-    #github-repo-link {
-      display: inline-block;
-    }
+      #github-logo {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+  </head>
 
-    #github-logo {
-      width: 32px;
-      height: 32px;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="container">
-    <p>
+  <body>
+    <div id="container">
+      <p>
+        <a
+          href="https://p.eagate.573.jp/game/2dx/28/djdata/score_download.html?style=SP"
+          >CSV</a
+        >
+        を入れてね！（submitをクリックすることで、クリップボードのCSVデータを直接読み込めます。）
+      </p>
+      <p>
+        <textarea name="csv" cols="100" rows="10" id="csv"></textarea>
+      </p>
+      <p><input type="button" value="submit" id="sub" /></p>
+      <p>
+        <input
+          type="checkbox"
+          name="check_12"
+          id="check_12"
+          value="true"
+        /><label for="check_12">Shows only 12</label>
+        <input
+          type="checkbox"
+          name="include_no_play"
+          id="include_no_play"
+          value="true"
+        /><label for="include_no_play">Include No play</label>
+        <input
+          type="checkbox"
+          name="enable_heatmap"
+          id="enable_heatmap"
+          value="true"
+          onClick="toggleHeatmap(this.checked);"
+        /><label for="enable_heatmap">Enable heatmap</label>
+      </p>
+      <p id="tweet_button"></p>
+      <p id="statistics"></p>
+      <p id="list"></p>
+    </div>
+    <div id="github-link-box">
       <a
-        href="https://p.eagate.573.jp/game/2dx/28/djdata/score_download.html?style=SP"
-        >CSV</a
+        id="github-repo-link"
+        href="https://github.com/norimiso/beat-motivator"
+        target="_blank"
       >
-      を入れてね！（submitをクリックすることで、クリップボードのCSVデータを直接読み込めます。）
-    </p>
-    <p>
-      <textarea name="csv" cols="100" rows="10" id="csv"></textarea>
-    </p>
-    <p><input type="button" value="submit" id="sub" /></p>
-    <p>
-      <input type="checkbox" name="check_12" id="check_12" value="true" /><label for="check_12">Shows only 12</label>
-      <input type="checkbox" name="enable_heatmap" id="enable_heatmap" value="true"
-        onClick="toggleHeatmap(this.checked);" /><label for="enable_heatmap">Enable heatmap</label>
-    </p>
-    <p id="tweet_button"></p>
-    <p id="statistics"></p>
-    <p id="list"></p>
-  </div>
-  <div id="github-link-box">
-    <a id="github-repo-link" href="https://github.com/norimiso/beat-motivator" target="_blank">
-      <img id="github-logo" src="./GitHub-Mark-64px.png" alt="github">
-    </a>
-  </div>
-</body>
-
+        <img id="github-logo" src="./GitHub-Mark-64px.png" alt="github" />
+      </a>
+    </div>
+  </body>
 </html>

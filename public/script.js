@@ -49,7 +49,6 @@ function getMasterdata() {
   for (const line of splittedData) {
     const cols = line.split(",");
     if (cols.length < 2 || cols[0] === "version_full") {
-      console.log(cols);
       continue; // skip header
     }
 
@@ -73,7 +72,7 @@ function processCsv(csv) {
   }
 
   const csvData = [];
-
+  // テキストエリアの CSV をパース
   for (const line of splittedData) {
     const cols = line.split(",");
     if (cols[0] === "バージョン") {
@@ -122,9 +121,11 @@ function processCsv(csv) {
   }
   // console.dir(csvData);
 
+  // マスターデータを読み込み
   const masterData = getMasterdata();
   // console.dir(masterData);
 
+  // 後で処理がしやすいように"曲名_難易度"みたいなキーでmasterDataSongに入れ直す
   const masterDataSong = {};
   for (const data of masterData) {
     masterDataSong[`${data["title"]}_${data["difficulty"]}`] = {
@@ -138,10 +139,17 @@ function processCsv(csv) {
   // console.dir(masterDataSong);
   const songScores = [];
 
+  // バラしたcsvのデータsongScores に良い感じに格納
   for (const song of csvData) {
     const difficulties = ["SPB", "SPN", "SPH", "SPA", "SPL"];
     for (const difficulty of difficulties) {
-      if (song[difficulty]["score"] > 0) {
+      if (
+        song[difficulty]["score"] > 0 ||
+        // no play を表示するための条件分岐
+        (song[difficulty]["score"] >= 0 &&
+          document.getElementById("include_no_play").checked === true &&
+          song[difficulty]["level"] !== "0")
+      ) {
         const songScore = {};
         const key = `${song["title"]}_${difficulty}`;
         songScore["level"] = song[difficulty]["level"];
@@ -172,6 +180,7 @@ function processCsv(csv) {
   // sort by rate, in descending order
   songScores.sort((a, b) => b["rate"] - a["rate"]);
 
+  // 表に表示するための統計データの作成。まずはここで初期化。
   const stats = {};
   for (const song of Object.values(masterDataSong)) {
     if (song["level"] === "-1") {
@@ -179,14 +188,9 @@ function processCsv(csv) {
     }
     if (stats[song["level"]] && stats[song["level"]]["total"] >= 0) {
       stats[song["level"]]["total"]++;
-      // for debug
-      if (song["level"] === "12") {
-        console.dir(song);
-        console.log(stats[song["level"]]["total"]);
-      }
     } else {
       stats[song["level"]] = {
-        total: 0,
+        total: 1,
         played: 0,
         average_rate: 0.0,
         A: 0,
@@ -204,13 +208,14 @@ function processCsv(csv) {
     }
   }
 
-  console.dir(songScores);
-
+  // 統計情報の作成
   for (const s of songScores) {
     if (s["max-"] === 9999) {
       continue; // because we have no data about this song.
     }
-
+    if (s["level"] === "0") {
+      continue;
+    }
     const songLv = s["level"];
     stats[songLv]["played"]++;
     stats[songLv]["average_rate"] += s["rate"]; // will be devined by "played"
@@ -259,6 +264,8 @@ function processCsv(csv) {
 
   console.dir(stats);
 
+  // 作った統計情報を元にHTMLのテーブル作成
+  // まずはヘッダー
   const statistics = ["<table>"];
   const statisticsHeader = `
     <thead>
@@ -281,6 +288,8 @@ function processCsv(csv) {
     </thead>
     `;
   statistics.push(statisticsHeader);
+
+  // 次は中身
   for (let lv = 12; lv >= 1; lv--) {
     const row = stats[lv];
     statistics.push("<tr>");
@@ -301,6 +310,7 @@ function processCsv(csv) {
   }
   statistics.push("</table>");
 
+  // Twitter 投稿用の統計情報のサマリの作成
   const statisticsSummary = [];
   let num1keta = 0;
   let num99p = 0;
@@ -317,8 +327,7 @@ function processCsv(csv) {
   statisticsSummary.push(`99%: ${num99p} / `);
   statisticsSummary.push(`98%: ${num98p}\n\n`);
 
-  console.log(statisticsSummary.join(""));
-
+  // 全曲のデータ用のHTMLテーブル作成
   const list = ["<table>"];
   const listHeader = `
     <thead>
@@ -334,7 +343,6 @@ function processCsv(csv) {
   list.push(listHeader);
 
   for (const songScore of songScores) {
-    // console.log(s);
     if (
       document.getElementById("check_12").checked === true &&
       songScore["level"] !== "12"
@@ -351,8 +359,7 @@ function processCsv(csv) {
   }
   list.push("</table>");
 
-  // console.dir(list);
-
+  // HTML を作って返却。
   return {
     list: list.join(""),
     statistics: statistics.join(""),
