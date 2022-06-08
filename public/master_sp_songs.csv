@@ -664,11 +664,11 @@ BISTROVER,DUAL STRIKER,IIDX SOUNDS,"Mayumi Morinaga，Fernweh by BEMANI Sound Te
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPH,3,4,313,-,-
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPA,4,4,324,-,-
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPL,5,-1,-1,-,-
-2nd style,0.59,-,-,2,SPB,1,-,-1,-,-
-2nd style,0.59,-,-,2,SPN,2,-,360,-,-
-2nd style,0.59,-,-,2,SPH,3,-,514,-,-
-2nd style,0.59,-,-,2,SPA,4,-,584,-,-
-2nd style,0.59,-,-,2,SPL,5,-,-1,-,-
+2nd style,.59,CHILL OUT,dj TAKA,2,SPB,1,-1,-1,-,-
+2nd style,.59,CHILL OUT,dj TAKA,2,SPN,2,4,360,-,-
+2nd style,.59,CHILL OUT,dj TAKA,2,SPH,3,6,514,-,-
+2nd style,.59,CHILL OUT,dj TAKA,2,SPA,4,7,584,-,-
+2nd style,.59,CHILL OUT,dj TAKA,2,SPL,5,-1,-1,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPB,1,-1,-1,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPN,2,4,310,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPH,3,8,632,-,-
@@ -2538,7 +2538,7 @@ DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPN,2,6,640,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPH,3,10,1064,-,-
 DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPA,4,11,1458,-,-
-DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,Time to Air,DANCE SPEED,青龍,15,SPL,5,12,1888,-,-
 DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPN,2,6,353,-,-
 DJ TROOPERS,TRIP MACHINE PhoeniX,SUPERNOVA2 BEAT #2,DE-SIRE改,15,SPH,3,9,842,-,-
@@ -3313,7 +3313,7 @@ Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPB,1,2
 Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPN,2,3,249,-,-
 Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPH,3,7,596,-,-
 Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPA,4,9,803,-,-
-Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPL,5,-1,-1,-,-
+Resort Anthem,WISE UP!,RESORT HOUSE,木之下慶行 feat.星野奏子,18,SPL,5,11,1320,-,-
 Resort Anthem,Wuv U,CANDY RAVE,kors k,18,SPB,1,-1,-1,-,-
 Resort Anthem,Wuv U,CANDY RAVE,kors k,18,SPN,2,3,208,-,-
 Resort Anthem,Wuv U,CANDY RAVE,kors k,18,SPH,3,8,672,-,-
@@ -5280,7 +5280,7 @@ SINOBUZ,AO-∞,DANCE SPEED,青龍,24,SPH,3,9,952,-,-
 SINOBUZ,AO-∞,DANCE SPEED,青龍,24,SPA,4,10,1375,-,-
 SINOBUZ,AO-∞,DANCE SPEED,青龍,24,SPL,5,-1,-1,-,-
 SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPB,1,-1,-1,-,-
-SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPN,2,5,588,-,-
+SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPN,2,5,580,-,-
 SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPH,3,9,1096,-,-
 SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPA,4,12,1814,-,-
 SINOBUZ,Apocalypse,EPIC D'N'B,Morrigan feat. リリィ,24,SPL,5,-1,-1,-,-
@@ -7569,6 +7569,36 @@ CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPN,2,6,-1,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPH,3,10,-1,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPA,4,12,1886,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPL,5,-1,-1,-,-
+CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPB,1,-1,-1,-,-
+CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPN,2,5,382,-,-
+CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPH,3,8,780,-,-
+CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPA,4,10,1168,-,-
+CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPL,5,-1,-1,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPB,1,-1,-1,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPN,2,5,450,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPH,3,-1,831,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPA,4,11,1179,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPL,5,-1,-1,-,-
+CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPB,1,-1,-1,-,-
+CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPN,2,6,542,-,-
+CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPH,3,9,892,-,-
+CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPA,4,11,1317,-,-
+CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPL,5,-1,-1,-,-
+CastHour,天邪鬼,HARD DANCE,Qlarabelle,29,SPB,1,-1,-1,-,-
+CastHour,天邪鬼,HARD DANCE,Qlarabelle,29,SPN,2,5,500,-,-
+CastHour,天邪鬼,HARD DANCE,Qlarabelle,29,SPH,3,9,870,-,-
+CastHour,天邪鬼,HARD DANCE,Qlarabelle,29,SPA,4,12,1693,-,-
+CastHour,天邪鬼,HARD DANCE,Qlarabelle,29,SPL,5,-1,-1,-,-
+CastHour,Flying Castle,COLOUR CORE,lapix,29,SPB,1,-1,-1,-,-
+CastHour,Flying Castle,COLOUR CORE,lapix,29,SPN,2,6,548,-,-
+CastHour,Flying Castle,COLOUR CORE,lapix,29,SPH,3,10,1162,-,-
+CastHour,Flying Castle,COLOUR CORE,lapix,29,SPA,4,12,1877,-,-
+CastHour,Flying Castle,COLOUR CORE,lapix,29,SPL,5,-1,-1,-,-
+CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPB,1,-1,-1,-,-
+CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPN,2,7,627,-,-
+CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPH,3,10,1206,-,-
+CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPA,4,12,1946,-,-
+CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPL,5,-1,-1,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPB,1,-1,-1,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPN,2,5,499,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPH,3,9,939,-,-
@@ -7646,7 +7676,7 @@ SIRIUS,Do Back Burn,ELECTRO,PRASTIK DANCEFLOOR,17,SPA,4,10,1078,-,-
 SIRIUS,Do Back Burn,ELECTRO,PRASTIK DANCEFLOOR,17,SPL,5,-1,-1,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPB,1,-1,-1,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPN,2,4,376,-,-
-7th style,Somebody Like You,POPS,good-cool,7,SPH,3,-1,606,-,-
+7th style,Somebody Like You,POPS,good-cool,7,SPH,3,7,606,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPA,4,9,933,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPL,5,-1,-1,-,-
 BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPB,1,-1,-1,-,-
