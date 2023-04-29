@@ -155,10 +155,10 @@ function processCsv(csv) {
         const key = `${song["title"]}_${difficulty}`;
         songScore["level"] = song[difficulty]["level"];
         songScore["title"] = song["title"];
-        songScore["version"] = song["version"];
         songScore["difficulty"] = difficulty;
         songScore["score"] = song[difficulty]["score"];
         if (masterDataSong[key]) {
+          songScore["version"] = masterDataSong[key]["version"];
           songScore["rate"] =
             song[difficulty]["score"] / masterDataSong[key]["notes"] / 2;
           songScore["notes"] = masterDataSong[key]["notes"];
