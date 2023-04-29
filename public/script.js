@@ -54,7 +54,8 @@ function getMasterdata() {
 
     ret.push({
       title: cols[1],
-      version: cols[0],
+      version_full: cols[0],
+      version: cols[4],
       difficulty: cols[5],
       level: cols[7],
       notes: cols[8],
@@ -80,7 +81,7 @@ function processCsv(csv) {
     }
     csvData.push({
       title: cols[1],
-      version: cols[0],
+      version_full: cols[0],
       playcount: cols[4],
       SPB: {
         level: cols[5],
@@ -352,7 +353,7 @@ function processCsv(csv) {
       continue;
     }
     list.push("<tr>");
-    list.push(`<td>☆${songScore["version"]}</td>`);
+    list.push(`<td>${songScore["version"]}</td>`);
     list.push(`<td>☆${songScore["level"]}</td>`);
     list.push(`<td>${songScore["title"]} (${songScore["difficulty"]})</td>`);
     list.push(`<td>${songScore["score"]}</td>`);
