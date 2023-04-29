@@ -154,6 +154,7 @@ function processCsv(csv) {
         const key = `${song["title"]}_${difficulty}`;
         songScore["level"] = song[difficulty]["level"];
         songScore["title"] = song["title"];
+        songScore["version"] = song["version"];
         songScore["difficulty"] = difficulty;
         songScore["score"] = song[difficulty]["score"];
         if (masterDataSong[key]) {
@@ -332,10 +333,11 @@ function processCsv(csv) {
   const listHeader = `
     <thead>
     <tr>
+    <td> Ver </td>
     <td> ☆ </td>
-    <td> title </td>
-    <td> score </td>
-    <td> rate </td>
+    <td> Title </td>
+    <td> Score </td>
+    <td> Rate </td>
     <td> MAX- </td>
     </tr>
     </thead>
