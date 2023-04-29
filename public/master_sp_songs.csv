@@ -1,4 +1,4 @@
-version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,kaiden_average,top_score
+﻿version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,kaiden_average,top_score
 CANNON BALLERS,255,HYPER SPEED RAVE,255,25,SPB,1,-1,-1,-,-
 CANNON BALLERS,255,HYPER SPEED RAVE,255,25,SPN,2,6,469,-,-
 CANNON BALLERS,255,HYPER SPEED RAVE,255,25,SPH,3,9,823,-,-
@@ -353,7 +353,7 @@ BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPB,1,-1,-1,-,-
 BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPN,2,6,609,-,-
 BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPH,3,9,935,-,-
 BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPA,4,11,1470,-,-
-BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPL,5,-1,-1,-,-
+BISTROVER,Burning Flame,HYPER TECHNO,AJURIKA feat.SAK.,28,SPL,5,12,1938,-,-
 BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPB,1,-1,-1,-,-
 BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPN,2,4,364,-,-
 BISTROVER,That Feeling,SPEED HOUSE,Crayvxn,28,SPH,3,8,629,-,-
@@ -664,11 +664,11 @@ BISTROVER,DUAL STRIKER,IIDX SOUNDS,"Mayumi Morinaga，Fernweh by BEMANI Sound Te
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPH,3,4,313,-,-
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPA,4,4,324,-,-
 2nd style,SP-TRIP MACHINE(for beatmania II),JUNGLE,dj TAKA feat. DE-SIRE,2,SPL,5,-1,-1,-,-
-2nd style,.59,CHILL OUT,dj TAKA,2,SPB,1,-1,-1,-,-
-2nd style,.59,CHILL OUT,dj TAKA,2,SPN,2,4,360,-,-
-2nd style,.59,CHILL OUT,dj TAKA,2,SPH,3,6,514,-,-
-2nd style,.59,CHILL OUT,dj TAKA,2,SPA,4,7,584,-,-
-2nd style,.59,CHILL OUT,dj TAKA,2,SPL,5,-1,-1,-,-
+2nd style,0.59,-,-,2,SPB,1,-,-1,-,-
+2nd style,0.59,-,-,2,SPN,2,-,360,-,-
+2nd style,0.59,-,-,2,SPH,3,-,514,-,-
+2nd style,0.59,-,-,2,SPA,4,-,584,-,-
+2nd style,0.59,-,-,2,SPL,5,-,-1,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPB,1,-1,-1,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPN,2,4,310,-,-
 3rd style,CAN'T STOP FALLIN'IN LOVE,HYPER EUROBEAT,NAOKI,3,SPH,3,8,632,-,-
@@ -1006,7 +1006,7 @@ BISTROVER,DUAL STRIKER,IIDX SOUNDS,"Mayumi Morinaga，Fernweh by BEMANI Sound Te
 6th style,Take It Easy,INSTRUMENTAL,Aya,6,SPL,5,-1,-1,-,-
 6th style,VJ ARMY,ALL MIX,good-cool,6,SPB,1,-1,-1,-,-
 6th style,VJ ARMY,ALL MIX,good-cool,6,SPN,2,6,660,-,-
-6th style,VJ ARMY,ALL MIX,good-cool,6,SPH,3,9,901,-,-
+6th style,VJ ARMY,ALL MIX,good-cool,6,SPH,3,9,904,-,-
 6th style,VJ ARMY,ALL MIX,good-cool,6,SPA,4,10,1149,-,-
 6th style,VJ ARMY,ALL MIX,good-cool,6,SPL,5,-1,-1,-,-
 6th style,19，November,HOUSE,good-cool,6,SPB,1,-1,-1,-,-
@@ -2349,11 +2349,11 @@ GOLD,零 - ZERO -,HYPER J-POP ZERO,ＴЁЯＲＡ,14,SPN,2,6,596,-,-
 GOLD,零 - ZERO -,HYPER J-POP ZERO,ＴЁЯＲＡ,14,SPH,3,8,912,-,-
 GOLD,零 - ZERO -,HYPER J-POP ZERO,ＴЁЯＲＡ,14,SPA,4,9,1162,-,-
 GOLD,零 - ZERO -,HYPER J-POP ZERO,ＴЁЯＲＡ,14,SPL,5,-1,-1,-,-
-DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPB,1,-1,-1,-,-
-DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPN,2,6,631,-,-
-DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPH,3,10,1089,-,-
-DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPA,4,11,1443,-,-
-DJ TROOPERS,Anisakis -somatic mutation type"Forza"-,HARD RENAISSANCE,朱雀,15,SPL,5,12,1971,-,-
+DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPB,1,-1,-1,-,-
+DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPN,2,6,631,-,-
+DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPH,3,10,1089,-,-
+DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPA,4,11,1443,-,-
+DJ TROOPERS,"Anisakis -somatic mutation type""Forza""-",HARD RENAISSANCE,朱雀,15,SPL,5,12,1971,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPN,2,4,390,-,-
 DJ TROOPERS,avant-guerre,CLASSICAL PIANO SOLO,Osamu Kubota,15,SPH,3,7,694,-,-
@@ -2573,7 +2573,7 @@ DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPB,1,2,169,
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPN,2,6,510,-,-
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPH,3,8,804,-,-
 DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPA,4,10,1029,-,-
-DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPL,5,12,1597,-,-
+DJ TROOPERS,華爛漫 -Flowers-,HYPER JAPANESQUE 2,ＴЁЯＲＡ,15,SPL,5,-1,1597,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPN,2,6,642,-,-
 DJ TROOPERS,少年A,POST RENAISSANCE,Remixed by 少年ラジオ,15,SPH,3,10,1144,-,-
@@ -2583,7 +2583,7 @@ DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPB,1,-1,-1,
 DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPN,2,5,575,-,-
 DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPH,3,9,1097,-,-
 DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPA,4,10,1345,-,-
-DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPL,5,-1,-1,-,-
+DJ TROOPERS,ミラージュ・レジデンス,FUSION,Jimmy Weckl,15,SPL,5,-1,1676,-,-
 DJ TROOPERS,マチ子の唄,EDUCATION,AKIRA YAMAOKA,15,SPB,1,-1,-1,-,-
 DJ TROOPERS,マチ子の唄,EDUCATION,AKIRA YAMAOKA,15,SPN,2,4,418,-,-
 DJ TROOPERS,マチ子の唄,EDUCATION,AKIRA YAMAOKA,15,SPH,3,6,662,-,-
@@ -2648,7 +2648,7 @@ EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPB,1,-1,-1,-,-
 EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPN,2,4,467,-,-
 EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPH,3,8,964,-,-
 EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPA,4,10,1179,-,-
-EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPL,5,-1,-1,-,-
+EMPRESS,Flash Back 90's,MEGA MIX,kors k as disconation,16,SPL,5,-1,1470,-,-
 EMPRESS,Fly Above,DREAM TRANCE,Sota Fujimori,16,SPB,1,-1,-1,-,-
 EMPRESS,Fly Above,DREAM TRANCE,Sota Fujimori,16,SPN,2,5,482,-,-
 EMPRESS,Fly Above,DREAM TRANCE,Sota Fujimori,16,SPH,3,6,815,-,-
@@ -2698,7 +2698,7 @@ EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPB,1,2,147,-,-
 EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPN,2,4,414,-,-
 EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPH,3,7,736,-,-
 EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPA,4,9,951,-,-
-EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPL,5,-1,-1,-,-
+EMPRESS,NΦ CRIME,DANCE MUSIC OF SORROW,C×F,16,SPL,5,-1,1211,-,-
 EMPRESS,naughty girl@Queen's Palace,TECH-BREAKBEATS,DJ Mass MAD Izm*,16,SPB,1,-1,-1,-,-
 EMPRESS,naughty girl@Queen's Palace,TECH-BREAKBEATS,DJ Mass MAD Izm*,16,SPN,2,5,433,-,-
 EMPRESS,naughty girl@Queen's Palace,TECH-BREAKBEATS,DJ Mass MAD Izm*,16,SPH,3,9,869,-,-
@@ -2759,11 +2759,11 @@ EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPN,2,5,569,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPH,3,9,921,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPA,4,12,1478,-,-
 EMPRESS,Y&Co. is dead or alive,90's RAVE,Y&Co.,16,SPL,5,-1,-1,-,-
-EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPB,1,-1,-1,-,-
-EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPN,2,6,629,-,-
-EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPH,3,10,962,-,-
-EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPA,4,11,1276,-,-
-EMPRESS,You'll say "Now!",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPL,5,-1,-1,-,-
+EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPB,1,-1,-1,-,-
+EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPN,2,6,629,-,-
+EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPH,3,10,962,-,-
+EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPA,4,11,1276,-,-
+EMPRESS,"You'll say ""Now!""",ONLY ONE TECHNO,BLACK STAR 幸広-YUKIHIRO-,16,SPL,5,-1,-1,-,-
 EMPRESS,3y3s,DANCE SPEED,青龍,16,SPB,1,3,280,-,-
 EMPRESS,3y3s,DANCE SPEED,青龍,16,SPN,2,7,772,-,-
 EMPRESS,3y3s,DANCE SPEED,青龍,16,SPH,3,10,1306,-,-
@@ -2938,7 +2938,7 @@ SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPB,1,-1,-1,-,-
 SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPN,2,5,520,-,-
 SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPH,3,8,862,-,-
 SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPA,4,10,1170,-,-
-SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPL,5,-1,-1,-,-
+SIRIUS,Hydrogen Blueback,TECH DANCE,MAD CHILD,17,SPL,5,11,1241,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPB,1,3,273,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPN,2,4,381,-,-
 SIRIUS,IN THE NAME OF LOVE,EUROBEAT,Y&Co.feat.Erica,17,SPH,3,7,718,-,-
@@ -3064,11 +3064,11 @@ SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,476,-,
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPH,3,6,709,-,-
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPA,4,8,855,-,-
 SIRIUS,サヨナラ・ヘヴン,WORLD/ELECTRONICA,猫叉Master,17,SPL,5,-1,-1,-,-
-SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPB,1,-1,-1,-,-
-SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,357,-,-
-SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPH,3,8,868,-,-
-SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPA,4,10,1073,-,-
-SIRIUS,水上の提督(Short mix from "幻想水滸伝V"),WORLD/ELECTRONICA,猫叉Master,17,SPL,5,-1,-1,-,-
+SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPB,1,-1,-1,-,-
+SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPN,2,4,357,-,-
+SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPH,3,8,868,-,-
+SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPA,4,10,1073,-,-
+SIRIUS,"水上の提督(Short mix from ""幻想水滸伝V"")",WORLD/ELECTRONICA,猫叉Master,17,SPL,5,-1,-1,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPB,1,-1,-1,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPN,2,6,646,-,-
 SIRIUS,たからもの,POPS,セリカ＆エリカ,17,SPH,3,8,943,-,-
@@ -3573,7 +3573,7 @@ Lincle,The Limbo,CYBER PUNK,STN,19,SPB,1,-1,-1,-,-
 Lincle,The Limbo,CYBER PUNK,STN,19,SPN,2,6,603,-,-
 Lincle,The Limbo,CYBER PUNK,STN,19,SPH,3,10,1042,-,-
 Lincle,The Limbo,CYBER PUNK,STN,19,SPA,4,12,1701,-,-
-Lincle,The Limbo,CYBER PUNK,STN,19,SPL,5,-1,-1,-,-
+Lincle,The Limbo,CYBER PUNK,STN,19,SPL,5,-1,2190,-,-
 Lincle,The Sampling Paradise,HARD TRANCE,Mamonis,19,SPB,1,-1,-1,-,-
 Lincle,The Sampling Paradise,HARD TRANCE,Mamonis,19,SPN,2,5,438,-,-
 Lincle,The Sampling Paradise,HARD TRANCE,Mamonis,19,SPH,3,9,940,-,-
@@ -3788,7 +3788,7 @@ tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPB,1,-1,-1,-,-
 tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPN,2,5,511,-,-
 tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPH,3,9,942,-,-
 tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPA,4,11,1398,-,-
-tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPL,5,-1,-1,-,-
+tricoro,Illegal Function Call,ORBITALIC CORE,U1-ASAMi,20,SPL,5,-1,2023,-,-
 tricoro,In Heaven,HEAVENLY TRANCE,Sota Fujimori,20,SPB,1,-1,-1,-,-
 tricoro,In Heaven,HEAVENLY TRANCE,Sota Fujimori,20,SPN,2,4,386,-,-
 tricoro,In Heaven,HEAVENLY TRANCE,Sota Fujimori,20,SPH,3,7,745,-,-
@@ -4163,7 +4163,7 @@ SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPB,1,-1,-1,-,-
 SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPN,2,6,593,-,-
 SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPH,3,9,1004,-,-
 SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPA,4,11,1566,-,-
-SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPL,5,-1,-1,-,-
+SPADA,Elektrick U-Phoria,UK HARDCORE,DJ Noriken,21,SPL,5,12,2050,-,-
 SPADA,Element of SPADA,HEALING POP,猫叉Master feat.霜月はるか,21,SPB,1,-1,-1,-,-
 SPADA,Element of SPADA,HEALING POP,猫叉Master feat.霜月はるか,21,SPN,2,3,355,-,-
 SPADA,Element of SPADA,HEALING POP,猫叉Master feat.霜月はるか,21,SPH,3,7,686,-,-
@@ -4240,7 +4240,7 @@ SPADA,KHAMEN BREAK,PROGRESSIVE GOSPEL,くふおー,21,SPH,3,7,723,-,-
 SPADA,KHAMEN BREAK,PROGRESSIVE GOSPEL,くふおー,21,SPA,4,11,1281,-,-
 SPADA,KHAMEN BREAK,PROGRESSIVE GOSPEL,くふおー,21,SPL,5,-1,-1,-,-
 SPADA,Last Dance,HARD STACC,dj TAKA,21,SPB,1,-1,-1,-,-
-SPADA,Last Dance,HARD STACC,dj TAKA,21,SPN,2,6,615,-,-
+SPADA,Last Dance,HARD STACC,dj TAKA,21,SPN,2,6,616,-,-
 SPADA,Last Dance,HARD STACC,dj TAKA,21,SPH,3,10,1040,-,-
 SPADA,Last Dance,HARD STACC,dj TAKA,21,SPA,4,12,1650,-,-
 SPADA,Last Dance,HARD STACC,dj TAKA,21,SPL,5,-1,-1,-,-
@@ -5563,7 +5563,7 @@ SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPB,1,-1,-1,-,-
 SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPN,2,3,285,-,-
 SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPH,3,7,623,-,-
 SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPA,4,10,959,-,-
-SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPL,5,-1,-1,-,-
+SINOBUZ,Sweet Clapper,J-POP,livetune+,24,SPL,5,-1,1485,-,-
 SINOBUZ,The Commanders,HARDSTYLE,USAO,24,SPB,1,-1,-1,-,-
 SINOBUZ,The Commanders,HARDSTYLE,USAO,24,SPN,2,5,486,-,-
 SINOBUZ,The Commanders,HARDSTYLE,USAO,24,SPH,3,8,764,-,-
@@ -5583,7 +5583,7 @@ SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPB,1,-1,-1,-,-
 SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPN,2,3,311,-,-
 SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPH,3,7,720,-,-
 SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPA,4,10,966,-,-
-SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPL,5,12,1566,-,-
+SINOBUZ,Umbral,UPLIFTING TRANCE,Maozon,24,SPL,5,-1,1566,-,-
 SINOBUZ,Venom,JUMP UP/HARDCORE,kors k vs L.E.D.-G,24,SPB,1,-1,-1,-,-
 SINOBUZ,Venom,JUMP UP/HARDCORE,kors k vs L.E.D.-G,24,SPN,2,6,656,-,-
 SINOBUZ,Venom,JUMP UP/HARDCORE,kors k vs L.E.D.-G,24,SPH,3,10,1110,-,-
@@ -5606,7 +5606,7 @@ SINOBUZ,XINOBIKILL,CYBER JAZZSTEP,SOUND HOLIC feat. Nana Takahashi,24,SPA,4,11,1
 SINOBUZ,XINOBIKILL,CYBER JAZZSTEP,SOUND HOLIC feat. Nana Takahashi,24,SPL,5,-1,-1,-,-
 SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPB,1,-1,-1,-,-
 SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPN,2,5,499,-,-
-SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPH,3,8,822,-,-
+SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPH,3,8,823,-,-
 SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPA,4,11,1345,-,-
 SINOBUZ,yamabiko (SINOBUZ Edition),夏の夕暮れと、DUBSTEP。,かめりあ,24,SPL,5,-1,-1,-,-
 SINOBUZ,Yellow Sketch(RX-Ver.S.P.L.),ALTERNATIVE ELECTRO,高田雅史,24,SPB,1,-1,-1,-,-
@@ -5667,7 +5667,7 @@ SINOBUZ,鴉,CROSSBREED,L.E.D.-G,24,SPL,5,-1,-1,-,-
 SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPB,1,-1,-1,-,-
 SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPN,2,5,518,-,-
 SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPH,3,8,805,-,-
-SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPA,4,10,1246,-,-
+SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPA,4,10,1247,-,-
 SINOBUZ,恋はどう？モロ◎波動OK☆方程式!!,理系ポップ,あべにゅうぷろじぇくと feat. 佐倉紗織 produced by ave;new,24,SPL,5,-1,-1,-,-
 SINOBUZ,九尾狐夜行,ORIENTAL FUSION,天狐,24,SPB,1,-1,-1,-,-
 SINOBUZ,九尾狐夜行,ORIENTAL FUSION,天狐,24,SPN,2,5,438,-,-
@@ -5924,11 +5924,11 @@ CANNON BALLERS,Let's bounce !!,FUTURE HOUSE,"BEMANI Sound Team ""Sota F.""",25,S
 CANNON BALLERS,Let's bounce !!,FUTURE HOUSE,"BEMANI Sound Team ""Sota F.""",25,SPH,3,7,658,-,-
 CANNON BALLERS,Let's bounce !!,FUTURE HOUSE,"BEMANI Sound Team ""Sota F.""",25,SPA,4,10,1146,-,-
 CANNON BALLERS,Let's bounce !!,FUTURE HOUSE,"BEMANI Sound Team ""Sota F.""",25,SPL,5,-1,-1,-,-
-CANNON BALLERS,Life Is A Game ft.DD"ナカタ"Metal,UPTEMPO HARDCORE,RoughSketch,25,SPB,1,-1,-1,-,-
-CANNON BALLERS,Life Is A Game ft.DD"ナカタ"Metal,UPTEMPO HARDCORE,RoughSketch,25,SPN,2,6,642,-,-
-CANNON BALLERS,Life Is A Game ft.DD"ナカタ"Metal,UPTEMPO HARDCORE,RoughSketch,25,SPH,3,10,999,-,-
-CANNON BALLERS,Life Is A Game ft.DD"ナカタ"Metal,UPTEMPO HARDCORE,RoughSketch,25,SPA,4,12,1775,-,-
-CANNON BALLERS,Life Is A Game ft.DD"ナカタ"Metal,UPTEMPO HARDCORE,RoughSketch,25,SPL,5,-1,-1,-,-
+CANNON BALLERS,"Life Is A Game ft.DD""ナカタ""Metal",UPTEMPO HARDCORE,RoughSketch,25,SPB,1,-1,-1,-,-
+CANNON BALLERS,"Life Is A Game ft.DD""ナカタ""Metal",UPTEMPO HARDCORE,RoughSketch,25,SPN,2,6,642,-,-
+CANNON BALLERS,"Life Is A Game ft.DD""ナカタ""Metal",UPTEMPO HARDCORE,RoughSketch,25,SPH,3,10,999,-,-
+CANNON BALLERS,"Life Is A Game ft.DD""ナカタ""Metal",UPTEMPO HARDCORE,RoughSketch,25,SPA,4,12,1775,-,-
+CANNON BALLERS,"Life Is A Game ft.DD""ナカタ""Metal",UPTEMPO HARDCORE,RoughSketch,25,SPL,5,-1,-1,-,-
 CANNON BALLERS,LIGHTS ft. EVO+,EMO BREAKS,lapix,25,SPB,1,-1,-1,-,-
 CANNON BALLERS,LIGHTS ft. EVO+,EMO BREAKS,lapix,25,SPN,2,4,388,-,-
 CANNON BALLERS,LIGHTS ft. EVO+,EMO BREAKS,lapix,25,SPH,3,7,729,-,-
@@ -6369,11 +6369,11 @@ Rootage,Necroxis Girl,GLITCH DUBSTEP,"BEMANI Sound Team ""HuΣeR""",26,SPN,2,6,6
 Rootage,Necroxis Girl,GLITCH DUBSTEP,"BEMANI Sound Team ""HuΣeR""",26,SPH,3,9,1027,-,-
 Rootage,Necroxis Girl,GLITCH DUBSTEP,"BEMANI Sound Team ""HuΣeR""",26,SPA,4,11,1441,-,-
 Rootage,Necroxis Girl,GLITCH DUBSTEP,"BEMANI Sound Team ""HuΣeR""",26,SPL,5,-1,-1,-,-
-Rootage,Next Tales 2 Oath (IIDX 20th Anniv "Ring" Theme),THEME SONG,Hommarju,26,SPB,1,-1,-1,-,-
-Rootage,Next Tales 2 Oath (IIDX 20th Anniv "Ring" Theme),THEME SONG,Hommarju,26,SPN,2,5,457,-,-
-Rootage,Next Tales 2 Oath (IIDX 20th Anniv "Ring" Theme),THEME SONG,Hommarju,26,SPH,3,9,847,-,-
-Rootage,Next Tales 2 Oath (IIDX 20th Anniv "Ring" Theme),THEME SONG,Hommarju,26,SPA,4,11,1387,-,-
-Rootage,Next Tales 2 Oath (IIDX 20th Anniv "Ring" Theme),THEME SONG,Hommarju,26,SPL,5,-1,-1,-,-
+Rootage,"Next Tales 2 Oath (IIDX 20th Anniv ""Ring"" Theme)",THEME SONG,Hommarju,26,SPB,1,-1,-1,-,-
+Rootage,"Next Tales 2 Oath (IIDX 20th Anniv ""Ring"" Theme)",THEME SONG,Hommarju,26,SPN,2,5,457,-,-
+Rootage,"Next Tales 2 Oath (IIDX 20th Anniv ""Ring"" Theme)",THEME SONG,Hommarju,26,SPH,3,9,847,-,-
+Rootage,"Next Tales 2 Oath (IIDX 20th Anniv ""Ring"" Theme)",THEME SONG,Hommarju,26,SPA,4,11,1387,-,-
+Rootage,"Next Tales 2 Oath (IIDX 20th Anniv ""Ring"" Theme)",THEME SONG,Hommarju,26,SPL,5,-1,-1,-,-
 Rootage,Night! Night! Night!,EURO DYNAMITE,MM,26,SPB,1,-1,-1,-,-
 Rootage,Night! Night! Night!,EURO DYNAMITE,MM,26,SPN,2,6,609,-,-
 Rootage,Night! Night! Night!,EURO DYNAMITE,MM,26,SPH,3,9,931,-,-
@@ -6663,7 +6663,7 @@ Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC
 Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC,"BEMANI Sound Team ""黒猫ダンジョン""",26,SPN,2,6,576,-,-
 Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC,"BEMANI Sound Team ""黒猫ダンジョン""",26,SPH,3,10,1190,-,-
 Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC,"BEMANI Sound Team ""黒猫ダンジョン""",26,SPA,4,11,1614,-,-
-Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC,"BEMANI Sound Team ""黒猫ダンジョン""",26,SPL,5,-1,-1,-,-
+Rootage,龍王の霊廟(Mausoleum Of The Primal Dragon),RETROSPECTIVE EPIC MUSIC,"BEMANI Sound Team ""黒猫ダンジョン""",26,SPL,5,12,2023,-,-
 Rootage,ミッドナイト☆WAR,BEMANIZED ROCKCORE,いちか,26,SPB,1,-1,-1,-,-
 Rootage,ミッドナイト☆WAR,BEMANIZED ROCKCORE,いちか,26,SPN,2,5,414,-,-
 Rootage,ミッドナイト☆WAR,BEMANIZED ROCKCORE,いちか,26,SPH,3,8,800,-,-
@@ -6752,7 +6752,7 @@ HEROIC VERSE,Bow shock!!,JAZZ PIANO TRANCE,Xceon,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPN,2,5,502,-,-
 HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPH,3,8,777,-,-
-HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPA,4,10,1242,-,-
+HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPA,4,10,1245,-,-
 HEROIC VERSE,Calvados Queen,JAZZ ROCK,OSTER project feat. かなたん,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Change Yourself,TRANCE,ARM × kradness,27,SPN,2,5,493,-,-
@@ -6958,7 +6958,7 @@ HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPN,2,5,480,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPH,3,8,821,-,-
 HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPA,4,11,1471,-,-
-HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPL,5,12,2204,-,-
+HEROIC VERSE,Override,EUPHORIC HARDCORE,Nhato,27,SPL,5,-1,2204,-,-
 HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPB,1,-1,-1,-,-
 HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPN,2,6,638,-,-
 HEROIC VERSE,PHASE SHIFT MANEUVER,PSYSTYLE,"BEMANI Sound Team ""L.E.D."" ",27,SPH,3,9,886,-,-
@@ -7082,7 +7082,7 @@ HEROIC VERSE,THE F∀UST,PIERROT CORE,Masqed Pierrot,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPN,2,4,444,-,-
 HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPH,3,8,767,-,-
-HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPA,4,10,1216,-,-
+HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPA,4,10,1215,-,-
 HEROIC VERSE,The Sky of Sadness,WORLD/CONTEMPORARY,猫叉Master,27,SPL,5,-1,-1,-,-
 HEROIC VERSE,Theory,TRAP,YUTO,27,SPB,1,-1,-1,-,-
 HEROIC VERSE,Theory,TRAP,YUTO,27,SPN,2,5,412,-,-
@@ -7252,7 +7252,7 @@ CastHour,Blue Bird feat. Kanae Asaba,LATIN FUSION POP,Nhato,29,SPL,5,-1,-1,-,-
 CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPB,1,-1,-1,-,-
 CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPN,2,5,524,-,-
 CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPH,3,8,927,-,-
-CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPA,4,10,1243,-,-
+CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPA,4,11,1243,-,-
 CastHour,DISPARATE,CYBERPUNK,"BEMANI Sound Team ""Captain Sonic""",29,SPL,5,-1,-1,-,-
 CastHour,Don't believe the hype,MIXTURE,DJ Mass MAD Izm* feat.H14(LEONAIR),29,SPB,1,-1,-1,-,-
 CastHour,Don't believe the hype,MIXTURE,DJ Mass MAD Izm* feat.H14(LEONAIR),29,SPN,2,6,588,-,-
@@ -7398,12 +7398,12 @@ CastHour,デモーニッシュ,J-POP,ツユ,29,SPB,1,1,133,-,-
 CastHour,デモーニッシュ,J-POP,ツユ,29,SPN,2,5,471,-,-
 CastHour,デモーニッシュ,J-POP,ツユ,29,SPH,3,8,745,-,-
 CastHour,デモーニッシュ,J-POP,ツユ,29,SPA,4,11,1205,-,-
-CastHour,デモーニッシュ,J-POP,ツユ,29,SPL,5,-1,-1,-,-
+CastHour,デモーニッシュ,J-POP,ツユ,29,SPL,5,12,1580,-,-
 CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPB,1,-1,-1,-,-
 CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPN,2,6,560,-,-
 CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPH,3,9,980,-,-
 CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPA,4,11,1367,-,-
-CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPL,5,-1,-1,-,-
+CastHour,ハイテックトキオ,ハイテックトキオ,"lapix ∞ BEMANI Sound Team ""Sota Fujimori""",29,SPL,5,12,1657,-,-
 CastHour,愛しくてラヴィンユー ft. マナ,EURO BEAT,Xceon,29,SPB,1,-1,-1,-,-
 CastHour,愛しくてラヴィンユー ft. マナ,EURO BEAT,Xceon,29,SPN,2,4,407,-,-
 CastHour,愛しくてラヴィンユー ft. マナ,EURO BEAT,Xceon,29,SPH,3,7,757,-,-
@@ -7423,7 +7423,7 @@ CastHour,踊,J-POP,Ado,29,SPB,1,1,92,-,-
 CastHour,踊,J-POP,Ado,29,SPN,2,3,183,-,-
 CastHour,踊,J-POP,Ado,29,SPH,3,6,415,-,-
 CastHour,踊,J-POP,Ado,29,SPA,4,9,818,-,-
-CastHour,踊,J-POP,Ado,29,SPL,5,-1,-1,-,-
+CastHour,踊,J-POP,Ado,29,SPL,5,10,1063,-,-
 CastHour,オールトの雲,GALAXY QUEST,OSTER project,29,SPB,1,-1,-1,-,-
 CastHour,オールトの雲,GALAXY QUEST,OSTER project,29,SPN,2,6,617,-,-
 CastHour,オールトの雲,GALAXY QUEST,OSTER project,29,SPH,3,9,1015,-,-
@@ -7433,7 +7433,7 @@ CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPB,1,2,152,-,-
 CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPN,2,4,328,-,-
 CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPH,3,7,611,-,-
 CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPA,4,10,901,-,-
-CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPL,5,-1,-1,-,-
+CastHour,シル・ヴ・プレジデント,J-POP,P丸様。,29,SPL,5,11,1299,-,-
 CastHour,ウツシミウツシ,ALTERNATIVE DANCE CORE,"BEMANI Sound Team ""PHQUASE"" feat.ぁゅ",29,SPB,1,-1,-1,-,-
 CastHour,ウツシミウツシ,ALTERNATIVE DANCE CORE,"BEMANI Sound Team ""PHQUASE"" feat.ぁゅ",29,SPN,2,6,640,-,-
 CastHour,ウツシミウツシ,ALTERNATIVE DANCE CORE,"BEMANI Sound Team ""PHQUASE"" feat.ぁゅ",29,SPH,3,9,1049,-,-
@@ -7464,6 +7464,21 @@ CastHour,ぐだふわエブリデー,IIDX EDITION,Remixed by Xceon feat. Marcia(
 CastHour,ぐだふわエブリデー,IIDX EDITION,Remixed by Xceon feat. Marcia(幽閉サテライト),29,SPH,3,8,665,-,-
 CastHour,ぐだふわエブリデー,IIDX EDITION,Remixed by Xceon feat. Marcia(幽閉サテライト),29,SPA,4,11,1169,-,-
 CastHour,ぐだふわエブリデー,IIDX EDITION,Remixed by Xceon feat. Marcia(幽閉サテライト),29,SPL,5,-1,-1,-,-
+CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPB,1,1,158,-,-
+CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPN,2,3,312,-,-
+CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPH,3,6,589,-,-
+CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPA,4,9,918,-,-
+CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPL,5,-1,-1,-,-
+CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPB,1,2,185,-,-
+CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPN,2,5,327,-,-
+CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPH,3,7,625,-,-
+CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPA,4,10,1031,-,-
+CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPL,5,-1,-1,-,-
+CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPB,1,3,293,-,-
+CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPN,2,5,554,-,-
+CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPH,3,8,905,-,-
+CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPA,4,11,1557,-,-
+CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPL,5,-1,-1,-,-
 CastHour,ナイトフィクション,ALTERNATIVE,中山真斗 feat. CHAN,29,SPB,1,-1,-1,-,-
 CastHour,ナイトフィクション,ALTERNATIVE,中山真斗 feat. CHAN,29,SPN,2,4,367,-,-
 CastHour,ナイトフィクション,ALTERNATIVE,中山真斗 feat. CHAN,29,SPH,3,8,790,-,-
@@ -7499,11 +7514,11 @@ CastHour,Stepper,DANCE MUSIC,PSYQUI,29,SPN,2,4,356,-,-
 CastHour,Stepper,DANCE MUSIC,PSYQUI,29,SPH,3,8,780,-,-
 CastHour,Stepper,DANCE MUSIC,PSYQUI,29,SPA,4,10,1105,-,-
 CastHour,Stepper,DANCE MUSIC,PSYQUI,29,SPL,5,-1,-1,-,-
-CastHour,青の洞窟,AQUARIUM QUATERSTEP,Ujico*,29,SPB,1,-1,-1,-,-
-CastHour,青の洞窟,AQUARIUM QUATERSTEP,Ujico*,29,SPN,2,4,455,-,-
-CastHour,青の洞窟,AQUARIUM QUATERSTEP,Ujico*,29,SPH,3,9,1033,-,-
-CastHour,青の洞窟,AQUARIUM QUATERSTEP,Ujico*,29,SPA,4,11,1600,-,-
-CastHour,青の洞窟,AQUARIUM QUATERSTEP,Ujico*,29,SPL,5,-1,-1,-,-
+CastHour,青の洞窟,AQUARIUM QUARTERSTEP,Ujico*,29,SPB,1,-1,-1,-,-
+CastHour,青の洞窟,AQUARIUM QUARTERSTEP,Ujico*,29,SPN,2,4,455,-,-
+CastHour,青の洞窟,AQUARIUM QUARTERSTEP,Ujico*,29,SPH,3,9,1033,-,-
+CastHour,青の洞窟,AQUARIUM QUARTERSTEP,Ujico*,29,SPA,4,11,1600,-,-
+CastHour,青の洞窟,AQUARIUM QUARTERSTEP,Ujico*,29,SPL,5,-1,-1,-,-
 CastHour,Banger Banger Banger Banger,EARLY RAVE,nora2r,29,SPB,1,-1,-1,-,-
 CastHour,Banger Banger Banger Banger,EARLY RAVE,nora2r,29,SPN,2,5,496,-,-
 CastHour,Banger Banger Banger Banger,EARLY RAVE,nora2r,29,SPH,3,9,907,-,-
@@ -7565,8 +7580,8 @@ CastHour,Smalt #28598F,TECH DANCE,REMO-CON,29,SPH,3,10,1192,-,-
 CastHour,Smalt #28598F,TECH DANCE,REMO-CON,29,SPA,4,12,1725,-,-
 CastHour,Smalt #28598F,TECH DANCE,REMO-CON,29,SPL,5,-1,-1,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPB,1,-1,-1,-,-
-CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPN,2,6,-1,-,-
-CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPH,3,10,-1,-,-
+CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPN,2,6,559,-,-
+CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPH,3,10,1149,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPA,4,12,1886,-,-
 CastHour,RAGE feat.H14 of LEONAIR,MIXTURE,DJ Mass MAD Izm*,29,SPL,5,-1,-1,-,-
 CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPB,1,-1,-1,-,-
@@ -7576,7 +7591,7 @@ CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPA,4,10,1168,-,-
 CastHour,アクマフカ,ROCK,Pizuya's Cell,29,SPL,5,-1,-1,-,-
 CastHour,Emera,EDM STYLE,PON,29,SPB,1,-1,-1,-,-
 CastHour,Emera,EDM STYLE,PON,29,SPN,2,5,450,-,-
-CastHour,Emera,EDM STYLE,PON,29,SPH,3,-1,831,-,-
+CastHour,Emera,EDM STYLE,PON,29,SPH,3,8,831,-,-
 CastHour,Emera,EDM STYLE,PON,29,SPA,4,11,1179,-,-
 CastHour,Emera,EDM STYLE,PON,29,SPL,5,-1,-1,-,-
 CastHour,Pout,FUTURE BASS,"BEMANI Sound Team ""SYUNN""",29,SPB,1,-1,-1,-,-
@@ -7599,6 +7614,36 @@ CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPN,2,7,627,-,-
 CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPH,3,10,1206,-,-
 CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPA,4,12,1946,-,-
 CastHour,WHA,CROSSO-WHA-R,かめりあ involving ななひら,29,SPL,5,-1,-1,-,-
+CastHour,AMICABLE,FUTURE POP,"BEMANI Sound Team ""Sota F.""",29,SPB,1,-1,-1,-,-
+CastHour,AMICABLE,FUTURE POP,"BEMANI Sound Team ""Sota F.""",29,SPN,2,5,519,-,-
+CastHour,AMICABLE,FUTURE POP,"BEMANI Sound Team ""Sota F.""",29,SPH,3,8,809,-,-
+CastHour,AMICABLE,FUTURE POP,"BEMANI Sound Team ""Sota F.""",29,SPA,4,10,1259,-,-
+CastHour,AMICABLE,FUTURE POP,"BEMANI Sound Team ""Sota F.""",29,SPL,5,-1,-1,-,-
+CastHour,Get set， Go! feat.Kanae Asaba,FUTURE BOUNCE,MK,29,SPB,1,-1,-1,-,-
+CastHour,Get set， Go! feat.Kanae Asaba,FUTURE BOUNCE,MK,29,SPN,2,4,425,-,-
+CastHour,Get set， Go! feat.Kanae Asaba,FUTURE BOUNCE,MK,29,SPH,3,7,740,-,-
+CastHour,Get set， Go! feat.Kanae Asaba,FUTURE BOUNCE,MK,29,SPA,4,10,1069,-,-
+CastHour,Get set， Go! feat.Kanae Asaba,FUTURE BOUNCE,MK,29,SPL,5,-1,-1,-,-
+CastHour,10000 MILES AWAY,DRUMSTEP,AJURIKA,29,SPB,1,-1,-1,-,-
+CastHour,10000 MILES AWAY,DRUMSTEP,AJURIKA,29,SPN,2,5,525,-,-
+CastHour,10000 MILES AWAY,DRUMSTEP,AJURIKA,29,SPH,3,9,842,-,-
+CastHour,10000 MILES AWAY,DRUMSTEP,AJURIKA,29,SPA,4,11,1494,-,-
+CastHour,10000 MILES AWAY,DRUMSTEP,AJURIKA,29,SPL,5,-1,-1,-,-
+CastHour,雪上断火,HIP ROCK3,Des-ROW・組,29,SPB,1,-1,-1,-,-
+CastHour,雪上断火,HIP ROCK3,Des-ROW・組,29,SPN,2,6,511,-,-
+CastHour,雪上断火,HIP ROCK3,Des-ROW・組,29,SPH,3,10,940,-,-
+CastHour,雪上断火,HIP ROCK3,Des-ROW・組,29,SPA,4,12,1544,-,-
+CastHour,雪上断火,HIP ROCK3,Des-ROW・組,29,SPL,5,-1,-1,-,-
+CastHour,Arkadia,FREEFORM HARDCORE,Hommarju ft. Mayumi Morinaga,29,SPB,1,-1,-1,-,-
+CastHour,Arkadia,FREEFORM HARDCORE,Hommarju ft. Mayumi Morinaga,29,SPN,2,5,591,-,-
+CastHour,Arkadia,FREEFORM HARDCORE,Hommarju ft. Mayumi Morinaga,29,SPH,3,9,1071,-,-
+CastHour,Arkadia,FREEFORM HARDCORE,Hommarju ft. Mayumi Morinaga,29,SPA,4,12,1873,-,-
+CastHour,Arkadia,FREEFORM HARDCORE,Hommarju ft. Mayumi Morinaga,29,SPL,5,-1,-1,-,-
+CastHour,hard-wired,HIDEOUT,Yuta Imai ≡ Blacklolita,29,SPB,1,-1,-1,-,-
+CastHour,hard-wired,HIDEOUT,Yuta Imai ≡ Blacklolita,29,SPN,2,7,821,-,-
+CastHour,hard-wired,HIDEOUT,Yuta Imai ≡ Blacklolita,29,SPH,3,10,1208,-,-
+CastHour,hard-wired,HIDEOUT,Yuta Imai ≡ Blacklolita,29,SPA,4,12,1901,-,-
+CastHour,hard-wired,HIDEOUT,Yuta Imai ≡ Blacklolita,29,SPL,5,-1,-1,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPB,1,-1,-1,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPN,2,5,499,-,-
 CastHour,《GRANDMASTER》,TRIUMPH,Blacklolita,29,SPH,3,9,939,-,-
@@ -7644,6 +7689,21 @@ CastHour,Push on Beats!～音ゲの国のeX-ストリーマー～,AKIBA-POP,MOSA
 CastHour,Push on Beats!～音ゲの国のeX-ストリーマー～,AKIBA-POP,MOSAIC.WAV,29,SPH,3,9,1018,-,-
 CastHour,Push on Beats!～音ゲの国のeX-ストリーマー～,AKIBA-POP,MOSAIC.WAV,29,SPA,4,12,1748,-,-
 CastHour,Push on Beats!～音ゲの国のeX-ストリーマー～,AKIBA-POP,MOSAIC.WAV,29,SPL,5,-1,-1,-,-
+CastHour,"ピアノ独奏無言歌 ""灰燼""",THRENODY,"BEMANI Sound Team ""Virkato Wakhmaninov""",29,SPB,1,-1,-1,-,-
+CastHour,"ピアノ独奏無言歌 ""灰燼""",THRENODY,"BEMANI Sound Team ""Virkato Wakhmaninov""",29,SPN,2,6,608,-,-
+CastHour,"ピアノ独奏無言歌 ""灰燼""",THRENODY,"BEMANI Sound Team ""Virkato Wakhmaninov""",29,SPH,3,10,1256,-,-
+CastHour,"ピアノ独奏無言歌 ""灰燼""",THRENODY,"BEMANI Sound Team ""Virkato Wakhmaninov""",29,SPA,4,12,1977,-,-
+CastHour,"ピアノ独奏無言歌 ""灰燼""",THRENODY,"BEMANI Sound Team ""Virkato Wakhmaninov""",29,SPL,5,-1,-1,-,-
+CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPB,1,-1,-1,-,-
+CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPN,2,5,476,-,-
+CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPH,3,9,1006,-,-
+CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPA,4,11,1503,-,-
+CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPL,5,-1,-1,-,-
+CastHour,GRAVITON,NEUROFUNK,"BEMANI Sound Team ""L.E.D.""",29,SPB,1,-1,-1,-,-
+CastHour,GRAVITON,NEUROFUNK,"BEMANI Sound Team ""L.E.D.""",29,SPN,2,6,597,-,-
+CastHour,GRAVITON,NEUROFUNK,"BEMANI Sound Team ""L.E.D.""",29,SPH,3,10,1040,-,-
+CastHour,GRAVITON,NEUROFUNK,"BEMANI Sound Team ""L.E.D.""",29,SPA,4,12,1762,-,-
+CastHour,GRAVITON,NEUROFUNK,"BEMANI Sound Team ""L.E.D.""",29,SPL,5,-1,-1,-,-
 CastHour,SPARK IN THE NIGHT,EUPHORIC HARDSTYLE,"BEMANI Sound Team ""L.E.D.-G""",29,SPB,1,-1,-1,-,-
 CastHour,SPARK IN THE NIGHT,EUPHORIC HARDSTYLE,"BEMANI Sound Team ""L.E.D.-G""",29,SPN,2,4,440,-,-
 CastHour,SPARK IN THE NIGHT,EUPHORIC HARDSTYLE,"BEMANI Sound Team ""L.E.D.-G""",29,SPH,3,8,734,-,-
@@ -7679,38 +7739,438 @@ SIRIUS,Do Back Burn,ELECTRO,PRASTIK DANCEFLOOR,17,SPL,5,-1,-1,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPH,3,7,606,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPA,4,9,933,-,-
 7th style,Somebody Like You,POPS,good-cool,7,SPL,5,-1,-1,-,-
-BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPB,1,-1,-1,-,-
-BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPN,2,6,576,-,-
-BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPH,3,9,906,-,-
-BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPA,4,10,1208,-,-
-BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPL,5,-1,-1,-,-
-CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPB,1,-1,-1,-,-
-CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPN,2,3,312,-,-
-CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPH,3,6,589,-,-
-CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPA,4,9,918,-,-
-CastHour,VR - Virtual Reality (prod.by Snail's House),DANCE MUSIC,KMNZ,29,SPL,5,-1,-1,-,-
-CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPB,1,-1,-1,-,-
-CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPN,2,5,327,-,-
-CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPH,3,7,625,-,-
-CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPA,4,10,1031,-,-
-CastHour,あいつら全員同窓会,J-POP,ずっと真夜中でいいのに。,29,SPL,5,-1,-1,-,-
-CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPB,1,-1,-1,-,-
-CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPN,2,5,554,-,-
-CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPH,3,8,905,-,-
-CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPA,4,11,1557,-,-
-CastHour,グッバイ宣言,IIDX EDITION,Remixed by uno(IOSYS) & Liqo feat. Chiyoko,29,SPL,5,-1,-1,-,-
-CastHour,ピアノ独奏無言歌 "灰燼",THRENODY,BEMANI Sound Team "Virkato Wakhmaninov",29,SPB,1,-1,-1,-,-
-CastHour,ピアノ独奏無言歌 "灰燼",THRENODY,BEMANI Sound Team "Virkato Wakhmaninov",29,SPN,2,6,508,-,-
-CastHour,ピアノ独奏無言歌 "灰燼",THRENODY,BEMANI Sound Team "Virkato Wakhmaninov",29,SPH,3,10,1256,-,-
-CastHour,ピアノ独奏無言歌 "灰燼",THRENODY,BEMANI Sound Team "Virkato Wakhmaninov",29,SPA,4,12,1977,-,-
-CastHour,ピアノ独奏無言歌 "灰燼",THRENODY,BEMANI Sound Team "Virkato Wakhmaninov",29,SPL,5,-1,-1,-,-
-CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPB,1,-1,-1,-,-
-CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPN,2,5,476,-,-
-CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPH,3,9,1006,-,-
-CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPA,4,11,1503,-,-
-CastHour,Divine Heaven,BIG ANTHEM,Absolute The 4th,29,SPL,5,-1,-1,-,-
 Lincle,GIGANT,MARCHING ROCK,seiya-murai,19,SPB,1,-1,-1,-,-
 Lincle,GIGANT,MARCHING ROCK,seiya-murai,19,SPN,2,3,297,-,-
 Lincle,GIGANT,MARCHING ROCK,seiya-murai,19,SPH,3,6,601,-,-
 Lincle,GIGANT,MARCHING ROCK,seiya-murai,19,SPA,4,9,890,-,-
 Lincle,GIGANT,MARCHING ROCK,seiya-murai,19,SPL,5,11,1484,-,-
+HAPPY SKY,mind the gap,UK PROGRESSIVE,Osamu Kubota,12,SPB,1,-1,-1,-,-
+HAPPY SKY,mind the gap,UK PROGRESSIVE,Osamu Kubota,12,SPN,2,5,395,-,-
+HAPPY SKY,mind the gap,UK PROGRESSIVE,Osamu Kubota,12,SPH,3,7,550,-,-
+HAPPY SKY,mind the gap,UK PROGRESSIVE,Osamu Kubota,12,SPA,4,9,840,-,-
+HAPPY SKY,mind the gap,UK PROGRESSIVE,Osamu Kubota,12,SPL,5,-1,-1,-,-
+BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPB,1,-1,-1,-,-
+BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPN,2,6,576,-,-
+BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPH,3,9,906,-,-
+BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPA,4,10,1208,-,-
+BISTROVER,"Hands Up feat. kradness BEMANI Sound Team ""Sota Fujimori"" Remix",THE 4TH,"BEMANI Sound Team ""Sota Fujimori""",28,SPL,5,-1,-1,-,-
+RESIDENT,anthracene,HYPER EUROBEATECHNO,DJ Command (Eurobeat Union),30,SPB,1,-1,-1,-,-
+RESIDENT,anthracene,HYPER EUROBEATECHNO,DJ Command (Eurobeat Union),30,SPN,2,6,488,-,-
+RESIDENT,anthracene,HYPER EUROBEATECHNO,DJ Command (Eurobeat Union),30,SPH,3,9,986,-,-
+RESIDENT,anthracene,HYPER EUROBEATECHNO,DJ Command (Eurobeat Union),30,SPA,4,12,1744,-,-
+RESIDENT,anthracene,HYPER EUROBEATECHNO,DJ Command (Eurobeat Union),30,SPL,5,-1,-1,-,-
+RESIDENT,B.O.D.Y.,HARD BODY MUSIC,"BEMANI Sound Team ""L.E.D. Sota F.""& Starbitz",30,SPB,1,-1,-1,-,-
+RESIDENT,B.O.D.Y.,HARD BODY MUSIC,"BEMANI Sound Team ""L.E.D. Sota F.""& Starbitz",30,SPN,2,6,558,-,-
+RESIDENT,B.O.D.Y.,HARD BODY MUSIC,"BEMANI Sound Team ""L.E.D. Sota F.""& Starbitz",30,SPH,3,10,1103,-,-
+RESIDENT,B.O.D.Y.,HARD BODY MUSIC,"BEMANI Sound Team ""L.E.D. Sota F.""& Starbitz",30,SPA,4,12,1734,-,-
+RESIDENT,B.O.D.Y.,HARD BODY MUSIC,"BEMANI Sound Team ""L.E.D. Sota F.""& Starbitz",30,SPL,5,-1,-1,-,-
+RESIDENT,Bad Encryption,NEO INDUSTRIAL,"BEMANI Sound Team ""ZAQUVA"" respect for teranoid",30,SPB,1,-1,-1,-,-
+RESIDENT,Bad Encryption,NEO INDUSTRIAL,"BEMANI Sound Team ""ZAQUVA"" respect for teranoid",30,SPN,2,7,678,-,-
+RESIDENT,Bad Encryption,NEO INDUSTRIAL,"BEMANI Sound Team ""ZAQUVA"" respect for teranoid",30,SPH,3,10,1015,-,-
+RESIDENT,Bad Encryption,NEO INDUSTRIAL,"BEMANI Sound Team ""ZAQUVA"" respect for teranoid",30,SPA,4,12,1633,-,-
+RESIDENT,Bad Encryption,NEO INDUSTRIAL,"BEMANI Sound Team ""ZAQUVA"" respect for teranoid",30,SPL,5,-1,-1,-,-
+RESIDENT,C-C-C-N-N-N,ELECTRONICORE,RoughSkreamZ feat. Aikapin,30,SPB,1,-1,-1,-,-
+RESIDENT,C-C-C-N-N-N,ELECTRONICORE,RoughSkreamZ feat. Aikapin,30,SPN,2,5,504,-,-
+RESIDENT,C-C-C-N-N-N,ELECTRONICORE,RoughSkreamZ feat. Aikapin,30,SPH,3,9,898,-,-
+RESIDENT,C-C-C-N-N-N,ELECTRONICORE,RoughSkreamZ feat. Aikapin,30,SPA,4,11,1434,-,-
+RESIDENT,C-C-C-N-N-N,ELECTRONICORE,RoughSkreamZ feat. Aikapin,30,SPL,5,-1,-1,-,-
+RESIDENT,CUE CUE RESCUE,EMERGENCY CORE,TORIENA,30,SPB,1,-1,-1,-,-
+RESIDENT,CUE CUE RESCUE,EMERGENCY CORE,TORIENA,30,SPN,2,5,580,-,-
+RESIDENT,CUE CUE RESCUE,EMERGENCY CORE,TORIENA,30,SPH,3,8,853,-,-
+RESIDENT,CUE CUE RESCUE,EMERGENCY CORE,TORIENA,30,SPA,4,10,1278,-,-
+RESIDENT,CUE CUE RESCUE,EMERGENCY CORE,TORIENA,30,SPL,5,-1,-1,-,-
+RESIDENT,Driver,BIGROOM D&B,Masayoshi Iimori,30,SPB,1,-1,-1,-,-
+RESIDENT,Driver,BIGROOM D&B,Masayoshi Iimori,30,SPN,2,5,450,-,-
+RESIDENT,Driver,BIGROOM D&B,Masayoshi Iimori,30,SPH,3,7,651,-,-
+RESIDENT,Driver,BIGROOM D&B,Masayoshi Iimori,30,SPA,4,9,906,-,-
+RESIDENT,Driver,BIGROOM D&B,Masayoshi Iimori,30,SPL,5,-1,-1,-,-
+RESIDENT,EZ DO DANCE,IIDX EDITION,Remixed by kors k,30,SPB,1,2,196,-,-
+RESIDENT,EZ DO DANCE,IIDX EDITION,Remixed by kors k,30,SPN,2,4,388,-,-
+RESIDENT,EZ DO DANCE,IIDX EDITION,Remixed by kors k,30,SPH,3,7,714,-,-
+RESIDENT,EZ DO DANCE,IIDX EDITION,Remixed by kors k,30,SPA,4,9,992,-,-
+RESIDENT,EZ DO DANCE,IIDX EDITION,Remixed by kors k,30,SPL,5,-1,-1,-,-
+RESIDENT,GET UP AGAIN,COMPETITIVE ROCKSTEP,Zekk feat. くらべ,30,SPB,1,-1,-1,-,-
+RESIDENT,GET UP AGAIN,COMPETITIVE ROCKSTEP,Zekk feat. くらべ,30,SPN,2,6,564,-,-
+RESIDENT,GET UP AGAIN,COMPETITIVE ROCKSTEP,Zekk feat. くらべ,30,SPH,3,8,856,-,-
+RESIDENT,GET UP AGAIN,COMPETITIVE ROCKSTEP,Zekk feat. くらべ,30,SPA,4,10,1226,-,-
+RESIDENT,GET UP AGAIN,COMPETITIVE ROCKSTEP,Zekk feat. くらべ,30,SPL,5,-1,-1,-,-
+RESIDENT,LADS,HYBRID FOLK,"BEMANI Sound Team ""PON""",30,SPB,1,-1,-1,-,-
+RESIDENT,LADS,HYBRID FOLK,"BEMANI Sound Team ""PON""",30,SPN,2,5,474,-,-
+RESIDENT,LADS,HYBRID FOLK,"BEMANI Sound Team ""PON""",30,SPH,3,7,834,-,-
+RESIDENT,LADS,HYBRID FOLK,"BEMANI Sound Team ""PON""",30,SPA,4,10,1155,-,-
+RESIDENT,LADS,HYBRID FOLK,"BEMANI Sound Team ""PON""",30,SPL,5,-1,-1,-,-
+RESIDENT,Luna Plena,MELODIC J-ROCK,アオワイファイ,30,SPB,1,-1,-1,-,-
+RESIDENT,Luna Plena,MELODIC J-ROCK,アオワイファイ,30,SPN,2,5,438,-,-
+RESIDENT,Luna Plena,MELODIC J-ROCK,アオワイファイ,30,SPH,3,8,814,-,-
+RESIDENT,Luna Plena,MELODIC J-ROCK,アオワイファイ,30,SPA,4,10,1309,-,-
+RESIDENT,Luna Plena,MELODIC J-ROCK,アオワイファイ,30,SPL,5,-1,-1,-,-
+RESIDENT,Meissa,PROGRESSIVE DRUM'N'BASS,"BEMANI Sound Team ""Yvya""",30,SPB,1,-1,-1,-,-
+RESIDENT,Meissa,PROGRESSIVE DRUM'N'BASS,"BEMANI Sound Team ""Yvya""",30,SPN,2,5,465,-,-
+RESIDENT,Meissa,PROGRESSIVE DRUM'N'BASS,"BEMANI Sound Team ""Yvya""",30,SPH,3,9,826,-,-
+RESIDENT,Meissa,PROGRESSIVE DRUM'N'BASS,"BEMANI Sound Team ""Yvya""",30,SPA,4,12,1435,-,-
+RESIDENT,Meissa,PROGRESSIVE DRUM'N'BASS,"BEMANI Sound Team ""Yvya""",30,SPL,5,-1,-1,-,-
+RESIDENT,Move UR Body,HAPPY HARDCORE,nora2r,30,SPB,1,-1,-1,-,-
+RESIDENT,Move UR Body,HAPPY HARDCORE,nora2r,30,SPN,2,6,597,-,-
+RESIDENT,Move UR Body,HAPPY HARDCORE,nora2r,30,SPH,3,9,919,-,-
+RESIDENT,Move UR Body,HAPPY HARDCORE,nora2r,30,SPA,4,11,1327,-,-
+RESIDENT,Move UR Body,HAPPY HARDCORE,nora2r,30,SPL,5,-1,-1,-,-
+RESIDENT,No Border,TRANCE,"BEMANI Sound Team ""dj TAKA"" feat.Sana",30,SPB,1,-1,-1,-,-
+RESIDENT,No Border,TRANCE,"BEMANI Sound Team ""dj TAKA"" feat.Sana",30,SPN,2,6,589,-,-
+RESIDENT,No Border,TRANCE,"BEMANI Sound Team ""dj TAKA"" feat.Sana",30,SPH,3,10,1013,-,-
+RESIDENT,No Border,TRANCE,"BEMANI Sound Team ""dj TAKA"" feat.Sana",30,SPA,4,12,1895,-,-
+RESIDENT,No Border,TRANCE,"BEMANI Sound Team ""dj TAKA"" feat.Sana",30,SPL,5,-1,-1,-,-
+RESIDENT,Peng-Ging Sky High!!,HARD ELECTRIC POP,"moimoi + BEMANI Sound Team ""S-C-U""",30,SPB,1,-1,-1,-,-
+RESIDENT,Peng-Ging Sky High!!,HARD ELECTRIC POP,"moimoi + BEMANI Sound Team ""S-C-U""",30,SPN,2,5,558,-,-
+RESIDENT,Peng-Ging Sky High!!,HARD ELECTRIC POP,"moimoi + BEMANI Sound Team ""S-C-U""",30,SPH,3,7,746,-,-
+RESIDENT,Peng-Ging Sky High!!,HARD ELECTRIC POP,"moimoi + BEMANI Sound Team ""S-C-U""",30,SPA,4,10,1336,-,-
+RESIDENT,Peng-Ging Sky High!!,HARD ELECTRIC POP,"moimoi + BEMANI Sound Team ""S-C-U""",30,SPL,5,-1,-1,-,-
+RESIDENT,Perfect Plan,CRIME JAZZ BROKEN BEATS,Dirty Androids,30,SPB,1,-1,-1,-,-
+RESIDENT,Perfect Plan,CRIME JAZZ BROKEN BEATS,Dirty Androids,30,SPN,2,6,595,-,-
+RESIDENT,Perfect Plan,CRIME JAZZ BROKEN BEATS,Dirty Androids,30,SPH,3,9,912,-,-
+RESIDENT,Perfect Plan,CRIME JAZZ BROKEN BEATS,Dirty Androids,30,SPA,4,11,1328,-,-
+RESIDENT,Perfect Plan,CRIME JAZZ BROKEN BEATS,Dirty Androids,30,SPL,5,-1,-1,-,-
+RESIDENT,Programmed Genom,PSYCHEDELIC TRANCE,kors k,30,SPB,1,-1,-1,-,-
+RESIDENT,Programmed Genom,PSYCHEDELIC TRANCE,kors k,30,SPN,2,5,570,-,-
+RESIDENT,Programmed Genom,PSYCHEDELIC TRANCE,kors k,30,SPH,3,8,826,-,-
+RESIDENT,Programmed Genom,PSYCHEDELIC TRANCE,kors k,30,SPA,4,11,1214,-,-
+RESIDENT,Programmed Genom,PSYCHEDELIC TRANCE,kors k,30,SPL,5,-1,-1,-,-
+RESIDENT,Rewind Time,GLITCH HOP,Dazsta,30,SPB,1,-1,-1,-,-
+RESIDENT,Rewind Time,GLITCH HOP,Dazsta,30,SPN,2,4,361,-,-
+RESIDENT,Rewind Time,GLITCH HOP,Dazsta,30,SPH,3,7,658,-,-
+RESIDENT,Rewind Time,GLITCH HOP,Dazsta,30,SPA,4,10,1107,-,-
+RESIDENT,Rewind Time,GLITCH HOP,Dazsta,30,SPL,5,-1,-1,-,-
+RESIDENT,Ruler or Loser,DRUM & BASS,Maozon feat. Nadia,30,SPB,1,-1,-1,-,-
+RESIDENT,Ruler or Loser,DRUM & BASS,Maozon feat. Nadia,30,SPN,2,5,494,-,-
+RESIDENT,Ruler or Loser,DRUM & BASS,Maozon feat. Nadia,30,SPH,3,8,845,-,-
+RESIDENT,Ruler or Loser,DRUM & BASS,Maozon feat. Nadia,30,SPA,4,11,1339,-,-
+RESIDENT,Ruler or Loser,DRUM & BASS,Maozon feat. Nadia,30,SPL,5,-1,-1,-,-
+RESIDENT,Seraph,UNSUNG SHADOWS,satella feat.棗いつき,30,SPB,1,-1,-1,-,-
+RESIDENT,Seraph,UNSUNG SHADOWS,satella feat.棗いつき,30,SPN,2,5,500,-,-
+RESIDENT,Seraph,UNSUNG SHADOWS,satella feat.棗いつき,30,SPH,3,9,922,-,-
+RESIDENT,Seraph,UNSUNG SHADOWS,satella feat.棗いつき,30,SPA,4,11,1227,-,-
+RESIDENT,Seraph,UNSUNG SHADOWS,satella feat.棗いつき,30,SPL,5,-1,-1,-,-
+RESIDENT,Shadow World,STYLISH CONTEMPORARY,"BEMANI Sound Team ""HuΣeR × 猫叉Master"" feat.Emi Evans",30,SPB,1,-1,-1,-,-
+RESIDENT,Shadow World,STYLISH CONTEMPORARY,"BEMANI Sound Team ""HuΣeR × 猫叉Master"" feat.Emi Evans",30,SPN,2,4,498,-,-
+RESIDENT,Shadow World,STYLISH CONTEMPORARY,"BEMANI Sound Team ""HuΣeR × 猫叉Master"" feat.Emi Evans",30,SPH,3,8,836,-,-
+RESIDENT,Shadow World,STYLISH CONTEMPORARY,"BEMANI Sound Team ""HuΣeR × 猫叉Master"" feat.Emi Evans",30,SPA,4,11,1369,-,-
+RESIDENT,Shadow World,STYLISH CONTEMPORARY,"BEMANI Sound Team ""HuΣeR × 猫叉Master"" feat.Emi Evans",30,SPL,5,-1,-1,-,-
+RESIDENT,Summerblue,GAME MUSIC,Toby Fox & Camellia,30,SPB,1,-1,-1,-,-
+RESIDENT,Summerblue,GAME MUSIC,Toby Fox & Camellia,30,SPN,2,5,551,-,-
+RESIDENT,Summerblue,GAME MUSIC,Toby Fox & Camellia,30,SPH,3,8,886,-,-
+RESIDENT,Summerblue,GAME MUSIC,Toby Fox & Camellia,30,SPA,4,10,1232,-,-
+RESIDENT,Summerblue,GAME MUSIC,Toby Fox & Camellia,30,SPL,5,-1,-1,-,-
+RESIDENT,Sunny Day Vibes,FUTURE CORE,Mameyudoufu,30,SPB,1,-1,-1,-,-
+RESIDENT,Sunny Day Vibes,FUTURE CORE,Mameyudoufu,30,SPN,2,5,482,-,-
+RESIDENT,Sunny Day Vibes,FUTURE CORE,Mameyudoufu,30,SPH,3,8,829,-,-
+RESIDENT,Sunny Day Vibes,FUTURE CORE,Mameyudoufu,30,SPA,4,10,1150,-,-
+RESIDENT,Sunny Day Vibes,FUTURE CORE,Mameyudoufu,30,SPL,5,-1,-1,-,-
+RESIDENT,TECHNOPHOBIA,TECH/ELECTRO,"BEMANI Sound Team ""HuΣeR""",30,SPB,1,-1,-1,-,-
+RESIDENT,TECHNOPHOBIA,TECH/ELECTRO,"BEMANI Sound Team ""HuΣeR""",30,SPN,2,5,404,-,-
+RESIDENT,TECHNOPHOBIA,TECH/ELECTRO,"BEMANI Sound Team ""HuΣeR""",30,SPH,3,8,852,-,-
+RESIDENT,TECHNOPHOBIA,TECH/ELECTRO,"BEMANI Sound Team ""HuΣeR""",30,SPA,4,12,1544,-,-
+RESIDENT,TECHNOPHOBIA,TECH/ELECTRO,"BEMANI Sound Team ""HuΣeR""",30,SPL,5,-1,-1,-,-
+RESIDENT,THE TIME MACHINE,HARDWAVE/STYLE,Yuta Imai,30,SPB,1,-1,-1,-,-
+RESIDENT,THE TIME MACHINE,HARDWAVE/STYLE,Yuta Imai,30,SPN,2,6,552,-,-
+RESIDENT,THE TIME MACHINE,HARDWAVE/STYLE,Yuta Imai,30,SPH,3,9,900,-,-
+RESIDENT,THE TIME MACHINE,HARDWAVE/STYLE,Yuta Imai,30,SPA,4,11,1350,-,-
+RESIDENT,THE TIME MACHINE,HARDWAVE/STYLE,Yuta Imai,30,SPL,5,-1,-1,-,-
+RESIDENT,VOLCANIC BIGBEAT,TECH-BIGBEAT,DJ Mass MAD Izm*,30,SPB,1,-1,-1,-,-
+RESIDENT,VOLCANIC BIGBEAT,TECH-BIGBEAT,DJ Mass MAD Izm*,30,SPN,2,6,552,-,-
+RESIDENT,VOLCANIC BIGBEAT,TECH-BIGBEAT,DJ Mass MAD Izm*,30,SPH,3,9,932,-,-
+RESIDENT,VOLCANIC BIGBEAT,TECH-BIGBEAT,DJ Mass MAD Izm*,30,SPA,4,11,1444,-,-
+RESIDENT,VOLCANIC BIGBEAT,TECH-BIGBEAT,DJ Mass MAD Izm*,30,SPL,5,-1,-1,-,-
+RESIDENT,"wanna be a ""BAD GIRL"" feat. Nana Takahashi",FUNK POP,Nhato,30,SPB,1,-1,-1,-,-
+RESIDENT,"wanna be a ""BAD GIRL"" feat. Nana Takahashi",FUNK POP,Nhato,30,SPN,2,3,401,-,-
+RESIDENT,"wanna be a ""BAD GIRL"" feat. Nana Takahashi",FUNK POP,Nhato,30,SPH,3,6,665,-,-
+RESIDENT,"wanna be a ""BAD GIRL"" feat. Nana Takahashi",FUNK POP,Nhato,30,SPA,4,9,1029,-,-
+RESIDENT,"wanna be a ""BAD GIRL"" feat. Nana Takahashi",FUNK POP,Nhato,30,SPL,5,-1,-1,-,-
+RESIDENT,With You,DANCE,BANVOX,30,SPB,1,-1,-1,-,-
+RESIDENT,With You,DANCE,BANVOX,30,SPN,2,4,420,-,-
+RESIDENT,With You,DANCE,BANVOX,30,SPH,3,8,801,-,-
+RESIDENT,With You,DANCE,BANVOX,30,SPA,4,11,1296,-,-
+RESIDENT,With You,DANCE,BANVOX,30,SPL,5,-1,-1,-,-
+RESIDENT,≡+≡,NIGHTCORE,Ryu☆,30,SPB,1,-1,-1,-,-
+RESIDENT,≡+≡,NIGHTCORE,Ryu☆,30,SPN,2,7,698,-,-
+RESIDENT,≡+≡,NIGHTCORE,Ryu☆,30,SPH,3,10,1069,-,-
+RESIDENT,≡+≡,NIGHTCORE,Ryu☆,30,SPA,4,11,1520,-,-
+RESIDENT,≡+≡,NIGHTCORE,Ryu☆,30,SPL,5,-1,-1,-,-
+RESIDENT,3V0,NEO DANCE SPEED,BlackY,30,SPB,1,-1,-1,-,-
+RESIDENT,3V0,NEO DANCE SPEED,BlackY,30,SPN,2,5,530,-,-
+RESIDENT,3V0,NEO DANCE SPEED,BlackY,30,SPH,3,9,929,-,-
+RESIDENT,3V0,NEO DANCE SPEED,BlackY,30,SPA,4,11,1530,-,-
+RESIDENT,3V0,NEO DANCE SPEED,BlackY,30,SPL,5,-1,-1,-,-
+RESIDENT,雨のちパノラマセカイ,SUNNY SKY,"BEMANI Sound Team ""劇団レコード"" feat.NU-KO",30,SPB,1,-1,-1,-,-
+RESIDENT,雨のちパノラマセカイ,SUNNY SKY,"BEMANI Sound Team ""劇団レコード"" feat.NU-KO",30,SPN,2,4,413,-,-
+RESIDENT,雨のちパノラマセカイ,SUNNY SKY,"BEMANI Sound Team ""劇団レコード"" feat.NU-KO",30,SPH,3,7,721,-,-
+RESIDENT,雨のちパノラマセカイ,SUNNY SKY,"BEMANI Sound Team ""劇団レコード"" feat.NU-KO",30,SPA,4,9,1112,-,-
+RESIDENT,雨のちパノラマセカイ,SUNNY SKY,"BEMANI Sound Team ""劇団レコード"" feat.NU-KO",30,SPL,5,-1,-1,-,-
+RESIDENT,罪過の聖堂,PIANO CONCERTO,OSTER project,30,SPB,1,-1,-1,-,-
+RESIDENT,罪過の聖堂,PIANO CONCERTO,OSTER project,30,SPN,2,4,449,-,-
+RESIDENT,罪過の聖堂,PIANO CONCERTO,OSTER project,30,SPH,3,8,708,-,-
+RESIDENT,罪過の聖堂,PIANO CONCERTO,OSTER project,30,SPA,4,10,1080,-,-
+RESIDENT,罪過の聖堂,PIANO CONCERTO,OSTER project,30,SPL,5,-1,-1,-,-
+RESIDENT,きゅんです。,ROCK,Pizuya's Cell,30,SPB,1,-1,-1,-,-
+RESIDENT,きゅんです。,ROCK,Pizuya's Cell,30,SPN,2,4,367,-,-
+RESIDENT,きゅんです。,ROCK,Pizuya's Cell,30,SPH,3,7,724,-,-
+RESIDENT,きゅんです。,ROCK,Pizuya's Cell,30,SPA,4,10,1177,-,-
+RESIDENT,きゅんです。,ROCK,Pizuya's Cell,30,SPL,5,-1,-1,-,-
+RESIDENT,儚キ戀ノ幻想譚,和風歌謡硬核音楽,まろん feat. あやぽんず＊ (森羅万象),30,SPB,1,-1,-1,-,-
+RESIDENT,儚キ戀ノ幻想譚,和風歌謡硬核音楽,まろん feat. あやぽんず＊ (森羅万象),30,SPN,2,7,797,-,-
+RESIDENT,儚キ戀ノ幻想譚,和風歌謡硬核音楽,まろん feat. あやぽんず＊ (森羅万象),30,SPH,3,10,1169,-,-
+RESIDENT,儚キ戀ノ幻想譚,和風歌謡硬核音楽,まろん feat. あやぽんず＊ (森羅万象),30,SPA,4,12,1808,-,-
+RESIDENT,儚キ戀ノ幻想譚,和風歌謡硬核音楽,まろん feat. あやぽんず＊ (森羅万象),30,SPL,5,-1,-1,-,-
+RESIDENT,いつかオトナになれるといいね。,J-POP,ツユ,30,SPB,1,3,277,-,-
+RESIDENT,いつかオトナになれるといいね。,J-POP,ツユ,30,SPN,2,6,568,-,-
+RESIDENT,いつかオトナになれるといいね。,J-POP,ツユ,30,SPH,3,9,984,-,-
+RESIDENT,いつかオトナになれるといいね。,J-POP,ツユ,30,SPA,4,11,1522,-,-
+RESIDENT,いつかオトナになれるといいね。,J-POP,ツユ,30,SPL,5,-1,-1,-,-
+RESIDENT,響花水月,HEROIC DRUM & BASS,xi feat. Risa Yuzuki,30,SPB,1,-1,-1,-,-
+RESIDENT,響花水月,HEROIC DRUM & BASS,xi feat. Risa Yuzuki,30,SPN,2,6,608,-,-
+RESIDENT,響花水月,HEROIC DRUM & BASS,xi feat. Risa Yuzuki,30,SPH,3,9,974,-,-
+RESIDENT,響花水月,HEROIC DRUM & BASS,xi feat. Risa Yuzuki,30,SPA,4,11,1487,-,-
+RESIDENT,響花水月,HEROIC DRUM & BASS,xi feat. Risa Yuzuki,30,SPL,5,-1,-1,-,-
+RESIDENT,真夜中のバベル,HOUSE,Len,30,SPB,1,-1,-1,-,-
+RESIDENT,真夜中のバベル,HOUSE,Len,30,SPN,2,4,360,-,-
+RESIDENT,真夜中のバベル,HOUSE,Len,30,SPH,3,7,607,-,-
+RESIDENT,真夜中のバベル,HOUSE,Len,30,SPA,4,9,877,-,-
+RESIDENT,真夜中のバベル,HOUSE,Len,30,SPL,5,-1,-1,-,-
+RESIDENT,おとせサンダー,J-ROCK,ぼっちぼろまる,30,SPB,1,1,107,-,-
+RESIDENT,おとせサンダー,J-ROCK,ぼっちぼろまる,30,SPN,2,4,334,-,-
+RESIDENT,おとせサンダー,J-ROCK,ぼっちぼろまる,30,SPH,3,7,602,-,-
+RESIDENT,おとせサンダー,J-ROCK,ぼっちぼろまる,30,SPA,4,10,1088,-,-
+RESIDENT,おとせサンダー,J-ROCK,ぼっちぼろまる,30,SPL,5,-1,-1,-,-
+RESIDENT,生きるよすが,J-POP,月詠み,30,SPB,1,2,222,-,-
+RESIDENT,生きるよすが,J-POP,月詠み,30,SPN,2,4,479,-,-
+RESIDENT,生きるよすが,J-POP,月詠み,30,SPH,3,7,766,-,-
+RESIDENT,生きるよすが,J-POP,月詠み,30,SPA,4,10,1256,-,-
+RESIDENT,生きるよすが,J-POP,月詠み,30,SPL,5,-1,-1,-,-
+RESIDENT,湘南ロンリーMIDNIGHT RAIN,歌謡ニューウェーブ,"Nana Takahashi & BEMANI Sound Team ""T.Kakuta""",30,SPB,1,-1,-1,-,-
+RESIDENT,湘南ロンリーMIDNIGHT RAIN,歌謡ニューウェーブ,"Nana Takahashi & BEMANI Sound Team ""T.Kakuta""",30,SPN,2,5,493,-,-
+RESIDENT,湘南ロンリーMIDNIGHT RAIN,歌謡ニューウェーブ,"Nana Takahashi & BEMANI Sound Team ""T.Kakuta""",30,SPH,3,8,918,-,-
+RESIDENT,湘南ロンリーMIDNIGHT RAIN,歌謡ニューウェーブ,"Nana Takahashi & BEMANI Sound Team ""T.Kakuta""",30,SPA,4,10,1438,-,-
+RESIDENT,湘南ロンリーMIDNIGHT RAIN,歌謡ニューウェーブ,"Nana Takahashi & BEMANI Sound Team ""T.Kakuta""",30,SPL,5,-1,-1,-,-
+RESIDENT,月と夢の跡 ft. マナ,J METAL×DANCE POP,Xceon,30,SPB,1,-1,-1,-,-
+RESIDENT,月と夢の跡 ft. マナ,J METAL×DANCE POP,Xceon,30,SPN,2,5,484,-,-
+RESIDENT,月と夢の跡 ft. マナ,J METAL×DANCE POP,Xceon,30,SPH,3,8,780,-,-
+RESIDENT,月と夢の跡 ft. マナ,J METAL×DANCE POP,Xceon,30,SPA,4,10,1269,-,-
+RESIDENT,月と夢の跡 ft. マナ,J METAL×DANCE POP,Xceon,30,SPL,5,-1,-1,-,-
+RESIDENT,KING,IIDX EDITION,Remixed by SOUND HOLIC feat. はるの,30,SPB,1,2,226,-,-
+RESIDENT,KING,IIDX EDITION,Remixed by SOUND HOLIC feat. はるの,30,SPN,2,4,475,-,-
+RESIDENT,KING,IIDX EDITION,Remixed by SOUND HOLIC feat. はるの,30,SPH,3,9,997,-,-
+RESIDENT,KING,IIDX EDITION,Remixed by SOUND HOLIC feat. はるの,30,SPA,4,11,1553,-,-
+RESIDENT,KING,IIDX EDITION,Remixed by SOUND HOLIC feat. はるの,30,SPL,5,-1,-1,-,-
+RESIDENT,マツケンサンバII,IIDX EDITION,"Remixed by Ryu☆ feat. BEMANI Sound Team ""ショッチョー"" ＆ イオシスコーラス隊",30,SPB,1,3,202,-,-
+RESIDENT,マツケンサンバII,IIDX EDITION,"Remixed by Ryu☆ feat. BEMANI Sound Team ""ショッチョー"" ＆ イオシスコーラス隊",30,SPN,2,6,570,-,-
+RESIDENT,マツケンサンバII,IIDX EDITION,"Remixed by Ryu☆ feat. BEMANI Sound Team ""ショッチョー"" ＆ イオシスコーラス隊",30,SPH,3,9,923,-,-
+RESIDENT,マツケンサンバII,IIDX EDITION,"Remixed by Ryu☆ feat. BEMANI Sound Team ""ショッチョー"" ＆ イオシスコーラス隊",30,SPA,4,11,1460,-,-
+RESIDENT,マツケンサンバII,IIDX EDITION,"Remixed by Ryu☆ feat. BEMANI Sound Team ""ショッチョー"" ＆ イオシスコーラス隊",30,SPL,5,-1,-1,-,-
+RESIDENT,新時代,IIDX EDITION,Remixed by Nhato feat. 花たん,30,SPB,1,2,168,-,-
+RESIDENT,新時代,IIDX EDITION,Remixed by Nhato feat. 花たん,30,SPN,2,4,379,-,-
+RESIDENT,新時代,IIDX EDITION,Remixed by Nhato feat. 花たん,30,SPH,3,7,633,-,-
+RESIDENT,新時代,IIDX EDITION,Remixed by Nhato feat. 花たん,30,SPA,4,10,1171,-,-
+RESIDENT,新時代,IIDX EDITION,Remixed by Nhato feat. 花たん,30,SPL,5,-1,-1,-,-
+RESIDENT,神っぽいな,IIDX EDITION,Remixed by uno(IOSYS) & NUE feat. Chiyoko,30,SPB,1,2,186,-,-
+RESIDENT,神っぽいな,IIDX EDITION,Remixed by uno(IOSYS) & NUE feat. Chiyoko,30,SPN,2,4,392,-,-
+RESIDENT,神っぽいな,IIDX EDITION,Remixed by uno(IOSYS) & NUE feat. Chiyoko,30,SPH,3,8,734,-,-
+RESIDENT,神っぽいな,IIDX EDITION,Remixed by uno(IOSYS) & NUE feat. Chiyoko,30,SPA,4,10,1078,-,-
+RESIDENT,神っぽいな,IIDX EDITION,Remixed by uno(IOSYS) & NUE feat. Chiyoko,30,SPL,5,-1,-1,-,-
+RESIDENT,RINNE,SYMPHONIC SAVIOR,GeMiNioN,30,SPB,1,-1,-1,-,-
+RESIDENT,RINNE,SYMPHONIC SAVIOR,GeMiNioN,30,SPN,2,5,604,-,-
+RESIDENT,RINNE,SYMPHONIC SAVIOR,GeMiNioN,30,SPH,3,10,1186,-,-
+RESIDENT,RINNE,SYMPHONIC SAVIOR,GeMiNioN,30,SPA,4,12,1788,-,-
+RESIDENT,RINNE,SYMPHONIC SAVIOR,GeMiNioN,30,SPL,5,-1,-1,-,-
+RESIDENT,I,CHIP ELECTRO,黒魔,30,SPB,1,-1,-1,-,-
+RESIDENT,I,CHIP ELECTRO,黒魔,30,SPN,2,6,632,-,-
+RESIDENT,I,CHIP ELECTRO,黒魔,30,SPH,3,10,1191,-,-
+RESIDENT,I,CHIP ELECTRO,黒魔,30,SPA,4,12,1901,-,-
+RESIDENT,I,CHIP ELECTRO,黒魔,30,SPL,5,-1,-1,-,-
+RESIDENT,輪廻の鴉,SPIRITUAL CORE,"BEMANI Sound Team ""dj TAKA""",30,SPB,1,-1,-1,-,-
+RESIDENT,輪廻の鴉,SPIRITUAL CORE,"BEMANI Sound Team ""dj TAKA""",30,SPN,2,5,520,-,-
+RESIDENT,輪廻の鴉,SPIRITUAL CORE,"BEMANI Sound Team ""dj TAKA""",30,SPH,3,9,910,-,-
+RESIDENT,輪廻の鴉,SPIRITUAL CORE,"BEMANI Sound Team ""dj TAKA""",30,SPA,4,11,1398,-,-
+RESIDENT,輪廻の鴉,SPIRITUAL CORE,"BEMANI Sound Team ""dj TAKA""",30,SPL,5,-1,-1,-,-
+RESIDENT,[ ]DENTITY,FORTUNE OVERTURE,"BEMANI Sound Team ""HuΣeR""",30,SPB,1,-1,-1,-,-
+RESIDENT,[ ]DENTITY,FORTUNE OVERTURE,"BEMANI Sound Team ""HuΣeR""",30,SPN,2,6,590,-,-
+RESIDENT,[ ]DENTITY,FORTUNE OVERTURE,"BEMANI Sound Team ""HuΣeR""",30,SPH,3,10,1070,-,-
+RESIDENT,[ ]DENTITY,FORTUNE OVERTURE,"BEMANI Sound Team ""HuΣeR""",30,SPA,4,12,2000,-,-
+RESIDENT,[ ]DENTITY,FORTUNE OVERTURE,"BEMANI Sound Team ""HuΣeR""",30,SPL,5,-1,-1,-,-
+RESIDENT,VOLAQUAS,EMPYREAL HYDRO ARTCORE,"BEMANI Sound Team ""DJ TOTTO VS 兎々""",30,SPB,1,-1,-1,-,-
+RESIDENT,VOLAQUAS,EMPYREAL HYDRO ARTCORE,"BEMANI Sound Team ""DJ TOTTO VS 兎々""",30,SPN,2,7,670,-,-
+RESIDENT,VOLAQUAS,EMPYREAL HYDRO ARTCORE,"BEMANI Sound Team ""DJ TOTTO VS 兎々""",30,SPH,3,10,1119,-,-
+RESIDENT,VOLAQUAS,EMPYREAL HYDRO ARTCORE,"BEMANI Sound Team ""DJ TOTTO VS 兎々""",30,SPA,4,12,1982,-,-
+RESIDENT,VOLAQUAS,EMPYREAL HYDRO ARTCORE,"BEMANI Sound Team ""DJ TOTTO VS 兎々""",30,SPL,5,-1,-1,-,-
+RESIDENT,Fading Stars,TRANCE,Nhato,30,SPB,1,-1,-1,-,-
+RESIDENT,Fading Stars,TRANCE,Nhato,30,SPN,2,5,553,-,-
+RESIDENT,Fading Stars,TRANCE,Nhato,30,SPH,3,8,831,-,-
+RESIDENT,Fading Stars,TRANCE,Nhato,30,SPA,4,10,1367,-,-
+RESIDENT,Fading Stars,TRANCE,Nhato,30,SPL,5,-1,-1,-,-
+RESIDENT,DIAMOND JACKAL,ENIGMATIC BASS HARDCORE,Akira Complex,30,SPB,1,-1,-1,-,-
+RESIDENT,DIAMOND JACKAL,ENIGMATIC BASS HARDCORE,Akira Complex,30,SPN,2,5,540,-,-
+RESIDENT,DIAMOND JACKAL,ENIGMATIC BASS HARDCORE,Akira Complex,30,SPH,3,9,839,-,-
+RESIDENT,DIAMOND JACKAL,ENIGMATIC BASS HARDCORE,Akira Complex,30,SPA,4,11,1313,-,-
+RESIDENT,DIAMOND JACKAL,ENIGMATIC BASS HARDCORE,Akira Complex,30,SPL,5,-1,-1,-,-
+RESIDENT,あるビー！ feat.ころねぽち,ピコピコ電波ソング,ヒゲドライバー,30,SPB,1,-1,-1,-,-
+RESIDENT,あるビー！ feat.ころねぽち,ピコピコ電波ソング,ヒゲドライバー,30,SPN,2,4,500,-,-
+RESIDENT,あるビー！ feat.ころねぽち,ピコピコ電波ソング,ヒゲドライバー,30,SPH,3,9,900,-,-
+RESIDENT,あるビー！ feat.ころねぽち,ピコピコ電波ソング,ヒゲドライバー,30,SPA,4,11,1457,-,-
+RESIDENT,あるビー！ feat.ころねぽち,ピコピコ電波ソング,ヒゲドライバー,30,SPL,5,-1,-1,-,-
+RESIDENT,Peaktime Booster,RAPCORE,らっぷびと Prod. by RoughSketch & NUE,30,SPB,1,-1,-1,-,-
+RESIDENT,Peaktime Booster,RAPCORE,らっぷびと Prod. by RoughSketch & NUE,30,SPN,2,6,588,-,-
+RESIDENT,Peaktime Booster,RAPCORE,らっぷびと Prod. by RoughSketch & NUE,30,SPH,3,10,959,-,-
+RESIDENT,Peaktime Booster,RAPCORE,らっぷびと Prod. by RoughSketch & NUE,30,SPA,4,12,1663,-,-
+RESIDENT,Peaktime Booster,RAPCORE,らっぷびと Prod. by RoughSketch & NUE,30,SPL,5,-1,-1,-,-
+RESIDENT,LOUDER ROLLING THUNDER,MASSIVE MIXTURE,"BEMANI Sound Team ""Dustup Vs. L.E.D.-G""",30,SPB,1,-1,-1,-,-
+RESIDENT,LOUDER ROLLING THUNDER,MASSIVE MIXTURE,"BEMANI Sound Team ""Dustup Vs. L.E.D.-G""",30,SPN,2,6,555,-,-
+RESIDENT,LOUDER ROLLING THUNDER,MASSIVE MIXTURE,"BEMANI Sound Team ""Dustup Vs. L.E.D.-G""",30,SPH,3,10,1029,-,-
+RESIDENT,LOUDER ROLLING THUNDER,MASSIVE MIXTURE,"BEMANI Sound Team ""Dustup Vs. L.E.D.-G""",30,SPA,4,12,1767,-,-
+RESIDENT,LOUDER ROLLING THUNDER,MASSIVE MIXTURE,"BEMANI Sound Team ""Dustup Vs. L.E.D.-G""",30,SPL,5,-1,-1,-,-
+RESIDENT,昏き甲鉄のヴェルガ,FANTASIA,arcane feat.rionos,30,SPB,1,-1,-1,-,-
+RESIDENT,昏き甲鉄のヴェルガ,FANTASIA,arcane feat.rionos,30,SPN,2,4,458,-,-
+RESIDENT,昏き甲鉄のヴェルガ,FANTASIA,arcane feat.rionos,30,SPH,3,7,813,-,-
+RESIDENT,昏き甲鉄のヴェルガ,FANTASIA,arcane feat.rionos,30,SPA,4,10,1177,-,-
+RESIDENT,昏き甲鉄のヴェルガ,FANTASIA,arcane feat.rionos,30,SPL,5,-1,-1,-,-
+RESIDENT,楽園追放,ALTERNATIVE,中山真斗 feat. CHAN,30,SPB,1,-1,-1,-,-
+RESIDENT,楽園追放,ALTERNATIVE,中山真斗 feat. CHAN,30,SPN,2,5,476,-,-
+RESIDENT,楽園追放,ALTERNATIVE,中山真斗 feat. CHAN,30,SPH,3,8,796,-,-
+RESIDENT,楽園追放,ALTERNATIVE,中山真斗 feat. CHAN,30,SPA,4,10,1228,-,-
+RESIDENT,楽園追放,ALTERNATIVE,中山真斗 feat. CHAN,30,SPL,5,-1,-1,-,-
+RESIDENT,ちょえちょえまぎか,ROCK,Pizuya's Cell,30,SPB,1,-1,-1,-,-
+RESIDENT,ちょえちょえまぎか,ROCK,Pizuya's Cell,30,SPN,2,6,619,-,-
+RESIDENT,ちょえちょえまぎか,ROCK,Pizuya's Cell,30,SPH,3,10,1159,-,-
+RESIDENT,ちょえちょえまぎか,ROCK,Pizuya's Cell,30,SPA,4,11,1529,-,-
+RESIDENT,ちょえちょえまぎか,ROCK,Pizuya's Cell,30,SPL,5,-1,-1,-,-
+RESIDENT,ONE AND ONLY,RAVE IN THE GAME,Yuta Imai,30,SPB,1,-1,-1,-,-
+RESIDENT,ONE AND ONLY,RAVE IN THE GAME,Yuta Imai,30,SPN,2,6,600,-,-
+RESIDENT,ONE AND ONLY,RAVE IN THE GAME,Yuta Imai,30,SPH,3,9,919,-,-
+RESIDENT,ONE AND ONLY,RAVE IN THE GAME,Yuta Imai,30,SPA,4,12,1639,-,-
+RESIDENT,ONE AND ONLY,RAVE IN THE GAME,Yuta Imai,30,SPL,5,-1,-1,-,-
+RESIDENT,Super Freak,HARDCORE,Hommarju,30,SPB,1,-1,-1,-,-
+RESIDENT,Super Freak,HARDCORE,Hommarju,30,SPN,2,5,565,-,-
+RESIDENT,Super Freak,HARDCORE,Hommarju,30,SPH,3,9,963,-,-
+RESIDENT,Super Freak,HARDCORE,Hommarju,30,SPA,4,12,1754,-,-
+RESIDENT,Super Freak,HARDCORE,Hommarju,30,SPL,5,-1,-1,-,-
+RESIDENT,Level 4,DnB,Yamato,30,SPB,1,-1,-1,-,-
+RESIDENT,Level 4,DnB,Yamato,30,SPN,2,6,619,-,-
+RESIDENT,Level 4,DnB,Yamato,30,SPH,3,10,1066,-,-
+RESIDENT,Level 4,DnB,Yamato,30,SPA,4,12,1883,-,-
+RESIDENT,Level 4,DnB,Yamato,30,SPL,5,-1,-1,-,-
+RESIDENT,kors k's How to make OTOGE CORE 「LONG」,CHANNEL K,kors k,30,SPB,1,-1,-1,-,-
+RESIDENT,kors k's How to make OTOGE CORE 「LONG」,CHANNEL K,kors k,30,SPN,2,6,607,-,-
+RESIDENT,kors k's How to make OTOGE CORE 「LONG」,CHANNEL K,kors k,30,SPH,3,10,1216,-,-
+RESIDENT,kors k's How to make OTOGE CORE 「LONG」,CHANNEL K,kors k,30,SPA,4,12,1863,-,-
+RESIDENT,kors k's How to make OTOGE CORE 「LONG」,CHANNEL K,kors k,30,SPL,5,-1,-1,-,-
+RESIDENT,Beyond Evolution,CULMINATION,Hekatoncheir,30,SPB,1,-1,-1,-,-
+RESIDENT,Beyond Evolution,CULMINATION,Hekatoncheir,30,SPN,2,7,-1,-,-
+RESIDENT,Beyond Evolution,CULMINATION,Hekatoncheir,30,SPH,3,11,-1,-,-
+RESIDENT,Beyond Evolution,CULMINATION,Hekatoncheir,30,SPA,4,12,2216,-,-
+RESIDENT,Beyond Evolution,CULMINATION,Hekatoncheir,30,SPL,5,-1,-1,-,-
+RESIDENT,AWA AWA,BOSSA NA NOKA,Snail's House,30,SPB,1,-1,-1,-,-
+RESIDENT,AWA AWA,BOSSA NA NOKA,Snail's House,30,SPN,2,4,398,-,-
+RESIDENT,AWA AWA,BOSSA NA NOKA,Snail's House,30,SPH,3,7,671,-,-
+RESIDENT,AWA AWA,BOSSA NA NOKA,Snail's House,30,SPA,4,10,1169,-,-
+RESIDENT,AWA AWA,BOSSA NA NOKA,Snail's House,30,SPL,5,-1,-1,-,-
+RESIDENT,EXODUS SIGN,TEAROUT BREAKS,Blacklolita,30,SPB,1,-1,-1,-,-
+RESIDENT,EXODUS SIGN,TEAROUT BREAKS,Blacklolita,30,SPN,2,6,626,-,-
+RESIDENT,EXODUS SIGN,TEAROUT BREAKS,Blacklolita,30,SPH,3,9,921,-,-
+RESIDENT,EXODUS SIGN,TEAROUT BREAKS,Blacklolita,30,SPA,4,11,1366,-,-
+RESIDENT,EXODUS SIGN,TEAROUT BREAKS,Blacklolita,30,SPL,5,-1,-1,-,-
+RESIDENT,STRAIGHT TO THE STARS,COLOUR BASS BREAKS,"BEMANI Sound Team ""Expander"" feat. Starvitz",30,SPB,1,-1,-1,-,-
+RESIDENT,STRAIGHT TO THE STARS,COLOUR BASS BREAKS,"BEMANI Sound Team ""Expander"" feat. Starvitz",30,SPN,2,5,530,-,-
+RESIDENT,STRAIGHT TO THE STARS,COLOUR BASS BREAKS,"BEMANI Sound Team ""Expander"" feat. Starvitz",30,SPH,3,8,879,-,-
+RESIDENT,STRAIGHT TO THE STARS,COLOUR BASS BREAKS,"BEMANI Sound Team ""Expander"" feat. Starvitz",30,SPA,4,11,1506,-,-
+RESIDENT,STRAIGHT TO THE STARS,COLOUR BASS BREAKS,"BEMANI Sound Team ""Expander"" feat. Starvitz",30,SPL,5,-1,-1,-,-
+RESIDENT,glacia,ARTCORE,DJ TOTTO,30,SPB,1,-1,-1,-,-
+RESIDENT,glacia,ARTCORE,DJ TOTTO,30,SPN,2,6,606,-,-
+RESIDENT,glacia,ARTCORE,DJ TOTTO,30,SPH,3,10,1093,-,-
+RESIDENT,glacia,ARTCORE,DJ TOTTO,30,SPA,4,12,1492,-,-
+RESIDENT,glacia,ARTCORE,DJ TOTTO,30,SPL,5,-1,-1,-,-
+RESIDENT,Chaotoxin,HELETIC BREAK D'n'B,Feryquitous,30,SPB,1,-1,-1,-,-
+RESIDENT,Chaotoxin,HELETIC BREAK D'n'B,Feryquitous,30,SPN,2,5,599,-,-
+RESIDENT,Chaotoxin,HELETIC BREAK D'n'B,Feryquitous,30,SPH,3,9,888,-,-
+RESIDENT,Chaotoxin,HELETIC BREAK D'n'B,Feryquitous,30,SPA,4,12,1705,-,-
+RESIDENT,Chaotoxin,HELETIC BREAK D'n'B,Feryquitous,30,SPL,5,-1,-1,-,-
+RESIDENT,栄冠のカンパネラ,-,-,30,SPB,1,-,-1,-,-
+RESIDENT,栄冠のカンパネラ,-,-,30,SPN,2,-,687,-,-
+RESIDENT,栄冠のカンパネラ,-,-,30,SPH,3,-,1101,-,-
+RESIDENT,栄冠のカンパネラ,-,-,30,SPA,4,-,2000,-,-
+RESIDENT,栄冠のカンパネラ,-,-,30,SPL,5,-,-1,-,-
+RESIDENT,《ORDERBREAKER》,GODSPEED,Blacklolita,30,SPB,1,-1,-1,-,-
+RESIDENT,《ORDERBREAKER》,GODSPEED,Blacklolita,30,SPN,2,6,511,-,-
+RESIDENT,《ORDERBREAKER》,GODSPEED,Blacklolita,30,SPH,3,9,815,-,-
+RESIDENT,《ORDERBREAKER》,GODSPEED,Blacklolita,30,SPA,4,11,1257,-,-
+RESIDENT,《ORDERBREAKER》,GODSPEED,Blacklolita,30,SPL,5,-1,-1,-,-
+RESIDENT,Get On Your Feet,HYBRID TRANCE,Nhato,30,SPB,1,-1,-1,-,-
+RESIDENT,Get On Your Feet,HYBRID TRANCE,Nhato,30,SPN,2,5,573,-,-
+RESIDENT,Get On Your Feet,HYBRID TRANCE,Nhato,30,SPH,3,9,914,-,-
+RESIDENT,Get On Your Feet,HYBRID TRANCE,Nhato,30,SPA,4,11,1384,-,-
+RESIDENT,Get On Your Feet,HYBRID TRANCE,Nhato,30,SPL,5,-1,-1,-,-
+RESIDENT,OVER VOLTAGE,HARDSTYLE,Yuta Imai,30,SPB,1,-1,-1,-,-
+RESIDENT,OVER VOLTAGE,HARDSTYLE,Yuta Imai,30,SPN,2,6,560,-,-
+RESIDENT,OVER VOLTAGE,HARDSTYLE,Yuta Imai,30,SPH,3,9,935,-,-
+RESIDENT,OVER VOLTAGE,HARDSTYLE,Yuta Imai,30,SPA,4,11,1332,-,-
+RESIDENT,OVER VOLTAGE,HARDSTYLE,Yuta Imai,30,SPL,5,-1,-1,-,-
+RESIDENT,Hat Surprise (Season 2),UK HARDCORE,Hommarju,30,SPB,1,-1,-1,-,-
+RESIDENT,Hat Surprise (Season 2),UK HARDCORE,Hommarju,30,SPN,2,5,514,-,-
+RESIDENT,Hat Surprise (Season 2),UK HARDCORE,Hommarju,30,SPH,3,9,928,-,-
+RESIDENT,Hat Surprise (Season 2),UK HARDCORE,Hommarju,30,SPA,4,12,1729,-,-
+RESIDENT,Hat Surprise (Season 2),UK HARDCORE,Hommarju,30,SPL,5,-1,-1,-,-
+RESIDENT,Ou Legends,TOHOKU NEURO DENSETSU,かめりあ,30,SPB,1,-1,-1,-,-
+RESIDENT,Ou Legends,TOHOKU NEURO DENSETSU,かめりあ,30,SPN,2,6,581,-,-
+RESIDENT,Ou Legends,TOHOKU NEURO DENSETSU,かめりあ,30,SPH,3,10,1068,-,-
+RESIDENT,Ou Legends,TOHOKU NEURO DENSETSU,かめりあ,30,SPA,4,12,1687,-,-
+RESIDENT,Ou Legends,TOHOKU NEURO DENSETSU,かめりあ,30,SPL,5,-1,-1,-,-
+RESIDENT,Next Level,DRUM & BASS,Maozon,30,SPB,1,-1,-1,-,-
+RESIDENT,Next Level,DRUM & BASS,Maozon,30,SPN,2,5,477,-,-
+RESIDENT,Next Level,DRUM & BASS,Maozon,30,SPH,3,8,817,-,-
+RESIDENT,Next Level,DRUM & BASS,Maozon,30,SPA,4,10,1100,-,-
+RESIDENT,Next Level,DRUM & BASS,Maozon,30,SPL,5,-1,-1,-,-
+RESIDENT,Red Soul,HARDCORE,RoughSketch,30,SPB,1,-1,-1,-,-
+RESIDENT,Red Soul,HARDCORE,RoughSketch,30,SPN,2,6,543,-,-
+RESIDENT,Red Soul,HARDCORE,RoughSketch,30,SPH,3,9,915,-,-
+RESIDENT,Red Soul,HARDCORE,RoughSketch,30,SPA,4,11,1494,-,-
+RESIDENT,Red Soul,HARDCORE,RoughSketch,30,SPL,5,-1,-1,-,-
+RESIDENT,STAR BEAT,COLOUR BASS,MK,30,SPB,1,-1,-1,-,-
+RESIDENT,STAR BEAT,COLOUR BASS,MK,30,SPN,2,4,427,-,-
+RESIDENT,STAR BEAT,COLOUR BASS,MK,30,SPH,3,8,880,-,-
+RESIDENT,STAR BEAT,COLOUR BASS,MK,30,SPA,4,10,1230,-,-
+RESIDENT,STAR BEAT,COLOUR BASS,MK,30,SPL,5,-1,-1,-,-
+RESIDENT,dica dica,ACID RAVE,REMO-CON,30,SPB,1,-1,-1,-,-
+RESIDENT,dica dica,ACID RAVE,REMO-CON,30,SPN,2,5,591,-,-
+RESIDENT,dica dica,ACID RAVE,REMO-CON,30,SPH,3,10,1233,-,-
+RESIDENT,dica dica,ACID RAVE,REMO-CON,30,SPA,4,12,1638,-,-
+RESIDENT,dica dica,ACID RAVE,REMO-CON,30,SPL,5,-1,-1,-,-
+RESIDENT,サヨナラ・ヘヴン-Celtic Chip Dance Mix-,-,-,30,SPB,1,-,-1,-,-
+RESIDENT,サヨナラ・ヘヴン-Celtic Chip Dance Mix-,-,-,30,SPN,2,-,461,-,-
+RESIDENT,サヨナラ・ヘヴン-Celtic Chip Dance Mix-,-,-,30,SPH,3,-,775,-,-
+RESIDENT,サヨナラ・ヘヴン-Celtic Chip Dance Mix-,-,-,30,SPA,4,-,1319,-,-
+RESIDENT,サヨナラ・ヘヴン-Celtic Chip Dance Mix-,-,-,30,SPL,5,-,-1,-,-
+RESIDENT,ZENITH,PLUS ONE,Snail's House,30,SPB,1,-1,-1,-,-
+RESIDENT,ZENITH,PLUS ONE,Snail's House,30,SPN,2,5,580,-,-
+RESIDENT,ZENITH,PLUS ONE,Snail's House,30,SPH,3,9,1020,-,-
+RESIDENT,ZENITH,PLUS ONE,Snail's House,30,SPA,4,11,1531,-,-
+RESIDENT,ZENITH,PLUS ONE,Snail's House,30,SPL,5,-1,-1,-,-
+RESIDENT,The Clown of 24stairs,DISSOCIATIVE IDENTITY DISORDER,Yu_Asahina,30,SPB,1,-1,-1,-,-
+RESIDENT,The Clown of 24stairs,DISSOCIATIVE IDENTITY DISORDER,Yu_Asahina,30,SPN,2,6,579,-,-
+RESIDENT,The Clown of 24stairs,DISSOCIATIVE IDENTITY DISORDER,Yu_Asahina,30,SPH,3,10,1146,-,-
+RESIDENT,The Clown of 24stairs,DISSOCIATIVE IDENTITY DISORDER,Yu_Asahina,30,SPA,4,12,1788,-,-
+RESIDENT,The Clown of 24stairs,DISSOCIATIVE IDENTITY DISORDER,Yu_Asahina,30,SPL,5,-1,-1,-,-
+RESIDENT,恋愛＝精度×認識力,HARDCORE×ソフラン×変拍子×萌え,"立秋 vs. BEMANI Sound Team ""L.E.D.-G"" feat.ちょこ＆ななひら",30,SPB,1,-1,-1,-,-
+RESIDENT,恋愛＝精度×認識力,HARDCORE×ソフラン×変拍子×萌え,"立秋 vs. BEMANI Sound Team ""L.E.D.-G"" feat.ちょこ＆ななひら",30,SPN,2,7,825,-,-
+RESIDENT,恋愛＝精度×認識力,HARDCORE×ソフラン×変拍子×萌え,"立秋 vs. BEMANI Sound Team ""L.E.D.-G"" feat.ちょこ＆ななひら",30,SPH,3,10,1220,-,-
+RESIDENT,恋愛＝精度×認識力,HARDCORE×ソフラン×変拍子×萌え,"立秋 vs. BEMANI Sound Team ""L.E.D.-G"" feat.ちょこ＆ななひら",30,SPA,4,12,1756,-,-
+RESIDENT,恋愛＝精度×認識力,HARDCORE×ソフラン×変拍子×萌え,"立秋 vs. BEMANI Sound Team ""L.E.D.-G"" feat.ちょこ＆ななひら",30,SPL,5,-1,-1,-,-
+DistorteD,DEEP ROAR,-,-,13,SPB,1,-,-1,-,-
+DistorteD,DEEP ROAR,-,-,13,SPN,2,-,503,-,-
+DistorteD,DEEP ROAR,-,-,13,SPH,3,-,726,-,-
+DistorteD,DEEP ROAR,-,-,13,SPA,4,-,1387,-,-
+DistorteD,DEEP ROAR,-,-,13,SPL,5,-,-1,-,-
+9th style,fun,FUNK SHUFFLE,Mr.T,9,SPB,1,-1,-1,-,-
+9th style,fun,FUNK SHUFFLE,Mr.T,9,SPN,2,4,311,-,-
+9th style,fun,FUNK SHUFFLE,Mr.T,9,SPH,3,7,586,-,-
+9th style,fun,FUNK SHUFFLE,Mr.T,9,SPA,4,10,950,-,-
+9th style,fun,FUNK SHUFFLE,Mr.T,9,SPL,5,-1,-1,-,-
+EMPRESS,THE SHINING POLARIS(kors k mix),UK HARD CORE,Remixed by kors k,16,SPB,1,-1,-1,-,-
+EMPRESS,THE SHINING POLARIS(kors k mix),UK HARD CORE,Remixed by kors k,16,SPN,2,6,664,-,-
+EMPRESS,THE SHINING POLARIS(kors k mix),UK HARD CORE,Remixed by kors k,16,SPH,3,9,1061,-,-
+EMPRESS,THE SHINING POLARIS(kors k mix),UK HARD CORE,Remixed by kors k,16,SPA,4,11,1645,-,-
+EMPRESS,THE SHINING POLARIS(kors k mix),UK HARD CORE,Remixed by kors k,16,SPL,5,-1,-1,-,-
