@@ -352,6 +352,7 @@ function processCsv(csv) {
       continue;
     }
     list.push("<tr>");
+    list.push(`<td>☆${songScore["version"]}</td>`);
     list.push(`<td>☆${songScore["level"]}</td>`);
     list.push(`<td>${songScore["title"]} (${songScore["difficulty"]})</td>`);
     list.push(`<td>${songScore["score"]}</td>`);
