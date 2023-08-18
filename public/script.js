@@ -157,7 +157,7 @@ function processCsv(csv) {
         songScore["title"] = song["title"];
         songScore["difficulty"] = difficulty;
         songScore["score"] = song[difficulty]["score"];
-        if (masterDataSong[key]) {
+        if (masterDataSong[key] && masterDataSong[key]["notes"] > 0) {
           songScore["version"] = masterDataSong[key]["version"];
           songScore["rate"] =
             song[difficulty]["score"] / masterDataSong[key]["notes"] / 2;
