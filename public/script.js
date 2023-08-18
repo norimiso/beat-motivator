@@ -168,13 +168,10 @@ function processCsv(csv) {
           if (songScore["rate"] < 0) {
             songScore["rate"] = 0;
           }
+          songScores.push(songScore);
         } else {
-          songScore["rate"] = 0.0;
-          songScore["notes"] = 1;
-          songScore["max-"] = 9999;
           console.log("not found:", key);
         }
-        songScores.push(songScore);
       }
     }
   }
@@ -212,9 +209,6 @@ function processCsv(csv) {
 
   // 統計情報の作成
   for (const s of songScores) {
-    if (s["max-"] === 9999) {
-      continue; // because we have no data about this song.
-    }
     if (s["level"] === "0") {
       continue;
     }
