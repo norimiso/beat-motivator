@@ -357,8 +357,8 @@ function processCsv(csv) {
     list.push(`<td>${songScore["score"]}</td>`);
     list.push(`<td>${(songScore["rate"] * 100).toFixed(2)}%</td>`);
     list.push(`<td>MAX-${songScore["notes"] * 2 - songScore["score"]}</td>`);
-    list.push(`<td>${songScore["kaiden_average"]}</td>`);
-    list.push(`<td>${songScore["top_score"]}</td>`);
+    list.push(`<td>${songScore["kaiden_average"]} (${songScore["score"] - songScore["kaiden_average"]})</td>`);
+    list.push(`<td>${songScore["top_score"]} (${songScore["score"] - songScore["top_score"]})</td>`);
     list.push("</tr>");
   }
   list.push("</table>");
