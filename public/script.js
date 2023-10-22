@@ -162,6 +162,8 @@ function processCsv(csv) {
           songScore["rate"] =
             song[difficulty]["score"] / masterDataSong[key]["notes"] / 2;
           songScore["notes"] = masterDataSong[key]["notes"];
+          songScore["kaiden_average"] = masterDataSong[key]["kaiden_average"];
+          songScore["top_score"] = masterDataSong[key]["top_score"];
           songScore["max-"] =
             masterDataSong[key]["notes"] * 2 - song[difficulty]["score"];
           // rate validation
@@ -334,6 +336,8 @@ function processCsv(csv) {
     <td> Score </td>
     <td> Rate </td>
     <td> MAX- </td>
+    <td> 皆伝平均(RES) </td>
+    <td> 全1(RES) </td>
     </tr>
     </thead>
     `;
@@ -353,6 +357,8 @@ function processCsv(csv) {
     list.push(`<td>${songScore["score"]}</td>`);
     list.push(`<td>${(songScore["rate"] * 100).toFixed(2)}%</td>`);
     list.push(`<td>MAX-${songScore["notes"] * 2 - songScore["score"]}</td>`);
+    list.push(`<td>${songScore["kaiden_average"]}</td>`);
+    list.push(`<td>${songScore["top_score"]}</td>`);
     list.push("</tr>");
   }
   list.push("</table>");
