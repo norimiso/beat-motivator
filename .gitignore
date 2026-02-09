@@ -1,0 +1,22 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
+
+# macOS
+.DS_Store
+
+# wrangler
+.wrangler/
+.dev.vars
+
+# astro
+.astro/
+
+# misc
+_miscs/

@@ -1,0 +1,475 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Beat Motivator">
+  <header>
+    <div class="inner">
+      <h1><span>Beat</span> Motivator</h1>
+      <p>IIDX Score Tracker — 日々の成長を記録しよう</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- CSV入力 -->
+    <section class="input-section">
+      <h2>CSV 入力</h2>
+      <p>
+        <a href="https://p.eagate.573.jp/game/2dx/33/djdata/score_download.html?style=SP"
+           target="_blank" rel="noopener">e-amusement CSV</a>
+        をテキストエリアに貼り付けるか、空のまま submit でクリップボードから読み込みます。
+      </p>
+      <textarea id="csv-input" rows="6" placeholder="e-amusement CSV をここに貼り付け..."></textarea>
+      <div class="options-row">
+        <label>
+          <input type="checkbox" id="opt-include-noplay" />
+          未プレイ含む
+        </label>
+        <label>
+          フィルタ:
+          <select id="opt-level-filter">
+            <option value="0">全レベル</option>
+            <option value="12">☆12のみ</option>
+            <option value="11">☆11のみ</option>
+            <option value="10">☆10のみ</option>
+          </select>
+        </label>
+        <label>
+          <input type="checkbox" id="opt-heatmap" checked />
+          ヒートマップ
+        </label>
+      </div>
+      <button id="btn-submit">Submit</button>
+    </section>
+
+    <!-- Tweet -->
+    <section id="tweet-section" style="display:none;">
+      <a id="tweet-link" class="tweet-link" target="_blank" rel="noopener">
+        Post your IIDX stats
+      </a>
+    </section>
+
+    <!-- レベル別統計テーブル -->
+    <section id="stats-section" style="display:none;">
+      <h2>レベル別統計</h2>
+      <div class="scroll-x">
+        <table class="stats-table" id="stats-table">
+          <thead>
+            <tr>
+              <th>☆</th>
+              <th>Played / Total</th>
+              <th>Avg Rate</th>
+              <th>MAX-*</th>
+              <th>MAX-**</th>
+              <th>99%</th>
+              <th>98%</th>
+              <th>97%</th>
+              <th>96%</th>
+              <th>95%</th>
+              <th>MAX-</th>
+              <th>AAA</th>
+              <th>AA</th>
+              <th>A</th>
+            </tr>
+          </thead>
+          <tbody id="stats-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- サマリーカード -->
+    <section id="summary-section" style="display:none;">
+      <div class="summary-card">
+        <h3>全体サマリー</h3>
+        <div class="summary-grid">
+          <div class="stat">
+            <span class="stat-label">プレイ済</span>
+            <span class="stat-value" id="sum-played">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">平均スコアレート</span>
+            <span class="stat-value" id="sum-rate">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">総合BPI</span>
+            <span class="stat-value" id="sum-bpi">-</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">合計EX SCORE</span>
+            <span class="stat-value" id="sum-exscore">-</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 全曲リスト (折りたたみ) -->
+    <section id="list-section" style="display:none;">
+      <details>
+        <summary><h2>全曲リスト</h2></summary>
+        <div class="scroll-x">
+          <table class="song-table" id="song-table">
+            <thead>
+              <tr>
+                <th>☆</th>
+                <th>Diff</th>
+                <th>Title</th>
+                <th>Score</th>
+                <th>Rate</th>
+                <th>MAX-</th>
+                <th>BPI</th>
+                <th>Miss</th>
+                <th>Clear</th>
+                <th>皆伝平均(差)</th>
+                <th>全1(差)</th>
+              </tr>
+            </thead>
+            <tbody id="song-body"></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <!-- 履歴 -->
+    <section id="history-section">
+      <details>
+        <summary><h2>履歴</h2></summary>
+        <div id="history-list" class="history-list">
+          <p class="history-empty">まだ履歴がありません</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    // ── State ──
+    let currentResults = null;
+    let currentSummary = null;
+
+    // ── DOM refs ──
+    const btnSubmit = document.getElementById('btn-submit');
+    const csvInput = document.getElementById('csv-input');
+    const optLevelFilter = document.getElementById('opt-level-filter');
+    const optHeatmap = document.getElementById('opt-heatmap');
+    const optNoPlay = document.getElementById('opt-include-noplay');
+
+    // ── Submit ──
+    btnSubmit.addEventListener('click', async () => {
+      let csv = csvInput.value;
+      if (!csv && navigator.clipboard) {
+        try {
+          csv = await navigator.clipboard.readText();
+        } catch {
+          alert('クリップボードの読み取りに失敗しました。CSVを直接貼り付けてください。');
+          return;
+        }
+      }
+      if (!csv) {
+        alert('CSVデータがありません');
+        return;
+      }
+
+      btnSubmit.disabled = true;
+      btnSubmit.textContent = '集計中...';
+
+      try {
+        const res = await fetch('/api/aggregate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ csv }),
+        });
+        const data = await res.json();
+        if (data.error) {
+          alert('エラー: ' + data.error);
+          return;
+        }
+        currentResults = data.results;
+        currentSummary = data.summary;
+        renderAll();
+        saveHistory();
+      } catch (e) {
+        alert('通信エラー: ' + e.message);
+      } finally {
+        btnSubmit.disabled = false;
+        btnSubmit.textContent = 'Submit';
+      }
+    });
+
+    // ── Options ──
+    optHeatmap.addEventListener('change', () => { if (currentSummary) renderStats(); });
+    optLevelFilter.addEventListener('change', () => { if (currentResults) renderSongList(); });
+    optNoPlay.addEventListener('change', () => { if (currentResults) renderSongList(); });
+
+    // ── Render ──
+    function renderAll() {
+      renderStats();
+      renderSummary();
+      renderSongList();
+      renderTweet();
+    }
+
+    function renderStats() {
+      if (!currentSummary) return;
+      const stats = currentSummary.levelStats;
+      const tbody = document.getElementById('stats-body');
+      const heatmap = optHeatmap.checked;
+      const HEATMAP_COLOR = '74, 158, 255';
+
+      let html = '';
+      for (const s of stats) {
+        html += '<tr>';
+        html += `<td style="text-align:left;font-weight:600;">☆${s.level}</td>`;
+        html += `<td>${s.played} / ${s.total}</td>`;
+        html += `<td style="text-align:right;">${(s.averageRate * 100).toFixed(3)}%</td>`;
+
+        const cells = [
+          s.maxMinus1keta, s.maxMinus2keta,
+          s.pct99, s.pct98, s.pct97, s.pct96, s.pct95,
+          s.maxMinus, s.aaa, s.aa, s.a,
+        ];
+        for (const val of cells) {
+          const alpha = s.total > 0 ? val / s.total : 0;
+          const bg = heatmap
+            ? `background-color: rgba(${HEATMAP_COLOR}, ${alpha.toFixed(3)});`
+            : '';
+          html += `<td style="${bg}">${val}</td>`;
+        }
+        html += '</tr>';
+      }
+      tbody.innerHTML = html;
+      document.getElementById('stats-section').style.display = '';
+    }
+
+    function renderSummary() {
+      if (!currentSummary) return;
+      const s = currentSummary;
+      document.getElementById('sum-played').textContent =
+        `${s.playedCharts.toLocaleString()} / ${s.totalCharts.toLocaleString()}`;
+      document.getElementById('sum-rate').textContent =
+        (s.averageScoreRate * 100).toFixed(2) + '%';
+      document.getElementById('sum-bpi').textContent =
+        s.averageBpi !== null ? s.averageBpi.toFixed(2) : '-';
+      document.getElementById('sum-exscore').textContent =
+        `${s.totalExScore.toLocaleString()} / ${s.totalMaxScore.toLocaleString()}`;
+      document.getElementById('summary-section').style.display = '';
+    }
+
+    function renderSongList() {
+      if (!currentResults) return;
+      const levelFilter = parseInt(optLevelFilter.value, 10);
+      const includeNoPlay = optNoPlay.checked;
+
+      let filtered = currentResults;
+      if (levelFilter > 0) {
+        filtered = filtered.filter(r => r.level === levelFilter);
+      }
+      if (!includeNoPlay) {
+        filtered = filtered.filter(r => r.exScore > 0);
+      }
+
+      const tbody = document.getElementById('song-body');
+      let html = '';
+
+      for (const r of filtered) {
+        const noPlay = r.exScore === 0;
+        const rowClass = noPlay ? 'class="no-play"' : '';
+        const diffClass = `diff diff-${r.difficulty.toLowerCase()}`;
+
+        html += `<tr ${rowClass}>`;
+        html += `<td>☆${r.level}</td>`;
+        html += `<td><span class="${diffClass}">${r.difficulty}</span></td>`;
+        html += `<td style="text-align:left;max-width:280px;overflow:hidden;text-overflow:ellipsis;">${escHtml(r.title)}</td>`;
+        html += `<td>${noPlay ? '-' : r.exScore}</td>`;
+        html += `<td>${noPlay ? '-' : (r.scoreRate * 100).toFixed(2) + '%'}</td>`;
+        html += `<td>${noPlay ? '-' : r.maxMinus}</td>`;
+        html += `<td>${formatBpi(r.bpi)}</td>`;
+        html += `<td>${r.missCount !== null ? r.missCount : '-'}</td>`;
+        html += `<td>${formatClear(r.clearType)}</td>`;
+        html += `<td>${formatDiff(r.kaidenDiff, r.kaidenAverage)}</td>`;
+        html += `<td>${formatDiff(r.topDiff, r.topScore)}</td>`;
+        html += '</tr>';
+      }
+
+      tbody.innerHTML = html;
+      document.getElementById('list-section').style.display = '';
+    }
+
+    function renderTweet() {
+      if (!currentSummary) return;
+      const s = currentSummary;
+
+      // レベル11,12のサマリー行
+      let text = '';
+      for (const ls of s.levelStats) {
+        if (ls.level === 12 || ls.level === 11) {
+          text += `☆${ls.level} avg: ${(ls.averageRate * 100).toFixed(2)}% (${ls.played}/${ls.total}) | `;
+          text += `max-**: ${ls.maxMinus2keta} / 99%: ${ls.pct99} / 98%: ${ls.pct98} / AAA: ${ls.aaa}\n`;
+        }
+      }
+      text += `\nTotal played: ${s.playedCharts} | avg: ${(s.averageScoreRate * 100).toFixed(2)}%`;
+      if (s.averageBpi !== null) {
+        text += ` | BPI: ${s.averageBpi.toFixed(2)}`;
+      }
+
+      const url = 'https://beat-motivator.norimiso.workers.dev/';
+      const tweetUrl = `https://twitter.com/intent/tweet?hashtags=beat_motivator&text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+
+      const link = document.getElementById('tweet-link');
+      link.href = tweetUrl;
+      document.getElementById('tweet-section').style.display = '';
+    }
+
+    // ── History ──
+    const HISTORY_KEY = 'beat-motivator-history';
+    const MAX_HISTORY = 30;
+
+    function saveHistory() {
+      if (!currentResults || !currentSummary) return;
+
+      // スコアがある結果のみ保存 (NO PLAY を除く → localStorage 節約)
+      const scores = {};
+      for (const r of currentResults) {
+        if (r.exScore <= 0) continue;
+        const key = `${r.title}__${r.difficulty}`;
+        scores[key] = {
+          exScore: r.exScore,
+          scoreRate: r.scoreRate,
+          bpi: r.bpi,
+          clearType: r.clearType,
+          djLevel: r.djLevel,
+          maxMinus: r.maxMinus,
+          missCount: r.missCount,
+        };
+      }
+
+      const entry = {
+        id: crypto.randomUUID(),
+        date: new Date().toISOString().slice(0, 10),
+        submittedAt: new Date().toISOString(),
+        summary: currentSummary,
+        scores,
+      };
+
+      const history = loadHistory();
+      history.unshift(entry);
+      if (history.length > MAX_HISTORY) history.length = MAX_HISTORY;
+
+      try {
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+      } catch {
+        // localStorage full → 古いものを削除して再試行
+        while (history.length > 5) {
+          history.pop();
+          try {
+            localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+            break;
+          } catch { /* continue removing */ }
+        }
+      }
+      renderHistory();
+    }
+
+    function loadHistory() {
+      try {
+        const raw = localStorage.getItem(HISTORY_KEY);
+        if (!raw) return [];
+        return JSON.parse(raw);
+      } catch {
+        return [];
+      }
+    }
+
+    function deleteHistory(id) {
+      const history = loadHistory().filter(h => h.id !== id);
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+      renderHistory();
+    }
+
+    function restoreHistory(id) {
+      const history = loadHistory();
+      const entry = history.find(h => h.id === id);
+      if (!entry) return;
+
+      // 履歴はスコアのみ保存しているので、結果テーブルを再構築はできないが
+      // サマリーは復元可能
+      currentSummary = entry.summary;
+      currentResults = null; // 全曲リストは表示不可
+      renderStats();
+      renderSummary();
+      document.getElementById('list-section').style.display = 'none';
+      document.getElementById('tweet-section').style.display = 'none';
+
+      // アクティブ表示
+      document.querySelectorAll('.history-item').forEach(el => el.classList.remove('active'));
+      document.querySelector(`[data-history-id="${id}"]`)?.classList.add('active');
+    }
+
+    function renderHistory() {
+      const history = loadHistory();
+      const container = document.getElementById('history-list');
+
+      if (history.length === 0) {
+        container.innerHTML = '<p class="history-empty">まだ履歴がありません</p>';
+        return;
+      }
+
+      let html = '';
+      for (const h of history) {
+        const s = h.summary;
+        const played = s.playedCharts;
+        const rate = (s.averageScoreRate * 100).toFixed(2);
+        const bpi = s.averageBpi !== null ? s.averageBpi.toFixed(2) : '-';
+
+        html += `<div class="history-item" data-history-id="${h.id}" onclick="restoreHistory('${h.id}')">`;
+        html += `<span class="history-date">${h.date}</span>`;
+        html += `<span class="history-info"><strong>${played}</strong> played | <strong>${rate}%</strong> avg | BPI <strong>${bpi}</strong></span>`;
+        html += `<button class="history-delete" onclick="event.stopPropagation(); deleteHistory('${h.id}')">削除</button>`;
+        html += '</div>';
+      }
+      container.innerHTML = html;
+    }
+
+    // expose to global for onclick handlers
+    window.restoreHistory = restoreHistory;
+    window.deleteHistory = deleteHistory;
+
+    // ── Helpers ──
+    function escHtml(s) {
+      return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function formatBpi(bpi) {
+      if (bpi === null || bpi === undefined) return '<span class="bpi-negative">-</span>';
+      const val = bpi.toFixed(2);
+      if (bpi >= 80) return `<span class="bpi-top">${val}</span>`;
+      if (bpi >= 50) return `<span class="bpi-high">${val}</span>`;
+      if (bpi >= 0) return `<span class="bpi-mid">${val}</span>`;
+      if (bpi >= -15) return `<span class="bpi-low">${val}</span>`;
+      return `<span class="bpi-negative">${val}</span>`;
+    }
+
+    function formatClear(ct) {
+      const map = {
+        'FULLCOMBO CLEAR': ['FC', 'clear-fc'],
+        'EX HARD CLEAR': ['EXH', 'clear-exh'],
+        'HARD CLEAR': ['HARD', 'clear-hard'],
+        'CLEAR': ['CLEAR', 'clear-normal'],
+        'EASY CLEAR': ['EASY', 'clear-easy'],
+        'ASSIST CLEAR': ['ASSIST', 'clear-assist'],
+        'FAILED': ['FAILED', 'clear-failed'],
+        'NO PLAY': ['---', 'clear-noplay'],
+      };
+      const [label, cls] = map[ct] ?? ['?', ''];
+      return `<span class="${cls}">${label}</span>`;
+    }
+
+    function formatDiff(diff, base) {
+      if (diff === null || diff === undefined || base === null || base === undefined) return '-';
+      const sign = diff >= 0 ? '+' : '';
+      const cls = diff >= 0 ? 'positive' : 'negative';
+      return `${base} (<span class="${cls}">${sign}${diff}</span>)`;
+    }
+
+    // ── Init ──
+    renderHistory();
+  </script>
+</Layout>

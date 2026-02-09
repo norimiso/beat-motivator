@@ -1,0 +1,9 @@
+name = "beat-motivator"
+account_id = "364b8cf40d6c98329314dfac09238032"
+main = "./dist/_worker.js/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
