@@ -2,6 +2,7 @@ import type { TargetChart, ScoreResult, ScoreSummary, LevelStats } from './types
 import { calculateBpi, calculateOverallBpi } from './bpi';
 import { calculateScoreRate, calculateMaxMinus, calculateDjLevel } from './score';
 import { parseEamusementCsv } from './csv-parser';
+import { calculateAbilityScores } from './ability';
 
 /**
  * メイン集計関数 (全曲対応版)
@@ -19,6 +20,8 @@ export function aggregate(
 
   const results: ScoreResult[] = [];
   const bpiValues: number[] = [];
+  const scoreRatesAll: number[] = []; // 単発力用: 全プレイ曲の scoreRate
+  let totalMisses = 0;               // 地力用: 全曲合計ミスカウント
   let playedCount = 0;
   let scoredCount = 0;
   let totalRate = 0;
@@ -114,6 +117,10 @@ export function aggregate(
       scoredCount++;
       totalRate += scoreRate;
       totalExScore += exScore;
+      scoreRatesAll.push(scoreRate);
+      if (score?.missCount !== null && score?.missCount !== undefined) {
+        totalMisses += score.missCount;
+      }
       if (bpi !== null) bpiValues.push(bpi);
 
       // レベル別統計
@@ -160,6 +167,18 @@ export function aggregate(
     if (s && s.total > 0) levelStats.push(s);
   }
 
+  // 能力値計算
+  const levelAverages = new Map<number, number>();
+  for (const s of levelStats) {
+    if (s.averageRate > 0) {
+      levelAverages.set(s.level, s.averageRate);
+    }
+  }
+
+  const ability = scoreRatesAll.length > 0
+    ? calculateAbilityScores({ scoreRates: scoreRatesAll, levelAverages, totalMisses })
+    : null;
+
   const summary: ScoreSummary = {
     totalCharts: targetCharts.length,
     playedCharts: playedCount,
@@ -168,6 +187,7 @@ export function aggregate(
     totalExScore,
     totalMaxScore,
     levelStats,
+    ability,
   };
 
   return { results, summary };

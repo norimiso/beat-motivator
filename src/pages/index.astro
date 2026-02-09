@@ -102,6 +102,35 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+    <!-- 能力値カード -->
+    <section id="ability-section" style="display:none;">
+      <div class="summary-card">
+        <h3>能力値</h3>
+        <div class="ability-gauges">
+          <div class="ability-gauge">
+            <div class="ability-header">
+              <span class="ability-name">単発力</span>
+              <span class="ability-value" id="ability-single">-</span>
+            </div>
+            <div class="ability-bar-bg">
+              <div class="ability-bar-fill" id="ability-single-bar" style="width:0%"></div>
+            </div>
+            <span class="ability-desc">上位3曲の精度 (PGREAT率)</span>
+          </div>
+          <div class="ability-gauge">
+            <div class="ability-header">
+              <span class="ability-name">地力</span>
+              <span class="ability-value" id="ability-jikara">-</span>
+            </div>
+            <div class="ability-bar-bg">
+              <div class="ability-bar-fill" id="ability-jikara-bar" style="width:0%"></div>
+            </div>
+            <span class="ability-desc">レベル横断のスコア安定性</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 全曲リスト (折りたたみ) -->
     <section id="list-section" style="display:none;">
       <details>
@@ -203,6 +232,7 @@ import Layout from '../layouts/Layout.astro';
     function renderAll() {
       renderStats();
       renderSummary();
+      renderAbility();
       renderSongList();
       renderTweet();
     }
@@ -237,6 +267,22 @@ import Layout from '../layouts/Layout.astro';
       }
       tbody.innerHTML = html;
       document.getElementById('stats-section').style.display = '';
+    }
+
+    function renderAbility() {
+      if (!currentSummary?.ability) {
+        document.getElementById('ability-section').style.display = 'none';
+        return;
+      }
+      const a = currentSummary.ability;
+
+      document.getElementById('ability-single').textContent = a.singleNote.toFixed(1);
+      document.getElementById('ability-single-bar').style.width = a.singleNote.toFixed(1) + '%';
+
+      document.getElementById('ability-jikara').textContent = a.jikara.toFixed(1);
+      document.getElementById('ability-jikara-bar').style.width = a.jikara.toFixed(1) + '%';
+
+      document.getElementById('ability-section').style.display = '';
     }
 
     function renderSummary() {
@@ -395,6 +441,7 @@ import Layout from '../layouts/Layout.astro';
       currentResults = null; // 全曲リストは表示不可
       renderStats();
       renderSummary();
+      renderAbility();
       document.getElementById('list-section').style.display = 'none';
       document.getElementById('tweet-section').style.display = 'none';
 

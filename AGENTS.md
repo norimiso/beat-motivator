@@ -36,6 +36,7 @@ src/
     csv-parser.ts         # e-amusement CSV パーサー (RFC 4180)
     master.ts             # master_songs.csv パーサー
     aggregate.ts          # メイン集計 (レベル別統計付き)
+    ability.ts            # 能力値計算 (単発力、地力)
 seed/
   master_songs.csv        # 曲マスター (30ASA と共通)
 _legacy/                  # 旧 vanilla JS 版のファイル

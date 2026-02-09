@@ -432,6 +432,50 @@ const { title } = Astro.props;
         text-decoration: none;
       }
 
+      /* ── Ability Gauges ── */
+      .ability-gauges {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+      .ability-gauge {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+      .ability-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .ability-name {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+      .ability-value {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+      }
+      .ability-bar-bg {
+        height: 8px;
+        background: var(--surface2);
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .ability-bar-fill {
+        height: 100%;
+        border-radius: 4px;
+        background: linear-gradient(90deg, var(--accent-dim), var(--accent));
+        transition: width 0.6s ease-out;
+      }
+      .ability-desc {
+        font-size: 0.7rem;
+        color: var(--text-muted);
+      }
+
       /* ── Misc ── */
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; }

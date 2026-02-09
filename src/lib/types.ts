@@ -78,6 +78,14 @@ export interface LevelStats {
   a: number;
 }
 
+/** 能力値スコア */
+export interface AbilityScores {
+  /** 単発力 (0-100) — 精度・PGREAT能力 */
+  singleNote: number;
+  /** 地力 (0-100) — 難易度横断のスコア安定性 */
+  jikara: number;
+}
+
 /** 集計サマリー */
 export interface ScoreSummary {
   totalCharts: number;
@@ -87,6 +95,7 @@ export interface ScoreSummary {
   totalExScore: number;
   totalMaxScore: number;
   levelStats: LevelStats[];
+  ability: AbilityScores | null;
 }
 
 /** localStorage 履歴の1曲分スコア */
