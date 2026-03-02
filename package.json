@@ -6,7 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:csv": "node tools/check-csv-coverage.mjs \"8981-4679_sp_score (1).csv\"",
+    "check:csv:strict": "node tools/check-csv-coverage.mjs \"8981-4679_sp_score (1).csv\" --strict",
+    "master:pull": "node tools/sync-master-from-30asa.mjs",
+    "master:sync": "node tools/sync-master-from-30asa.mjs --run-sync",
+    "master:auto": "node tools/update-master-and-validate.mjs \"8981-4679_sp_score (1).csv\"",
+    "master:auto:deploy": "node tools/update-master-and-validate.mjs \"8981-4679_sp_score (1).csv\" --deploy"
   },
   "dependencies": {
     "astro": "^5.17.1",

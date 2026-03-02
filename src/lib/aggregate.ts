@@ -1,8 +1,50 @@
-import type { TargetChart, ScoreResult, ScoreSummary, LevelStats } from './types';
+import type { TargetChart, ScoreResult, ScoreSummary, LevelStats, ParsedScore } from './types';
 import { calculateBpi, calculateOverallBpi } from './bpi';
 import { calculateScoreRate, calculateMaxMinus, calculateDjLevel } from './score';
 import { parseEamusementCsv } from './csv-parser';
 import { calculateAbilityScores } from './ability';
+import { normalizeTitleForMatch } from './title-normalizer';
+
+/**
+ * タイトル正規化キー -> ParsedScore[] の索引を作る
+ *
+ * 1つの正規化キーに複数のタイトルがぶら下がる場合は曖昧として無効化し、
+ * 誤マッチを防ぐために fallback しない。
+ */
+function buildNormalizedScoreIndex(parsedScores: Map<string, ParsedScore[]>): Map<string, ParsedScore[] | null> {
+  const index = new Map<string, ParsedScore[] | null>();
+
+  for (const [title, scores] of parsedScores) {
+    const key = normalizeTitleForMatch(title);
+    if (!index.has(key)) {
+      index.set(key, scores);
+      continue;
+    }
+    index.set(key, null);
+  }
+
+  return index;
+}
+
+/**
+ * 正規化キーが master 側で一意なタイトルだけを抽出
+ */
+function buildUniqueNormalizedTitleKeys(targetCharts: TargetChart[]): Set<string> {
+  const counts = new Map<string, number>();
+  const uniqueTitles = new Set(targetCharts.map(chart => chart.title));
+
+  for (const title of uniqueTitles) {
+    const key = normalizeTitleForMatch(title);
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+
+  const uniqueKeys = new Set<string>();
+  for (const [key, count] of counts) {
+    if (count === 1) uniqueKeys.add(key);
+  }
+
+  return uniqueKeys;
+}
 
 /**
  * メイン集計関数 (全曲対応版)
@@ -17,6 +59,8 @@ export function aggregate(
 ): { results: ScoreResult[]; summary: ScoreSummary } {
   // e-amusement CSV パース (全曲版なので targetTitles なし)
   const parsedScores = parseEamusementCsv(eamusementCsv);
+  const normalizedScoreIndex = buildNormalizedScoreIndex(parsedScores);
+  const uniqueNormalizedTitleKeys = buildUniqueNormalizedTitleKeys(targetCharts);
 
   const results: ScoreResult[] = [];
   const bpiValues: number[] = [];
@@ -60,7 +104,12 @@ export function aggregate(
   for (let lv = 1; lv <= 12; lv++) levelRateSum.set(lv, 0);
 
   for (const chart of targetCharts) {
-    const songScores = parsedScores.get(chart.title);
+    const exactScores = parsedScores.get(chart.title);
+    const normalizedKey = normalizeTitleForMatch(chart.title);
+    const normalizedScores = uniqueNormalizedTitleKeys.has(normalizedKey)
+      ? normalizedScoreIndex.get(normalizedKey)
+      : undefined;
+    const songScores = exactScores ?? normalizedScores ?? undefined;
     const score = songScores?.find(s => s.difficulty === chart.difficulty);
 
     const exScore = score?.exScore ?? 0;

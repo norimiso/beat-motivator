@@ -20,3 +20,5 @@ node_modules/
 
 # misc
 _miscs/
+*_sp_score*.csv
+*_dp_score*.csv
