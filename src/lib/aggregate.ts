@@ -66,7 +66,6 @@ export function aggregate(
   const bpiValues: number[] = [];
   const scoreRatesAll: number[] = []; // 単発力用: 全プレイ曲の scoreRate
   let totalMisses = 0;               // 地力用: 全曲合計ミスカウント
-  let playedCount = 0;
   let scoredCount = 0;
   let totalRate = 0;
   let totalExScore = 0;
@@ -132,7 +131,6 @@ export function aggregate(
     }
 
     const hasScore = exScore > 0;
-    const isPlayed = hasScore || (score?.clearType !== undefined && score.clearType !== 'NO PLAY');
 
     const result: ScoreResult = {
       title: chart.title,
@@ -161,8 +159,7 @@ export function aggregate(
 
     results.push(result);
 
-    if (isPlayed && hasScore) {
-      playedCount++;
+    if (hasScore) {
       scoredCount++;
       totalRate += scoreRate;
       totalExScore += exScore;
@@ -230,7 +227,7 @@ export function aggregate(
 
   const summary: ScoreSummary = {
     totalCharts: targetCharts.length,
-    playedCharts: playedCount,
+    playedCharts: scoredCount,
     averageScoreRate: scoredCount > 0 ? totalRate / scoredCount : 0,
     averageBpi,
     totalExScore,

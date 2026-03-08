@@ -144,6 +144,29 @@ const { title } = Astro.props;
       }
       button:hover { background: #5daaff; }
       button:disabled { opacity: 0.4; cursor: not-allowed; }
+      .secondary-btn {
+        background: var(--surface2);
+        color: var(--text);
+        border: 1px solid var(--border);
+      }
+      .secondary-btn:hover {
+        background: rgba(74, 158, 255, 0.14);
+        border-color: var(--accent);
+      }
+      .input-actions,
+      .result-actions,
+      .history-tools {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .submit-result {
+        margin-top: 0.6rem;
+        min-height: 1.2rem;
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
 
       /* ── Tables ── */
       table {
@@ -191,11 +214,26 @@ const { title } = Astro.props;
       }
 
       /* ── Song list table ── */
-      .song-table td:nth-child(3) {
+      .song-title-cell {
         text-align: left;
         max-width: 280px;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .compact-score-cell {
+        font-size: 0.74rem;
+      }
+      .song-table th[data-col='bpi'],
+      .song-table td[data-col='bpi'] {
+        width: 4.4rem;
+      }
+      .song-table th[data-col='miss'],
+      .song-table td[data-col='miss'] {
+        width: 3.6rem;
+      }
+      .song-table th[data-col='clear'],
+      .song-table td[data-col='clear'] {
+        width: 3rem;
       }
 
       /* ── Difficulty ── */
@@ -220,8 +258,9 @@ const { title } = Astro.props;
       .clear-normal { color: var(--accent); font-size: 0.72rem; }
       .clear-easy { color: var(--positive); font-size: 0.72rem; }
       .clear-assist { color: var(--diff-spl); font-size: 0.72rem; }
-      .clear-failed { color: var(--negative); font-size: 0.72rem; }
+      .clear-failed { color: var(--text-muted); font-size: 0.72rem; }
       .clear-noplay { color: var(--text-muted); font-size: 0.72rem; }
+      .clear-short { font-weight: 700; letter-spacing: 0.03em; }
 
       /* ── BPI ── */
       .bpi-top { color: #ef5350; font-weight: 700; }
@@ -431,6 +470,34 @@ const { title } = Astro.props;
         border-color: var(--accent);
         text-decoration: none;
       }
+      .column-controls {
+        margin-bottom: 0.75rem;
+        padding: 0.8rem 0.9rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+      .column-controls summary {
+        cursor: pointer;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+      .column-toggle-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem 0.8rem;
+        margin-top: 0.65rem;
+      }
+      .column-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-size: 0.76rem;
+        color: var(--text-muted);
+      }
+      .column-toggle.locked {
+        opacity: 0.75;
+      }
 
       /* ── Ability Gauges ── */
       .ability-gauges {
@@ -474,6 +541,39 @@ const { title } = Astro.props;
       .ability-desc {
         font-size: 0.7rem;
         color: var(--text-muted);
+      }
+
+      @media (max-width: 700px) {
+        .song-table {
+          table-layout: fixed;
+          width: 100%;
+          font-size: 0.68rem;
+        }
+        .song-table th,
+        .song-table td {
+          padding: 0.35rem 0.28rem;
+        }
+        .song-title-cell {
+          max-width: 12ch;
+        }
+        .song-title-cell.diff-spa { color: var(--diff-spa); }
+        .song-title-cell.diff-spl { color: var(--diff-spl); }
+        .song-table th[data-col='compactScore'],
+        .song-table td[data-col='compactScore'] {
+          width: 7rem;
+        }
+        .song-table th[data-col='bpi'],
+        .song-table td[data-col='bpi'] {
+          width: 4rem;
+        }
+        .song-table th[data-col='miss'],
+        .song-table td[data-col='miss'] {
+          width: 2.8rem;
+        }
+        .song-table th[data-col='clear'],
+        .song-table td[data-col='clear'] {
+          width: 2.4rem;
+        }
       }
 
       /* ── Misc ── */

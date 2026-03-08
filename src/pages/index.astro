@@ -39,14 +39,19 @@ import Layout from '../layouts/Layout.astro';
           ヒートマップ
         </label>
       </div>
-      <button id="btn-submit">Submit</button>
+      <div class="input-actions">
+        <button id="btn-submit">Submit</button>
+        <button id="btn-example" class="secondary-btn" type="button">サンプルCSVで表示 (保存しない)</button>
+      </div>
+      <div id="submit-result" class="submit-result"></div>
     </section>
 
-    <!-- Tweet -->
+      <!-- Tweet -->
     <section id="tweet-section" style="display:none;">
-      <a id="tweet-link" class="tweet-link" target="_blank" rel="noopener">
-        Post your IIDX stats
-      </a>
+      <div class="result-actions">
+        <a id="tweet-link" class="tweet-link" target="_blank" rel="noopener">Post your IIDX stats</a>
+        <button id="copy-tweet-btn" class="secondary-btn" type="button">文面コピー</button>
+      </div>
     </section>
 
     <!-- レベル別統計テーブル -->
@@ -135,21 +140,26 @@ import Layout from '../layouts/Layout.astro';
     <section id="list-section" style="display:none;">
       <details>
         <summary><h2>全曲リスト</h2></summary>
+        <details id="song-column-controls" class="column-controls" style="display:none;">
+          <summary>表示列</summary>
+          <div id="song-column-toggle-grid" class="column-toggle-grid"></div>
+        </details>
         <div class="scroll-x">
           <table class="song-table" id="song-table">
             <thead>
               <tr>
-                <th>☆</th>
-                <th>Diff</th>
-                <th>Title</th>
-                <th>Score</th>
-                <th>Rate</th>
-                <th>MAX-</th>
-                <th>BPI</th>
-                <th>Miss</th>
-                <th>Clear</th>
-                <th>皆伝平均(差)</th>
-                <th>全1(差)</th>
+                <th data-col="level">☆</th>
+                <th data-col="difficulty">Diff</th>
+                <th data-col="title">Title</th>
+                <th data-col="compactScore">Score</th>
+                <th data-col="exscore">EX SCORE</th>
+                <th data-col="rate">Rate</th>
+                <th data-col="maxminus">MAX-</th>
+                <th data-col="bpi">BPI</th>
+                <th data-col="miss">Miss</th>
+                <th data-col="clear">Clear</th>
+                <th data-col="kaiden">皆伝平均(差)</th>
+                <th data-col="top">全1(差)</th>
               </tr>
             </thead>
             <tbody id="song-body"></tbody>
@@ -162,6 +172,11 @@ import Layout from '../layouts/Layout.astro';
     <section id="history-section">
       <details>
         <summary><h2>履歴</h2></summary>
+        <div class="history-tools">
+          <button id="export-history-btn" class="secondary-btn" type="button">履歴を書き出し</button>
+          <button id="import-history-btn" class="secondary-btn" type="button">履歴を読み込む</button>
+          <input id="history-import-input" type="file" accept="application/json" hidden>
+        </div>
         <div id="history-list" class="history-list">
           <p class="history-empty">まだ履歴がありません</p>
         </div>
@@ -173,13 +188,97 @@ import Layout from '../layouts/Layout.astro';
     // ── State ──
     let currentResults = null;
     let currentSummary = null;
+    let currentSourceLabel = '';
+
+    const SONG_COLUMN_DEFS = [
+      { key: 'level', label: '☆' },
+      { key: 'difficulty', label: 'Diff' },
+      { key: 'title', label: 'Title', locked: true },
+      { key: 'compactScore', label: 'Score' },
+      { key: 'exscore', label: 'EX SCORE' },
+      { key: 'rate', label: 'Rate' },
+      { key: 'maxminus', label: 'MAX-' },
+      { key: 'bpi', label: 'BPI' },
+      { key: 'miss', label: 'Miss' },
+      { key: 'clear', label: 'Clear' },
+      { key: 'kaiden', label: '皆伝' },
+      { key: 'top', label: '全1' },
+    ];
+
+    const DEFAULT_DESKTOP_COLUMNS = {
+      level: true,
+      difficulty: true,
+      title: true,
+      compactScore: false,
+      exscore: true,
+      rate: true,
+      maxminus: true,
+      bpi: true,
+      miss: true,
+      clear: true,
+      kaiden: true,
+      top: true,
+    };
+
+    const DEFAULT_MOBILE_COLUMNS = {
+      level: false,
+      difficulty: false,
+      title: true,
+      compactScore: true,
+      exscore: false,
+      rate: false,
+      maxminus: false,
+      bpi: true,
+      miss: true,
+      clear: true,
+      kaiden: false,
+      top: false,
+    };
 
     // ── DOM refs ──
     const btnSubmit = document.getElementById('btn-submit');
+    const btnExample = document.getElementById('btn-example');
     const csvInput = document.getElementById('csv-input');
     const optLevelFilter = document.getElementById('opt-level-filter');
     const optHeatmap = document.getElementById('opt-heatmap');
     const optNoPlay = document.getElementById('opt-include-noplay');
+    const submitResult = document.getElementById('submit-result');
+    const copyTweetBtn = document.getElementById('copy-tweet-btn');
+    const exportHistoryBtn = document.getElementById('export-history-btn');
+    const importHistoryBtn = document.getElementById('import-history-btn');
+    const historyImportInput = document.getElementById('history-import-input');
+
+    const DEFAULT_SUBMIT_LABEL = 'Submit';
+    const DEFAULT_EXAMPLE_LABEL = 'サンプルCSVで表示 (保存しない)';
+
+    function setBusyState({ busy = false, submitLabel = DEFAULT_SUBMIT_LABEL, exampleLabel = DEFAULT_EXAMPLE_LABEL } = {}) {
+      btnSubmit.disabled = busy;
+      btnExample.disabled = busy;
+      btnSubmit.textContent = submitLabel;
+      btnExample.textContent = exampleLabel;
+    }
+
+    async function fetchAggregate(csv) {
+      const res = await fetch('/api/aggregate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ csv }),
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(data.error || '集計に失敗しました');
+      }
+      return data;
+    }
+
+    function applyAggregateData(data, { saveHistory: shouldSaveHistory = true, sourceLabel = '' } = {}) {
+      currentResults = data.results;
+      currentSummary = data.summary;
+      currentSourceLabel = sourceLabel;
+      renderAll();
+      if (shouldSaveHistory) saveHistory();
+      submitResult.textContent = sourceLabel || '集計が完了しました';
+    }
 
     // ── Submit ──
     btnSubmit.addEventListener('click', async () => {
@@ -197,29 +296,35 @@ import Layout from '../layouts/Layout.astro';
         return;
       }
 
-      btnSubmit.disabled = true;
-      btnSubmit.textContent = '集計中...';
+      setBusyState({ busy: true, submitLabel: '集計中...' });
+      submitResult.textContent = '';
 
       try {
-        const res = await fetch('/api/aggregate', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ csv }),
-        });
-        const data = await res.json();
-        if (data.error) {
-          alert('エラー: ' + data.error);
-          return;
-        }
-        currentResults = data.results;
-        currentSummary = data.summary;
-        renderAll();
-        saveHistory();
+        const data = await fetchAggregate(csv);
+        applyAggregateData(data, { saveHistory: true, sourceLabel: 'CSVを集計しました' });
       } catch (e) {
         alert('通信エラー: ' + e.message);
       } finally {
-        btnSubmit.disabled = false;
-        btnSubmit.textContent = 'Submit';
+        setBusyState();
+      }
+    });
+
+    btnExample.addEventListener('click', async () => {
+      setBusyState({ busy: true, exampleLabel: '読込中...' });
+      submitResult.textContent = '';
+      try {
+        const response = await fetch('/api/example-csv');
+        const payload = await response.json();
+        if (!response.ok || payload.error) {
+          throw new Error(payload.error || 'サンプルCSVの読み込みに失敗しました');
+        }
+        csvInput.value = payload.csv || '';
+        const data = await fetchAggregate(payload.csv || '');
+        applyAggregateData(data, { saveHistory: false, sourceLabel: `サンプルCSV (${payload.filename}) を表示しました` });
+      } catch (e) {
+        alert(e.message);
+      } finally {
+        setBusyState();
       }
     });
 
@@ -235,6 +340,8 @@ import Layout from '../layouts/Layout.astro';
       renderAbility();
       renderSongList();
       renderTweet();
+      renderColumnControls();
+      applyColumnVisibility();
     }
 
     function renderStats() {
@@ -285,6 +392,72 @@ import Layout from '../layouts/Layout.astro';
       document.getElementById('ability-section').style.display = '';
     }
 
+    function isMobileLayout() {
+      return window.matchMedia('(max-width: 700px)').matches;
+    }
+
+    function getColumnPrefsKey() {
+      return 'beat-motivator-columns-v1';
+    }
+
+    function loadColumnPrefs() {
+      try {
+        const raw = localStorage.getItem(getColumnPrefsKey());
+        return raw ? JSON.parse(raw) : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function getActiveColumnPrefs() {
+      return {
+        ...(isMobileLayout() ? DEFAULT_MOBILE_COLUMNS : DEFAULT_DESKTOP_COLUMNS),
+        ...(loadColumnPrefs() || {}),
+        title: true,
+      };
+    }
+
+    function saveColumnPrefs(prefs) {
+      localStorage.setItem(getColumnPrefsKey(), JSON.stringify(prefs));
+    }
+
+    function renderColumnControls() {
+      const root = document.getElementById('song-column-controls');
+      const grid = document.getElementById('song-column-toggle-grid');
+      if (!root || !grid) return;
+      const prefs = getActiveColumnPrefs();
+      root.style.display = currentResults ? 'block' : 'none';
+      grid.innerHTML = SONG_COLUMN_DEFS.map((column) => `
+        <label class="column-toggle${column.locked ? ' locked' : ''}">
+          <input type="checkbox" data-column-toggle="${column.key}" ${prefs[column.key] ? 'checked' : ''} ${column.locked ? 'disabled' : ''}>
+          <span>${column.label}</span>
+        </label>
+      `).join('');
+      grid.querySelectorAll('[data-column-toggle]').forEach((input) => {
+        input.addEventListener('change', () => {
+          const nextPrefs = { ...loadColumnPrefs(), [input.dataset.columnToggle]: input.checked };
+          saveColumnPrefs(nextPrefs);
+          applyColumnVisibility();
+        });
+      });
+    }
+
+    function applyColumnVisibility() {
+      const prefs = getActiveColumnPrefs();
+      document.querySelectorAll('[data-col]').forEach((el) => {
+        const key = el.dataset.col;
+        const visible = key === 'title' ? true : !!prefs[key];
+        el.style.display = visible ? '' : 'none';
+      });
+    }
+
+    function getCompactScoreText(result) {
+      if (!result || result.exScore <= 0) return '-';
+      const rate = (result.scoreRate * 100).toFixed(1);
+      const maxPart = result.maxMinus === 0 ? '' : `/-${Math.abs(result.maxMinus)}`;
+      return `${result.exScore} (${rate}%${maxPart})`;
+    }
+
     function renderSummary() {
       if (!currentSummary) return;
       const s = currentSummary;
@@ -319,19 +492,22 @@ import Layout from '../layouts/Layout.astro';
         const noPlay = r.exScore === 0;
         const rowClass = noPlay ? 'class="no-play"' : '';
         const diffClass = `diff diff-${r.difficulty.toLowerCase()}`;
+        const titleClass = `song-title-cell diff-${r.difficulty.toLowerCase()}`;
+        const compactScore = getCompactScoreText(r);
 
         html += `<tr ${rowClass}>`;
-        html += `<td>☆${r.level}</td>`;
-        html += `<td><span class="${diffClass}">${r.difficulty}</span></td>`;
-        html += `<td style="text-align:left;max-width:280px;overflow:hidden;text-overflow:ellipsis;">${escHtml(r.title)}</td>`;
-        html += `<td>${noPlay ? '-' : r.exScore}</td>`;
-        html += `<td>${noPlay ? '-' : (r.scoreRate * 100).toFixed(2) + '%'}</td>`;
-        html += `<td>${noPlay ? '-' : r.maxMinus}</td>`;
-        html += `<td>${formatBpi(r.bpi)}</td>`;
-        html += `<td>${r.missCount !== null ? r.missCount : '-'}</td>`;
-        html += `<td>${formatClear(r.clearType)}</td>`;
-        html += `<td>${formatDiff(r.kaidenDiff, r.kaidenAverage)}</td>`;
-        html += `<td>${formatDiff(r.topDiff, r.topScore)}</td>`;
+        html += `<td data-col="level">☆${r.level}</td>`;
+        html += `<td data-col="difficulty"><span class="${diffClass}">${r.difficulty}</span></td>`;
+        html += `<td data-col="title" class="${titleClass}">${escHtml(r.title)}</td>`;
+        html += `<td data-col="compactScore" class="compact-score-cell">${noPlay ? '-' : compactScore}</td>`;
+        html += `<td data-col="exscore">${noPlay ? '-' : r.exScore}</td>`;
+        html += `<td data-col="rate">${noPlay ? '-' : (r.scoreRate * 100).toFixed(2) + '%'}</td>`;
+        html += `<td data-col="maxminus">${noPlay ? '-' : r.maxMinus}</td>`;
+        html += `<td data-col="bpi">${formatBpi(r.bpi)}</td>`;
+        html += `<td data-col="miss">${r.missCount !== null ? r.missCount : '-'}</td>`;
+        html += `<td data-col="clear">${formatClear(r.clearType)}</td>`;
+        html += `<td data-col="kaiden">${formatDiff(r.kaidenDiff, r.kaidenAverage)}</td>`;
+        html += `<td data-col="top">${formatDiff(r.topDiff, r.topScore)}</td>`;
         html += '</tr>';
       }
 
@@ -356,8 +532,9 @@ import Layout from '../layouts/Layout.astro';
         text += ` | BPI: ${s.averageBpi.toFixed(2)}`;
       }
 
-      const url = 'https://beat-motivator.norimiso.workers.dev/';
-      const tweetUrl = `https://twitter.com/intent/tweet?hashtags=beat_motivator&text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+      const shareUrl = new URL(window.location.href);
+      const finalText = `${text}\n${shareUrl.toString()}\n#beat_motivator`;
+      const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(finalText)}`;
 
       const link = document.getElementById('tweet-link');
       link.href = tweetUrl;
@@ -424,6 +601,46 @@ import Layout from '../layouts/Layout.astro';
       }
     }
 
+    async function copyTweetText() {
+      const link = document.getElementById('tweet-link');
+      const href = link?.href || '';
+      const url = new URL(href);
+      const text = url.searchParams.get('text');
+      if (!text) {
+        alert('共有できる集計結果がありません');
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      submitResult.textContent = '共有文面をコピーしました';
+    }
+
+    function exportHistory() {
+      const payload = {
+        version: 1,
+        exportedAt: new Date().toISOString(),
+        entries: loadHistory(),
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `beat-motivator-history-${new Date().toISOString().slice(0, 10)}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    async function importHistory(file) {
+      const text = await file.text();
+      const payload = JSON.parse(text);
+      const entries = Array.isArray(payload?.entries) ? payload.entries : [];
+      const merged = new Map(loadHistory().map((entry) => [entry.id, entry]));
+      entries.forEach((entry) => {
+        if (entry && typeof entry === 'object' && entry.id) merged.set(entry.id, entry);
+      });
+      localStorage.setItem(HISTORY_KEY, JSON.stringify([...merged.values()]));
+      renderHistory();
+    }
+
     function deleteHistory(id) {
       const history = loadHistory().filter(h => h.id !== id);
       localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
@@ -478,6 +695,27 @@ import Layout from '../layouts/Layout.astro';
     // expose to global for onclick handlers
     window.restoreHistory = restoreHistory;
     window.deleteHistory = deleteHistory;
+    copyTweetBtn.addEventListener('click', () => {
+      copyTweetText().catch((error) => alert(error.message || 'コピーに失敗しました'));
+    });
+    exportHistoryBtn.addEventListener('click', exportHistory);
+    importHistoryBtn.addEventListener('click', () => historyImportInput.click());
+    historyImportInput.addEventListener('change', async (event) => {
+      const file = event.target.files?.[0];
+      if (!file) return;
+      try {
+        await importHistory(file);
+        submitResult.textContent = '履歴を読み込みました';
+      } catch (error) {
+        alert(error.message || '履歴の読み込みに失敗しました');
+      } finally {
+        event.target.value = '';
+      }
+    });
+    window.addEventListener('resize', () => {
+      renderColumnControls();
+      applyColumnVisibility();
+    });
 
     // ── Helpers ──
     function escHtml(s) {
@@ -498,12 +736,12 @@ import Layout from '../layouts/Layout.astro';
       const map = {
         'FULLCOMBO CLEAR': ['FC', 'clear-fc'],
         'EX HARD CLEAR': ['EXH', 'clear-exh'],
-        'HARD CLEAR': ['HARD', 'clear-hard'],
-        'CLEAR': ['CLEAR', 'clear-normal'],
-        'EASY CLEAR': ['EASY', 'clear-easy'],
-        'ASSIST CLEAR': ['ASSIST', 'clear-assist'],
-        'FAILED': ['FAILED', 'clear-failed'],
-        'NO PLAY': ['---', 'clear-noplay'],
+        'HARD CLEAR': ['H', 'clear-hard'],
+        'CLEAR': ['N', 'clear-normal'],
+        'EASY CLEAR': ['E', 'clear-easy'],
+        'ASSIST CLEAR': ['A', 'clear-assist'],
+        'FAILED': ['-', 'clear-failed'],
+        'NO PLAY': ['-', 'clear-noplay'],
       };
       const [label, cls] = map[ct] ?? ['?', ''];
       return `<span class="${cls}">${label}</span>`;
