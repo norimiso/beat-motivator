@@ -581,6 +581,15 @@ const { title } = Astro.props;
       a:hover { text-decoration: underline; }
 
       ::selection { background: var(--accent-dim); }
+
+      /* ── Focus ring (accessibility) ── */
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+      :focus:not(:focus-visible) {
+        outline: none;
+      }
     </style>
   </head>
   <body>
