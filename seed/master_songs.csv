@@ -9381,11 +9381,11 @@ tricoro,ZED,DUB STEP,USAO,20,SPB,1,-1,-1,-1,-1,-1,-1,122,-1,-1
 tricoro,ZED,DUB STEP,USAO,20,SPN,2,5,474,190,190,190,97,123,903,948
 tricoro,ZED,DUB STEP,USAO,20,SPH,3,8,876,190,190,190,97,123,1609,1740
 tricoro,ZED,DUB STEP,USAO,20,SPA,4,11,1405,190,190,190,97,123,2528,2807
-tricoro,ZED,DUB STEP,USAO,20,SPL,5,-1,-1,-1,-1,-1,-1,122,-1,-1
+tricoro,ZED,DUB STEP,USAO,20,SPL,5,12,1778,190,190,190,97,123,-1,-1
 tricoro,ZED,DUB STEP,USAO,20,DPN,6,5,534,190,190,190,97,123,-1,-1
 tricoro,ZED,DUB STEP,USAO,20,DPH,7,8,818,190,190,190,97,123,-1,-1
 tricoro,ZED,DUB STEP,USAO,20,DPA,8,11,1479,190,190,190,97,123,-1,-1
-tricoro,ZED,DUB STEP,USAO,20,DPL,9,-1,-1,-1,-1,-1,-1,122,-1,-1
+tricoro,ZED,DUB STEP,USAO,20,DPL,9,12,1781,190,190,190,97,123,-1,-1
 tricoro,Zirkfied,SPACE REQUIEM,iconoclasm,20,SPB,1,-1,-1,-1,-1,-1,-1,125,-1,-1
 tricoro,Zirkfied,SPACE REQUIEM,iconoclasm,20,SPN,2,5,524,210,210,210,109,125,882,1047
 tricoro,Zirkfied,SPACE REQUIEM,iconoclasm,20,SPH,3,10,1055,210,210,210,109,125,1822,2087
@@ -10821,11 +10821,11 @@ PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPB,1,-1,-1,-1,-1,-1,-1,119,-1,-1
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPN,2,5,402,150,150,150,74,118,702,804
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPH,3,9,822,150,150,150,74,118,1497,1637
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPA,4,12,1574,150,150,150,74,118,2534,3109
-PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPL,5,-1,-1,-1,-1,-1,-1,119,-1,-1
+PENDUAL,Reflux,TRANCESTEP,Eagle,22,SPL,5,12,1660,150,150,150,74,118,-1,-1
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,DPN,6,6,467,150,150,150,74,118,-1,-1
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,DPH,7,9,912,150,150,150,74,118,-1,-1
 PENDUAL,Reflux,TRANCESTEP,Eagle,22,DPA,8,12,1693,150,150,150,74,118,-1,-1
-PENDUAL,Reflux,TRANCESTEP,Eagle,22,DPL,9,-1,-1,-1,-1,-1,-1,119,-1,-1
+PENDUAL,Reflux,TRANCESTEP,Eagle,22,DPL,9,12,1936,150,150,150,74,118,-1,-1
 PENDUAL,Sakura Mirage,CHIPCORE,Ryu☆,22,SPB,1,-1,-1,-1,-1,-1,-1,105,-1,-1
 PENDUAL,Sakura Mirage,CHIPCORE,Ryu☆,22,SPN,2,6,520,187,187,187,81,104,983,1034
 PENDUAL,Sakura Mirage,CHIPCORE,Ryu☆,22,SPH,3,8,710,187,187,187,81,104,1233,1403
@@ -13449,11 +13449,11 @@ CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,SPN,2,4,459,150,150,150,75,120,899,918
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,SPH,3,8,797,150,150,150,75,120,1484,1593
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,SPA,4,10,1138,150,150,150,75,120,2169,2275
-CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,SPL,5,-1,-1,-1,-1,-1,-1,122,-1,-1
+CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,SPL,5,11,1460,150,150,150,76,122,-1,-1
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,DPN,6,5,503,150,150,150,75,120,-1,-1
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,DPH,7,8,807,150,150,150,75,120,-1,-1
 CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,DPA,8,10,1128,150,150,150,75,120,-1,-1
-CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,DPL,9,-1,-1,-1,-1,-1,-1,122,-1,-1
+CANNON BALLERS,Only for now,PSYCHDELIC TRANCE,RINA SOUND PRODUCE : KAZUYA TAKASE,25,DPL,9,11,1481,150,150,150,76,122,-1,-1
 CANNON BALLERS,Papilio ulysses,DRUMSTEP,"BEMANI Sound Team ""SYUNN""",25,SPB,1,-1,-1,-1,-1,-1,-1,122,-1,-1
 CANNON BALLERS,Papilio ulysses,DRUMSTEP,"BEMANI Sound Team ""SYUNN""",25,SPN,2,7,614,180,180,180,89,119,1061,1228
 CANNON BALLERS,Papilio ulysses,DRUMSTEP,"BEMANI Sound Team ""SYUNN""",25,SPH,3,10,1080,180,180,180,89,119,1880,2144
@@ -15060,11 +15060,11 @@ HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPB,1,-1,-1,-1,-1,-1,-1,110,-1,-1
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPN,2,5,398,170,170,170,74,104,718,796
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPH,3,8,689,170,170,170,74,104,1258,1373
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPA,4,10,959,170,170,170,74,104,1777,1917
-HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPL,5,-1,-1,-1,-1,-1,-1,110,-1,-1
+HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,SPL,5,12,1254,170,170,170,74,104,-1,-1
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,DPN,6,5,394,170,170,170,74,104,-1,-1
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,DPH,7,8,690,170,170,170,74,104,-1,-1
 HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,DPA,8,10,969,170,170,170,74,104,-1,-1
-HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,DPL,9,-1,-1,-1,-1,-1,-1,110,-1,-1
+HEROIC VERSE,If,FUTURE BASS,Pa's Lam System,27,DPL,9,12,1250,170,170,170,74,104,-1,-1
 HEROIC VERSE,Inferno of Fomalhaut,DJENT STEP,fallen shepherd ft. ricono,27,SPB,1,-1,-1,-1,-1,-1,-1,123,-1,-1
 HEROIC VERSE,Inferno of Fomalhaut,DJENT STEP,fallen shepherd ft. ricono,27,SPN,2,5,523,150,150,150,76,122,959,1046
 HEROIC VERSE,Inferno of Fomalhaut,DJENT STEP,fallen shepherd ft. ricono,27,SPH,3,10,980,150,150,150,76,122,1670,1943
@@ -16271,7 +16271,7 @@ BISTROVER,POLKAMAИIA,ポルカ2020,かめりあ feat. ななひら,28,DPN,6,6,5
 BISTROVER,POLKAMAИIA,ポルカ2020,かめりあ feat. ななひら,28,DPH,7,9,899,160,160,160,77,116,-1,-1
 BISTROVER,POLKAMAИIA,ポルカ2020,かめりあ feat. ななひら,28,DPA,8,11,1473,160,160,160,77,116,-1,-1
 BISTROVER,POLKAMAИIA,ポルカ2020,かめりあ feat. ななひら,28,DPL,9,12,1798,160,160,160,77,116,-1,-1
-BISTROVER,Rejection Girl,STYLISH FUTURE,"BEMANI Sound Team ""HuΣeR""",28,SPB,1,-1,-1,-1,-1,-1,-1,122,-1,-1
+BISTROVER,Rejection Girl,STYLISH FUTURE,"BEMANI Sound Team ""HuΣeR""",28,SPB,1,2,514,174,174,174,87,120,-1,-1
 BISTROVER,Rejection Girl,STYLISH FUTURE,"BEMANI Sound Team ""HuΣeR""",28,SPN,2,5,514,174,174,174,87,120,928,1028
 BISTROVER,Rejection Girl,STYLISH FUTURE,"BEMANI Sound Team ""HuΣeR""",28,SPH,3,9,844,174,174,174,87,120,1539,1686
 BISTROVER,Rejection Girl,STYLISH FUTURE,"BEMANI Sound Team ""HuΣeR""",28,SPA,4,11,1352,174,174,174,87,120,2438,2697
@@ -20569,8 +20569,8 @@ Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,SPN,2,6,1310,173,1
 Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,SPH,3,10,1310,173,173,173,89,123,-1,-1
 Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,SPA,4,12,2171,173,173,173,89,123,-1,-1
 Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPN,6,6,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPH,7,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPN,6,6,1277,173,173,173,89,123,-1,-1
+Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPH,7,10,1277,173,173,173,89,123,-1,-1
 Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPA,8,12,2160,173,173,173,89,123,-1,-1
 Sparkle Shower,Amor∞Fati,PIANO DANCE APPASSIONATO,BlackY,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Astra Blaze,DRUMSTEP,MK,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
@@ -20727,12 +20727,12 @@ Sparkle Shower,Hallucination,PSYCHEDELIC TRANCE,KO3 & Relect,33,DPH,7,9,973,160,
 Sparkle Shower,Hallucination,PSYCHEDELIC TRANCE,KO3 & Relect,33,DPA,8,11,1363,160,120,160,83,125,-1,-1
 Sparkle Shower,Hallucination,PSYCHEDELIC TRANCE,KO3 & Relect,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPN,2,6,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPH,3,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPN,2,6,1164,185,185,185,96,125,-1,-1
+Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPH,3,10,1164,185,185,185,96,125,-1,-1
 Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPA,4,12,1831,185,185,185,96,125,-1,-1
 Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPN,6,6,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPH,7,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPN,6,6,1117,185,185,185,96,125,-1,-1
+Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPH,7,10,1117,185,185,185,96,125,-1,-1
 Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPA,8,12,1847,185,185,185,96,125,-1,-1
 Sparkle Shower,HEROES,HARD MIXTURE,ビートまりお Prod. by Yuta Imai & L.E.D.-G,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,HORIZON BEATZ,FUTURE VIBES,SOUND HOLIC feat. Nana Takahashi,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
@@ -20844,12 +20844,12 @@ Sparkle Shower,MOCHIMOCHI DREAMIN!!,オモチコア,nora2r × まろん feat. �
 Sparkle Shower,MOCHIMOCHI DREAMIN!!,オモチコア,nora2r × まろん feat. 和鳴るせ,33,DPA,8,11,1564,170,170,170,85,120,-1,-1
 Sparkle Shower,MOCHIMOCHI DREAMIN!!,オモチコア,nora2r × まろん feat. 和鳴るせ,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPN,2,5,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPH,3,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPN,2,5,920,170,170,170,85,120,-1,-1
+Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPH,3,9,920,170,170,170,85,120,-1,-1
 Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPA,4,11,1404,170,170,170,85,120,-1,-1
 Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPN,6,5,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPH,7,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPN,6,5,935,170,170,170,85,120,-1,-1
+Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPH,7,9,935,170,170,170,85,120,-1,-1
 Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPA,8,11,1470,170,170,170,85,120,-1,-1
 Sparkle Shower,Nemophila,EMOTIONAL FUTURE RIDDIM,TAN1CHU,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Nyan Nyan University,MAJOR IN MEWOLOGY,Aice room,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
@@ -20875,10 +20875,19 @@ Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,SPN,2,
 Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,SPH,3,10,1237,190,190,190,92,116,-1,-1
 Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,SPA,4,12,1990,190,190,190,92,116,-1,-1
 Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPN,6,6,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPH,7,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPN,6,6,1240,190,190,190,92,116,-1,-1
+Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPH,7,10,1240,190,190,190,92,116,-1,-1
 Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPA,8,12,1997,190,190,190,92,116,-1,-1
 Sparkle Shower,PERFECT GREAT!!,SUPER ULTRA MIRACLE HAPPY HARDCORE,Zekk,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,SPB,1,-1,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,SPN,2,5,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,SPH,3,9,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,SPA,4,11,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,SPL,5,-1,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,DPN,6,5,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,DPH,7,9,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,DPA,8,11,-1,162,162,162,-1,-1,-1,-1
+Sparkle Shower,pique,MELODIOUS TECH,星野音楽工房,33,DPL,9,-1,-1,162,162,162,-1,-1,-1,-1
 Sparkle Shower,RALLY '25,RALLY HARD TECHNO,Masayoshi Iimori,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,RALLY '25,RALLY HARD TECHNO,Masayoshi Iimori,33,SPN,2,6,1100,160,160,160,80,120,-1,-1
 Sparkle Shower,RALLY '25,RALLY HARD TECHNO,Masayoshi Iimori,33,SPH,3,10,1100,160,160,160,80,120,-1,-1
@@ -20915,6 +20924,15 @@ Sparkle Shower,RIZING-GAMERS.,GOLDEN FORCE,BlackY,33,DPN,6,5,1176,165,165,165,84
 Sparkle Shower,RIZING-GAMERS.,GOLDEN FORCE,BlackY,33,DPH,7,10,1176,165,165,165,84,122,-1,-1
 Sparkle Shower,RIZING-GAMERS.,GOLDEN FORCE,BlackY,33,DPA,8,12,1751,165,165,165,84,122,-1,-1
 Sparkle Shower,RIZING-GAMERS.,GOLDEN FORCE,BlackY,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,SPB,1,-1,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,SPN,2,6,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,SPH,3,10,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,SPA,4,12,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,SPL,5,-1,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,DPN,6,6,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,DPH,7,10,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,DPA,8,12,-1,160,160,160,-1,-1,-1,-1
+Sparkle Shower,RUINA,HARD PSY/SPEEDCORE,Dustup VS MAX MAXIMIZER,33,DPL,9,-1,-1,160,160,160,-1,-1,-1,-1
 Sparkle Shower,SHINING☆DANCE,J-RAVE,ハレトキドキ,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,SHINING☆DANCE,J-RAVE,ハレトキドキ,33,SPN,2,4,789,161,161,161,81,121,-1,-1
 Sparkle Shower,SHINING☆DANCE,J-RAVE,ハレトキドキ,33,SPH,3,7,789,161,161,161,81,121,-1,-1
@@ -20934,8 +20952,8 @@ Sparkle Shower,Shooting Star,DANCE POP,ReGLOSS,33,DPH,7,7,-1,-1,-1,-1,-1,-1,-1,-
 Sparkle Shower,Shooting Star,DANCE POP,ReGLOSS,33,DPA,8,10,1256,170,170,170,86,121,-1,-1
 Sparkle Shower,Shooting Star,DANCE POP,ReGLOSS,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPN,2,5,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPH,3,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPN,2,5,725,145,145,145,71,118,-1,-1
+Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPH,3,7,725,145,145,145,71,118,-1,-1
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPA,4,10,1035,145,145,145,71,118,-1,-1
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,DPN,6,5,-1,-1,-1,-1,-1,-1,-1,-1
@@ -20943,8 +20961,8 @@ Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,DPH,7,7,-1,-1,-1,-
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,DPA,8,10,1023,145,145,145,71,118,-1,-1
 Sparkle Shower,Show Time,HYBRID JERSEY CLUB,MK&Kanae Asaba,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPN,2,4,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPH,3,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPN,2,4,524,196,196,196,48,59,-1,-1
+Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPH,3,7,524,196,196,196,48,59,-1,-1
 Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPA,4,9,806,196,196,196,48,59,-1,-1
 Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Signs and Wonders,PROJECT ZIRCON,ネオン(CV:藤川茜)、芽兎めう(CV:五十嵐裕美),33,DPN,6,4,-1,-1,-1,-1,-1,-1,-1,-1
@@ -20960,6 +20978,15 @@ Sparkle Shower,SILKY BRAVE,HARDCORE RAVE,DJ Shimamura,33,DPN,6,5,770,178,178,178
 Sparkle Shower,SILKY BRAVE,HARDCORE RAVE,DJ Shimamura,33,DPH,7,9,770,178,178,178,83,112,-1,-1
 Sparkle Shower,SILKY BRAVE,HARDCORE RAVE,DJ Shimamura,33,DPA,8,10,1154,178,178,178,83,112,-1,-1
 Sparkle Shower,SILKY BRAVE,HARDCORE RAVE,DJ Shimamura,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,SPB,1,-1,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,SPN,2,5,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,SPH,3,8,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,SPA,4,10,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,SPL,5,-1,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,DPN,6,5,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,DPH,7,7,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,DPA,8,10,-1,180,180,180,-1,-1,-1,-1
+Sparkle Shower,Skywalking,TRANCECORE,Nhato,33,DPL,9,-1,-1,180,180,180,-1,-1,-1,-1
 Sparkle Shower,SnapSkipSpark,HAPPY BREAKCORE,Feryquitous,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,SnapSkipSpark,HAPPY BREAKCORE,Feryquitous,33,SPN,2,5,967,185,185,185,93,121,-1,-1
 Sparkle Shower,SnapSkipSpark,HAPPY BREAKCORE,Feryquitous,33,SPH,3,9,967,185,185,185,93,121,-1,-1
@@ -21006,8 +21033,8 @@ Sparkle Shower,TOKAKU=ALMiRAJ,ORIENTAL MIRAGE,MYUKKE.,33,DPH,7,9,935,170,170,170
 Sparkle Shower,TOKAKU=ALMiRAJ,ORIENTAL MIRAGE,MYUKKE.,33,DPA,8,11,1502,170,170,170,82,116,-1,-1
 Sparkle Shower,TOKAKU=ALMiRAJ,ORIENTAL MIRAGE,MYUKKE.,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPN,2,5,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPH,3,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPN,2,5,1079,162,162,162,81,120,-1,-1
+Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPH,3,9,1079,162,162,162,81,120,-1,-1
 Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPA,4,12,1787,162,162,162,81,120,-1,-1
 Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,UNDO THE NIGHT,EUROBEAT,葛城ユイ feat. Command (Eurobeat Union),33,DPN,6,5,-1,-1,-1,-1,-1,-1,-1,-1
@@ -21041,6 +21068,15 @@ Sparkle Shower,Watermelon Explosion,EXPLO POP,YUC'e,33,DPN,6,4,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Watermelon Explosion,EXPLO POP,YUC'e,33,DPH,7,8,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,Watermelon Explosion,EXPLO POP,YUC'e,33,DPA,8,10,1026,180,180,180,76,101,-1,-1
 Sparkle Shower,Watermelon Explosion,EXPLO POP,YUC'e,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,SPB,1,2,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,SPN,2,5,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,SPH,3,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,SPA,4,11,1603,204,204,204,106,125,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,DPN,6,5,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,DPH,7,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,DPA,8,11,1638,204,204,204,106,125,-1,-1
+Sparkle Shower,オーバーライド,IIDX EDITION,Remixed by Pizuya's Cell,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,かわいいだけじゃだめですか？,IIDX EDITION,"Remixed by BEMANI Sound Team ""L.E.D.-G"" feat. 佐伯伊織",33,SPB,1,1,804,175,175,175,81,111,-1,-1
 Sparkle Shower,かわいいだけじゃだめですか？,IIDX EDITION,"Remixed by BEMANI Sound Team ""L.E.D.-G"" feat. 佐伯伊織",33,SPN,2,5,804,175,175,175,81,111,-1,-1
 Sparkle Shower,かわいいだけじゃだめですか？,IIDX EDITION,"Remixed by BEMANI Sound Team ""L.E.D.-G"" feat. 佐伯伊織",33,SPH,3,8,804,175,175,175,81,111,-1,-1
@@ -21069,8 +21105,8 @@ Sparkle Shower,それが、ボクの使命 ～レスキュー隊長 メンキュ
 Sparkle Shower,それが、ボクの使命 ～レスキュー隊長 メンキュー～,EMERGENCY CORE,TORIENA,33,DPA,8,10,1034,180,180,180,82,109,-1,-1
 Sparkle Shower,それが、ボクの使命 ～レスキュー隊長 メンキュー～,EMERGENCY CORE,TORIENA,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPN,2,6,-1,-1,-1,-1,-1,-1,-1,-1
-Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPH,3,9,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPN,2,6,973,206,206,206,87,101,-1,-1
+Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPH,3,9,973,206,206,206,87,101,-1,-1
 Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPA,4,11,1346,206,206,206,87,101,-1,-1
 Sparkle Shower,タンポポ,ROCK,豚乙女,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,タンポポ,ROCK,豚乙女,33,DPN,6,6,-1,-1,-1,-1,-1,-1,-1,-1
@@ -21122,6 +21158,15 @@ Sparkle Shower,ベラ・ベ・カラベラ,TERRORCORE/RAP,Fra Prod. by RoughSket
 Sparkle Shower,ベラ・ベ・カラベラ,TERRORCORE/RAP,Fra Prod. by RoughSketch,33,DPH,7,9,920,150,150,150,75,120,-1,-1
 Sparkle Shower,ベラ・ベ・カラベラ,TERRORCORE/RAP,Fra Prod. by RoughSketch,33,DPA,8,11,1419,150,150,150,75,120,-1,-1
 Sparkle Shower,ベラ・ベ・カラベラ,TERRORCORE/RAP,Fra Prod. by RoughSketch,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,SPN,2,6,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,SPH,3,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,SPA,4,12,1867,165,165,165,84,122,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,DPN,6,6,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,DPH,7,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,DPA,8,12,1814,165,165,165,84,122,-1,-1
+Sparkle Shower,ベンガル vs. アムール Battle,BOLLYWOOD CORE,OSTER project,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,SPB,1,1,714,165,165,165,75,109,-1,-1
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,SPN,2,4,714,165,165,165,75,109,-1,-1
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,SPH,3,8,714,165,165,165,75,109,-1,-1
@@ -21131,6 +21176,15 @@ Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ず�
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,DPH,7,8,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,DPA,8,10,1119,165,165,165,75,109,-1,-1
 Sparkle Shower,もんめためたもん,ALIEN IDOL CORE,OSTER Project feat.ずんだもん & 四国めたん,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,SPN,2,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,SPH,3,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,SPA,4,12,1902,224,224,224,113,121,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,DPN,6,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,DPH,7,10,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,DPA,8,12,1899,224,224,224,113,121,-1,-1
+Sparkle Shower,ラブコメトキドキシリアス,Hi-ROM COM,cosMo@暴走P & L.E.D.-G,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,レシピのリドル,ガールズティーパーティー,音戯探偵ひなビタ♫,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,レシピのリドル,ガールズティーパーティー,音戯探偵ひなビタ♫,33,SPN,2,3,729,245,245,245,135,132,-1,-1
 Sparkle Shower,レシピのリドル,ガールズティーパーティー,音戯探偵ひなビタ♫,33,SPH,3,7,729,245,245,245,135,132,-1,-1
@@ -21212,6 +21266,15 @@ Sparkle Shower,百恋ラブラスター,KAWAII POP,irucaice feat. ななひら,3
 Sparkle Shower,百恋ラブラスター,KAWAII POP,irucaice feat. ななひら,33,DPH,7,8,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,百恋ラブラスター,KAWAII POP,irucaice feat. ななひら,33,DPA,8,10,1284,160,160,160,78,117,-1,-1
 Sparkle Shower,百恋ラブラスター,KAWAII POP,irucaice feat. ななひら,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,SPB,1,1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,SPN,2,5,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,SPH,3,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,SPA,4,10,1292,147,147,147,78,127,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,SPL,5,-1,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,DPN,6,5,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,DPH,7,7,-1,-1,-1,-1,-1,-1,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,DPA,8,10,1288,147,147,147,78,127,-1,-1
+Sparkle Shower,不死身ごっこ,ボカロ,ピノキオピー,33,DPL,9,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,煉獄コンフィチュール,ROCK,Pizuya's Cell,33,SPB,1,-1,-1,-1,-1,-1,-1,-1,-1,-1
 Sparkle Shower,煉獄コンフィチュール,ROCK,Pizuya's Cell,33,SPN,2,5,957,236,236,236,115,117,-1,-1
 Sparkle Shower,煉獄コンフィチュール,ROCK,Pizuya's Cell,33,SPH,3,9,957,236,236,236,115,117,-1,-1
