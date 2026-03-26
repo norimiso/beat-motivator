@@ -14,14 +14,14 @@ const { title } = Astro.props;
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
     <style is:global>
       :root {
-        --bg: #0f1114;
-        --surface: #1a1d23;
-        --surface2: #22262e;
+        --surface-0: #0f1114;
+        --surface-1: #1a1d23;
+        --surface-2: #22262e;
         --border: #2d3139;
-        --text: #c9d1d9;
-        --text-muted: #6e7681;
+        --text-1: #c9d1d9;
+        --text-2: #6e7681;
         --accent: #4a9eff;
-        --accent-dim: #264166;
+        --accent-subtle: #264166;
         --positive: #2ea043;
         --negative: #da3633;
         --warning: #d29922;
@@ -35,15 +35,42 @@ const { title } = Astro.props;
         --heatmap-color: 74, 158, 255;
 
         --radius: 6px;
+
+        /* ─── Typography scale ─────────────────────────── */
+        --text-xs:   0.75rem;
+        --text-sm:   0.875rem;
+        --text-base: 1rem;
+        --text-lg:   1.125rem;
+        --text-xl:   1.25rem;
+
+        /* ─── Spacing (4px base) ───────────────────────── */
+        --space-1:  0.25rem;
+        --space-2:  0.5rem;
+        --space-3:  0.75rem;
+        --space-4:  1rem;
+        --space-5:  1.25rem;
+        --space-6:  1.5rem;
+        --space-8:  2rem;
+        --space-10: 2.5rem;
+        --space-12: 3rem;
+
+        /* ─── Transitions ──────────────────────────────── */
+        --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+        --duration-fast:   120ms;
+        --duration-normal: 200ms;
+        --duration-slow:   350ms;
+
+        /* ─── Accent hover ─────────────────────────────── */
+        --accent-hover: #5daaff;
       }
 
-      *, *::before, *::after { box-sizing: border-box; }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
       body {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', sans-serif;
-        background: var(--bg);
-        color: var(--text);
+        background: var(--surface-0);
+        color: var(--text-1);
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
       }
@@ -52,7 +79,7 @@ const { title } = Astro.props;
       header {
         padding: 1.5rem 1rem;
         border-bottom: 1px solid var(--border);
-        background: var(--surface);
+        background: var(--surface-1);
       }
       header .inner {
         max-width: 1200px;
@@ -65,13 +92,13 @@ const { title } = Astro.props;
         font-size: 1.3rem;
         font-weight: 700;
         letter-spacing: 0.02em;
-        color: var(--text);
+        color: var(--text-1);
         margin: 0;
       }
       header h1 span { color: var(--accent); }
       header p {
         font-size: 0.8rem;
-        color: var(--text-muted);
+        color: var(--text-2);
         margin: 0;
       }
 
@@ -89,7 +116,7 @@ const { title } = Astro.props;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.06em;
-        color: var(--text-muted);
+        color: var(--text-2);
         margin: 0 0 0.75rem;
         padding-bottom: 0.4rem;
         border-bottom: 1px solid var(--border);
@@ -97,14 +124,14 @@ const { title } = Astro.props;
 
       /* ── Input Section ── */
       .input-section {
-        background: var(--surface);
+        background: var(--surface-1);
         padding: 1.25rem;
         border-radius: var(--radius);
         border: 1px solid var(--border);
       }
       .input-section p {
         font-size: 0.82rem;
-        color: var(--text-muted);
+        color: var(--text-2);
         margin: 0 0 0.75rem;
       }
       .input-section a {
@@ -117,15 +144,15 @@ const { title } = Astro.props;
         display: block;
         width: 100%;
         padding: 0.6rem 0.75rem;
-        background: var(--bg);
+        background: var(--surface-0);
         border: 1px solid var(--border);
         border-radius: var(--radius);
-        color: var(--text);
+        color: var(--text-1);
         font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
         font-size: 0.8rem;
         resize: vertical;
         outline: none;
-        transition: border-color 0.15s;
+        transition: border-color var(--duration-fast) var(--ease-out);
       }
       textarea:focus { border-color: var(--accent); }
 
@@ -140,13 +167,13 @@ const { title } = Astro.props;
         font-size: 0.85rem;
         font-weight: 600;
         cursor: pointer;
-        transition: background 0.15s;
+        transition: background var(--duration-fast) var(--ease-out);
       }
-      button:hover { background: #5daaff; }
+      button:hover { background: var(--accent-hover); }
       button:disabled { opacity: 0.4; cursor: not-allowed; }
       .secondary-btn {
-        background: var(--surface2);
-        color: var(--text);
+        background: var(--surface-2);
+        color: var(--text-1);
         border: 1px solid var(--border);
       }
       .secondary-btn:hover {
@@ -165,7 +192,7 @@ const { title } = Astro.props;
         margin-top: 0.6rem;
         min-height: 1.2rem;
         font-size: 0.78rem;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
 
       /* ── Tables ── */
@@ -178,8 +205,8 @@ const { title } = Astro.props;
       thead { position: sticky; top: 0; z-index: 1; }
       th {
         padding: 0.5rem 0.6rem;
-        background: var(--surface2);
-        color: var(--text-muted);
+        background: var(--surface-2);
+        color: var(--text-2);
         font-weight: 600;
         font-size: 0.72rem;
         text-transform: uppercase;
@@ -194,8 +221,8 @@ const { title } = Astro.props;
         border-bottom: 1px solid var(--border);
         white-space: nowrap;
       }
-      tbody tr { transition: background 0.1s; }
-      tbody tr:hover { background: var(--surface); }
+      tbody tr { transition: background var(--duration-fast) var(--ease-out); }
+      tbody tr:hover { background: var(--surface-1); }
 
       /* ── Heatmap statistics table ── */
       .stats-table td {
@@ -258,8 +285,8 @@ const { title } = Astro.props;
       .clear-normal { color: var(--accent); font-size: 0.72rem; }
       .clear-easy { color: var(--positive); font-size: 0.72rem; }
       .clear-assist { color: var(--diff-spl); font-size: 0.72rem; }
-      .clear-failed { color: var(--text-muted); font-size: 0.72rem; }
-      .clear-noplay { color: var(--text-muted); font-size: 0.72rem; }
+      .clear-failed { color: var(--text-2); font-size: 0.72rem; }
+      .clear-noplay { color: var(--text-2); font-size: 0.72rem; }
       .clear-short { font-weight: 700; letter-spacing: 0.03em; }
 
       /* ── BPI ── */
@@ -267,7 +294,7 @@ const { title } = Astro.props;
       .bpi-high { color: #ffa726; font-weight: 600; }
       .bpi-mid { color: #42a5f5; }
       .bpi-low { color: var(--positive); }
-      .bpi-negative { color: var(--text-muted); }
+      .bpi-negative { color: var(--text-2); }
 
       /* ── Diff colors ── */
       .positive { color: var(--positive); }
@@ -275,7 +302,7 @@ const { title } = Astro.props;
 
       /* ── Summary Card ── */
       .summary-card {
-        background: var(--surface);
+        background: var(--surface-1);
         border: 1px solid var(--border);
         border-radius: var(--radius);
         padding: 1.25rem;
@@ -285,7 +312,7 @@ const { title } = Astro.props;
         font-size: 0.9rem;
         font-weight: 600;
         margin: 0 0 1rem;
-        color: var(--text);
+        color: var(--text-1);
       }
       .summary-grid {
         display: grid;
@@ -302,7 +329,7 @@ const { title } = Astro.props;
         font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 0.04em;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
       .stat-value {
         font-size: 1.5rem;
@@ -318,7 +345,7 @@ const { title } = Astro.props;
         align-items: center;
         margin-top: 0.75rem;
         font-size: 0.82rem;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
       .options-row label {
         display: flex;
@@ -328,10 +355,10 @@ const { title } = Astro.props;
       }
       .options-row select {
         padding: 0.3rem 0.5rem;
-        background: var(--bg);
+        background: var(--surface-0);
         border: 1px solid var(--border);
         border-radius: var(--radius);
-        color: var(--text);
+        color: var(--text-1);
         font-size: 0.8rem;
         outline: none;
         cursor: pointer;
@@ -362,7 +389,7 @@ const { title } = Astro.props;
         display: inline-block;
         margin-right: 0.5rem;
         font-size: 0.75em;
-        transition: transform 0.2s;
+        transition: transform var(--duration-normal) var(--ease-out);
       }
       details[open] summary h2 {
         margin-bottom: 0.75rem;
@@ -384,19 +411,19 @@ const { title } = Astro.props;
         align-items: center;
         gap: 0.75rem;
         padding: 0.6rem 0.75rem;
-        background: var(--surface);
+        background: var(--surface-1);
         border: 1px solid var(--border);
         border-radius: var(--radius);
         cursor: pointer;
-        transition: background 0.15s, border-color 0.15s;
+        transition: background var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out);
       }
       .history-item:hover {
-        background: var(--surface2);
+        background: var(--surface-2);
         border-color: var(--accent);
       }
       .history-item.active {
         border-color: var(--accent);
-        background: var(--accent-dim);
+        background: var(--accent-subtle);
       }
       .history-date {
         font-size: 0.8rem;
@@ -407,10 +434,10 @@ const { title } = Astro.props;
       .history-info {
         flex: 1;
         font-size: 0.78rem;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
       .history-info strong {
-        color: var(--text);
+        color: var(--text-1);
       }
       .history-delete {
         padding: 0.2rem 0.5rem;
@@ -429,13 +456,13 @@ const { title } = Astro.props;
       }
       .history-empty {
         font-size: 0.8rem;
-        color: var(--text-muted);
+        color: var(--text-2);
         padding: 1rem 0;
       }
 
       /* ── Chart Container ── */
       .chart-container {
-        background: var(--surface);
+        background: var(--surface-1);
         border: 1px solid var(--border);
         border-radius: var(--radius);
         padding: 1rem;
@@ -444,7 +471,7 @@ const { title } = Astro.props;
       .chart-container h3 {
         font-size: 0.8rem;
         font-weight: 600;
-        color: var(--text-muted);
+        color: var(--text-2);
         margin: 0 0 0.75rem;
         text-transform: uppercase;
         letter-spacing: 0.04em;
@@ -458,13 +485,13 @@ const { title } = Astro.props;
       .tweet-link {
         display: inline-block;
         padding: 0.4rem 1rem;
-        background: var(--surface2);
+        background: var(--surface-2);
         border: 1px solid var(--border);
         border-radius: var(--radius);
         font-size: 0.8rem;
         color: var(--accent);
         text-decoration: none;
-        transition: border-color 0.15s;
+        transition: border-color var(--duration-fast) var(--ease-out);
       }
       .tweet-link:hover {
         border-color: var(--accent);
@@ -473,7 +500,7 @@ const { title } = Astro.props;
       .column-controls {
         margin-bottom: 0.75rem;
         padding: 0.8rem 0.9rem;
-        background: var(--surface);
+        background: var(--surface-1);
         border: 1px solid var(--border);
         border-radius: var(--radius);
       }
@@ -493,7 +520,7 @@ const { title } = Astro.props;
         align-items: center;
         gap: 0.35rem;
         font-size: 0.76rem;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
       .column-toggle.locked {
         opacity: 0.75;
@@ -518,7 +545,7 @@ const { title } = Astro.props;
       .ability-name {
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--text);
+        color: var(--text-1);
       }
       .ability-value {
         font-size: 1.3rem;
@@ -528,19 +555,19 @@ const { title } = Astro.props;
       }
       .ability-bar-bg {
         height: 8px;
-        background: var(--surface2);
+        background: var(--surface-2);
         border-radius: 4px;
         overflow: hidden;
       }
       .ability-bar-fill {
         height: 100%;
         border-radius: 4px;
-        background: linear-gradient(90deg, var(--accent-dim), var(--accent));
+        background: linear-gradient(90deg, var(--accent-subtle), var(--accent));
         transition: width 0.6s ease-out;
       }
       .ability-desc {
         font-size: 0.7rem;
-        color: var(--text-muted);
+        color: var(--text-2);
       }
 
       @media (max-width: 700px) {
@@ -580,7 +607,7 @@ const { title } = Astro.props;
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; }
 
-      ::selection { background: var(--accent-dim); }
+      ::selection { background: var(--accent-subtle); }
 
       /* ── Focus ring (accessibility) ── */
       :focus-visible {
