@@ -42,6 +42,10 @@ seed/
 _legacy/                  # 旧 vanilla JS 版のファイル
 ```
 
+## 参照ドキュメント
+
+- `docs/AI_ADVISOR_DESIGN.md` - AI Advisor (beat-advisor) 設計ドキュメント
+
 ## ドキュメント更新ルール
 
 - 機能実装とドキュメント更新は同一セッション内で行う
@@ -52,3 +56,10 @@ _legacy/                  # 旧 vanilla JS 版のファイル
 - `src/lib/` のコアモジュール (bpi.ts, score.ts, csv-parser.ts) は 30ASA から移植
 - `seed/master_songs.csv` は 30ASA と同一ファイル
 - 将来 30ASA 側でマスター更新した場合は、こちらにもコピーが必要
+
+## AI Advisor (beat-advisor) について
+
+- **別 Worker** として分離 (`beat-advisor/`)。Agent SDK (Durable Object) + React ベース
+- beat-motivator からは **iframe** 経由で統合。集計データは `postMessage` で受け渡し
+- Workers AI モデル: Gemma 4 26B (`@cf/google/gemma-4-26b-a4b-it`)、Kimi K2.5 (`@cf/moonshotai/kimi-k2.5`)
+- 詳細は `docs/AI_ADVISOR_DESIGN.md` を参照

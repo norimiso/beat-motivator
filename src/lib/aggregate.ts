@@ -65,7 +65,6 @@ export function aggregate(
   const results: ScoreResult[] = [];
   const bpiValues: number[] = [];
   const scoreRatesAll: number[] = []; // 単発力用: 全プレイ曲の scoreRate
-  let totalMisses = 0;               // 地力用: 全曲合計ミスカウント
   let scoredCount = 0;
   let totalRate = 0;
   let totalExScore = 0;
@@ -164,9 +163,6 @@ export function aggregate(
       totalRate += scoreRate;
       totalExScore += exScore;
       scoreRatesAll.push(scoreRate);
-      if (score?.missCount !== null && score?.missCount !== undefined) {
-        totalMisses += score.missCount;
-      }
       if (bpi !== null) bpiValues.push(bpi);
 
       // レベル別統計
@@ -214,15 +210,8 @@ export function aggregate(
   }
 
   // 能力値計算
-  const levelAverages = new Map<number, number>();
-  for (const s of levelStats) {
-    if (s.averageRate > 0) {
-      levelAverages.set(s.level, s.averageRate);
-    }
-  }
-
   const ability = scoreRatesAll.length > 0
-    ? calculateAbilityScores({ scoreRates: scoreRatesAll, levelAverages, totalMisses })
+    ? calculateAbilityScores({ scoreRates: scoreRatesAll })
     : null;
 
   const summary: ScoreSummary = {

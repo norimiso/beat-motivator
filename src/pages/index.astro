@@ -46,6 +46,25 @@ import Layout from '../layouts/Layout.astro';
       <div id="submit-result" class="submit-result"></div>
     </section>
 
+    <!-- AI Advisor -->
+    <section id="advisor-section" style="display:none;">
+      <div class="advisor-wrapper">
+        <div class="advisor-toggle">
+          <button id="advisor-toggle-btn" type="button" class="secondary-btn">
+            AI Advisor を開く
+          </button>
+        </div>
+        <div id="advisor-container" style="display:none;">
+          <iframe
+            id="advisor-iframe"
+            src="https://beat-advisor.norimiso.workers.dev"
+            style="width:100%; height:500px; border:1px solid var(--border-color, #333); border-radius:8px;"
+            allow="clipboard-read"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
       <!-- Tweet -->
     <section id="tweet-section" style="display:none;">
       <div class="result-actions">
@@ -120,17 +139,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="ability-bar-bg">
               <div class="ability-bar-fill" id="ability-single-bar" style="width:0%"></div>
             </div>
-            <span class="ability-desc">上位3曲の精度 (PGREAT率)</span>
-          </div>
-          <div class="ability-gauge">
-            <div class="ability-header">
-              <span class="ability-name">地力</span>
-              <span class="ability-value" id="ability-jikara">-</span>
-            </div>
-            <div class="ability-bar-bg">
-              <div class="ability-bar-fill" id="ability-jikara-bar" style="width:0%"></div>
-            </div>
-            <span class="ability-desc">レベル横断のスコア安定性</span>
+            <span class="ability-desc">上位10曲の精度 (99-100%の微差を拡大)</span>
           </div>
         </div>
       </div>
@@ -278,6 +287,185 @@ import Layout from '../layouts/Layout.astro';
       renderAll();
       if (shouldSaveHistory) saveHistory();
       submitResult.textContent = sourceLabel || '集計が完了しました';
+      // AI Advisor にデータを送信
+      showAdvisor(data);
+    }
+
+    // ── AI Advisor 連携 ──
+    const advisorSection = document.getElementById('advisor-section');
+    const advisorToggleBtn = document.getElementById('advisor-toggle-btn');
+    const advisorContainer = document.getElementById('advisor-container');
+    const advisorIframe = document.getElementById('advisor-iframe');
+    let advisorVisible = false;
+    let pendingAdvisorData = null;
+    let advisorReady = false;
+
+    // iframe 内の React アプリが ready を通知してきたらデータを送る
+    window.addEventListener('message', (event) => {
+      console.log('[motivator] postMessage received:', event.data?.type, 'from:', event.origin);
+      if (event.data?.type === 'advisor-ready') {
+        console.log('[motivator] advisor-ready! pending:', !!pendingAdvisorData);
+        advisorReady = true;
+        if (pendingAdvisorData) {
+          sendToAdvisor(pendingAdvisorData);
+        }
+      }
+    });
+
+    advisorToggleBtn.addEventListener('click', () => {
+      advisorVisible = !advisorVisible;
+      advisorContainer.style.display = advisorVisible ? '' : 'none';
+      advisorToggleBtn.textContent = advisorVisible ? 'AI Advisor を閉じる' : 'AI Advisor を開く';
+      // 開いた直後にも送信を試みる (ready だがデータ未送信の場合)
+      if (advisorVisible && pendingAdvisorData && advisorReady) {
+        console.log('[motivator] toggle open -> sending data');
+        sendToAdvisor(pendingAdvisorData);
+      }
+    });
+
+    function showAdvisor(data) {
+      advisorSection.style.display = '';
+      const context = buildAdvisorContext(data);
+      console.log('[motivator] showAdvisor: played=', context.summary.playedCharts, 'ready=', advisorReady);
+      pendingAdvisorData = context;
+      if (advisorReady) {
+        sendToAdvisor(context);
+      }
+    }
+
+    function sendToAdvisor(context) {
+      const iframe = advisorIframe;
+      if (iframe && iframe.contentWindow) {
+        console.log('[motivator] sendToAdvisor: posting to iframe, played=', context.summary.playedCharts);
+        iframe.contentWindow.postMessage(
+          { type: 'advisor-context', context },
+          'https://beat-advisor.norimiso.workers.dev'
+        );
+      } else {
+        console.log('[motivator] sendToAdvisor: iframe not available');
+      }
+    }
+
+    function buildAdvisorContext(data) {
+      const summary = data.summary;
+      const results = data.results || [];
+
+      // レベル別統計を AdvisorContext.levelStats 形式に変換
+      const levelStats = (summary.levelStats || []).map(s => {
+        const played = results.filter(r => r.level === s.level && r.exScore > 0);
+        // クリアランプ分布を計算
+        const lampCount = (type) => played.filter(r => r.clearType === type).length;
+        const djCount = (dj) => played.filter(r => r.djLevel === dj).length;
+        return {
+          level: s.level,
+          total: s.total,
+          played: s.played,
+          playRate: s.total > 0 ? s.played / s.total : 0,
+          averageScoreRate: s.averageRate,
+          clearLampDistribution: {
+            fc: lampCount('FULLCOMBO CLEAR'),
+            exh: lampCount('EX HARD CLEAR'),
+            hard: lampCount('HARD CLEAR'),
+            clear: lampCount('CLEAR'),
+            easy: lampCount('EASY CLEAR'),
+            assist: lampCount('ASSIST CLEAR'),
+            failed: lampCount('FAILED'),
+            noplay: s.total - s.played,
+          },
+          djLevelDistribution: {
+            aaa: s.aaa,
+            aa: s.aa,
+            a: s.a,
+            other: s.played - s.aaa - s.aa - s.a,
+          },
+          scoreRateDistribution: {
+            pct100: played.filter(r => r.scoreRate >= 1.0).length,
+            pct99: s.pct99,
+            pct98: s.pct98,
+            pct97: s.pct97,
+            pct96: s.pct96,
+            pct95: s.pct95,
+          },
+          maxMinus1keta: s.maxMinus1keta,
+          maxMinus2keta: s.maxMinus2keta,
+        };
+      });
+
+      // BPM 分布 (簡易版: master データがクライアントにないので results から推定)
+      // Note: results には BPM 情報がない → 空配列で初期化、将来 master API から取得
+      const bpmDistribution = [];
+
+      // ソフラン統計 (同上)
+      const soflanStats = { totalSoflan: 0, playedSoflan: 0, averageScoreRate: 0 };
+
+      // 注目曲
+      const playedResults = results.filter(r => r.exScore > 0);
+      const sortedByRate = [...playedResults].sort((a, b) => b.scoreRate - a.scoreRate);
+      const sortedByRateAsc = [...playedResults].sort((a, b) => a.scoreRate - b.scoreRate);
+
+      // AI に送る曲データ: 全曲ではなく、カテゴリ別に注目すべき曲だけ抽出
+      const compact = (r) => ({
+        t: r.title, d: r.difficulty, lv: r.level,
+        sr: Math.round(r.scoreRate * 10000) / 100,
+        cl: r.clearType.replace(' CLEAR','').replace('FULLCOMBO','FC').replace('EX HARD','EXH'),
+        dj: r.djLevel,
+        bp: r.bpi !== null ? Math.round(r.bpi * 10) / 10 : null,
+        mc: r.missCount,
+      });
+
+      // ☆12 のカテゴリ別
+      const lv12 = playedResults.filter(r => r.level === 12);
+      const lv11 = playedResults.filter(r => r.level === 11);
+
+      const notableSongs = {
+        // スコア上位10 (得意曲)
+        lv12_best: lv12.sort((a,b) => b.scoreRate - a.scoreRate).slice(0, 10).map(compact),
+        // スコア下位10 (苦手曲)
+        lv12_worst: lv12.filter(r => r.scoreRate > 0).sort((a,b) => a.scoreRate - b.scoreRate).slice(0, 10).map(compact),
+        // FAILED している曲 (挑戦中)
+        lv12_failed: results.filter(r => r.level === 12 && r.clearType === 'FAILED').slice(0, 10).map(compact),
+        // AAA に近い曲 (AA 上位)
+        almostAAA: playedResults
+          .filter(r => r.djLevel === 'AA' && r.scoreRate >= 0.85)
+          .sort((a,b) => b.scoreRate - a.scoreRate).slice(0, 10).map(compact),
+        // FC に近い曲 (ミス1-5)
+        almostFC: playedResults
+          .filter(r => r.missCount !== null && r.missCount > 0 && r.missCount <= 5 && r.clearType !== 'FULLCOMBO CLEAR')
+          .sort((a,b) => (a.missCount||99) - (b.missCount||99)).slice(0, 10).map(compact),
+        // ☆11 のスコア上位/下位 (地力帯)
+        lv11_best: lv11.sort((a,b) => b.scoreRate - a.scoreRate).slice(0, 5).map(compact),
+        lv11_worst: lv11.filter(r => r.scoreRate > 0).sort((a,b) => a.scoreRate - b.scoreRate).slice(0, 5).map(compact),
+      };
+
+      return {
+        summary: {
+          totalCharts: summary.totalCharts,
+          playedCharts: summary.playedCharts,
+          averageScoreRate: summary.averageScoreRate,
+          averageBpi: summary.averageBpi,
+          estimatedRank: 0, // beat-advisor 側で計算
+          ability: summary.ability,
+        },
+        levelStats,
+        bpmDistribution,
+        soflanStats,
+        taggedChartStats: {},
+        notableSongs,
+      };
+    }
+
+    function simplifyScore(r) {
+      return {
+        title: r.title,
+        difficulty: r.difficulty,
+        level: r.level,
+        exScore: r.exScore,
+        scoreRate: r.scoreRate,
+        clearType: r.clearType,
+        djLevel: r.djLevel,
+        missCount: r.missCount,
+        bpi: r.bpi,
+      };
     }
 
     // ── Submit ──
@@ -385,9 +573,6 @@ import Layout from '../layouts/Layout.astro';
 
       document.getElementById('ability-single').textContent = a.singleNote.toFixed(1);
       document.getElementById('ability-single-bar').style.width = a.singleNote.toFixed(1) + '%';
-
-      document.getElementById('ability-jikara').textContent = a.jikara.toFixed(1);
-      document.getElementById('ability-jikara-bar').style.width = a.jikara.toFixed(1) + '%';
 
       document.getElementById('ability-section').style.display = '';
     }

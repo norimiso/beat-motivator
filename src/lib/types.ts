@@ -80,10 +80,8 @@ export interface LevelStats {
 
 /** 能力値スコア */
 export interface AbilityScores {
-  /** 単発力 (0-100) — 精度・PGREAT能力 */
+  /** 単発力 (0-100) -- 精度・PGREAT能力 (上位10曲の平均スコアレートから算出) */
   singleNote: number;
-  /** 地力 (0-100) — 難易度横断のスコア安定性 */
-  jikara: number;
 }
 
 /** 集計サマリー */
