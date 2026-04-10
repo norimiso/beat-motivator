@@ -64,8 +64,9 @@ export function aggregate(
 
   const results: ScoreResult[] = [];
   const bpiValues: number[] = [];
-  const scoreRatesAll: number[] = []; // 単発力用: 全プレイ曲の scoreRate
-  let scoredCount = 0;
+  const scoreRatesAll: number[] = []; // 単発力用: 今作スコアあり曲の scoreRate
+  let scoredCount = 0;   // 今作スコアあり
+  let playedCount = 0;   // ランプ or スコアあり (全バージョン)
   let totalRate = 0;
   let totalExScore = 0;
 
@@ -76,6 +77,7 @@ export function aggregate(
       level: lv,
       total: 0,
       played: 0,
+      scored: 0,
       averageRate: 0,
       maxMinus1keta: 0,
       maxMinus2keta: 0,
@@ -129,7 +131,10 @@ export function aggregate(
       });
     }
 
+    const clearType = score?.clearType ?? 'NO PLAY';
     const hasScore = exScore > 0;
+    const hasLamp = clearType !== 'NO PLAY';
+    const isPlayed = hasScore || hasLamp;  // どのバージョンでもプレイしたことがある
 
     const result: ScoreResult = {
       title: chart.title,
@@ -140,7 +145,7 @@ export function aggregate(
       maxScore,
       scoreRate,
       djLevel,
-      clearType: score?.clearType ?? 'NO PLAY',
+      clearType,
       maxMinus,
       pgreat: score?.pgreat ?? 0,
       great: score?.great ?? 0,
@@ -148,16 +153,26 @@ export function aggregate(
       bpi,
       kaidenAverage: chart.kaidenAverage,
       topScore: chart.topScore,
-      kaidenDiff: chart.kaidenAverage !== null && exScore > 0
+      kaidenDiff: chart.kaidenAverage !== null && hasScore
         ? exScore - chart.kaidenAverage
         : null,
-      topDiff: chart.topScore !== null && exScore > 0
+      topDiff: chart.topScore !== null && hasScore
         ? exScore - chart.topScore
         : null,
     };
 
     results.push(result);
 
+    // レベル別統計
+    const s = statsMap.get(chart.level);
+
+    // played: ランプ or スコアがある (全バージョン通算)
+    if (isPlayed && s) {
+      playedCount++;
+      s.played++;
+    }
+
+    // scored: 今作スコアがある (スコア系統計はここで計算)
     if (hasScore) {
       scoredCount++;
       totalRate += scoreRate;
@@ -165,13 +180,11 @@ export function aggregate(
       scoreRatesAll.push(scoreRate);
       if (bpi !== null) bpiValues.push(bpi);
 
-      // レベル別統計
-      const s = statsMap.get(chart.level);
       if (s) {
-        s.played++;
+        s.scored++;
         levelRateSum.set(chart.level, (levelRateSum.get(chart.level) ?? 0) + scoreRate);
 
-        // 累積カウント (99% には 99%以上のものすべてが含まれる)
+        // スコア系の累積カウント (今作スコアありのみ)
         if (maxMinus < 10) s.maxMinus1keta++;
         if (maxMinus < 100) s.maxMinus2keta++;
         if (scoreRate >= 0.99) s.pct99++;
@@ -179,7 +192,7 @@ export function aggregate(
         if (scoreRate >= 0.97) s.pct97++;
         if (scoreRate >= 0.96) s.pct96++;
         if (scoreRate >= 0.95) s.pct95++;
-        if (scoreRate >= 17 / 18) s.maxMinus++;  // MAX-ランク以上
+        if (scoreRate >= 17 / 18) s.maxMinus++;
         if (scoreRate >= 8 / 9) s.aaa++;
         if (scoreRate >= 7 / 9) s.aa++;
         if (scoreRate >= 6 / 9) s.a++;
@@ -187,10 +200,10 @@ export function aggregate(
     }
   }
 
-  // レベル別の平均レート算出
+  // レベル別の平均レート算出 (scored ベース)
   for (const [lv, s] of statsMap) {
-    if (s.played > 0) {
-      s.averageRate = (levelRateSum.get(lv) ?? 0) / s.played;
+    if (s.scored > 0) {
+      s.averageRate = (levelRateSum.get(lv) ?? 0) / s.scored;
     }
   }
 
@@ -216,7 +229,8 @@ export function aggregate(
 
   const summary: ScoreSummary = {
     totalCharts: targetCharts.length,
-    playedCharts: scoredCount,
+    playedCharts: playedCount,     // ランプ or スコアあり (全バージョン)
+    scoredCharts: scoredCount,     // 今作スコアあり
     averageScoreRate: scoredCount > 0 ? totalRate / scoredCount : 0,
     averageBpi,
     totalExScore,

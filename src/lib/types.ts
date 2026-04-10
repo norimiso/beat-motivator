@@ -63,7 +63,10 @@ export interface ScoreResult {
 export interface LevelStats {
   level: number;
   total: number;
+  /** ランプあり OR スコアあり (全バージョン通算) */
   played: number;
+  /** 今作スコアあり (exScore > 0) */
+  scored: number;
   averageRate: number;
   maxMinus1keta: number;
   maxMinus2keta: number;
@@ -87,7 +90,10 @@ export interface AbilityScores {
 /** 集計サマリー */
 export interface ScoreSummary {
   totalCharts: number;
+  /** ランプあり OR スコアあり */
   playedCharts: number;
+  /** 今作スコアあり */
+  scoredCharts: number;
   averageScoreRate: number;
   averageBpi: number | null;
   totalExScore: number;

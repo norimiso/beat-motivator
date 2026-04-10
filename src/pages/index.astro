@@ -359,7 +359,7 @@ import Layout from '../layouts/Layout.astro';
 
       // レベル別統計を AdvisorContext.levelStats 形式に変換
       const levelStats = (summary.levelStats || []).map(s => {
-        const played = results.filter(r => r.level === s.level && r.exScore > 0);
+        const played = results.filter(r => r.level === s.level && (r.exScore > 0 || r.clearType !== 'NO PLAY'));
         // クリアランプ分布を計算
         const lampCount = (type) => played.filter(r => r.clearType === type).length;
         const djCount = (dj) => played.filter(r => r.djLevel === dj).length;
@@ -406,9 +406,12 @@ import Layout from '../layouts/Layout.astro';
       const soflanStats = { totalSoflan: 0, playedSoflan: 0, averageScoreRate: 0 };
 
       // 注目曲
-      const playedResults = results.filter(r => r.exScore > 0);
-      const sortedByRate = [...playedResults].sort((a, b) => b.scoreRate - a.scoreRate);
-      const sortedByRateAsc = [...playedResults].sort((a, b) => a.scoreRate - b.scoreRate);
+      // スコアありの曲 (注目曲の抽出やスコアソートに使う)
+      const scoredResults = results.filter(r => r.exScore > 0);
+      // プレイ済み (ランプ or スコア) -- クリアランプ分布に使う
+      const playedResults = results.filter(r => r.exScore > 0 || r.clearType !== 'NO PLAY');
+      const sortedByRate = [...scoredResults].sort((a, b) => b.scoreRate - a.scoreRate);
+      const sortedByRateAsc = [...scoredResults].sort((a, b) => a.scoreRate - b.scoreRate);
 
       // AI に送る曲データ: 全曲ではなく、カテゴリ別に注目すべき曲だけ抽出
       const compact = (r) => ({
@@ -421,8 +424,9 @@ import Layout from '../layouts/Layout.astro';
       });
 
       // ☆12 のカテゴリ別
-      const lv12 = playedResults.filter(r => r.level === 12);
-      const lv11 = playedResults.filter(r => r.level === 11);
+      // スコアベースの注目曲抽出 (スコアがある曲のみ)
+      const lv12 = scoredResults.filter(r => r.level === 12);
+      const lv11 = scoredResults.filter(r => r.level === 11);
 
       const notableSongs = {
         // スコア上位10 (得意曲)
@@ -432,11 +436,11 @@ import Layout from '../layouts/Layout.astro';
         // FAILED している曲 (挑戦中)
         lv12_failed: results.filter(r => r.level === 12 && r.clearType === 'FAILED').slice(0, 10).map(compact),
         // AAA に近い曲 (AA 上位)
-        almostAAA: playedResults
+        almostAAA: scoredResults
           .filter(r => r.djLevel === 'AA' && r.scoreRate >= 0.85)
           .sort((a,b) => b.scoreRate - a.scoreRate).slice(0, 10).map(compact),
         // FC に近い曲 (ミス1-5)
-        almostFC: playedResults
+        almostFC: scoredResults
           .filter(r => r.missCount !== null && r.missCount > 0 && r.missCount <= 5 && r.clearType !== 'FULLCOMBO CLEAR')
           .sort((a,b) => (a.missCount||99) - (b.missCount||99)).slice(0, 10).map(compact),
         // ☆11 のスコア上位/下位 (地力帯)
@@ -668,7 +672,7 @@ import Layout from '../layouts/Layout.astro';
       for (const s of stats) {
         html += '<tr>';
         html += `<td style="text-align:left;font-weight:600;">☆${s.level}</td>`;
-        html += `<td>${s.played} / ${s.total}</td>`;
+        html += `<td>${s.played} (${s.scored}) / ${s.total}</td>`;
         html += `<td style="text-align:right;">${(s.averageRate * 100).toFixed(3)}%</td>`;
 
         const cells = [
@@ -772,7 +776,7 @@ import Layout from '../layouts/Layout.astro';
       if (!currentSummary) return;
       const s = currentSummary;
       document.getElementById('sum-played').textContent =
-        `${s.playedCharts.toLocaleString()} / ${s.totalCharts.toLocaleString()}`;
+        `${s.playedCharts.toLocaleString()} (今作: ${s.scoredCharts.toLocaleString()}) / ${s.totalCharts.toLocaleString()}`;
       document.getElementById('sum-rate').textContent =
         (s.averageScoreRate * 100).toFixed(2) + '%';
       document.getElementById('sum-bpi').textContent =
