@@ -464,6 +464,16 @@ import Layout from '../layouts/Layout.astro';
         notableSongs,
         // 全プレイ済み曲のコンパクトデータ (AI が tool 経由で検索する用)
         allSongs: playedResults.map(compact),
+        // 未プレイ/未スコア曲の master データ (☆10-12, AI が「次にプレイすべき曲」を提案する用)
+        unplayedMaster: results
+          .filter(r => r.level >= 10 && r.exScore === 0)
+          .map(r => ({
+            t: r.title, d: r.difficulty, lv: r.level,
+            ka: r.kaidenAverage,  // 皆伝平均 (高い = 簡単)
+            ts: r.topScore,       // 全国トップ
+            ns: r.notes,          // ノーツ数
+            cl: r.clearType !== 'NO PLAY' ? r.clearType.replace(' CLEAR','').replace('FULLCOMBO','FC').replace('EX HARD','EXH') : null,
+          })),
       };
     }
 
