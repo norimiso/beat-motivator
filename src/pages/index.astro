@@ -462,6 +462,8 @@ import Layout from '../layouts/Layout.astro';
         soflanStats,
         taggedChartStats: {},
         notableSongs,
+        // 全プレイ済み曲のコンパクトデータ (AI が tool 経由で検索する用)
+        allSongs: playedResults.map(compact),
       };
     }
 
