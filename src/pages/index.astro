@@ -46,22 +46,27 @@ import Layout from '../layouts/Layout.astro';
       <div id="submit-result" class="submit-result"></div>
     </section>
 
-    <!-- AI Advisor -->
+    <!-- AI Advisor: 構造化レポート -->
     <section id="advisor-section" style="display:none;">
-      <div class="advisor-wrapper">
-        <div class="advisor-toggle">
-          <button id="advisor-toggle-btn" type="button" class="secondary-btn">
-            AI Advisor を開く
-          </button>
-        </div>
-        <div id="advisor-container" style="display:none;">
-          <iframe
-            id="advisor-iframe"
-            src="https://beat-advisor.norimiso.workers.dev"
-            style="width:100%; height:500px; border:1px solid var(--border-color, #333); border-radius:8px;"
-            allow="clipboard-read"
-          ></iframe>
-        </div>
+      <!-- Rank カード -->
+      <div id="advisor-rank-card" class="advisor-card" style="display:none;"></div>
+      <!-- プレイ統計 -->
+      <div id="advisor-summary-card" class="advisor-card" style="display:none;"></div>
+      <!-- 注目曲 -->
+      <div id="advisor-songs" style="display:none;"></div>
+      <!-- AI チャット (折りたたみ) -->
+      <div class="advisor-chat-toggle">
+        <button id="advisor-toggle-btn" type="button" class="secondary-btn">
+          AI に質問する
+        </button>
+      </div>
+      <div id="advisor-container" style="display:none;">
+        <iframe
+          id="advisor-iframe"
+          src="https://beat-advisor.norimiso.workers.dev"
+          style="width:100%; height:500px; border:1px solid var(--border-color, #333); border-radius:8px;"
+          allow="clipboard-read"
+        ></iframe>
       </div>
     </section>
 
@@ -326,11 +331,13 @@ import Layout from '../layouts/Layout.astro';
     function showAdvisor(data) {
       advisorSection.style.display = '';
       const context = buildAdvisorContext(data);
-      console.log('[motivator] showAdvisor: played=', context.summary.playedCharts, 'ready=', advisorReady);
       pendingAdvisorData = context;
-      if (advisorReady) {
-        sendToAdvisor(context);
-      }
+
+      // 1. ネイティブ構造化レポートを描画
+      renderReport(context, data);
+
+      // 2. iframe にもデータを送る (AI チャット用)
+      if (advisorReady) sendToAdvisor(context);
     }
 
     function sendToAdvisor(context) {
@@ -466,6 +473,124 @@ import Layout from '../layouts/Layout.astro';
         missCount: r.missCount,
         bpi: r.bpi,
       };
+    }
+
+    // ── Rank 推定 (クライアント側) ──
+    const LAMP_ORDER = ['NO PLAY','FAILED','ASSIST CLEAR','EASY CLEAR','CLEAR','HARD CLEAR','EX HARD CLEAR','FULLCOMBO CLEAR'];
+    const RANK_THRESHOLDS = [
+      { rank:0, label:'級位', criteria:[{type:'clearRate',level:3,rate:0.3,lampType:'CLEAR',label:'☆3の30%以上クリア'}] },
+      { rank:1, label:'初段', criteria:[{type:'clearRate',level:5,rate:0.3,lampType:'CLEAR',label:'☆5の30%以上クリア'}] },
+      { rank:2, label:'二段', criteria:[{type:'clearRate',level:6,rate:0.3,lampType:'CLEAR',label:'☆6の30%以上クリア'}] },
+      { rank:3, label:'三段', criteria:[{type:'clearRate',level:7,rate:0.3,lampType:'CLEAR',label:'☆7の30%以上クリア'}] },
+      { rank:4, label:'四段', criteria:[{type:'clearRate',level:8,rate:0.3,lampType:'CLEAR',label:'☆8の30%以上クリア'}] },
+      { rank:5, label:'五段', criteria:[{type:'clearRate',level:8,rate:0.5,lampType:'CLEAR',label:'☆8の50%以上クリア'},{type:'clearRate',level:9,rate:0.1,lampType:'CLEAR',label:'☆9の10%以上クリア'}] },
+      { rank:6, label:'六段', criteria:[{type:'clearRate',level:9,rate:0.3,lampType:'CLEAR',label:'☆9の30%以上クリア'}] },
+      { rank:7, label:'七段', criteria:[{type:'clearRate',level:9,rate:0.6,lampType:'CLEAR',label:'☆9の60%以上クリア'},{type:'clearRate',level:10,rate:0.1,lampType:'CLEAR',label:'☆10の10%以上クリア'}] },
+      { rank:8, label:'八段', criteria:[{type:'clearRate',level:10,rate:0.4,lampType:'CLEAR',label:'☆10の40%以上クリア'}] },
+      { rank:9, label:'九段', criteria:[{type:'clearRate',level:10,rate:0.6,lampType:'CLEAR',label:'☆10の60%以上クリア'},{type:'clearRate',level:11,rate:0.1,lampType:'CLEAR',label:'☆11の10%以上クリア'}] },
+      { rank:10, label:'十段', criteria:[{type:'clearRate',level:11,rate:0.4,lampType:'CLEAR',label:'☆11の40%以上クリア'},{type:'clearRate',level:12,rate:0.05,lampType:'EASY_CLEAR',label:'☆12にEasy以上がちらほら'}] },
+      { rank:11, label:'中伝', criteria:[{type:'clearRate',level:12,rate:0.4,lampType:'HARD_CLEAR',label:'☆12の40%以上HARD'},{type:'djLevelRate',level:12,rate:0.02,djLevel:'AAA',label:'☆12にAAAが数曲ある'}] },
+      { rank:12, label:'皆伝', criteria:[{type:'clearRate',level:12,rate:0.7,lampType:'HARD_CLEAR',label:'☆12の70%以上HARD'},{type:'djLevelRate',level:12,rate:0.1,djLevel:'AAA',label:'☆12の10%以上AAA'}] },
+      { rank:13, label:'上位皆伝', criteria:[{type:'clearRate',level:12,rate:0.95,lampType:'HARD_CLEAR',label:'☆12の95%以上HARD'},{type:'djLevelRate',level:12,rate:0.5,djLevel:'AAA',label:'☆12の50%以上AAA'}] },
+      { rank:14, label:'最上位皆伝', criteria:[{type:'clearRate',level:12,rate:0.95,lampType:'EX_HARD_CLEAR',label:'☆12の95%以上EXH'},{type:'djLevelRate',level:12,rate:0.8,djLevel:'AAA',label:'☆12の80%以上AAA'}] },
+      { rank:15, label:'トッププレイヤー', criteria:[{type:'clearRate',level:12,rate:0.95,lampType:'EX_HARD_CLEAR',label:'☆12の95%以上EXH'},{type:'djLevelRate',level:12,rate:0.95,djLevel:'AAA',label:'☆12の95%以上AAA'}] },
+    ];
+
+    function estimateRankClient(levelStats) {
+      const statsMap = new Map();
+      for (const s of levelStats) statsMap.set(s.level, s);
+
+      function evalCriterion(c) {
+        const s = statsMap.get(c.level);
+        if (!s || s.total === 0) return { label: c.label, met: false, actual: 0, required: c.rate };
+        let actual = 0;
+        if (c.type === 'clearRate' && c.lampType) {
+          const d = s.clearLampDistribution;
+          const li = LAMP_ORDER.indexOf(c.lampType);
+          const counts = [d.noplay, d.failed, d.assist, d.easy, d.clear, d.hard, d.exh, d.fc];
+          let cl = 0; for (let i = li; i < counts.length; i++) cl += counts[i];
+          actual = cl / s.total;
+        } else if (c.type === 'djLevelRate' && c.djLevel) {
+          const d = s.djLevelDistribution;
+          if (c.djLevel === 'AAA') actual = d.aaa / s.total;
+          else if (c.djLevel === 'AA') actual = (d.aaa + d.aa) / s.total;
+        }
+        return { label: c.label, met: actual >= c.rate, actual, required: c.rate };
+      }
+
+      const sorted = [...RANK_THRESHOLDS].sort((a,b) => b.rank - a.rank);
+      for (let i = 0; i < sorted.length; i++) {
+        const rd = sorted[i];
+        const results = rd.criteria.map(evalCriterion);
+        const met = results.filter(r => r.met);
+        const unmet = results.filter(r => !r.met);
+        if (met.length > 0) {
+          const next = i > 0 ? sorted[i-1] : null;
+          return { rank: rd.rank, label: rd.label, met, unmet,
+            nextLabel: next?.label, nextGoals: next ? next.criteria.map(evalCriterion) : [] };
+        }
+      }
+      return { rank: 0, label: '級位', met: [], unmet: [], nextLabel: null, nextGoals: [] };
+    }
+
+    // ── ネイティブレポート描画 ──
+    function renderReport(context, data) {
+      const pct = v => (v * 100).toFixed(1) + '%';
+      const rr = estimateRankClient(context.levelStats);
+      const ns = context.notableSongs || {};
+
+      // Rank カード
+      const rankEl = document.getElementById('advisor-rank-card');
+      let rankHtml = `<div class="rank-header"><div class="rank-badge">Rank ${rr.rank}</div><div class="rank-label">${rr.label}</div></div>`;
+      if (rr.met.length) {
+        rankHtml += '<h4>達成済み</h4>';
+        rr.met.forEach(c => { rankHtml += `<div class="criterion met">✓ ${c.label} (${pct(c.actual)})</div>`; });
+      }
+      if (rr.unmet.length) {
+        rankHtml += '<h4>改善ポイント</h4>';
+        rr.unmet.forEach(c => {
+          const w = Math.min(100, (c.actual / c.required) * 100);
+          rankHtml += `<div class="criterion unmet">✗ ${c.label}<span class="criterion-bar"><span class="criterion-fill" style="width:${w}%"></span></span><span class="criterion-pct">${pct(c.actual)} / ${pct(c.required)}</span></div>`;
+        });
+      }
+      if (rr.nextLabel && rr.nextGoals.length) {
+        rankHtml += `<div class="next-rank-section"><h4>次の目標: ${rr.nextLabel}</h4>`;
+        rr.nextGoals.forEach(c => {
+          rankHtml += `<div class="criterion ${c.met?'met':'unmet'}">${c.met?'✓':'✗'} ${c.label}${!c.met?' ('+pct(c.actual)+')':''}</div>`;
+        });
+        rankHtml += '</div>';
+      }
+      rankEl.innerHTML = rankHtml;
+      rankEl.style.display = '';
+
+      // サマリーカード
+      const sumEl = document.getElementById('advisor-summary-card');
+      const s = context.summary;
+      sumEl.innerHTML = `<h3>プレイ統計</h3><div class="stat-row">
+        <div class="stat-item"><span class="stat-value">${s.playedCharts}</span><span class="stat-label">プレイ曲</span></div>
+        <div class="stat-item"><span class="stat-value">${pct(s.averageScoreRate)}</span><span class="stat-label">平均スコア</span></div>
+        <div class="stat-item"><span class="stat-value">${s.averageBpi?.toFixed(1) ?? 'N/A'}</span><span class="stat-label">平均BPI</span></div>
+        <div class="stat-item"><span class="stat-value">${s.ability?.singleNote?.toFixed(1) ?? 'N/A'}</span><span class="stat-label">単発力</span></div>
+      </div>`;
+      sumEl.style.display = '';
+
+      // 注目曲カード
+      const songsEl = document.getElementById('advisor-songs');
+      let songsHtml = '';
+      const songCard = (title, songs, color) => {
+        if (!songs || !songs.length) return '';
+        let h = `<div class="advisor-card song-card"><h3 class="song-card-title" style="border-left:3px solid ${color}">${title}</h3>`;
+        songs.forEach(s => {
+          h += `<div class="song-row"><span class="song-title">${s.t}</span><span class="song-meta">${s.d}</span><span class="song-rate">${s.sr}%</span><span class="song-lamp">${s.cl}</span></div>`;
+        });
+        return h + '</div>';
+      };
+      songsHtml += songCard('☆12 得意曲', ns.lv12_best, '#00ff88');
+      songsHtml += songCard('☆12 課題曲', ns.lv12_worst, '#ffaa00');
+      songsHtml += songCard('AAA まであと少し', ns.almostAAA, '#00d4ff');
+      songsHtml += songCard('FC まであと少し', ns.almostFC, '#00d4ff');
+      songsEl.innerHTML = songsHtml;
+      songsEl.style.display = '';
     }
 
     // ── Submit ──

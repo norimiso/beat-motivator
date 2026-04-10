@@ -617,6 +617,46 @@ const { title } = Astro.props;
       :focus:not(:focus-visible) {
         outline: none;
       }
+
+      /* ── AI Advisor レポートカード ── */
+      .advisor-card {
+        background: var(--surface-1); border: 1px solid var(--border-color);
+        border-radius: 8px; padding: 16px; margin-bottom: 12px;
+      }
+      .advisor-card h3 { font-size: 14px; color: var(--accent, #00d4ff); margin: 0 0 12px; }
+      .advisor-card h4 { font-size: 11px; color: var(--text-2); margin: 10px 0 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+      .rank-header { text-align: center; margin-bottom: 12px; }
+      .rank-badge { font-size: 32px; font-weight: 700; color: var(--accent, #00d4ff); }
+      .rank-label { font-size: 18px; font-weight: 600; margin: 2px 0; }
+      .rank-desc { font-size: 12px; color: var(--text-2); margin: 4px 0 0; }
+
+      .criterion { font-size: 12px; padding: 3px 0; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+      .criterion.met { color: #00ff88; }
+      .criterion.unmet { color: var(--text-1); }
+      .criterion-bar { flex: 1; min-width: 60px; height: 4px; background: #333; border-radius: 2px; overflow: hidden; }
+      .criterion-fill { display: block; height: 100%; background: #0091b3; border-radius: 2px; }
+      .criterion-pct { font-size: 11px; color: var(--text-2); white-space: nowrap; }
+      .next-rank-section { opacity: 0.7; border-top: 1px solid var(--border-color); padding-top: 8px; margin-top: 8px; }
+
+      .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+      .stat-item { text-align: center; }
+      .stat-value { display: block; font-size: 20px; font-weight: 700; }
+      .stat-label { font-size: 10px; color: var(--text-2); }
+
+      .song-card { margin-bottom: 8px; }
+      .song-card-title { font-size: 13px; color: var(--accent, #00d4ff); margin: 0 0 6px; padding-left: 8px; }
+      .song-row { display: flex; align-items: center; gap: 8px; font-size: 12px; padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+      .song-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .song-meta { color: var(--text-2); font-size: 10px; }
+      .song-rate { font-weight: 600; width: 50px; text-align: right; }
+      .song-lamp { color: #0091b3; width: 32px; font-size: 10px; }
+
+      .advisor-chat-toggle { margin: 12px 0 8px; }
+
+      @media (max-width: 700px) {
+        .stat-row { grid-template-columns: repeat(2, 1fr); }
+      }
     </style>
   </head>
   <body>
