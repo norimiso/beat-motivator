@@ -1,4 +1,4 @@
-version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,bpm,bpm_min,bpm_max,measure,duration,kaiden_average,top_score
+﻿version_full,title,genre,artist,version,difficulty_short,difficulty,level,notes,bpm,bpm_min,bpm_max,measure,duration,kaiden_average,top_score
 1st&substream,22DUNK,TECHNO,SLAKE,1,SPB,1,-1,-1,-1,-1,-1,-1,77,-1,-1
 1st&substream,22DUNK,TECHNO,SLAKE,1,SPN,2,3,265,135,135,135,39,69,474,530
 1st&substream,22DUNK,TECHNO,SLAKE,1,SPH,3,4,323,135,135,135,39,69,606,646
@@ -9578,7 +9578,7 @@ tricoro,朧,FASCINATION,HHH×MM×ST,20,DPL,9,11,1257,149,149,149,73,118,-1,-1
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPB,1,-1,-1,-1,-1,-1,-1,124,-1,-1
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPN,2,6,584,175,175,175,83,114,1023,1168
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPH,3,10,1075,175,175,175,83,114,1842,2134
-tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPA,4,12,1600,175,175,175,83,114,3112,3188
+tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPA,4,12,1600,175,175,175,83,114,2797,3188
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,SPL,5,12,1852,175,175,175,83,114,3042,3668
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,DPN,6,6,551,175,175,175,83,114,-1,-1
 tricoro,ΕΛΠΙΣ,ROMANTIC SCHOOL VARIATIONS,dj TAKA,20,DPH,7,10,1096,175,175,175,83,114,-1,-1
